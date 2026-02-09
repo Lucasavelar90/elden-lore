@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elden Ring Lore - Páginas 288-289</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalhos e Rodapés */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+        
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        /* Tipografia de Conteúdo */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+            padding-bottom: 40px;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        em { font-style: italic; }
+
+        /* Citações e Títulos */
+        .item-quote { font-style: italic; margin: 15px 0 5px 0; text-indent: 0; font-size: 0.95em; }
+        .quote-source { display: block; text-align: left; margin-top: 0; margin-bottom: 15px; font-style: italic; font-size: 0.9em; color: #555; }
+        
+        /* Placeholders automáticos */
+        .img-placeholder {
+            display: none;
+            background-color: #ffeba7;
+            border: 2px dashed #c5a059;
+            color: #333;
+            padding: 15px;
+            text-align: center;
+            margin: 15px auto;
+            font-family: sans-serif;
+            font-size: 0.85rem;
+            break-inside: avoid;
+        }
+        
+        .column-illustration-center {
+            width: 100%;
+            display: block;
+            margin: 20px auto;
+            mix-blend-mode: multiply;
+            break-inside: avoid;
+        }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; padding-bottom: 0; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="book-spread">
+    <div class="page page-left">
+        <div class="header">
+            <svg class="header-icon" viewBox="0 0 24 24">
+                <path d="M12,2L15,5L12,8L9,5L12,2M12,6C13.66,6 15,7.34 15,9C15,10.66 13.66 12 12 12C10.34 12 9 10.66 9 9C9 7.34 10.34 6 12 6M6,10V12H8V14H6V22H4V14H2V12H4V10H6M18,10V12H20V14H18V22H16V14H14V12H16V10H18Z"/>
+            </svg>
+            <div class="header-title">Radagon da Ordem Dourada</div>
+        </div>
+
+        <div class="content">
+            <p class="no-indent">...as chamas de sua forja nunca morreriam, a Rainha Marika o marcou com uma maldição. “Ó gigante insignificante, que tu cuides da tua chama pela eternidade.”</p>
+            <span class="quote-source">– Lembrança do Gigante de Fogo</span>
+
+            <p>
+                Marika massacra brutalmente os gigantes, deixa um vivo entre o cemitério de seu povo e reduz os outros a escravos. Não faria sentido que a aversão intensa de Radagon pelos gigantes viesse de sua outra metade?
+            </p>
+
+            <p>
+                Mas é aqui que Radagon veio a existir? Novamente, meu instinto é que Radagon foi criado quando Marika se tornou uma deusa – quando ela se tornou um receptáculo para o Elden Ring – e ele é um produto de sua influência.
+            </p>
+
+            <p>
+                De fato, sabemos que o fim da guerra dos gigantes anunciou a Era da Térvore, e assim poderia ser argumentado que Radagon poderia ter sido formado por volta dessa época. Em seu discurso pré-batalha, Marika fala de "brandir" o Elden Ring, implicando que ela já está empunhando seu poder.
+            </p>
+
+            <p>
+                Entraremos nos detalhes e na ciência da criação de Radagon em breve, mas é minha especulação que Radagon tem sido parte de Marika por muito tempo, mesmo que não possamos datar especificamente o início.
+            </p>
+
+            <img src="red_giant_illustration.jpg" 
+                 alt="Ilustração do Gigante Vermelho" 
+                 class="column-illustration-center" 
+                 style="width: 70%;"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            
+            <div class="img-placeholder">
+                <strong>IMAGEM FALTANDO</strong><br>
+                Recorte a ilustração vermelha (guerreiro ruivo/gigante com espada) e salve como:<br>
+                <code>red_giant_illustration.jpg</code>
+            </div>
+
+            <p>
+                Também quero começar este segmento e teoria contrapondo algumas outras teorias comuns, e isso não é para dizer que estou totalmente correto. Em vez disso, quero apenas estabelecer uma base mais sólida para esta discussão.
+            </p>
+
+            <p>
+                A teoria oposta mais comum é que Marika e Radagon se tornaram um quando se casaram, ou que eles se fundiram durante a Ruptura do Elden Ring.
+            </p>
+
+            <p>
+                O argumento de que eles se tornaram um durante a Ruptura é o mais facilmente dissipado. Na cinemática de abertura e no trailer de anúncio, já podemos ver que Radagon e Marika são um ser durante a própria Ruptura, alternando entre suas duas metades, aparecendo alternadamente como Radagon e Marika.
+            </p>
+
+            <p>
+                Podemos aprender o que está acontecendo aqui através da descrição do Martelo de Marika:
+            </p>
+
+            <p class="item-quote">
+                “A ferramenta com a qual a Rainha Marika despedaçou o Elden Ring e Radagon tentou repará-lo.”
+            </p>
+            <span class="quote-source">– Martelo de Marika</span>
+
+            <p>
+                Novamente: mesmo antes do Elden Ring se despedaçar propriamente, Marika e Radagon estavam em um corpo, capazes de alternar entre cada forma enquanto lutavam pelo controle.
+            </p>
+        </div>
+
+        <div class="page-number">288</div>
+    </div>
+
+    <div class="page page-right">
+        <div class="header">
+            <svg class="header-icon" viewBox="0 0 24 24">
+                <path d="M12,2L14.5,9.5L22,12L14.5,14.5L12,22L9.5,14.5L2,12L9.5,9.5L12,2Z"/>
+            </svg>
+            <div class="header-title">Graça Concedida</div>
+        </div>
+
+        <div class="content">
+            <p class="no-indent">Muitas pessoas que acreditam que Radagon era uma pessoa separada, até o momento da Ruptura, frequentemente apontam para o diálogo de Marika que Melina recria em sua sala do trono:</p>
+
+            <p class="item-quote">
+                “Nas próprias palavras de Marika. Ó Radagon, cão leal da Ordem Dourada. Ainda tens de te tornar eu. Ainda tens de te tornar um deus. Vamos ser despedaçados, ambos. Meu outro eu.”
+            </p>
+            <span class="quote-source">– Rainha Marika via Melina</span>
+
+            <p>
+                Muitos interpretam a linha, "Ainda tens de te tornar eu", para significar que eles eram pessoas separadas que em breve se tornariam um e o mesmo. No entanto, aqueles que argumentam este ponto convenientemente ignoram a linha "Vamos ser despedaçados, ambos. Meu outro eu."
+            </p>
+
+            <p>
+                Radagon já é seu "outro eu" e a razão pela qual ela diz "ainda tens de te tornar eu" é porque eles ainda são duas personalidades separadas, apesar de compartilharem um corpo. Acho que clareza pode ser encontrada no japonês original também, e graças a Lokey temos acesso a isso. Em sua tradução do discurso, o que estou implicando é um pouco mais claro e cito essa tradução agora:
+            </p>
+
+            <p class="item-quote">
+                “Oh, Radagon, cão da Regulação Dourada. Você ainda não é eu. Ainda não é Deus. Agora, vamos quebrar isso juntos! Minha outra metade!”
+            </p>
+            <span class="quote-source">– Tradução via Lokey</span>
+
+            <p>
+                “Você ainda não é eu” – implicando que, apesar de compartilharem um corpo e Radagon ter ganho poder e influência, é Marika quem é a forma divina. Não Radagon.
+            </p>
+
+            <p>
+                Eu acho que Marika e Radagon eram um mesmo antes de se casarem, antes de Radagon se tornar o segundo Lorde Prístino. Minhas principais razões para acreditar nisso são as dicas flagrantes em torno da história de seu casamento com Rennala.
+            </p>
+
+            <p>
+                A primeira coisa que precisamos considerar é o próprio propósito do casamento. O raciocínio por trás da união nos é dado através do Monumento de Espada relevante, que diz:
+            </p>
+
+            <p class="item-quote">
+                “A Segunda Guerra de Liurnia / Sem vitória para o ouro, nem para a lua / Sem prêmio além da expiação; o nascimento de um voto”
+            </p>
+            <span class="quote-source">– Monumento de Espada, Igreja dos Votos, Liurnia dos Lagos</span>
+
+            <p>
+                Claramente esta guerra resultou em um impasse – os poderosos exércitos de Leyndell incapazes de quebrar as defesas das forças de Caria magicamente apoiadas. Em vez disso, uma aliança foi formada, como nos é dito por Miriel, que diz:
+            </p>
+
+            <p class="item-quote">
+                “É aqui, na Igreja dos Votos, que as grandes casas da Térvore e da Lua foram unidas. Pelo laço matrimonial entre Radagon de cabelo vermelho e Rennala, Rainha da Lua Cheia. E assim, nossa igreja mantém à vista os monumentos de ambas as casas. A Térvore da Capital, e a Academia de Raya Lucaria.”
+            </p>
+            <span class="quote-source">– Miriel, Pastor dos Votos</span>
+        </div>
+
+        <div class="page-number">289</div>
+    </div>
+</div>
+
+</body>
+</html>

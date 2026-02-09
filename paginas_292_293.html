@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elden Ring Lore - Páginas 292-293</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+            padding: 0; /* Remover padding para arte full-page */
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Cabeçalhos e Rodapés */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+        
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+            z-index: 10;
+        }
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; color: #e5e3da; text-shadow: 0 0 5px rgba(0,0,0,0.8); }
+
+        .footer-note {
+            position: absolute;
+            bottom: 50px; 
+            left: 50px;
+            right: 50px;
+            font-size: 0.75em;
+            color: #888;
+            font-style: italic;
+            border-top: 1px solid #e0e0e0;
+            padding-top: 5px;
+        }
+
+        /* Tipografia de Conteúdo */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+            padding-bottom: 40px;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        em { font-style: italic; }
+
+        /* Citações e Títulos */
+        .item-quote { font-style: italic; margin: 15px 0 5px 0; text-indent: 0; font-size: 0.95em; }
+        .quote-source { display: block; text-align: left; margin-top: 0; margin-bottom: 15px; font-style: italic; font-size: 0.9em; color: #555; }
+        
+        h2.subsection-title {
+            font-family: 'Cinzel', serif;
+            color: #c56c38; /* Laranja avermelhado */
+            font-size: 1.3rem;
+            text-align: center;
+            margin: 25px 0 15px 0;
+            line-height: 1.2;
+            break-inside: avoid;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        /* Imagens e Placeholders */
+        .full-page-art {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .img-placeholder {
+            display: none;
+            background-color: #ffeba7;
+            border: 2px dashed #c5a059;
+            color: #333;
+            padding: 20px;
+            text-align: center;
+            margin: 20px auto;
+            font-family: sans-serif;
+            font-size: 0.9rem;
+            width: 90%;
+            z-index: 20;
+            position: relative;
+        }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; padding-bottom: 0; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+            .page-right { min-height: 600px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="book-spread">
+    <div class="page page-left">
+        <div class="header">
+            <svg class="header-icon" viewBox="0 0 24 24">
+                <path d="M12,2C14.2,2 16,3.8 16,6V9H18L19,13H5L6,9H8V6C8,3.8 9.8,2 12,2M12,4C10.9,4 10,4.9 10,6V9H14V6C14,4.9 13.1,4 12,4M5,14H19V22H5V14Z"/>
+            </svg>
+            <div class="header-title">Radagon da Ordem Dourada</div>
+        </div>
+
+        <div class="content">
+            <p class="no-indent">Considero mais ou menos um fato que Radagon já era parte de Marika na época de seu casamento com Rennala, e é por isso que os preceptores de Caria precisavam manter silêncio – pois eles teriam visto Radagon transformar-se em Marika atrás de portas fechadas. Acredito que Radagon, em última análise, nunca existiu como uma pessoa individual. Dito isso, isso não significa que ele não tenha sua própria personalidade com seus próprios objetivos. Tanto ele quanto Marika são personalidades distintas ou metades do mesmo ser, para constituir partes de um Rebis imortal. Mas o que é um Rebis e o que ele pode nos dizer sobre a história deles?</p>
+
+            <h2 class="subsection-title">O Rebis Imortal</h2>
+
+            <p>
+                Uma grande questão quando se trata de Radagon é: "Por quê?" Por que ele foi feito parte de Marika? Lokey sugere que Radagon foi feito para contrariar Marika, depois que ela frustrou as caçadas aos deuses da Pele Divina. Ele era um cão de caça mais confiável que Maliketh, projetado para mantê-la na linha. Sou mais da crença de que Radagon foi formado para que Marika pudesse se tornar um Rebis alquímico, o ser perfeito e o guardião perfeito para o Elden Ring. Esta é a minha teoria, e como você pode ver pela sugestão de Lokey, há muitos argumentos convincentes a serem feitos.
+            </p>
+
+            <p>
+                Como mencionei, um Rebis imortal é um conceito alquímico. É o *magnum opus* do campo, uma forma divina e perfeita. Para citar a Wikipedia:
+            </p>
+
+            <p class="item-quote">
+                “Às vezes descrito como o hermafrodita divino, uma reconciliação de espírito e matéria, um ser de qualidades tanto masculinas quanto femininas, como indicado pelas cabeças masculina e feminina dentro de um único corpo.”
+            </p>
+            <span class="quote-source">– Rebis, Wikipedia</span>
+
+            <p>
+                Em última análise, o Rebis é a reunificação e reconciliação de matéria oposta, incluindo o macho e a fêmea, para criar o ser imortal perfeito. É perfeito na medida em que engloba tudo, espírito e matéria. Isso soa perfeito para um ser que seria um deus e o receptáculo para o Elden Ring.
+            </p>
+
+            <p>
+                Em termos básicos, alquimia é frequentemente o processo de combinar e misturar elementos, e muito disso descrito alegoricamente.
+            </p>
+
+            <p>
+                Em um vídeo chamado "Elden Ring is an Allegory for Alchemy"¹, Ziostorm faz uma referência perspicaz ao Rei Vermelho e à Rainha Branca, as duas partes constituintes do Rebis divino. A relevância para Radagon, o ruivo, e Marika, a de cabelos brancos, deve ser óbvia, então crédito a Ziostorm por chamar minha atenção para esse detalhe particular.
+            </p>
+
+            <p>
+                Este conceito do Rei Vermelho e da Rainha Branca é uma ideia alegórica bem conhecida, e para citar um artigo do Learn Religions:
+            </p>
+        </div>
+
+        <div class="footer-note">1 “Elden Ring is an Allegory for Alchemy” - Ziostorm</div>
+        <div class="page-number">292</div>
+    </div>
+
+    <div class="page page-right">
+        <img src="radagon_rebis_full_art.jpg" 
+             alt="Arte de Radagon como Rebis" 
+             class="full-page-art"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        
+        <div class="img-placeholder">
+            <strong>IMAGEM FALTANDO</strong><br>
+            Salve a arte de página inteira (Radagon com o anel no peito) como:<br>
+            <code>radagon_rebis_full_art.jpg</code>
+        </div>
+
+        <div class="page-number">293</div>
+    </div>
+</div>
+
+</body>
+</html>

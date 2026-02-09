@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elden Ring Lore - Páginas 300-301</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalhos e Rodapés */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+        
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        /* Tipografia de Conteúdo */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+            padding-bottom: 40px;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        em { font-style: italic; }
+
+        /* Citações e Títulos */
+        .item-quote { font-style: italic; margin: 15px 0 5px 0; text-indent: 0; font-size: 0.95em; }
+        .quote-source { display: block; text-align: left; margin-top: 0; margin-bottom: 15px; font-style: italic; font-size: 0.9em; color: #555; }
+        
+        h2.subsection-title {
+            font-family: 'Cinzel', serif;
+            color: #c56c38; /* Laranja avermelhado */
+            font-size: 1.3rem;
+            text-align: center;
+            margin: 25px 0 15px 0;
+            line-height: 1.2;
+            break-inside: avoid;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; padding-bottom: 0; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="book-spread">
+    <div class="page page-left">
+        <div class="header">
+            <svg class="header-icon" viewBox="0 0 24 24">
+                <path d="M12,2L15,5L12,8L9,5L12,2M12,6C13.66,6 15,7.34 15,9C15,10.66 13.66 12 12 12C10.34 12 9 10.66 9 9C9 7.34 10.34 6 12 6M6,10V12H8V14H6V22H4V14H2V12H4V10H6M18,10V12H20V14H18V22H16V14H14V12H16V10H18Z"/>
+            </svg>
+            <div class="header-title">Radagon da Ordem Dourada</div>
+        </div>
+
+        <div class="content">
+            <p class="no-indent">...durante um período de paz, Marika macularia seu marido e o baniria junto com seus guerreiros das Terras Intermédias.</p>
+
+            <p class="item-quote">
+                “No entanto, quando Godfrey, o primeiro Lorde Prístino, foi expulso das Terras Intermédias, Radagon deixou Rennala para retornar à Capital da Térvore, tornando-se o segundo marido da Rainha Marika e Rei Consorte. Tomando o título... de segundo Lorde Prístino.”
+            </p>
+            <span class="quote-source">– Miriel, Pastor dos Votos</span>
+
+            <h2 class="subsection-title">Ordem Dourada</h2>
+
+            <p>
+                Como discutimos no capítulo “As Eras da Térvore”, a fé era fácil de se obter na Era da Fartura. Isso não é era para um guerreiro – não se pode matar a falta de fé com um machado – e então vejo isso como a era em que Godfrey e os Maculados foram banidos. Um novo lorde era necessário: um pensador, um filósofo, um grande unificador que pudesse forjar uma nova ideologia para substituir a perda da Térvore. Entra Radagon, Segundo Lorde Prístino.
+            </p>
+
+            <p>
+                Ambas as metades, Marika e Radagon, reconheceram claramente que a teoria unificadora de fé e feitiçaria combinadas de Radagon poderia preencher uma lacuna muito necessária onde a Térvore outrora esteve, e assim ele retornou à capital da Térvore e casou-se com sua outra metade. Esta união produziria duas crianças, Miquella e Malenia, ambas grandemente defeituosas e ainda assim quase inigualáveis em poder e intelecto, respectivamente. Talvez as falhas de Miquella e Malenia sejam o resultado desta endogamia mais incomum – um único corpo literal provendo tanto o aspecto masculino quanto o feminino.
+            </p>
+
+            <p>
+                No entanto, não posso deixar de vê-los como reflexos do Rei Vermelho e da Rainha Branca: Miquella com o intelecto de seu pai, mas a compleição de sua mãe, e Malenia com a crina de seu pai e a proeza de batalha. Talvez se tivessem nascido como um só em vez de dois, teriam sido verdadeiramente a criança perfeita.
+            </p>
+
+            <p>
+                Ainda assim, o maior legado e obsessão de Radagon é a Ordem Dourada. A Ordem Dourada foi criada quando a Morte Destinada foi confinada, evidenciado pela descrição da Runa de Reparo do Príncipe da Morte:
+            </p>
+
+            <p class="item-quote">
+                “A Ordem Dourada foi criada ao confinar a Morte Destinada. Assim, esta nova Ordem será uma onde a Morte é restaurada.”
+            </p>
+            <span class="quote-source">– Runa de Reparo do Príncipe da Morte</span>
+
+            <p>
+                Acho que este é um momento importante para explorar as diferenças entre a Ordem Dourada como um corpo governante e o Fundamentalismo da Ordem Dourada como um ideal. Rogier data a era da Ordem Dourada até o momento em que Radagon fez a paz com os Carianos:
+            </p>
+
+            <p class="item-quote">
+                “A arte de batalha que você aprendeu é da família da pedra cintilante. Elas foram concebidas na grande Academia de Raya Lucaria, ao...”
+            </p>
+        </div>
+
+        <div class="page-number">300</div>
+    </div>
+
+    <div class="page page-right">
+        <div class="header">
+            <svg class="header-icon" viewBox="0 0 24 24">
+                <path d="M12,2L14.5,9.5L22,12L14.5,14.5L12,22L9.5,14.5L2,12L9.5,9.5L12,2Z"/>
+            </svg>
+            <div class="header-title">Graça Concedida</div>
+        </div>
+
+        <div class="content">
+            <p class="no-indent">...norte deste castelo. No passado, eles obedeciam a leis que contrariavam a Ordem Dourada, ou assim me disseram. Fascinante, não é? Que a Ordem Dourada fosse maleável o suficiente para absorver práticas que a contradiziam no passado. Com a Ordem quebrada, distorcida e precisando de reparo, tal adaptabilidade é mais importante agora do que nunca.”</p>
+            <span class="quote-source">– Feiticeiro Rogier</span>
+
+            <p>
+                Como o Tarnished Archaeologist, acredito que a Apostasia da Pele Divina, a destruição da Térvore original e o confinamento da Morte aconteceram todos no final da antiga Era da Térvore, daí o porquê da Lâmina Negra de Maliketh ter o encantamento da Térvore antiga. No rescaldo deste evento, com a Runa da Morte confinada por Maliketh, a fantasma Térvore emergiria. Este foi o início de uma Ordem Dourada. Radagon não criou a Ordem Dourada *per se*; a Ordem Dourada é tanto a ordem governante quanto a forma do próprio Elden Ring.
+            </p>
+
+            <p>
+                O encantamento Barreira de Ouro, usado durante este mesmo conflito, não porta o sigilo da antiga Térvore. Em vez disso, porta o sigilo dos encantamentos da Térvore, colocando-o firmemente na era de fé do Tarnished Archaeologist – a era que segue a Era da Fartura. Acredito que o confinamento da Runa da Morte aconteceu seguindo a Apostasia da Pele Divina, como evidenciado pela descrição do traje de Apóstolo da Pele Divina. Faz sentido, após a destruição causada pela Morte Destinada nas mãos da Rainha dos Olhos do Crepúsculo e seus apóstolos, que Marika desejasse a Runa da Morte removida.
+            </p>
+
+            <p>
+                O que Radagon desenvolveu é o *Fundamentalismo* da Ordem Dourada. Lokey fornece uma tradução do kanji original usado no lugar de fundamentalismo e eu os cito agora:
+            </p>
+
+            <p class="item-quote">
+                “Fundamentalismo literalmente ‘doutrina da lógica original’. A lógica refere-se aos princípios do Universo...”
+            </p>
+            <span class="quote-source">– Tradução via Lokey</span>
+
+            <p>
+                É erudição, uma filosofia pseudo-religiosa que tenta entender os fundamentos da lógica, da Ordem e da regra do universo. Preocupa-se com o Elden Ring, Ordem e o que a Ordem é, daí a ausência da árvore em qualquer iconografia fundamentalista.
+            </p>
+
+            <p>
+                Radagon tomou os estudos baseados em inteligência dos Carianos e os misturou com a fé da Térvore – gerando assim o fundamentalismo, uma nova ideologia que poderia preencher o vazio deixado pela destruição física da Térvore.
+            </p>
+
+            <p>
+                A era de Radagon foi muito diferente da de Godfrey, evoluindo da era combativa e primal do Cadinho para uma de refinamento e uma sociedade mais ordenada. Vemos isso no fechamento das arenas. Essas arenas são decoradas com o emblema do leão de Godfrey e com uma arquitetura que é desagradável comparada a...
+            </p>
+        </div>
+
+        <div class="page-number">301</div>
+    </div>
+</div>
+
+</body>
+</html>

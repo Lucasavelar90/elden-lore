@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elden Ring Lore - Páginas 330-331</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalhos e Rodapés */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+        
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        /* Tipografia de Conteúdo */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+            padding-bottom: 40px;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        em { font-style: italic; }
+
+        /* Citações e Títulos */
+        .item-quote { font-style: italic; margin: 15px 0 5px 0; text-indent: 0; font-size: 0.95em; }
+        .quote-source { display: block; text-align: left; margin-top: 0; margin-bottom: 15px; font-style: italic; font-size: 0.9em; color: #555; }
+        
+        /* Placeholders automáticos */
+        .img-placeholder {
+            display: none;
+            background-color: #ffeba7;
+            border: 2px dashed #c5a059;
+            color: #333;
+            padding: 15px;
+            text-align: center;
+            margin: 15px auto;
+            font-family: sans-serif;
+            font-size: 0.85rem;
+            break-inside: avoid;
+        }
+        
+        .inline-illustration {
+            float: left;
+            width: 70%;
+            margin: 10px 20px 10px 0;
+            mix-blend-mode: multiply;
+            shape-outside: margin-box;
+        }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; padding-bottom: 0; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+            .inline-illustration { float: none; width: 60%; margin: 20px auto; display: block; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="book-spread">
+    <div class="page page-left">
+        <div class="header">
+            <svg class="header-icon" viewBox="0 0 24 24">
+                <path d="M12,2C14.2,2 16,3.8 16,6V9H18L19,13H5L6,9H8V6C8,3.8 9.8,2 12,2M12,4C10.9,4 10,4.9 10,6V9H14V6C14,4.9 13.1,4 12,4M5,14H19V22H5V14Z"/>
+            </svg>
+            <div class="header-title">Máscara de Ouro e a Ordem Dourada</div>
+        </div>
+
+        <div class="content">
+            <p class="no-indent">E o Máscara de Ouro está certo: Marika, a única deusa verdadeira destinada a defender a vontade do Elden Ring e da Térvore, foi quem o despedaçou. Tome o discurso dela no topo das Montanhas dos Gigantes:</p>
+
+            <p class="item-quote">
+                “Nas próprias palavras de Marika. Ouvi, bravos guerreiros. Ouvi, meu senhor Godfrey. Louvamos vossos feitos. A Graça livrou-se de vossa provação para o lugar onde estais. Coloquei os gigantes à espada e confinei a chama no topo do monte. Que comece uma nova época. Uma época cintilante de vida. Brandi o Elden Ring, para a Era da Térvore!”
+            </p>
+            <span class="quote-source">– Rainha Marika via Melina</span>
+
+            <p>E então seu discurso para Radagon:</p>
+
+            <p class="item-quote">
+                “Nas próprias palavras de Marika. Ó Radagon, cão leal da Ordem Dourada. Ainda tens de te tornar eu. Ainda tens de te tornar um deus. Vamos ser despedaçados, ambos. Meu outro eu.”
+            </p>
+            <span class="quote-source">– Rainha Marika via Melina</span>
+
+            <p>
+                Podemos ver uma transformação real de caráter aqui, de crente convicta a rainha cansada. De alguém que travou guerra em nome da Térvore a alguém que golpeou seu próprio coração. Por qualquer razão, pós-Noite das Facas Negras, Marika decide quebrar o Elden Ring, porque escolheu ser guiada por suas próprias motivações.
+            </p>
+
+            <p>
+                De fato, o Rebis de Marika e Radagon é em si um paradoxo ambulante. Por um lado Marika dirige a fé em direção ao esquecimento total após ver as falhas na Ordem seguindo a Noite das Facas Negras. Enquanto isso, os fundamentalistas de Radagon estão caçando Aqueles Que Vivem na Morte, tentando erradicar a falha completamente. Isso sem mencionar o fato de que foi Marika quem teve a Runa da Morte removida em primeiro lugar – um movimento que eventualmente levaria à brecha que geraria Aqueles Que Vivem na Morte.
+            </p>
+
+            <p>
+                De fato, suas ações finais são a inconstância manifestada – Marika destrói o anel enquanto Radagon tenta repará-lo.
+            </p>
+
+            <p>
+                A Ordem Dourada em essência é governada por Marika/Radagon e a Fera Prístina, ambos considerados deuses. Vejo a Vontade Maior como algo muito além desses seres incompreensíveis. Mas são suas ações inconsistentes que o Máscara de Ouro vê como a causa da imperfeição dentro da Ordem Dourada.
+            </p>
+
+            <p>
+                Dito isto, vamos olhar para sua Runa de Reparo, sua solução para aperfeiçoar a Ordem.
+            </p>
+
+            <p>
+                Quando usamos qualquer uma das outras duas Runas de Reparo, elas são incorporadas ao Elden Ring, significando que o poder dessa runa se torna parte da nova Ordem do mundo; i.e., a Maldição dos Agouros ou Aqueles Que Vivem na Morte.
+            </p>
+        </div>
+
+        <div class="page-number">330</div>
+    </div>
+
+    <div class="page page-right">
+        <div class="header">
+            <svg class="header-icon" viewBox="0 0 24 24">
+                <path d="M12,2L14.5,9.5L22,12L14.5,14.5L12,22L9.5,14.5L2,12L9.5,9.5L12,2Z"/>
+            </svg>
+            <div class="header-title">Graça Concedida</div>
+        </div>
+
+        <div class="content">
+            <p class="no-indent">No entanto, a runa do Máscara de Ouro é ligeiramente diferente, mais como um halo que circunda e engloba a totalidade do Elden Ring. Com a descrição da Runa de Reparo em mãos, o propósito disso deve ser abundantemente claro: é um anel protetor protegendo o Elden Ring da influência dos deuses.</p>
+
+            <p>
+                Além disso, é especulação. Para mim, suspeito que o Elden Ring deve ainda extrair seu poder da Vontade Maior, mas que agora está contido pelo halo do Máscara de Ouro, para que não possa sofrer interferência de qualquer outro deus vassalo. É por isso que o Máscara de Ouro vem ao topo das Montanhas dos Gigantes e à Chama da Ruína. Ele também busca ver seu poder liberado, pois os atuais deuses vassalos, Marika, Radagon e a Fera Prístina, devem ser purgados para que sua Ordem aperfeiçoada entre em vigor. De fato, a Vontade Maior mostra frustração com Marika/Radagon saindo do roteiro e não seguindo o plano:
+            </p>
+
+            <img src="corhyn_illustration.jpg" 
+                 alt="Ilustração do Irmão Corhyn" 
+                 class="inline-illustration" 
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            
+            <div class="img-placeholder" style="float: left; width: 60%; margin: 10px 20px 10px 0;">
+                <strong>IMAGEM FALTANDO</strong><br>
+                Recorte a ilustração vermelha (Corhyn com a Roda) e salve como:<br>
+                <code>corhyn_illustration.jpg</code>
+            </div>
+
+            <p class="item-quote">
+                “A transgressão de Marika exigiu uma sentença pesada. Mas mesmo acorrentada, ela permanece uma deusa, e o receptáculo da visão. Conceder Grandes Runas para se tornar Lorde Prístino, e juntar-se à Rainha Marika como seu consorte. Os Dedos assim o desejaram.”
+            </p>
+            <span class="quote-source">– Os Dois Dedos via Leitora de Dedos Enia</span>
+
+            <p>
+                A runa do Máscara de Ouro é chamada de Runa de Reparo da Ordem Perfeita, e a era que podemos trazer é a Era da Ordem. As motivações do Máscara de Ouro foram claramente expostas. Ele acredita que a Ordem Dourada deve significar ordem e estabilidade. Sem fundações rangentes e instáveis, sem motivações pessoais filtrando através de sua ideologia e sem deuses.
+            </p>
+
+            <p>
+                Humanos são humanos: sempre haverá guerra e conflito. Mas quando deuses agem da mesma maneira, há consequências cósmicas. Quando esses deuses controlam todas as fundações de nossa existência para atender às suas próprias agendas, ou se eles destroem essas fundações em um momento de desespero, então sua Ordem é simplesmente uma mentira.
+            </p>
+        </div>
+
+        <div class="page-number">331</div>
+    </div>
+</div>
+
+</body>
+</html>

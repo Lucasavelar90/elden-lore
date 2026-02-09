@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Sumário — Elden Ring</title>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+        background-color: #1a1a1a;
+        font-family: 'Cormorant Garamond', serif;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 100vh;
+        padding: 40px 20px;
+    }
+
+    .book-spread {
+        display: flex;
+        gap: 0;
+        max-width: 1200px;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: nowrap;
+        box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+    }
+
+    .page {
+        background-color: #fcfbf7;
+        flex: 1;
+        min-height: 850px;
+        padding: 60px 50px;
+        position: relative;
+        color: #1a1a1a;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .page-left {
+        border-radius: 5px 0 0 5px;
+        background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page-right {
+        border-radius: 0 5px 5px 0;
+        background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+    }
+
+    .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+    .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+    .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+
+    .content {
+        margin-top: 80px;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    h1.contents-title {
+        font-family: 'Cinzel', serif;
+        text-align: center;
+        color: #1a1a1a;
+        letter-spacing: 3px;
+        margin-bottom: 30px;
+    }
+
+    .toc-section { margin-bottom: 18px; }
+    .toc-section strong { font-family: 'Cinzel', serif; font-size: 0.95rem; }
+
+    .toc-entry {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #e0dccf;
+        padding: 3px 0;
+        font-size: 0.95rem;
+    }
+
+    /* FULL PAGE ART */
+    .fullpage-art {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+
+    .fullpage-art img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        mix-blend-mode: multiply;
+    }
+
+    .fullpage-art img::before {
+        content: attr(alt);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 40px;
+        font-family: 'Cinzel', serif;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        color: #c56c38;
+        background: repeating-linear-gradient(
+            45deg,
+            #eee,
+            #eee 10px,
+            #e2e0d6 10px,
+            #e2e0d6 20px
+        );
+        border: 2px dashed #c5a059;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+    @media (max-width: 900px) {
+        .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+        .page { width: 100%; max-width: 550px; min-height: auto; }
+    }
+</style>
+</head>
+
+<body>
+<div class="book-spread">
+
+    <!-- PÁGINA ESQUERDA — ARTE COMPLETA -->
+    <div class="page page-left">
+        <div class="fullpage-art">
+            <img src="sumario_arte.png" alt="FALTA IMAGEM: sumario_arte.png">
+        </div>
+        <div style="display:none;">Salvar a ilustração como sumario_arte.png</div>
+    </div>
+
+    <!-- PÁGINA DIREITA — SUMÁRIO -->
+    <div class="page page-right">
+        <div class="header">
+            <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2l4 7-4 2-4-2 4-7zm0 20l-6-9 6 3 6-3-6 9z"/></svg>
+            <div class="header-title">Sumário</div>
+        </div>
+
+        <div class="content">
+            <h1 class="contents-title">CONTEÚDO</h1>
+
+            <div class="toc-section">
+                <div class="toc-entry"><span>Introdução</span><span>viii</span></div>
+                <div class="toc-entry"><span>Prefácio</span><span>xii</span></div>
+            </div>
+
+            <div class="toc-section">
+                <strong>PARTE I: Deuses e Nações</strong>
+                <div class="toc-entry"><span>Capítulo 1: Deuses e o Anel Prístino</span><span>4</span></div>
+                <div class="toc-entry"><span>Capítulo 2: O Tempo Antes da Térvore</span><span>38</span></div>
+                <div class="toc-entry"><span>Capítulo 3: O Celestial</span><span>76</span></div>
+                <div class="toc-entry"><span>Capítulo 4: O Governo da Árvore</span><span>108</span></div>
+                <div class="toc-entry"><span>Capítulo 5: As Cidades Eternas</span><span>126</span></div>
+                <div class="toc-entry"><span>Capítulo 6: A Rainha de Olhos Crepusculares</span><span>150</span></div>
+                <div class="toc-entry"><span>Capítulo 7: Albinaúricos</span><span>170</span></div>
+                <div class="toc-entry"><span>Capítulo 8: Raya Lucaria e os Carianos</span><span>198</span></div>
+            </div>
+
+            <div class="toc-section">
+                <strong>PARTE II: História e Ideologia</strong>
+                <div class="toc-entry"><span>Capítulo 9: As Guerras de Unificação da Térvore</span><span>222</span></div>
+                <div class="toc-entry"><span>Capítulo 10: A Maldição dos Agouros</span><span>252</span></div>
+                <div class="toc-entry"><span>Capítulo 11: Cultos e Tribos</span><span>270</span></div>
+                <div class="toc-entry"><span>Capítulo 12: Radagon da Ordem Dourada</span><span>284</span></div>
+                <div class="toc-entry"><span>Capítulo 13: Goldmask e a Ordem Dourada</span><span>312</span></div>
+            </div>
+
+            <div class="toc-section">
+                <strong>PARTE III: Conspiração, Colapso e a Ruptura</strong>
+                <div class="toc-entry"><span>Capítulo 14: Ranni, a Bruxa</span><span>334</span></div>
+                <div class="toc-entry"><span>Capítulo 15: Noite das Facas Negras</span><span>344</span></div>
+                <div class="toc-entry"><span>Capítulo 16: Godwyn, Príncipe da Morte</span><span>366</span></div>
+                <div class="toc-entry"><span>Capítulo 17: A Ruptura</span><span>388</span></div>
+            </div>
+
+            <div class="toc-section">
+                <strong>PARTE IV: Os Semideuses</strong>
+                <div class="toc-entry"><span>Capítulo 18: Morgott e Mohg</span><span>400</span></div>
+                <div class="toc-entry"><span>Capítulo 19: Miquella, o Escolhido</span><span>424</span></div>
+                <div class="toc-entry"><span>Capítulo 20: Radahn, o Flagelo das Estrelas</span><span>434</span></div>
+                <div class="toc-entry"><span>Capítulo 21: Rykard, Senhor da Blasfêmia</span><span>448</span></div>
+                <div class="toc-entry"><span>Capítulo 22: Malenia e a Podridão Escarlate</span><span>466</span></div>
+            </div>
+
+            <div class="toc-section">
+                <strong>PARTE V: O Retorno dos Maculados</strong>
+                <div class="toc-entry"><span>Capítulo 23: Os Maculados e a Graça</span><span>490</span></div>
+                <div class="toc-entry"><span>Capítulo 24: Era das Estrelas</span><span>496</span></div>
+                <div class="toc-entry"><span>Capítulo 25: Que o Caos Tome o Mundo</span><span>500</span></div>
+            </div>
+
+            <div class="toc-section">
+                <div class="toc-entry"><span>Sobre o Autor</span><span>505</span></div>
+                <div class="toc-entry"><span>Agradecimentos</span><span>507</span></div>
+                <div class="toc-entry"><span>Benfeitores</span><span>509</span></div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

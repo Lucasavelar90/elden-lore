@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elden Ring Lore - Páginas 324-325</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden; /* Importante para cortar a imagem */
+            padding: 0; /* Sem padding para arte total */
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Numeração das páginas sobre a arte */
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #e5e3da; /* Cor clara para contrastar com a arte escura */
+            font-weight: 600;
+            text-shadow: 0 0 10px rgba(0,0,0,0.8);
+            z-index: 10;
+        }
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        /* Estilos da Arte de Spread (Página Dupla) */
+        .spread-image {
+            width: 200%; /* A imagem é duas vezes a largura de uma página */
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            max-width: none;
+        }
+
+        /* Posicionamento para a página esquerda */
+        .page-left .spread-image {
+            left: 0;
+            object-position: left center;
+        }
+
+        /* Posicionamento para a página direita */
+        .page-right .spread-image {
+            right: 0;
+            left: auto; /* Anula o left */
+            transform: translateX(50%); /* Ajuste técnico para alinhar o lado direito */
+            object-position: right center;
+        }
+        
+        /* Ajuste específico para garantir que a metade direita apareça corretamente usando object-position */
+        .page-right img.spread-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 100% 50%; /* Mostra o lado direito da imagem */
+            transform: none;
+            left: 0;
+        }
+        
+        .page-left img.spread-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 0% 50%; /* Mostra o lado esquerdo da imagem */
+        }
+
+
+        /* Placeholder */
+        .img-placeholder {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 235, 167, 0.9);
+            border: 2px dashed #c5a059;
+            color: #333;
+            padding: 20px;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 1rem;
+            z-index: 5;
+            width: 80%;
+        }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: 600px; }
+            /* No mobile, mostramos a imagem inteira em cada página ou ajustamos */
+            .spread-image { width: 100%; object-position: center; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="book-spread">
+    <div class="page page-left">
+        <img src="morgott_spread_full.jpg" 
+             alt="Arte de Morgott (Metade Esquerda)" 
+             class="spread-image"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        
+        <div class="img-placeholder">
+            <strong>ARTE DE PÁGINA DUPLA (ESQUERDA)</strong><br>
+            Salve a imagem completa do Morgott (horizontal) como:<br>
+            <code>morgott_spread_full.jpg</code><br>
+            O código irá mostrar apenas o lado esquerdo aqui.
+        </div>
+
+        <div class="page-number">324</div>
+    </div>
+
+    <div class="page page-right">
+        <img src="morgott_spread_full.jpg" 
+             alt="Arte de Morgott (Metade Direita)" 
+             class="spread-image"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        
+        <div class="img-placeholder">
+            <strong>ARTE DE PÁGINA DUPLA (DIREITA)</strong><br>
+            A mesma imagem será usada aqui, mostrando o lado direito automaticamente.
+        </div>
+
+        <div class="page-number">325</div>
+    </div>
+</div>
+
+</body>
+</html>

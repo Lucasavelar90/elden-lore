@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elden Ring Lore - Páginas 302-303</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalhos e Rodapés */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+        
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        .footer-note {
+            position: absolute;
+            bottom: 50px; 
+            left: 50px;
+            right: 50px;
+            font-size: 0.75em;
+            color: #888;
+            font-style: italic;
+            border-top: 1px solid #e0e0e0;
+            padding-top: 5px;
+        }
+
+        /* Tipografia de Conteúdo */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+            padding-bottom: 40px;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        em { font-style: italic; }
+
+        /* Citações e Títulos */
+        .item-quote { font-style: italic; margin: 15px 0 5px 0; text-indent: 0; font-size: 0.95em; }
+        .quote-source { display: block; text-align: left; margin-top: 0; margin-bottom: 15px; font-style: italic; font-size: 0.9em; color: #555; }
+        
+        .pull-quote-orange {
+            color: #c56c38;
+            font-size: 1.4rem;
+            line-height: 1.25;
+            margin: 20px 0 25px 0;
+            text-indent: 0;
+            text-align: left;
+            break-inside: avoid;
+            font-weight: 400;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; padding-bottom: 0; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="book-spread">
+    <div class="page page-left">
+        <div class="header">
+            <svg class="header-icon" viewBox="0 0 24 24">
+                <path d="M12,2L15,5L12,8L9,5L12,2M12,6C13.66,6 15,7.34 15,9C15,10.66 13.66 12 12 12C10.34 12 9 10.66 9 9C9 7.34 10.34 6 12 6M6,10V12H8V14H6V22H4V14H2V12H4V10H6M18,10V12H20V14H18V22H16V14H14V12H16V10H18Z"/>
+            </svg>
+            <div class="header-title">Radagon da Ordem Dourada</div>
+        </div>
+
+        <div class="content">
+            <p class="no-indent">...da alta Leyndell. Eram claramente relíquias da era de guerreiro dele. Tal barbárie e esporte de sangue não seriam bem-vindos na alta cultura de Radagon, como o Talismã de Escudo Ritual nos diz:</p>
+
+            <p class="item-quote">
+                “Um talismã moldado após escudos usados em combate ritual realizado para honrar a Térvore... A prática morreu na era do Rei Consorte Radagon, mas restos das arenas onde o combate ritual acontecia ainda podem ser encontrados em todas as terras.”
+            </p>
+            <span class="quote-source">– Talismã de Escudo Ritual</span>
+
+            <p>
+                Frequentemente credito Hawkshaw e seu excelente vídeo "The Color Theory of Elden Ring" por refinar meu entendimento dessa transição em direção a uma sociedade mais gentil, e devo fazê-lo novamente agora. Nesse vídeo, Hawkshaw destaca a Máscara de Governante e sua importância para iluminar a mudança na moral em termos de liderança:
+            </p>
+
+            <p class="item-quote">
+                “Tal máscara ilustra as qualidades de um lorde ideal: principalmente, sábio e possuindo uma certa genialidade desdentada. Aquele no centro da sociedade frequentemente acha essas qualidades as mais convenientes.”
+            </p>
+            <span class="quote-source">– Máscara de Governante</span>
+
+            <p>
+                Em geral, a era de Radagon foi uma de tirar as presas do passado. O fechamento das arenas é apenas um aspecto que foi restringido sob seu reinado. Qualquer coisa associada ao Cadinho é agora considerada crua, bárbara e violenta, e não tem lugar na sociedade civilizada de um estudioso como Radagon. Em um nível filosófico isso pode ser explicado pelos dogmas centrais do fundamentalismo da Ordem Dourada, a Lei da Causalidade e a Lei da Regressão. Preciso creditar Last Protagonist por refinar meu entendimento dessas leis, graças ao seu excelente vídeo de lore sobre a Ordem Dourada⁵.
+            </p>
+
+            <p>
+                Para citar a Lei da Regressão, primeiro ela afirma:
+            </p>
+
+            <p class="item-quote">
+                “A regressão é a atração do significado; que todas as coisas anseiam eternamente convergir.”
+            </p>
+            <span class="quote-source">– Lei da Regressão</span>
+
+            <p>
+                Last Protagonist compara essa regressão ao fenômeno estatístico conhecido como "regressão à média", onde variáveis extremas em um conjunto de dados são puxadas para mais perto da média em cada amostragem. O exemplo que Last Protagonist dá...
+            </p>
+
+            <div class="pull-quote-orange">
+                Em geral, a era de Radagon foi uma de tirar as presas do passado. O fechamento das arenas é apenas um aspecto que foi restringido sob seu reinado. Qualquer coisa associada ao Cadinho é agora considerada crua.
+            </div>
+        </div>
+
+        <div class="footer-note">5 “The Greattree, the Crucible, Destined Death, and the Golden Order” - Last Protagonist</div>
+        <div class="page-number">302</div>
+    </div>
+
+    <div class="page page-right">
+        <div class="header">
+            <svg class="header-icon" viewBox="0 0 24 24">
+                <path d="M12,2L14.5,9.5L22,12L14.5,14.5L12,22L9.5,14.5L2,12L9.5,9.5L12,2Z"/>
+            </svg>
+            <div class="header-title">Graça Concedida</div>
+        </div>
+
+        <div class="content">
+            <p class="no-indent">...é que se dois pais que são mais altos que a média têm um filho, então essa criança provavelmente será mais baixa que eles. A criança regredirá em direção à média.</p>
+
+            <p>
+                Em relação aos fundamentalistas da Ordem Dourada e sua visão da vida, significa que a vida deve ser menos caótica e mais uniforme – daí a convergência. Um refinamento da vida, com menos aberração caótica, como representado pelos Bastardos e Agouros e até mesmo o sigilo da própria Ordem Dourada, parece mais refinado que a árvore arbórea caótica da antiga Térvore. Mais uma vez, crédito a Last Protagonist por este resumo de regressão e a Quelaag por desempacotar a importância das mudanças visuais entre o sigilo antigo da Térvore e o equivalente da Ordem Dourada.
+            </p>
+
+            <p>
+                Avante. Quando vimos Radagon pela última vez, ele estava em Liurnia, estudando os trabalhos dos Carianos e a academia para se tornar uma pessoa mais equilibrada; ele vem de uma ordem de fé, mas ele está estudando os outros mistérios do universo encontrados na feitiçaria. No entanto, é claro que Radagon ainda não tinha concebido totalmente o fundamentalismo da Ordem Dourada quando voltou de Liurnia, pois aprendemos mais tarde sobre Radagon e Miquella trabalhando juntos nos encantamentos que formariam a espinha dorsal desse modo de pensar.
+            </p>
+
+            <p>
+                Por exemplo, temos os Anéis Triplos de Luz:
+            </p>
+
+            <p class="item-quote">
+                “Um dos encantamentos dos fundamentalistas da Ordem Dourada... Um presente do jovem Miquella para seu pai, Radagon.”
+            </p>
+            <span class="quote-source">– Anéis Triplos de Luz</span>
+
+            <p>
+                Não é surpresa que Miquella ajudaria seu pai a arredondar os dogmas da Ordem Dourada. Miquella é muito provavelmente uma metade do ser perfeito, e seu intelecto é extraordinário. Embora Miquella acabasse por se afastar do fundamentalismo em busca de suas próprias respostas, Radagon se tornaria devoto à Ordem Dourada acima de tudo. Sua fixação em sua forma pode ser encontrada na refação de seu próprio Espadão da Ordem Dourada, a espada representando a Ordem Dourada – uma fusão de magia de Caria e fé no Elden Ring.
+            </p>
+
+            <p>
+                Essa obsessão com a Ordem e sua suposta perfeição escorreria para seus seguidores e criaria os caçadores fundamentalistas da Ordem Dourada – pessoas como D. Sabemos que esses caçadores Daqueles Que Vivem na Morte estão ligados aos fundamentalistas graças aos seus encantamentos associados. Tome a Cura da Ordem:
+            </p>
+
+            <p class="item-quote">
+                “Um dos encantamentos dos fundamentalistas da Ordem Dourada. Usado por caçadores Daqueles Que Vivem na Morte.”
+            </p>
+            <span class="quote-source">– Cura da Ordem</span>
+
+            <p>
+                Isso faz sentido quando você considera que o fundamentalismo da Ordem Dourada está quebrando a Ordem Dourada até seus...
+            </p>
+        </div>
+
+        <div class="page-number">303</div>
+    </div>
+</div>
+
+</body>
+</html>

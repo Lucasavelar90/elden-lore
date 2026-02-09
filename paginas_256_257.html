@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 10: A Maldição do Agouro - Páginas 256 e 257</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+
+        /* Conteúdo Texto */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+            padding-bottom: 40px;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        
+        em { font-style: italic; }
+
+        /* Títulos de Subseção */
+        h2.subsection-title {
+            font-family: 'Cinzel', serif;
+            color: #c5a059; /* Laranja/Ferrugem */
+            font-size: 1.2rem;
+            text-align: center;
+            margin: 25px 0 15px 0;
+            line-height: 1.2;
+            break-inside: avoid;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        /* Citações de Itens */
+        .item-quote {
+            font-style: italic;
+            margin: 15px 0 5px 0;
+            text-indent: 0;
+            font-size: 0.95em;
+        }
+
+        .quote-source {
+            display: block;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Ilustração na coluna (flutuante no meio) */
+        .column-illustration-center {
+            width: 100%;
+            display: block;
+            margin: 20px auto;
+            mix-blend-mode: multiply;
+        }
+
+        .img-placeholder-column {
+            width: 100%;
+            height: 250px;
+            background-color: rgba(197, 160, 89, 0.15);
+            border: 1px dashed #c5a059;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #c5a059;
+            font-size: 0.8rem;
+            margin: 20px auto;
+        }
+
+        /* Rodapé */
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; padding-bottom: 0; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><circle cx="12" cy="12" r="3"/></svg> 
+                <div class="header-title">A Maldição do Agouro</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">sendo comidos por um Misbegotten. Isso não é por causa da morte em si, mas por causa do destino ignóbil de ser comido por um ser tão inferior.</p>
+
+                <p>No entanto, há um medo especial reservado para os Agouros, como sugerido pelo próprio nome. E então acho que Hawkshaw colocou isso de forma muito adequada em seu vídeo "Perfumistas e Assassinos de Agouros Deep Dive": Embora possamos nos concentrar na maneira brutal e injusta como os Agouros são tratados, precisamos perguntar se há alguma validade no medo que cerca os Agouros.</p>
+
+                <p>Acho que a resposta é sim, e isso é melhor explorado através de um certo personagem desprezível. Então vamos dar uma olhada no Comedor de Estrumes e na Maldição do Agouro.</p>
+
+                <h2 class="subsection-title">O COMEDOR DE<br>ESTRUMES</h2>
+
+                <p>O Comedor de Estrumes é um sujeito curioso. Acredito que ele seja o melhor vaso através do qual podemos entender a condição de Agouro. Em termos básicos, ele é um dos Maculados, como nós, e está listado na lista de heróis nos slides introdutórios, ao lado de Fia, Hoarah Loux e Gideon Ofnir.</p>
+
+                <p>O que é aparente nesses slides é que ele não é um indivíduo muito querido – especialmente porque ele é apresentado como o "repugnante" Comedor de Estrumes. Como alguns dos outros Maculados, em um ponto ele morreu. Mas ao contrário de Hoarah Loux, que morreu em batalha, ou Gideon, que parece ter sido enterrado, o Comedor de Estrumes parece ter encontrado seu fim nas mãos da sociedade – enforcado por algum crime.</p>
+
+                <p>Mesmo agora, a verdadeira forma do Maculado está aprisionada em Leyndell, embora discutiremos por que o Comedor de Estrumes está realmente preso aqui mais tarde. De qualquer forma, seu ex-companheiro de cela Blackguard está absolutamente aterrorizado com este homem:</p>
+
+                <p class="item-quote">“Faz todo tipo de merda com os cadáveres deles, para mantê-los amaldiçoados, para sempre. Eu não vi nada mais nojento em todos os meus anos. Nunca estive mais assustado, também. Enraizado no local sangrento... Enquanto ele fazia tudo aquilo, com meu amigo...”</p>
+                <span class="quote-source">- Blackguard Big Boggart</span>
+
+                <p>Por que ele faz isso com as pessoas?</p>
+
+                <p>Seu motivo pode ser um tanto destilado de seu conjunto de armadura distinto, que por acaso é um dos meus favoritos em qualquer jogo Souls. É apropriadamente chamado de Conjunto de Agouro e tem dois pedaços chave de lore, um da peça de peito única e um do resto.</p>
+
+                <p>Vamos olhar para a descrição do elmo primeiro de tudo, que diz:</p>
+
+                <p class="item-quote">“Elmo deformado lembrando um Agouro com seus chifres cortados. Usado pelo Comedor de Estrumes, sua forma é uma visão da paisagem de sua mente, e de sua aparência como ele desejava vê-la. O coração de um agouro sem o corpo para corresponder; poderia haver existência mais cruel? O que importa, então, se a maldição reivindica tudo?”</p>
+                <span class="quote-source">- Elmo de Agouro</span>
+            </div>
+            
+            <div class="page-number">256</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2L4 10h5v12h6V10h5L12 2z"/></svg> 
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">E agora vamos ler a peça de peito para que possamos desempacotar tudo juntos:</p>
+
+                <p class="item-quote">“Usado pelo Comedor de Estrumes. O medalhão pesado em forma de sol representa tanto a orientação que ele viu uma vez, quanto o anel ao qual um dia levará.”</p>
+                <span class="quote-source">- Armadura de Agouro</span>
+
+                <p>Em termos muito básicos, parece que o Comedor de Estrumes é alguém que se vê como um Agouro – é "sua aparência como ele desejava vê-la", para citar a armadura. Ele é um Agouro em seu coração, apesar de não ser realmente um Agouro, e assim ele moldou sua armadura para imitar a forma deles – um Agouro com seus chifres aparados, para ser preciso.</p>
+
+                <img src="dung_eater_illustration.jpg" alt="Arte Comedor de Estrumes" class="column-illustration-center" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="img-placeholder-column" style="display:none;">
+                    [Arte Comedor de Estrumes]<br>Salve como: dung_eater_illustration.jpg
+                </div>
+
+                <p>Este parece ser um propósito singular para o Comedor de Estrumes, pois quando sua forma corporal está trancada dentro de sua prisão, ele está tão frustrado que repetidamente dá cabeçadas na parede, nos informando seus desejos de amaldiçoar os vivos. O que é interessante é que parece haver algum grau de separação entre a forma corporal do Comedor de Estrumes e sua forma fantasma.</p>
+
+                <p>Por um lado, a forma espiritual parece mais no controle e em paz; de fato, é em sua forma fantasma que ele desenvolve seu plano para formar a Runa de Reparo. Por outro lado, sua forma corporal nem sequer te reconhece quando você o liberta, apesar de você já ter encontrado seu fantasma. Se eu fosse especular sobre os detalhes do que está acontecendo, eu sugeriria que ele pode se separar em um fantasma vermelho, e nesta forma ele é muito mais centrado do que sua contraparte mais singular. Talvez ele até tranque sua forma corporal enquanto pensa e planeja.</p>
+
+                <p>O Comedor de Estrumes odeia os vivos, e ama a Maldição do Agouro; diz-se que o elmo reflete a "visão da paisagem de sua mente". Isso se casa bem com a lore encontrada na peça de peito que olhamos anteriormente, descrevendo o fato de carregar um enorme medalhão de sol.</p>
+
+                <p>Agora, primeiramente, os fãs de Souls reconhecerão que o Medalhão do Sol é evidentemente uma homenagem ao primeiro jogo <em>Dark Souls</em>.</p>
+            </div>
+            
+            <div class="page-number">257</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

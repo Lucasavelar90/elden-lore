@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elden Ring Lore - Páginas 278-279</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalhos e Rodapés */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+        
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        /* Rodapé ajustado para não bater na paginação */
+        .footer-note {
+            position: absolute;
+            bottom: 50px; 
+            left: 50px;
+            right: 50px;
+            font-size: 0.75em;
+            color: #888;
+            font-style: italic;
+            border-top: 1px solid #e0e0e0;
+            padding-top: 5px;
+        }
+
+        /* Tipografia de Conteúdo */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+            padding-bottom: 40px;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        em { font-style: italic; }
+
+        /* Citações e Títulos */
+        .item-quote { font-style: italic; margin: 15px 0 5px 0; text-indent: 0; font-size: 0.95em; }
+        .quote-source { display: block; text-align: left; margin-top: 0; margin-bottom: 15px; font-style: italic; font-size: 0.9em; color: #555; }
+        
+        .pull-quote-orange {
+            color: #c56c38;
+            font-size: 1.4rem;
+            line-height: 1.25;
+            margin: 25px 0;
+            text-indent: 0;
+            text-align: left;
+            break-inside: avoid;
+            font-weight: 400;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; padding-bottom: 0; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="book-spread">
+    <div class="page page-left">
+        <div class="header">
+            <svg class="header-icon" viewBox="0 0 24 24">
+                <path d="M12,2L14,6L17,8L15,11L16,15L12,13L8,15L9,11L7,8L10,6L12,2M12,4.5L10.8,7.2L8.5,8.8L10.2,11.2L9.5,13.8L12,12.5L14.5,13.8L13.8,11.2L15.5,8.8L13.2,7.2L12,4.5Z"/>
+            </svg>
+            <div class="header-title">Cultos e Tribos</div>
+        </div>
+
+        <div class="content">
+            <p class="item-quote">
+                “Semelhança perturbadora de um homem cujos olhos foram arrancados. Os cantos de sua boca estão virados para cima em uma maneira quase sedutora... Diz-se que o homem, chamado Shabriri, teve seus olhos arrancados como punição pelo crime de calúnia, e, com o tempo, a praga da chama da loucura veio a habitar nas órbitas vazias.”
+            </p>
+            <span class="quote-source">– Angústia de Shabriri</span>
+
+            <p>
+                Shabriri parece ter sido um homem em algum estágio, embora pareça que ele é muito mais do que isso agora. Este homem tornou-se vilipendiado depois de cometer o "crime" de calúnia, pelo qual foi punido, mas a Chama Frenética viria a habitar sua forma.
+            </p>
+
+            <div class="pull-quote-orange">
+                Agora, dado que “a doença da chama da loucura” começou com Shabriri, isso pressupõe que ele foi o primeiro a sofrer de loucura, o primeiro a ter a loucura queimando em seus olhos.
+            </div>
+
+            <p>
+                Em seu vídeo de lore sobre Shabriri, Lore Hunter conecta a descrição do Escudo de Pedra de Impressão e o Uivo de Shabriri e cria uma narrativa convincente¹. Eles postulam que foi Shabriri quem foi um dos primeiros a receber a mensagem dos Três Dedos através dessas tábuas de pedra, e assim se tornou seu primeiro servo.
+            </p>
+
+            <p>
+                Lore Hunter vai além ao ligar a calúnia mencionada na Angústia de Shabriri ao destino final da Grande Caravana. Isso se deve a alguns diálogos cortados e linhas de missão que podem ser encontradas nos arquivos de texto, e novamente isso é algo que foi recriado em sua totalidade por Sekiro Dubi; recomendo fortemente que você confira esse vídeo. 
+            </p>
+            
+            <p>
+                Em resumo, Kalé tentaria localizar a Grande Caravana de seu povo, antes de encontrar a verdade chocante bem abaixo da capital. Neste estágio, Kalé diria o seguinte:
+            </p>
+
+            <p class="item-quote">
+                “Você viu? O que eles fizeram com meus ancestrais? O clã inteiro, enterrado vivo. Doentes. Enlouquecidos. Cascas de si mesmos. Você ouviu os gemidos deles? Eles mal são humanos agora. Eles acham que nós adoramos os Três Dedos? Que nós invocamos a doença enlouquecedora sobre eles? Bem. Se é isso que eles esperam de nós, então é isso que eles receberão de nós! O mundo da graça e seu povo deveriam ter se contentado em nos ver afundar pelas fendas.”
+            </p>
+            <span class="quote-source">– Mercador Kalé (conteúdo cortado)</span>
+        </div>
+
+        <div class="footer-note">1 “Don’t Fall for the Lie in ELDEN RING That Brought Chaos to the Lands Between” - The Lore Hunter</div>
+        <div class="page-number">278</div>
+    </div>
+
+    <div class="page page-right">
+        <div class="header">
+            <svg class="header-icon" viewBox="0 0 24 24">
+                <path d="M6,2V8H6V8L10,12L6,16V22H8V16L12,12L16,16V22H18V16L14,12L18,8V2H16V8L12,12L8,8V2H6Z"/>
+            </svg>
+            <div class="header-title">Graça Concedida</div>
+        </div>
+
+        <div class="content">
+            <p class="no-indent">Este diálogo é conteúdo cortado, então eu o aceitaria com cautela; no entanto, como Lore Hunter afirma corretamente, isso não contradiz nada na lore existente. O diálogo indica que a caravana nômade foi aprisionada por causa de sua afinidade percebida com a loucura e sua adoração aos Três Dedos. No entanto, o diálogo de Kalé parece indicar que esse não era o caso e que eles foram falsamente acusados, mas só se voltaram para isso agora em desespero e para afrontar aqueles que os oprimiriam.</p>
+
+            <p>
+                Isso é possivelmente apoiado pela descrição do Chapéu de Mercador Nômade, que implica que eles entraram em contato com a Chama Frenética por causa de seu aprisionamento.
+            </p>
+
+            <p>
+                Importante, o Chapéu afirma que a razão pela qual eles foram aprisionados em primeiro lugar foi por causa de "crenças heréticas". Isso nos leva a concluir que o que Kalé diz no conteúdo cortado ainda é muito verdadeiro.
+            </p>
+
+            <p>
+                Lore Hunter sugere que a calúnia que Shabriri cometeu foi essa falsa acusação contra a Grande Caravana e seu povo. Não se pode deixar de considerar o sorriso no talismã Angústia de Shabriri, descrito como quase sedutor, apesar de seus olhos arrancados. É quase como se ele soubesse exatamente o que estava fazendo e que isso levaria a uma maior propagação da Chama Frenética.
+            </p>
+
+            <p>
+                Isso ainda é apenas especulação. Tudo o que realmente sabemos é que Shabriri teve seus olhos arrancados, a chama da loucura então veio se aninhar dentro de seus olhos e ele se tornaria o paciente zero para essa nova aflição.
+            </p>
+
+            <p>
+                O próprio Shabriri é um caso interessante. Novamente, é claro que ele agora é mais do que um homem. Ele é capaz de possuir o corpo de Yura. Como discutiremos mais tarde, a Chama Frenética é capaz de criar raízes no desespero. Testemunhamos o desespero de Yura no final de sua missão:
+            </p>
+
+            <p class="item-quote">
+                “Eleonora, parece que não sou páreo para você. Mas aprendi uma coisa ou duas, veja você. Eu cortei o dedo fora. Por favor, por favor, Eleonora, não ceda ao sangue impuro mais. Não manche a imaculabilidade da sua espada, sua carne, seu fogo...”
+            </p>
+            <span class="quote-source">– Caçador de Dedos Sangrentos Yura</span>
+
+            <p>
+                E assim é provável que este momento de desespero permita que Shabriri entre no corpo de Yura, agindo como um emissário para a Chama Frenética tentar convencer o Maculado a assumir o manto de Lorde do Caos. Shabriri é um receptáculo para o caos, uma manifestação dele, o que explica sua habilidade de possuir pessoas. Em suas próprias palavras:
+            </p>
+
+            <p class="item-quote">
+                “Shabriri é o caos encarnado. Eu não posso morrer. Ahh, que o caos tome o mundo!”
+            </p>
+            <span class="quote-source">– Shabriri</span>
+
+            <p>
+                A escolha de seu nome também pode sugerir o que Shabriri é. Um Shabriri é um demônio na mitologia judaica – o...
+            </p>
+        </div>
+
+        <div class="page-number">279</div>
+    </div>
+</div>
+
+</body>
+</html>

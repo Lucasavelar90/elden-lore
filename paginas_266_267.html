@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elden Ring Lore - Páginas 266-267</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalhos e Rodapés */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+        
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        /* Tipografia de Conteúdo */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+            padding-bottom: 40px;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        em { font-style: italic; }
+
+        /* Citações e Títulos */
+        .item-quote { font-style: italic; margin: 15px 0 5px 0; text-indent: 0; font-size: 0.95em; }
+        .quote-source { display: block; text-align: left; margin-top: 0; margin-bottom: 15px; font-style: italic; font-size: 0.9em; color: #555; }
+        
+        h2.subsection-title {
+            font-family: 'Cinzel', serif;
+            color: #c5a059;
+            font-size: 1.2rem;
+            text-align: center;
+            margin: 25px 0 15px 0;
+            line-height: 1.2;
+            break-inside: avoid;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        /* Placeholders automáticos */
+        .img-placeholder {
+            display: none;
+            background-color: #ffeba7;
+            border: 2px dashed #c5a059;
+            color: #333;
+            padding: 15px;
+            text-align: center;
+            margin: 15px auto;
+            font-family: sans-serif;
+            font-size: 0.85rem;
+            break-inside: avoid;
+        }
+        
+        .column-illustration-center {
+            width: 100%;
+            display: block;
+            margin: 20px auto;
+            mix-blend-mode: multiply;
+            break-inside: avoid;
+        }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; padding-bottom: 0; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="book-spread">
+    <div class="page page-left">
+        <div class="header">
+            <svg class="header-icon" viewBox="0 0 24 24">
+                <path d="M12,2L15,5L12,8L9,5L12,2M11,9H13V15H11V9M7,15H17V17H15V22H9V17H7V15Z"/>
+            </svg>
+            <div class="header-title">A Maldição do Agouro</div>
+        </div>
+
+        <div class="content">
+            <p class="no-indent">Essa teoria é geralmente ancorada por dois itens chave: as cinzas da Perfumista Tricia e a Máscara de Sorriso de Agouro.</p>
+
+            <p>
+                Das cinzas da Perfumista Tricia, aprendemos sobre pelo menos uma perfumista que estava tentando ajudar os Agouros. Hawkshaw sugere que isso não deve ser visto como um caso isolado, e que, em vez disso, ilustra o que pode ter sido a resposta inicial dos boticários da capital. Eles viam isso como uma doença a ser curada, e os Agouros como seus pacientes.
+            </p>
+
+            <img src="omenkiller_items_collage.jpg" 
+                 alt="Itens do Matador de Agouro" 
+                 class="column-illustration-center"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            
+            <div class="img-placeholder">
+                <strong>IMAGEM FALTANDO</strong><br>
+                Recorte a ilustração laranja (máscaras e cutelos) e salve como:<br>
+                <code>omenkiller_items_collage.jpg</code>
+            </div>
+
+            <p>
+                Hawkshaw apresenta a possibilidade de que os perfumistas têm conhecimento sobre os espíritos que assombram os Agouros. Como parte de um tratamento contínuo, os Agouros podem ter comunicado isso como um sintoma aos perfumistas, seus médicos. Afinal, o primeiro dos Matadores de Agouros foi um perfumista, Rollo. Como mais ele teria o conhecimento para criar a Máscara de Sorriso de Agouro?
+            </p>
+
+            <p>
+                Embora possamos ver inicialmente os Matadores de Agouros como demônios psicóticos, os detalhes de Rollo pintam um quadro bastante diferente. A descrição das cinzas de Rollo diz:
+            </p>
+
+            <p class="item-quote">
+                “Espírito de Rollo, conhecido como o primeiro Matador de Agouros. Outrora um famoso perfumista, Rollo embebeu um elixir para se livrar da emoção, permitindo-lhe realizar seu trabalho de pesadelo, caçando os Agouros.”
+            </p>
+            <span class="quote-source">– Matador de Agouros Rollo</span>
+
+            <p>
+                Isso está na verdade bem distante de um assassino de sangue frio. Rollo precisava tomar uma poção removedora de emoções para que pudesse fazer o que precisava ser feito. A descrição até se refere a isso como "um trabalho de pesadelo", longe do que esperaríamos de um monstro impiedoso.
+            </p>
+
+            <p>
+                Hawkshaw nota sua aparência, vestindo um avental e empunhando cutelos maciços semelhantes aos de um açougueiro. O assassinato desses Agouros não é um prazer, mas sim um trabalho realizado por um profissional – de fato a palavra "açougueiro" é usada na descrição do Traje de Matador de Agouros. Isso parece ser preciso, já que Lokey traduz o Kanji para "matador" em "Matador de Agouros" como "açougueiro" ou "abatedor".
+            </p>
+
+            <p>
+                A impressão que tudo isso me dá é a de um médico, vendo uma doença que não pode ser curada e deve ser extirpada, fazendo o que precisa ser feito, apesar de quão horrível a tarefa possa ser.
+            </p>
+
+            <p>
+                Acho que a sugestão de uma relação médico-paciente entre os...
+            </p>
+        </div>
+
+        <div class="page-number">266</div>
+    </div>
+
+    <div class="page page-right">
+        <div class="header">
+            <svg class="header-icon" viewBox="0 0 24 24">
+                <path d="M12,2L14,6L17,8L15,11L16,15L12,13L8,15L9,11L7,8L10,6L12,2M12,4.5L10.8,7.2L8.5,8.8L10.2,11.2L9.5,13.8L12,12.5L14.5,13.8L13.8,11.2L15.5,8.8L13.2,7.2L12,4.5Z"/>
+            </svg>
+            <div class="header-title">Graça Concedida</div>
+        </div>
+
+        <div class="content">
+            <p class="no-indent">...perfumistas e os Agouros é uma teoria bastante sólida, pois explicaria algumas outras coisas. Tomemos o corte dos chifres dos Agouros.</p>
+
+            <p>
+                Talvez seja um procedimento cirúrgico. Como já discutimos, isso pode realmente ter um efeito prático: a restrição de seus poderes. Pode ter sido descoberto durante o curso do tratamento.
+            </p>
+
+            <p>
+                No entanto, como as cinzas de Tricia sugerem, não há cura, e o melhor que ela pode fazer é ajudar os Agouros a passar pacificamente. Mas aqueles que tinham estômago para isso seguiram os passos de Rollo: decretando uma grande matança – vendo isso como a única solução permanente e verdadeira.
+            </p>
+
+            <p>
+                Então parece que o establishment tomou uma rota menos direta, mas não menos cruel. Aqueles que nasceram Agouros de sangue comum teriam seus chifres excisados em cirurgia brutal para coibir seus poderes e aparência indecorosa. Aqueles "sortudos" o suficiente para sobreviver seriam indentados e acoleirados como tropas de choque, com suas espadas encantadas para desintegrar. Eles não eram sequer confiados a entregar suas armas quando a luta terminava.
+            </p>
+
+            <p>
+                No entanto, isso apresentou um dilema para a casa real, já que eles tinham interesse direto nesse jogo. Dois da própria Linhagem Dourada foram atingidos pela maldição: Morgott e Mohg. Estava claro que essas regras bárbaras não deveriam se aplicar igualmente, e então foi decretado que qualquer Agouro de nascimento real teria permissão para viver nos esgotos de Leyndell – doravante conhecidos como o Cárcere Subterrâneo.
+            </p>
+
+            <p>
+                Morgott e Mohg receberam grilhões, como se um cuidado extra fosse tomado para que esses dois não escapassem. Podemos ver isso como algo feito para todos os Agouros reais, ou para esses dois em particular por causa de seu poder e o potencial constrangimento que poderiam causar à Linhagem Dourada.
+            </p>
+
+            <p>
+                Acho bem claro que esse ódio pelos Agouros certamente terá acontecido na Era da Térvore – o Talismã de Escama, o Talismã de Nó e o Talismã de Pena do Cadinho deixam claro que os Agouros eram de fato vistos como divinos antigamente, no tempo do Cadinho. E se minha teoria sobre a condição deles estiver correta, acredito que sua maldição, uma maldição que impede a verdadeira morte da alma, não teria sido possível na Era do Cadinho, uma era em que as pessoas podiam realmente morrer.
+            </p>
+
+            <p>
+                De fato, o tratamento reverente de Godfrey para com Morgott se destaca. Em nenhum outro lugar, exceto talvez com Tricia, vemos tal compaixão em relação aos Agouros. Isso novamente se encaixa com tudo o que dissemos, porque Godfrey é um homem do Cadinho, e assim não os teria visto como uma ameaça ou impuros – mas de fato provavelmente os via como divinos.
+            </p>
+        </div>
+
+        <div class="page-number">267</div>
+    </div>
+</div>
+
+</body>
+</html>

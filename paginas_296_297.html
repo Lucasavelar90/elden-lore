@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elden Ring Lore - Páginas 296-297</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+            padding: 0; /* Remover padding para arte full-page */
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalhos e Rodapés */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+        
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+            z-index: 10;
+        }
+        .page-left .page-number { left: 45px; color: #e5e3da; text-shadow: 0 0 5px rgba(0,0,0,0.8); }
+        .page-right .page-number { right: 45px; }
+
+        .footer-note {
+            position: absolute;
+            bottom: 50px; 
+            left: 50px;
+            right: 50px;
+            font-size: 0.7em;
+            color: #888;
+            font-style: italic;
+            border-top: 1px solid #e0e0e0;
+            padding-top: 5px;
+        }
+
+        /* Tipografia de Conteúdo */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+            padding-bottom: 40px;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        em { font-style: italic; }
+
+        /* Citações e Títulos */
+        .item-quote { font-style: italic; margin: 15px 0 5px 0; text-indent: 0; font-size: 0.95em; }
+        .quote-source { display: block; text-align: left; margin-top: 0; margin-bottom: 15px; font-style: italic; font-size: 0.9em; color: #555; }
+        
+        h2.subsection-title {
+            font-family: 'Cinzel', serif;
+            color: #c56c38; /* Laranja avermelhado */
+            font-size: 1.3rem;
+            text-align: center;
+            margin: 25px 0 15px 0;
+            line-height: 1.2;
+            break-inside: avoid;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        /* Pull Quote Laranja */
+        .pull-quote-orange {
+            color: #c56c38;
+            font-size: 1.35rem;
+            line-height: 1.3;
+            margin: 0 0 25px 0;
+            text-indent: 0;
+            text-align: left;
+            break-inside: avoid;
+            font-weight: 400;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        /* Imagens e Placeholders */
+        .full-page-art {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .img-placeholder {
+            display: none;
+            background-color: #ffeba7;
+            border: 2px dashed #c5a059;
+            color: #333;
+            padding: 20px;
+            text-align: center;
+            margin: 20px auto;
+            font-family: sans-serif;
+            font-size: 0.9rem;
+            width: 90%;
+            z-index: 20;
+            position: relative;
+        }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; padding-bottom: 0; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+            .page-left { min-height: 600px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="book-spread">
+    <div class="page page-left">
+        <img src="shadowbound_beast_full_art.jpg" 
+             alt="Arte de uma Besta das Sombras" 
+             class="full-page-art"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        
+        <div class="img-placeholder">
+            <strong>IMAGEM FALTANDO</strong><br>
+            Salve a arte de página inteira (Besta das Sombras/Blaidd) como:<br>
+            <code>shadowbound_beast_full_art.jpg</code>
+        </div>
+
+        <div class="page-number">296</div>
+    </div>
+
+    <div class="page page-right">
+        <div class="header">
+            <svg class="header-icon" viewBox="0 0 24 24">
+                <path d="M12,2L14,6L17,8L15,11L16,15L12,13L8,15L9,11L7,8L10,6L12,2M12,4.5L10.8,7.2L8.5,8.8L10.2,11.2L9.5,13.8L12,12.5L14.5,13.8L13.8,11.2L15.5,8.8L13.2,7.2L12,4.5Z"/>
+            </svg>
+            <div class="header-title">Graça Concedida</div>
+        </div>
+
+        <div class="content">
+            <div class="pull-quote-orange">
+                Então, estes são descendentes humanoides potenciais de seres sobrenaturais que vêm de outro mundo, significando que não sabemos necessariamente qual é a norma para esses Numen.
+            </div>
+
+            <p class="no-indent">...cada vez mais selvagens. Até que ele simplesmente cessou. Agora o mestre está enfrentando um enigma e tanto. A Ordem Dourada é fundada no princípio de que Marika é a única deusa verdadeira. No entanto... O nome do segundo marido de Marika, Rei Consorte Radagon, também apareceu... Quem exatamente era Radagon?”</p>
+            <span class="quote-source">– Irmão Corhyn</span>
+
+            <p>
+                Marika e Radagon são muito um ser insondável, além da nossa compreensão completa – pois que outra coisa poderia literalmente carregar o Elden Ring dentro de si? Não apenas Marika/Radagon carrega o Elden Ring, eles são um com ele. É por isso que Marika diz:
+            </p>
+
+            <p class="item-quote">
+                “Vamos ser despedaçados, ambos. Meu outro eu.”
+            </p>
+            <span class="quote-source">– Rainha Marika via Melina</span>
+
+            <p>
+                É por isso que rachaduras aparecem ao longo do corpo de Marika enquanto ela despedaça o Elden Ring no trailer da história; tanto Marika quanto Radagon foram quebrados junto com o Elden Ring.
+            </p>
+
+            <p>
+                De qualquer forma, Radagon não é mencionado em absoluto até as Guerras de Liurnia. Estas são guerras que não acho que ocorreram até a posterior Era da Térvore, porque o encantamento Barreira de Ouro, que descreve este evento, usa o sigilo posterior da Térvore em vez do sigilo antigo da Térvore da anterior Era da Fartura⁴.
+            </p>
+
+            <p>
+                Como tal, acredito que a personalidade de Radagon foi gestada quando Marika foi coroada como deus, daí por que só ouvimos falar de Radagon mais tarde.
+            </p>
+
+            <p>
+                De muitas maneiras, a influência de Radagon cresceria com o tempo, especialmente na história posterior, como é evidenciado pela abundância de sua estatuária e pelo cabelo vermelho sendo reverenciado como um sinal de linhagem entre seus filhos. Então, vamos agora falar sobre a história de Radagon e seus atos nas Terras Intermédias.
+            </p>
+
+            <h2 class="subsection-title">O Consorte</h2>
+
+            <p>
+                Seguindo a teoria descrita acima, Radagon se tornaria o componente ativo para o Rebis divino real, e como tal lideraria as forças de Marika em um conflito importante: as Guerras de Liurnia. Nunca é especificamente mencionado por que Radagon se arrependeu de suas agressões, mas...
+            </p>
+        </div>
+
+        <div class="footer-note">4 “The 3 Creeds of the Erdtree” - The Tarnished Archaeologist</div>
+        <div class="page-number">297</div>
+    </div>
+</div>
+
+</body>
+</html>

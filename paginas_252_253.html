@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 10: A Maldição do Agouro - Páginas 252 e 253</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+
+        /* Estilos do Capítulo 10 */
+        .chapter-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .chapter-title {
+            font-family: 'Cinzel', serif;
+            color: #c5a059;
+            font-size: 1.8rem;
+            line-height: 1.1;
+            font-weight: 600;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        /* Estilo da Imagem do Capítulo */
+        .chapter-illustration {
+            width: 100%;
+            max-width: 450px;
+            display: block;
+            margin: 0 auto 20px auto;
+            mix-blend-mode: multiply; /* Faz a arte se fundir com o papel */
+        }
+
+        .img-placeholder-header {
+            width: 100%;
+            height: 250px;
+            background-color: rgba(197, 160, 89, 0.15);
+            border: 1px dashed #c5a059;
+            margin: 0 auto 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #c5a059;
+            font-size: 0.8rem;
+        }
+
+        /* Conteúdo Texto */
+        .content {
+            margin-top: 10px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+        }
+
+        .content-right-page {
+            margin-top: 40px;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        
+        em { font-style: italic; }
+
+        /* Letra Capitular (A) */
+        .drop-cap {
+            float: left;
+            font-family: 'Cinzel', serif;
+            font-size: 3.8rem;
+            line-height: 0.8;
+            padding: 6px 8px 2px 2px;
+            margin-right: 8px;
+            margin-top: -4px;
+            color: #1a1a1a;
+            border: 1px solid #1a1a1a;
+            background-color: transparent;
+        }
+
+        /* Citações */
+        .item-quote {
+            font-style: italic;
+            margin: 15px 0 5px 0;
+            text-indent: 0;
+            font-size: 0.95em;
+        }
+
+        .quote-source {
+            display: block;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Rodapé */
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            
+            <img src="omen_cell_art.jpg" alt="Arte Comedor de Estrumes na Cela" class="chapter-illustration" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            
+            <div class="img-placeholder-header" style="display:none;">
+                [Ilustração: Comedor de Estrumes na Cela]<br>Salve como: omen_cell_art.jpg
+            </div>
+
+            <div class="chapter-header">
+                <h1 class="chapter-title">Capítulo 10: A Maldição do Agouro</h1>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">
+                    <span class="drop-cap">U</span>m agouro pode ser um presságio de bem ou de mal. O tradutor Lokey afirma que o Kanji usado para "agouro" (omen) em <em>Elden Ring</em> poderia ser traduzido como "abominado" ou "tabu", e cito Lokey agora:
+                </p>
+
+                <p class="item-quote">“A maioria dos 'agouros' são uma 'criança agouro' (忌み子), o que tipicamente se referiria a uma criança indesejada, sendo o adjetivo significando ser azarado, abominado, tabu, etc.”</p>
+                <span class="quote-source">- Lokey, autor de Abyssal Archive</span>
+
+                <p>Estas são crianças indesejadas: crianças tanto da variedade humana comum quanto aquelas que pertencem à família real.</p>
+
+                <p>São humanos tocados pela condição de Agouro, o que os diferencia de seus parentes humanos normais. No tempo da graça, isso não é algo bom.</p>
+
+                <p>Para aqueles da Ordem Dourada, os Agouros são uma mancha no mundo da graça, seu sangue amaldiçoado poluindo a pureza da Térvore.</p>
+
+                <p>Parte desse ódio contra eles vem do fato de que os Agouros são relíquias de uma era anterior, um lembrete desconfortável e inconveniente de um período mais primitivo de adoração. Com seus chifres retorcidos, formas brutais e sangue amaldiçoado, pode ser fácil ver por que tais seres são tratados com desdém. No entanto, a verdade é muito mais complexa do que isso. Os Agouros não são simplesmente monstros brutos que precisam ser eliminados. Há uma complexidade em sua condição.</p>
+
+                <p>Há uma humanidade neles. De fato, um dos personagens mais inteligentes e indiscutivelmente admiráveis que encontramos em <em>Elden Ring</em> é um Agouro, embora um Agouro que não permitiu que a maldição o definisse ou controlasse. Por outro lado, há aqueles que se deleitam nos aspectos mais sombrios da maldição do Agouro. Aqueles como Mohg, Lorde do Sangue, que se regozija em sua corrupção, e o Comedor de Estrumes que, apesar de ser humano, emula a forma do Agouro. Estes são gêmeos que encapsulam perfeitamente a dualidade da condição de Agouro.</p>
+
+                <p>O tema do Agouro é desafiador de dissecar, porque a verdade sobre seu sangue e sua maldição está distorcida pelo preconceito e corroída pelo tempo. Então agora vamos examinar os Agouros, o Crisol ao qual devem sua herança, o Comedor de Estrumes, e se há alguma realidade no medo que inspiram nos outros.</p>
+
+                <p>A primeira coisa notável é que os Agouros não são sua própria espécie; em vez disso, eles parecem ser humanos que foram afligidos pela condição de Agouro. Recebemos pistas disso primeiramente pela Escama do Crisol, Pena do Crisol e...</p>
+            </div>
+            
+            <div class="page-number">252</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2L4 10h5v12h6V10h5L12 2z"/></svg> 
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content content-right-page">
+                <p class="no-indent">Talismãs de Nó do Crisol e, dadas as características de cada um, podemos quase certamente atribuir o Talismã do Nó aos Agouros. Agora, novamente, leiamos a descrição do item:</p>
+
+                <p class="item-quote">“Um talismã moldado a partir de um nó ósseo que incorpora os aspectos de várias criaturas. Diz-se que cresceu no corpo humano há muito tempo.”</p>
+                <span class="quote-source">- Talismã de Nó do Crisol</span>
+
+                <p>“Crescido no corpo humano há muito tempo.” Novamente, esses nós lembram os nós dos quais crescem os chifres dos Agouros, e este item é deixado por um Assassino de Agouros, entre todas as coisas. Obtemos mais provas de que os Agouros nascem de reprodução normal através dos itens de Criança de Agouro. Primeiramente, a Criança de Agouro comum:</p>
+
+                <p class="item-quote">“Boneca de uma criança nascida da maldição... bebês Agouro têm todos os seus chifres excisados, fazendo com que a maioria pereça. Estes fetiches são feitos para memorializá-los. Por favor, não me odeie, nem me amaldiçoe. Por favor.”</p>
+                <span class="quote-source">- Criança de Agouro</span>
+
+                <p>Então essas crianças são referidas como "crianças nascidas da maldição" — "bairn" sendo uma gíria para "criança". São crianças nascidas e então amaldiçoadas. Eles não são uma espécie distinta.</p>
+
+                <p>Essas Crianças de Agouro são baseadas nos Jizo da vida real. Os Jizo são estátuas de pedra que desempenham um papel na prática de <em>Mizuko kuyō</em>, ou serviço memorial de criança da água, no qual Jizo são esculpidos para memorializar uma criança que morreu como resultado de um aborto espontâneo ou outros meios.</p>
+            </div>
+            
+            <div class="page-number">253</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

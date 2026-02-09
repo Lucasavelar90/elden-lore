@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Introdução — Elden Ring</title>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+        background-color: #1a1a1a;
+        font-family: 'Cormorant Garamond', serif;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 100vh;
+        padding: 40px 20px;
+    }
+
+    .book-spread {
+        display: flex;
+        gap: 0;
+        max-width: 1200px;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: nowrap;
+        box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+    }
+
+    .page {
+        background-color: #fcfbf7;
+        flex: 1;
+        min-height: 850px;
+        padding: 60px 50px;
+        position: relative;
+        color: #1a1a1a;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .page-left {
+        border-radius: 5px 0 0 5px;
+        background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+    }
+
+    .page-right {
+        border-radius: 0 5px 5px 0;
+        background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+    }
+
+    .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+    .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+    .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+
+    .page-number {
+        position: absolute;
+        bottom: 20px;
+        font-family: 'Cinzel', serif;
+        font-size: 0.9rem;
+        color: #c5a059;
+        font-weight: 600;
+    }
+    .page-left .page-number { left: 45px; }
+    .page-right .page-number { right: 45px; }
+
+    .content {
+        margin-top: 40px;
+        column-count: 2;
+        column-gap: 35px;
+        font-size: 15px;
+        line-height: 1.45;
+        text-align: justify;
+        orphans: 2;
+        widows: 2;
+        flex-grow: 1;
+        padding-bottom: 40px;
+    }
+
+    p { margin-bottom: 15px; text-indent: 1.5em; }
+    .no-indent { text-indent: 0; }
+    em { font-style: italic; }
+
+    .image-frame {
+        width: 100%;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .image-frame img {
+        width: 100%;
+        display: block;
+        mix-blend-mode: multiply;
+    }
+
+    .image-frame img::before {
+        content: attr(alt);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        font-family: 'Cinzel', serif;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        color: #c56c38;
+        background: repeating-linear-gradient(45deg,#eee,#eee 10px,#e2e0d6 10px,#e2e0d6 20px);
+        border: 1px dashed #c5a059;
+        min-height: 180px;
+        box-sizing: border-box;
+    }
+
+    @media (max-width: 900px) {
+        .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+        .page { width: 100%; max-width: 550px; min-height: auto; }
+        .content { column-count: 1; padding-bottom: 0; }
+        .header { position: relative; top: auto; margin-bottom: 20px; }
+        .content { margin-top: 0; }
+    }
+</style>
+</head>
+
+<body>
+<div class="book-spread">
+
+    <!-- PÁGINA ESQUERDA -->
+    <div class="page page-left">
+        <div class="content">
+
+            <p class="no-indent">É uma longa jornada de <em>Demon’s Souls</em> até <em>Elden Ring</em>, o jogo que este livro explora, celebra e, por fim, ilumina. Mas essa experiência de jogar um título da FromSoftware, de abrir caminho pelo design, avançando, crescendo em compreensão e também em habilidade, ainda é tão rica quanto sempre foi.</p>
+
+            <p>Mas este livro também nos lembra que todo esse processo de progresso pessoal lento ao longo dos jogos que a FromSoftware cria, por mais empolgante que seja, é apenas metade da história. A outra metade — quer você esteja jogando <em>Demon’s Souls</em> ou <em>Sekiro: Shadows Die Twice</em> ou <em>Bloodborne</em> ou <em>Elden Ring</em> — é contada pela comunidade: um grupo de jogadores pacientes, atentos e inclinados à teoria, espalhados pelo mundo, que buscam o <em>lore</em>, discutem-no, criam vídeos, escrevem posts, compartilham teorias, voltam a traduções antigas e vasculham conteúdos cortados, tudo para montar uma visão mais completa das aventuras da FromSoftware do que qualquer pessoa sozinha poderia construir.</p>
+
+            <p>Eu tenho sido uma dessas pessoas desde os dias de <em>Demon’s Souls</em>. Fiz parte das comunidades unidas espalhadas por fóruns e grupos no Facebook, formadas por jogadores que se juntavam para decifrar menus arcaicos do jogo, que não ofereciam dicas nem explicações. Por jogadores que se perguntavam sobre armas que às vezes escondiam modificadores secretos de dano ou resistência, e que carregavam descrições de itens capazes de revelar pistas sobre o mundo do jogo e seus habitantes.</p>
+
+            <div class="image-frame">
+                <img src="intro_melina.png" alt="FALTA IMAGEM: intro_melina.png">
+            </div>
+            <div style="display:none;">Salvar a ilustração como intro_melina.png</div>
+
+        </div>
+    </div>
+
+    <!-- PÁGINA DIREITA -->
+    <div class="page page-right">
+        <div class="content">
+
+            <div class="image-frame">
+                <img src="intro_porta.png" alt="FALTA IMAGEM: intro_porta.png">
+            </div>
+            <div style="display:none;">Salvar a ilustração como intro_porta.png</div>
+
+            <p class="no-indent">Eu não tinha estratégia no começo, apenas uma energia frenética de empolgação e a paixão pela mitologia que me ajudaria a moldar minha compreensão da narrativa do jogo. Entre aulas da faculdade, eu ligava meu velho MacBook e me filmava respondendo perguntas e conectando descrições de itens.</p>
+
+            <p>Com o passar dos anos, mais criadores de conteúdo focados em <em>lore</em> surgiram, expandindo o formato que eu havia iniciado. Pessoas como SmoughTown, que escreveu o belo livro que você está segurando agora. SmoughTown mergulhou fundo em <em>Elden Ring</em> assim como já havia mergulhado em todos os jogos que a FromSoftware criou antes dele. Ele leu descrições de itens, analisou paisagens, fez jornadas de ida e volta através do coração amaldiçoado das Terras Intermédias, ponderando possibilidades e criando conexões.</p>
+
+            <p>E agora ele criou algo que, de muitas maneiras, é tão intrincado quanto os próprios trabalhos da FromSoftware: <em>Grace Given</em> é uma apreciação de <em>Elden Ring</em> que dá sentido a uma das mitologias imaginárias mais complexas dos games, equilibrando fatos e especulação cuidadosa, trazendo o que poderia ter sido chamado de “olhar disciplinado e mente selvagem” para essa nova e aterrorizante mitologia.</p>
+
+            <p>SmoughTown combina coisas que inicialmente não pareciam se encaixar e nos mostra que, na verdade, se encaixam. Ele deixa claro o que estava escondido na névoa. Mais do que isso, ele eleva outras pessoas da comunidade e desenvolve suas ideias com sua própria forma única e generosa de pensar sobre essas coisas. Ele é incansável, inventivo e constantemente reflexivo. Sua imaginação está sempre afiada, sempre focada nas riquezas escondidas no <em>lore</em>.</p>
+
+            <p>Este livro é sobre <em>Elden Ring</em>, então, mas também é sobre a FromSoftware e todos os jogos do estúdio, sobre a forma como eles funcionam e como gostam de se revelar. É também sobre SmoughTown, à sua própria maneira silenciosa. É um retrato de como a mente dele funciona tanto quanto daquilo para o que ela se inclina.</p>
+
+            <p>E sim, é sobre sentar diante de um amigo, tomando um café, ouvindo sobre algo implausivelmente belo e intricado, e percebendo que é preciso aprender mais — que é preciso ver por si mesmo. Obrigado, SmoughTown, por manter a chama acesa e a tradição viva.</p>
+
+        </div>
+        <div class="page-number">xi</div>
+    </div>
+
+</div>
+</body>
+</html>

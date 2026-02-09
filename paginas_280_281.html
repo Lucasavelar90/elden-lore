@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elden Ring Lore - Páginas 280-281</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalhos e Rodapés */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+        
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        /* Tipografia de Conteúdo */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+            padding-bottom: 40px;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        em { font-style: italic; }
+
+        /* Citações e Títulos */
+        .item-quote { font-style: italic; margin: 15px 0 5px 0; text-indent: 0; font-size: 0.95em; }
+        .quote-source { display: block; text-align: left; margin-top: 0; margin-bottom: 15px; font-style: italic; font-size: 0.9em; color: #555; }
+        
+        /* Placeholders automáticos */
+        .img-placeholder {
+            display: none;
+            background-color: #ffeba7;
+            border: 2px dashed #c5a059;
+            color: #333;
+            padding: 15px;
+            text-align: center;
+            margin: 15px auto;
+            font-family: sans-serif;
+            font-size: 0.85rem;
+            break-inside: avoid;
+        }
+        
+        .column-illustration-center {
+            width: 100%;
+            display: block;
+            margin: 20px auto;
+            mix-blend-mode: multiply;
+            break-inside: avoid;
+        }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; padding-bottom: 0; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="book-spread">
+    <div class="page page-left">
+        <div class="header">
+            <svg class="header-icon" viewBox="0 0 24 24">
+                <path d="M12,2L14,6L17,8L15,11L16,15L12,13L8,15L9,11L7,8L10,6L12,2M12,4.5L10.8,7.2L8.5,8.8L10.2,11.2L9.5,13.8L12,12.5L14.5,13.8L13.8,11.2L15.5,8.8L13.2,7.2L12,4.5Z"/>
+            </svg>
+            <div class="header-title">Cultos e Tribos</div>
+        </div>
+
+        <div class="content">
+            <p class="no-indent">...demônio da cegueira que espalha cegueira aos desavisados que bebem da água que ele habita.</p>
+
+            <p>
+                Então, para mim, Shabriri é um demônio do caos, o caos encarnado e uma manifestação de sua vontade e uma ferramenta usada para espalhar sua influência. Eu postularia que talvez Shabriri nunca tenha sido realmente um homem, e que mesmo quando ele era o homem mais vilipendiado da história, ele sempre foi apenas um demônio disfarçado de homem.
+            </p>
+
+            <p>
+                Quando a Chama Frenética criou raízes pela primeira vez dentro de Shabriri, ela se estabeleceu em seus olhos, e assim faz sentido que, quando esta "doença" se espalhasse, ela se espalharia da mesma maneira e se manifestaria nos olhos daqueles que a hospedam. Parece que as chamas, com o tempo, derretem os olhos como se para tornar o portador mais próximo de Shabriri, o primeiro receptáculo.
+            </p>
+
+            <img src="frenzied_dragon_illustration.jpg" 
+                 alt="Ilustração de Dragão da Chama Frenética" 
+                 class="column-illustration-center" 
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            
+            <div class="img-placeholder">
+                <strong>IMAGEM FALTANDO</strong><br>
+                Recorte a ilustração do dragão laranja e salve como:<br>
+                <code>frenzied_dragon_illustration.jpg</code>
+            </div>
+
+            <p class="item-quote">
+                “Ah, queima... Meus olhos, meus olhos, eles estão derretendo... Aaargh!”
+            </p>
+            <span class="quote-source">– Buscadora da Luz Hyetta</span>
+
+            <p>
+                De fato, as Uvas Shabriri são olhos afligidos e derretidos pela Chama Frenética, e se escolhermos herdar as Chamas Frenéticas, nossos olhos assumem uma aparência semelhante.
+            </p>
+
+            <p>
+                Então, por que a chama se estabeleceu nas órbitas oculares de Shabriri em primeiro lugar?
+            </p>
+
+            <p>
+                No início da história de lançamento de *Elden Ring*, uma obra de arte muito poderosa circulou no X. Era a pintura *Agony*, do artista Miles Johnston, e embora muitos acreditassem que esta era uma peça inspirada por *Elden Ring*, na verdade ela o antecede em alguns anos. *Agony* foi exibida no Instagram de Johnston já em 2018. Isso me leva a imaginar se essa obra de arte ajudou a inspirar os sintomas da Chama Frenética. Mesmo se não ajudou, o raciocínio e os temas que a inspiraram nos ajudam a entender a natureza da Chama Frenética, porque ambos estão tentando transmitir a mesma coisa: dor e desespero.
+            </p>
+
+            <p>
+                Em um post no Instagram, Johnston descreve a inspiração para esta peça:
+            </p>
+
+            <p class="item-quote">
+                “Eu tinha acabado de olhar para uma pintura de Bouguereau, ‘O Primeiro Luto’, e algo sobre Eva com duas mãos pressionadas contra o rosto parecia tão profundamente poderoso e triste, como se ele tivesse condensado todo o luto coletivo da humanidade em um gesto. Eu queria brincar com alguma linguagem corporal semelhante que parecesse inerentemente evocativa e construir a partir daí.”
+            </p>
+            <span class="quote-source">– Miles Johnston via Instagram</span>
+
+            <p>
+                Johnston deixa claro que, embora inspirado por outra obra de arte, ele queria transmitir todo o luto e dor da humanidade em uma emoção singular.
+            </p>
+        </div>
+
+        <div class="page-number">280</div>
+    </div>
+
+    <div class="page page-right">
+        <div class="header">
+            <svg class="header-icon" viewBox="0 0 24 24">
+                <path d="M11,2H13V14H11V2M7,6H9V14H7V6M15,6H17V14H15V6M5,16C5,16.55 5.45,17 6,17H18C18.55,17 19,16.55 19,16V15H5V16Z"/>
+            </svg>
+            <div class="header-title">Graça Concedida</div>
+        </div>
+
+        <div class="content">
+            <p class="no-indent">Da mesma forma, acredito que é isso que se pretende transmitir pela agonia congelada daqueles que sofrem da Chama Frenética em *Elden Ring*. Eles também estão segurando suas cabeças com as mãos.</p>
+
+            <p>
+                É claro o que esse gesto está tentando transmitir: dor, luto, tristeza. Hyetta assume esse exato mesmo gesto depois que seus olhos foram derretidos pela chama do caos, assim como Shabriri quando ele assume a carne de Yura.
+            </p>
+
+            <p>
+                Isso só se torna mais claro à medida que se progride no jogo. Aqueles que caem vítimas dessa doença são aqueles que sofreram, e aqueles que tiveram o suficiente da dor que a vida pode trazer. Edgar, dominado pelo luto e vingança. A Grande Caravana brutalizada e tratada injustamente. Yura perdido em seu luto pelo destino de Eleonora. E as muitas almas sem nome que desejavam simplesmente nunca ter nascido. Todos eles tocados pela Chama Frenética.
+            </p>
+
+            <p>
+                Parece que aqueles que sofrem com a chama também desejam que a vida nunca tivesse acontecido, pois é através da vida senciente que somos expostos a grandes dificuldades:
+            </p>
+
+            <p class="item-quote">
+                “Aqueles que me deram uvas uivaram sem palavras. Dizendo que desejavam nunca ter nascido. Tornem-se seu lorde. Peguem seu tormento, desespero. Sua aflição. Todo pecado, toda maldição. E derretam tudo. Como o Lorde do Caos. Sem mais fraturas... sem mais nascimentos...”
+            </p>
+            <span class="quote-source">– Buscadora da Luz Hyetta</span>
+
+            <p>
+                Desespero é a emoção unificadora. Desespero pelo que essas pessoas sofreram durante o curso de suas vidas. É também por isso que o Olho de Yelough, uma planta associada à Chama Frenética, é um analgésico; toda a filosofia por trás dessa força é um fim para a dor e o sofrimento.
+            </p>
+
+            <p>
+                Isso me retorna à minha pergunta original: qual é o significado dos olhos? Acho que remete àquela imagem de Miles Johnston e nossa compreensão inata e reconhecimento do desespero, onde o artista identificou que esse gesto retrata luto. Nós choramos com nossos olhos e testemunhamos o bem e o mal através de nossos olhos. É um tropo comum na tragédia que eventos ruins façam os personagens quererem arrancar seus olhos.
+            </p>
+
+            <p>
+                Para mim, ter os olhos dos aflitos derretendo em desespero é tematicamente apropriado. E, portanto, os olhos se tornam importantes em geral para as forças do caos; até mesmo as plantas nascidas do toque da Chama Frenética, como os Olhos de Yelough, tomam a forma de olhos.
+            </p>
+
+            <p>
+                Dada a importância da visão, então, qual é a importância da visão fraca de Hyetta? Deve estar claro agora que isso deve ter alguma relevância para o motivo pelo qual Irina foi escolhida para ser o receptáculo de Hyetta. É talvez porque ela não é capaz de ver a tragédia do mundo, e é assim...
+            </p>
+        </div>
+
+        <div class="page-number">281</div>
+    </div>
+</div>
+
+</body>
+</html>

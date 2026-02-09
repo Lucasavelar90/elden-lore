@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elden Ring Lore - Páginas 284-285</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalhos e Rodapés */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+        
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        /* Tipografia de Conteúdo */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+            padding-bottom: 40px;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        em { font-style: italic; }
+
+        /* Citações e Títulos */
+        .item-quote { font-style: italic; margin: 15px 0 5px 0; text-indent: 0; font-size: 0.95em; }
+        .quote-source { display: block; text-align: left; margin-top: 0; margin-bottom: 15px; font-style: italic; font-size: 0.9em; color: #555; }
+        
+        /* Título de Capítulo (Página 284) */
+        h1.chapter-title {
+            font-family: 'Cinzel', serif;
+            color: #c5a059;
+            font-size: 1.8rem;
+            text-align: center;
+            margin: 10px 0 30px 0;
+            line-height: 1.1;
+            text-transform: capitalize;
+            font-weight: 400;
+        }
+
+        /* Capitular (Drop Cap) */
+        .drop-cap {
+            float: left;
+            font-family: 'Cinzel', serif;
+            font-size: 3.5rem;
+            line-height: 0.8;
+            padding-right: 10px;
+            padding-top: 5px;
+            color: #1a1a1a;
+        }
+
+        /* Placeholders automáticos */
+        .img-placeholder {
+            display: none;
+            background-color: #ffeba7;
+            border: 2px dashed #c5a059;
+            color: #333;
+            padding: 15px;
+            text-align: center;
+            margin: 15px auto;
+            font-family: sans-serif;
+            font-size: 0.85rem;
+            break-inside: avoid;
+        }
+        
+        .chapter-header-img {
+            width: 100%;
+            mix-blend-mode: multiply;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; padding-bottom: 0; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="book-spread">
+    <div class="page page-left">
+        <img src="radagon_chapter_header.jpg" 
+             alt="Ilustração de Radagon" 
+             class="chapter-header-img"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+             
+        <div class="img-placeholder" style="margin-top: 0;">
+            <strong>IMAGEM FALTANDO</strong><br>
+            Recorte a ilustração superior (Radagon empunhando o martelo) e salve como:<br>
+            <code>radagon_chapter_header.jpg</code>
+        </div>
+
+        <h1 class="chapter-title">Capítulo 12: Radagon da Ordem Dourada</h1>
+
+        <div class="content">
+            <p class="no-indent">
+                <span class="drop-cap">U</span>ma das coisas interessantes sobre Radagon é o quão repentinamente ele aparece na história, já em uma posição de prestígio. A primeira instância dele aparecendo na linha do tempo é durante as duas Guerras de Liurnia. Sabemos que ele participou de ambas, como se lê na descrição do encantamento Barreira de Ouro:
+            </p>
+
+            <p class="item-quote">
+                “Este encantamento foi usado pelos campeões da Térvore na Primeira e Segunda Guerras de Liurnia, durante as quais o ruivo Radagon juntou-se às fileiras dos heróis.”
+            </p>
+            <span class="quote-source">– Barreira de Ouro</span>
+
+            <p>
+                Esta foi uma guerra árdua entre a casa real de Caria e a casa real da Térvore. Sabemos que os Cavaleiros de Caria lideraram uma resistência feroz contra as forças de Leyndell, como a descrição da Espada de Cavaleiro de Caria diz:
+            </p>
+
+            <p class="item-quote">
+                “As espadas destes cavaleiros podiam servir como catalisadores, permitindo-lhes empunhar habilidades de feitiçaria em batalha. Apesar de serem menos de vinte, esse poder os tornava páreo até mesmo para os campeões de ouro em batalha.”
+            </p>
+            <span class="quote-source">– Espada de Cavaleiro de Caria</span>
+        </div>
+
+        <div class="page-number">284</div>
+    </div>
+
+    <div class="page page-right">
+        <div class="header">
+            <svg class="header-icon" viewBox="0 0 24 24">
+                <path d="M12,2L14.5,9.5L22,12L14.5,14.5L12,22L9.5,14.5L2,12L9.5,9.5L12,2Z"/> 
+                </svg>
+            <div class="header-title">Graça Concedida</div>
+        </div>
+
+        <div class="content">
+            <p class="no-indent">Isso nos leva à pergunta inevitável que o próprio Miriel faz: quem é Radagon?</p>
+
+            <p>
+                Acredito que Radagon nunca foi uma entidade independente; enquanto ele existiu, ele foi parte de Marika.
+            </p>
+
+            <p>
+                Dito isso, reconheço que duas teorias principais são válidas. A primeira é que Radagon era sua própria pessoa individual, um trabalhador que descendia dos gigantes. A segunda teoria é que ele é um ser criado a partir de Marika, e sempre foi uma parte dela.
+            </p>
+
+            <p>
+                Mas em ambas as teorias, acredito que, no final, Radagon e Marika eram ultimamente um ser, para que pudessem cumprir o papel de um Rebis – um receptáculo perfeito para o Elden Ring.
+            </p>
+
+            <p>
+                Vamos explorar essa primeira teoria. A fonte dela vem principalmente de um item, o Martelo de Tijolo:
+            </p>
+
+            <p class="item-quote">
+                “Arma feita de um tijolo de pedra comum. Empunhada por um trabalhador que liderou uma rebelião, e mais tarde se tornou um campeão. Mesmo entre outras clavas de seu tamanho, esta arma é especialmente pesada. A força de um gigante é necessária para empunhá-la.”
+            </p>
+            <span class="quote-source">– Martelo de Tijolo</span>
+
+            <p>
+                Esta é claramente uma referência a Radagon: um campeão, um martelo e a força de gigantes. Quem mais poderia ser? Na época das Guerras de Liurnia, Radagon é chamado de campeão por Miriel e pela Barreira de Ouro, e é até referido como "heroico" na habilidade de arma do Martelo de Marika.
+            </p>
+
+            <p>
+                Depois, há a associação com o martelo – sua outra metade também empunha um martelo, e Radagon enfrenta-nos com o Martelo de Marika na mão. (Isso poderia ser usado como um argumento de que eles eram um e o mesmo, mas mais sobre isso depois.)
+            </p>
+
+            <p>
+                Finalmente, há a referência à "força de um gigante" – e novamente isso nos faz pensar em Radagon, graças à descrição da Trança Vermelha de Gigante.
+            </p>
+
+            <p>
+                Então vamos juntar tudo isso e apresentar algum tipo de narrativa que possa explicar plausivelmente a origem de Radagon, caso ele tivesse existido como um indivíduo antes de ser fundido com Marika.
+            </p>
+
+            <p>
+                Dizem-nos que ele era um trabalhador com a força de um gigante, e de fato sabemos que existem humanos que são suspeitos de terem sido descendentes dos gigantes. O preset de aparência Nortenho na criação de personagem diz:
+            </p>
+
+            <p class="item-quote">
+                “Um rosto encontrado entre o povo duro do norte implacável. Alguns dizem que eles descendem de gigantes.”
+            </p>
+            <span class="quote-source">– Preset de aparência Nortenho</span>
+
+            <p>
+                Então poderíamos aceitar que Radagon era uma dessas pessoas, mas sua linhagem era exibida mais vividamente por seu cabelo vermelho – o cabelo vermelho dos Gigantes de Fogo. Como descrito pela Trança Vermelha de Gigante, Radagon supostamente odiava seu cabelo vermelho...
+            </p>
+        </div>
+
+        <div class="page-number">285</div>
+    </div>
+</div>
+
+</body>
+</html>

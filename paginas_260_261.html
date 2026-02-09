@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 10: A Maldição do Agouro - Páginas 260 e 261</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+
+        /* Conteúdo Texto */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+            padding-bottom: 40px;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        
+        em { font-style: italic; }
+
+        /* Citações de Itens */
+        .item-quote {
+            font-style: italic;
+            margin: 15px 0 5px 0;
+            text-indent: 0;
+            font-size: 0.95em;
+        }
+
+        .quote-source {
+            display: block;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Rodapé e Footnotes */
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        .footnote {
+            position: absolute;
+            bottom: 50px;
+            right: 50px;
+            left: 50px;
+            text-align: right;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            font-size: 0.8em;
+            color: #555;
+        }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; padding-bottom: 0; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+            .footnote { position: relative; bottom: auto; margin-top: 30px; left: 0; right: 0; text-align: left; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><circle cx="12" cy="12" r="3"/></svg> 
+                <div class="header-title">A Maldição do Agouro</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Talvez em ambos os casos do Comedor de Estrumes e do Máscara de Ouro, a Vontade Maior viu uma oportunidade para o Anel Prístino ser reparado e uma nova Ordem se estabelecer. No final do dia, o Comedor de Estrumes é Maculado, e teve a graça estendida a ele, ressuscitando-o da morte por enforcamento que vemos na cinemática de abertura. Isso significa que a Vontade Maior viu algum valor no Comedor de Estrumes, não importa o que sintamos sobre os atos que ele comete.</p>
+
+                <p>Muito parecido com Máscara de Ouro, o Comedor de Estrumes está pessoalmente investido em trazer o futuro que ele vislumbrou na visão: Um mundo onde a maldição se espalha para todos, seus filhos e os filhos de seus filhos.</p>
+
+                <p>Isso nos traz de volta à questão de seu método, e por que ele é tão odiado.</p>
+
+                <p>Quando encontramos os cadáveres daqueles profanados pelo Comedor de Estrumes, já podemos dizer que é um crime bastante horrível. Eles geralmente estão amarrados a uma cadeira com sangue sobre eles, sugerindo que tortura esteve envolvida. Este processo é referido repetidamente como "profanação" pelo próprio Comedor de Estrumes:</p>
+
+                <p class="item-quote">“Eu posso te matar e profanar teu cadáver. Então a varíola será verdadeiramente tua.”</p>
+                <span class="quote-source">- Comedor de Estrumes</span>
+
+                <p>E o termo "profanar" também está presente na descrição do item da Maldição do Canteiro. "Profanar" é uma palavra poderosa. Temos a impressão de que o que o Comedor de Estrumes faz ao corpo é tão horrível que nem mesmo o jogo nos dará detalhes. O horror no testemunho de Boggart que lemos anteriormente realmente faz um trabalho fantástico de martelar o trauma que ele tem até mesmo de testemunhar o Comedor de Estrumes em ação.</p>
+
+                <p>Enquanto o jogo se abstém de nos dar os detalhes do que o Comedor de Estrumes faz, podemos obter parte da resposta olhando para o item que seu processo produz, a Maldição do Canteiro:</p>
+
+                <p class="item-quote">“Maldição crescida em um cadáver morto e profanado pelo Comedor de Estrumes. Uma varíola tenra afligida com chifres de agouro. O Comedor de Estrumes cultiva a maldição do canteiro em cadáveres. Ao fazer isso, ele impede que almas mortas retornem à Térvore, deixando-as para sempre amaldiçoadas. Uma das coisas mais repugnantes encontradas nas Terras Intermédias.”</p>
+                <span class="quote-source">- Maldição do Canteiro</span>
+
+                <p>Este tem que ser um dos itens de lore mais significativos do jogo. Ele liga a condição de profanação à maldição do Agouro, devido aos chifres de Agouro que brotam deste canteiro. Além disso, nos diz algo bastante dramático: O processo pelo qual o Comedor de Estrumes alcança esses crescimentos é impedindo que as almas...</p>
+            </div>
+            
+            <div class="page-number">260</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2L4 10h5v12h6V10h5L12 2z"/></svg> 
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content content-right-page">
+                <p class="no-indent">retornem à Térvore – invocando novamente a desconexão entre o Agouro e a Térvore que aludi anteriormente.</p>
+
+                <p>A tomada da alma de uma vítima, combinada com seu nome Comedor de Estrumes, levou alguns na comunidade a apresentar uma resposta bastante satisfatória sobre qual é o seu processo.</p>
+
+                <p>Infelizmente, o usuário original do Reddit responsável por esta postagem excluiu sua conta, mas em uma excelente postagem eles ligam o nome e modus operandi do Comedor de Estrumes ao folclore japonês². Eles explicam que existe um conceito conhecido como Shirikodama (尻子玉). Esta é uma bola dura, encontrada dentro do ânus, que contém a alma de alguém. Neste mesmo folclore, existe o Kappa, uma criatura mítica goblin que busca roubar esta bola e, assim, a alma da pessoa através do traseiro. Para mim, esta é a ligação mais satisfatória para tudo o que sabemos sobre o Comedor de Estrumes. Comedor de estrumes, comedor de almas.</p>
+
+                <p>Isso explicaria seu título infeliz. Também explicaria o puro horror expresso por Boggart. Para aqueles céticos sobre esta conexão, eu apontaria que esta não é a primeira vez que a FromSoftware aludiu a este conceito. De fato, eles fazem isso um pouco mais diretamente em <em>Sekiro</em>. Existe um tipo de inimigos espirituais conhecidos como os Sem-Cabeça, e um de seus ataques de agarrar envolve extrair uma pedra endurecida do traseiro de Sekiro.</p>
+
+                <p>Então é como se o Comedor de Estrumes estivesse roubando as almas das pessoas e as consumindo, negando-lhes o retorno à Térvore. Roderika parece implicar que essas almas ainda estão conectadas ao Comedor de Estrumes. Elas são espíritos torturados que ele devorou e que têm o descanso negado:</p>
+
+                <p class="item-quote">“Ele voltou. O Comedor de Estrumes. De novo. Eu posso ouvi-los; os espíritos enquanto uivam e lamentam com medo da maldição. E pior do que nunca, a reverberação da própria maldição distorcida.”</p>
+                <span class="quote-source">- Roderika</span>
+
+                <p>Talvez ao devorar essas almas amaldiçoadas, ele espere assumir a própria maldição do Agouro.</p>
+
+                <p>De qualquer forma, tudo isso é muito interessante porque o conceito de alma não é muito mencionado em <em>Elden Ring</em>, e ainda assim é usado repetidamente na história do Comedor de Estrumes. A remoção de uma alma de um humano dessa maneira resulta nesses canteiros, canteiros que têm chifres de Agouro crescendo neles. Então, a partir de cadáveres sem alma, o Comedor de Estrumes cultiva literalmente uma pequena maldição de Agouro, ligando diretamente a condição de Agouro à ideia de falta de alma.</p>
+
+                <p>No entanto, isso é uma gota no oceano. O Comedor de Estrumes é apenas um homem e seu trabalho levaria gerações. Eventualmente ele percebe que a orientação que ele...</p>
+            </div>
+            
+            <div class="footnote">
+                2 Postagem no Reddit “The Japanese origins of the Dung Eater”: bit.ly/4e3R3zV
+            </div>
+            <div class="page-number">261</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

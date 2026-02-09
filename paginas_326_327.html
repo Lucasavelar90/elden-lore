@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elden Ring Lore - Páginas 326-327</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalhos e Rodapés */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+        
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        /* Tipografia de Conteúdo */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+            padding-bottom: 40px;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        em { font-style: italic; }
+
+        /* Citações e Títulos */
+        .item-quote { font-style: italic; margin: 15px 0 5px 0; text-indent: 0; font-size: 0.95em; }
+        .quote-source { display: block; text-align: left; margin-top: 0; margin-bottom: 15px; font-style: italic; font-size: 0.9em; color: #555; }
+        
+        /* Placeholders automáticos */
+        .img-placeholder {
+            display: none;
+            background-color: #ffeba7;
+            border: 2px dashed #c5a059;
+            color: #333;
+            padding: 15px;
+            text-align: center;
+            margin: 15px auto;
+            font-family: sans-serif;
+            font-size: 0.85rem;
+            break-inside: avoid;
+        }
+        
+        .inline-illustration {
+            float: left;
+            width: 70%;
+            margin: 10px 20px 10px 0;
+            mix-blend-mode: multiply;
+            shape-outside: margin-box;
+        }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; padding-bottom: 0; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+            .inline-illustration { float: none; width: 60%; margin: 20px auto; display: block; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="book-spread">
+    <div class="page page-left">
+        <div class="header">
+            <svg class="header-icon" viewBox="0 0 24 24">
+                <path d="M12,2C14.2,2 16,3.8 16,6V9H18L19,13H5L6,9H8V6C8,3.8 9.8,2 12,2M12,4C10.9,4 10,4.9 10,6V9H14V6C14,4.9 13.1,4 12,4M5,14H19V22H5V14Z"/>
+            </svg>
+            <div class="header-title">Máscara de Ouro e a Ordem Dourada</div>
+        </div>
+
+        <div class="content">
+            <p class="no-indent">Então, embora cortado, acho que isso claramente reforça a vibração geral sobre a reputação do Sempre-Brilhante. Ele é um estudioso que tem uma compreensão profunda da Ordem Dourada, do Elden Ring e de sua forma. Sua reputação e renome são reforçados pelo fato de que o Máscara de Ouro foi tão reverenciado que teve discípulos em algum momento:</p>
+
+            <p class="item-quote">
+                “Braceletes feitos na imagem de ramos da Térvore. Adornos mínimos feitos pelos discípulos do Lorde Máscara de Ouro. Esses discípulos há muito o abandonaram.”
+            </p>
+            <span class="quote-source">– Braceletes de Ouro</span>
+
+            <img src="goldmask_figure_illustration.jpg" 
+                 alt="Ilustração do Máscara de Ouro" 
+                 class="inline-illustration" 
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            
+            <div class="img-placeholder" style="float: left; width: 60%; margin: 10px 20px 10px 0;">
+                <strong>IMAGEM FALTANDO</strong><br>
+                Recorte a ilustração vermelha (figura do Máscara de Ouro) e salve como:<br>
+                <code>goldmask_figure_illustration.jpg</code>
+            </div>
+
+            <p>
+                O que deve ficar claro para o jogador é que o Máscara de Ouro obviamente não opera no mesmo plano de inteligência que nós. O Máscara de Ouro não fala; em vez disso, sua mente está inteiramente focada em descompactar a fórmula da Ordem Dourada. Podemos ver isso ao longo da linha de missão de Corhyn, enquanto ele não pronuncia uma palavra e apenas gesticula em referência aos seus cálculos. É sem dúvida esse comportamento desumano que levou ao abandono por seus supramencionados discípulos.
+            </p>
+
+            <p>
+                Ou poderia ser que, como Corhyn, esses discípulos perceberam que o Máscara de Ouro não concordava com a perfeição da Ordem Dourada, o que deve ter parecido blasfêmia para quaisquer defensores da linha dura.
+            </p>
+
+            <p>
+                Já insinuamos o fato de que o Máscara de Ouro era excepcionalmente leal à Ordem Dourada, e de uma maneira que é mais verdadeira do que os negacionistas fanáticos que geralmente encontramos no fundamentalismo. Sua Máscara de Ouro Radiante é uma representação da inspiração que o trouxe às Terras Intermédias e o que ele buscava lá. O Máscara de Ouro identificaria falhas na perfeição da Ordem Dourada e acredito que é o reconhecimento de tais falhas que faz o Máscara de Ouro ficar acima dos outros membros delirantes da Ordem. D é uma contradição ambulante, chamando a Ordem Dourada de perfeita, mas ao mesmo tempo reconhecendo a imperfeição. Corhyn perde a cabeça no momento em que percebe que o Máscara de Ouro teria a audácia de questionar a perfeição da Ordem Dourada, apesar de ter passado a missão inteira chamando o Máscara de Ouro de gênio.
+            </p>
+
+            <p>
+                No entanto, o Máscara de Ouro é o mais leal à Ordem Dourada como conceito. Ele não busca trazer luz a essas falhas para destruir a Ordem Dourada.
+            </p>
+        </div>
+
+        <div class="page-number">326</div>
+    </div>
+
+    <div class="page page-right">
+        <div class="header">
+            <svg class="header-icon" viewBox="0 0 24 24">
+                <path d="M12,2L15,5L12,8L9,5L12,2M12,6C13.66,6 15,7.34 15,9C15,10.66 13.66 12 12 12C10.34 12 9 10.66 9 9C9 7.34 10.34 6 12 6M6,10V12H8V14H6V22H4V14H2V12H4V10H6M18,10V12H20V14H18V22H16V14H14V12H16V10H18Z"/>
+            </svg>
+            <div class="header-title">Graça Concedida</div>
+        </div>
+
+        <div class="content">
+            <p class="no-indent">De fato, o Máscara de Ouro busca encontrar a Ordem Dourada perfeita.</p>
+
+            <p>
+                Embora o Máscara de Ouro não fale, misericordiosamente existem algumas descrições de itens que podem nos ajudar a entender seus sentimentos sobre o estado atual da Ordem Dourada. Uma dessas descrições de item é a Cura da Ordem, um encantamento de caçador fundamentalista:
+            </p>
+
+            <p class="item-quote">
+                “O nobre Máscara de Ouro lamentou o que havia acontecido com os caçadores. Quão fácil é para a aprendizagem e a erudição serem reduzidas aos delírios de fanáticos; todo o bom e o grande procurado, em sua tolice, era um mal absoluto para lidar. Tal noção existe na ordem dos fundamentos da Ordem?”
+            </p>
+            <span class="quote-source">– Cura da Ordem</span>
+
+            <p>
+                Esta é a falha número um, uma falha que remonta a um dos primeiros conceitos que discutimos: a ordem em si. Como determinamos, a ordem é a unidade de pessoas, ideias e variáveis. No entanto, por sua própria definição, uma ordem se define definindo-se contra "outro"; contra um grupo que não é aceito, para ilustrar o que é aceito. A ordem deve criar uma desordem para se estabelecer contra, e nesta descrição de item o Máscara de Ouro lamenta isso – que as sofisticadas fundações escolásticas de sua ordem estão sendo reduzidas a um caso primitivo de nós-contra-eles.
+            </p>
+
+            <p>
+                Usar a Runa de Reparo do Máscara de Ouro no final do jogo resultará na Era da Ordem, e acho que está claro que um dos aspectos da Ordem Dourada que desconcerta ele é o fato de que na verdade não há Ordem em primeiro lugar. No entanto, isso foi apenas um sintoma observado pelo Máscara de Ouro. Quando ele vem para as Terras Intermédias, vemos que ele começa a operar em um plano superior do que a maioria de nós poderia entender, enquanto ele desenrola o núcleo matemático da Ordem Dourada, seus pensamentos e cálculos expressos por seus ritmos e gesticulações.
+            </p>
+
+            <p>
+                Enquanto o Máscara de Ouro é capaz de chegar ao cerne desta equação, ele é parado quando é apresentado com um nome que não esperava: Radagon.
+            </p>
+
+            <p class="item-quote">
+                “As reflexões do mestre aumentaram à medida que nos aproximávamos da Térvore. Embora ainda um cálculo preciso, os ritmos ficaram cada vez mais selvagens. Até que ele simplesmente cessou. Agora o mestre está enfrentando um enigma e tanto. A Ordem Dourada é fundada no princípio de que Marika é a única deusa verdadeira. No entanto... O nome do segundo marido de Marika, Rei Consorte Radagon, também apareceu... Quem exatamente era Radagon? O mestre está perplexo. Seu dedo permaneceu imóvel, desde que o nome de Radagon foi descoberto.”
+            </p>
+            <span class="quote-source">– Irmão Corhyn</span>
+
+            <p>
+                O Máscara de Ouro está perdendo parte da fórmula, e é por isso que vemos sua...
+            </p>
+        </div>
+
+        <div class="page-number">327</div>
+    </div>
+</div>
+
+</body>
+</html>

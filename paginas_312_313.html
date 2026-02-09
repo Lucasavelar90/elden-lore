@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elden Ring Lore - Páginas 312-313</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalhos e Rodapés */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+        
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        .footer-note {
+            position: absolute;
+            bottom: 50px; 
+            left: 50px;
+            right: 50px;
+            font-size: 0.75em;
+            color: #888;
+            font-style: italic;
+            border-top: 1px solid #e0e0e0;
+            padding-top: 5px;
+        }
+
+        /* Tipografia de Conteúdo */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+            padding-bottom: 40px;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        em { font-style: italic; }
+
+        /* Citações e Títulos */
+        .item-quote { font-style: italic; margin: 15px 0 5px 0; text-indent: 0; font-size: 0.95em; }
+        .quote-source { display: block; text-align: left; margin-top: 0; margin-bottom: 15px; font-style: italic; font-size: 0.9em; color: #555; }
+        
+        /* Título de Capítulo (Página 312) */
+        h1.chapter-title {
+            font-family: 'Cinzel', serif;
+            color: #c5a059;
+            font-size: 1.8rem;
+            text-align: center;
+            margin: 10px 0 30px 0;
+            line-height: 1.1;
+            text-transform: capitalize;
+            font-weight: 400;
+        }
+
+        /* Capitular (Drop Cap) */
+        .drop-cap {
+            float: left;
+            font-family: 'Cinzel', serif;
+            font-size: 3.5rem;
+            line-height: 0.8;
+            padding-right: 10px;
+            padding-top: 5px;
+            color: #1a1a1a;
+        }
+
+        /* Placeholders automáticos */
+        .img-placeholder {
+            display: none;
+            background-color: #ffeba7;
+            border: 2px dashed #c5a059;
+            color: #333;
+            padding: 15px;
+            text-align: center;
+            margin: 15px auto;
+            font-family: sans-serif;
+            font-size: 0.85rem;
+            break-inside: avoid;
+        }
+        
+        .chapter-header-img {
+            width: 100%;
+            mix-blend-mode: multiply;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; padding-bottom: 0; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="book-spread">
+    <div class="page page-left">
+        <img src="goldmask_chapter_header.jpg" 
+             alt="Ilustração do Máscara de Ouro e a Ordem Dourada" 
+             class="chapter-header-img"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+             
+        <div class="img-placeholder" style="margin-top: 0;">
+            <strong>IMAGEM FALTANDO</strong><br>
+            Recorte a ilustração superior (círculo laranja com Máscara de Ouro) e salve como:<br>
+            <code>goldmask_chapter_header.jpg</code>
+        </div>
+
+        <h1 class="chapter-title">Capítulo 13:<br>Máscara de Ouro e a Ordem Dourada</h1>
+
+        <div class="content">
+            <p class="no-indent">
+                <span class="drop-cap">A</span> Ordem Dourada é a Ordem governante da Térvore, uma ideologia defendida por nomes como Radagon, o segundo Lorde Prístino. A Ordem Dourada desfrutou de um governo incontestado por anos, com seus adeptos sendo tanto eruditos quanto fanáticos. No entanto, ela ainda colapsou, o Elden Ring foi despedaçado e as Terras Intermédias mergulharam em um período de calamidade e conflito. Se essa ideologia era tão perfeita e imutável, então como isso aconteceu? Esta foi uma questão ponderada por um estudioso de renome inigualável: Máscara de Ouro, o Sempre-Brilhante.
+            </p>
+        </div>
+
+        <div class="page-number">312</div>
+    </div>
+
+    <div class="page page-right">
+        <div class="header">
+            <svg class="header-icon" viewBox="0 0 24 24">
+                <path d="M12,2C14.2,2 16,3.8 16,6V9H18L19,13H5L6,9H8V6C8,3.8 9.8,2 12,2M12,4C10.9,4 10,4.9 10,6V9H14V6C14,4.9 13.1,4 12,4M5,14H19V22H5V14Z"/>
+            </svg>
+            <div class="header-title">Graça Concedida</div>
+        </div>
+
+        <div class="content">
+            <p class="no-indent">Máscara de Ouro faria uma pergunta simples, mas poderosa: por que a Ordem Dourada falhou? Se a Ordem Dourada era tão holística quanto seus adeptos afirmavam, como ela falhou em prevenir essa grande calamidade? Essas perguntas chegam ao cerne do que causou a Ruptura e a questão de como o mundo chegou a este ponto de pressão em primeiro lugar.</p>
+
+            <p>
+                Através de muita atenção aos detalhes e uma forte compreensão do fundamentalismo, podemos aprender como Máscara de Ouro identificou falhas gritantes dentro da Ordem. Vendo a Ordem Dourada como uma equação matemática, Máscara de Ouro buscaria trazer equilíbrio a esta fórmula, para o desgosto dos fanáticos da Ordem Dourada.
+            </p>
+
+            <p>
+                Então, antes de tudo, vamos estabelecer o que queremos dizer com "Ordem Dourada" e o que o termo "Ordem" significa neste contexto. De acordo com a Oxford Languages, a definição de "ordem" é “o arranjo ou disposição de pessoas ou coisas em relação umas às outras de acordo com uma sequência, padrão ou método particular”. É crítico entender isso logo de início, porque um dos principais objetivos que Máscara de Ouro está tentando alcançar é a Ordem "perfeita".
+            </p>
+
+            <p>
+                A Ordem Dourada é um termo que pode se referir a alguns conceitos. O primeiro e mais importante é a "forma" atual do Elden Ring, e é dessa versão do Elden Ring que a ideologia flui. Ouvimos isso da própria Vontade Maior, conforme os Dedos dizem o seguinte:
+            </p>
+
+            <p class="item-quote">
+                “Grande Elden Ring, raiz da Ordem Dourada. Âncora de todas as terras, doador da graça, fonte de toda alegria. Até que foi despedaçado. A trágica corrupção da Ordem cobrou seu preço. Através do reino, a vida está em ruínas. Caída em pedaços. Maldições vis e miséria se espalham, inabaláveis. Mas a Vontade Maior não abandonou o reino, nem a vida que o habita. E assim é que os Maculados são guiados pela graça. Chamados a agir. Bravo Maculado, teu Grande Anel é um belo fragmento do Elden Ring. Busque outro de sua espécie. Para se tornar Lorde Prístino, e restaurar a Ordem Dourada.”
+            </p>
+            <span class="quote-source">– Os Dois Dedos via Leitora de Dedos Enia</span>
+
+            <p>
+                Há dois pontos interessantes neste diálogo. Primeiro, aponta que de fato o Elden Ring é a fundação da Ordem Dourada. Segundo, até a Vontade Maior está ciente de uma corrupção da Ordem que levou ao estado lamentável das terras. Como veremos mais tarde, acredito que Máscara de Ouro quer ter os deuses vassalos, Marika e Radagon, removidos da Ordem, em vez da Vontade Maior em si. Até a Vontade Maior parece estar frustrada com as ações de seus vassalos.
+            </p>
+
+            <p>
+                (É neste ponto que gostaria de creditar Last Protagonist e seu excelente vídeo "The Greattree, the Crucible,...)
+            </p>
+        </div>
+
+        <div class="footer-note">...The Greattree, the Crucible, Destined Death and the Golden Order" - Last Protagonist</div>
+        <div class="page-number">313</div>
+    </div>
+</div>
+
+</body>
+</html>

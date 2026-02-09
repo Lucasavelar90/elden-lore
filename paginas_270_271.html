@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elden Ring Lore - Páginas 270-271</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalhos e Rodapés */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+        
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        /* Tipografia de Conteúdo */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+            padding-bottom: 40px;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        em { font-style: italic; }
+
+        /* Citações e Títulos */
+        .item-quote { font-style: italic; margin: 15px 0 5px 0; text-indent: 0; font-size: 0.95em; }
+        .quote-source { display: block; text-align: left; margin-top: 0; margin-bottom: 15px; font-style: italic; font-size: 0.9em; color: #555; }
+        
+        /* Título de Capítulo (Página 270) */
+        h1.chapter-title {
+            font-family: 'Cinzel', serif;
+            color: #c5a059;
+            font-size: 2rem;
+            text-align: center;
+            margin: 10px 0 30px 0;
+            line-height: 1.1;
+            text-transform: capitalize;
+            font-weight: 400;
+        }
+
+        /* Capitular (Drop Cap) */
+        .drop-cap {
+            float: left;
+            font-family: 'Cinzel', serif;
+            font-size: 3.5rem;
+            line-height: 0.8;
+            padding-right: 10px;
+            padding-top: 5px;
+            color: #1a1a1a;
+        }
+
+        /* Placeholders automáticos */
+        .img-placeholder {
+            display: none;
+            background-color: #ffeba7;
+            border: 2px dashed #c5a059;
+            color: #333;
+            padding: 15px;
+            text-align: center;
+            margin: 15px auto;
+            font-family: sans-serif;
+            font-size: 0.85rem;
+            break-inside: avoid;
+        }
+        
+        .column-illustration-center {
+            width: 100%;
+            display: block;
+            margin: 20px auto;
+            mix-blend-mode: multiply;
+            break-inside: avoid;
+        }
+        
+        /* Ilustração de Topo de Capítulo */
+        .chapter-header-img {
+            width: 100%;
+            mix-blend-mode: multiply;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; padding-bottom: 0; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="book-spread">
+    <div class="page page-left">
+        <img src="nomad_merchant_chapter_header.jpg" 
+             alt="Ilustração de Mercador Nômade" 
+             class="chapter-header-img"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+             
+        <div class="img-placeholder" style="margin-top: 0;">
+            <strong>IMAGEM FALTANDO</strong><br>
+            Recorte a ilustração superior (Mercador tocando instrumento com potes) e salve como:<br>
+            <code>nomad_merchant_chapter_header.jpg</code>
+        </div>
+
+        <h1 class="chapter-title">Capítulo 11: Cultos e Tribos</h1>
+
+        <div class="content">
+            <p class="no-indent">
+                <span class="drop-cap">E</span>mbora os dragões tenham sido derrotados, eles não foram desonrados por seus inimigos – muito pelo contrário. Um dos heróis mais poderosos do lado da Térvore foi Godwyn, o Dourado, cujos feitos ouvimos falar através de Monumentos de Espada, mas mais importante, através do encantamento Lança de Raio:
+            </p>
+
+            <p class="item-quote">
+                “Há muito tempo, Godwyn, o Dourado, derrotou o dragão antigo Fortissax, e fez amizade com seu inimigo caído – um evento que deu origem ao antigo culto aos dragões na capital.”
+            </p>
+            <span class="quote-source">– Lança de Raio</span>
+
+            <p>
+                A derrota de Fortissax por Godwyn não é um feito pequeno, pois como aprendemos com a Lança de Raio de Fortissax, ele era um dos mais poderosos e renomados entre seus irmãos. No entanto, ele foi tratado com respeito na derrota e, como resultado, uma das amizades mais lendárias da história foi estabelecida. A aliança de Fortissax e Godwyn inspiraria o povo da capital a também respeitar seus inimigos derrotados.
+            </p>
+
+            <p>
+                Este é o maior legado da espécie dos dragões. Foi a adoção de seus costumes e poderes, empunhados pelos cavaleiros da nova Ordem que passaram seus ensinamentos aos seus herdeiros, com alguns heróis lendários como Vyke e Kristoff surgindo do culto – sendo este último poderoso o suficiente para derrotar e aprisionar o semideus Godefroy.
+            </p>
+
+            <p>
+                A fácil integração da adoração aos dragões na adoração à Térvore pode parecer surpreendente para uma Ordem que eventualmente se tornaria conhecida por sua intolerância. No entanto, é facilmente explicado pelo Selo de Cascalho, que diz o seguinte:
+            </p>
+
+            <p class="item-quote">
+                “A adoração aos dragões antigos não conflita com a crença na Térvore. Afinal, este selo, e o próprio raio, são ambos imbuídos de ouro.”
+            </p>
+            <span class="quote-source">– Selo de Cascalho</span>
+
+            <p>
+                Essas crenças não conflitam porque ambas estão ligadas pelo ouro. Ambas são servas da Vontade Maior.
+            </p>
+
+            <p>
+                Não foi apenas Fortissax que ajudou a inspirar esta nova Ordem. Sua irmã Lansseax assumiu uma forma humana e comungou pessoalmente com os Cavaleiros do Dragão, como aprendemos via Glaive de Lansseax:
+            </p>
+
+            <p class="item-quote">
+                “Lansseax era irmã de Fortissax. Dizem que ela assumiu a forma de uma humana para comungar com os cavaleiros como uma sacerdotisa do antigo culto aos dragões.”
+            </p>
+            <span class="quote-source">– Glaive de Lansseax</span>
+        </div>
+
+        <div class="page-number">270</div>
+    </div>
+
+    <div class="page page-right">
+        <div class="header">
+            <svg class="header-icon" viewBox="0 0 24 24">
+                <path d="M12,2L14,6C14,6 18,7 20,5C20,5 21,6 20,8C19,10 15,11 15,11L16,16L12,14L8,16L9,11C9,11 5,10 4,8C3,6 4,5 4,5C6,7 10,6 10,6L12,2M12,14L11.5,18L12,22L12.5,18L12,14Z"/>
+            </svg>
+            <div class="header-title">Graça Concedida</div>
+        </div>
+
+        <div class="content">
+            <p class="no-indent">Até hoje, Lansseax ainda guarda a capital da Térvore, mostrando quão próximo é seu vínculo com seus antigos inimigos.</p>
+
+            <p>
+                Um de seus maiores adeptos foi o Cavaleiro da Távola Redonda Vyke, algo que aprendemos via Raio de Dragão de Vyke:
+            </p>
+
+            <p class="item-quote">
+                “De todos os cavaleiros, Vyke, a Lança do Dragão, foi aquele que Lansseax mais amou.”
+            </p>
+            <span class="quote-source">– Raio de Dragão de Vyke</span>
+
+            <p>
+                Vyke era amado por Lansseax e chamado de Lança do Dragão, sem dúvida como resultado de sua lança icônica e seu domínio sobre os Encantamentos de Dragão. Aprendemos com o conjunto de armadura de Vyke que ele foi o Maculado que chegou mais perto de alcançar o título de lorde, indubitavelmente como resultado desses poderosos Encantamentos de Dragão. Se ele tivesse se tornado lorde, o legado dos dragões poderia ter ido ainda mais longe. Isso me faz desejar que pudéssemos ter nos aliado a Lansseax para nos tornarmos um Lorde Prístino do Culto aos Dragões.
+            </p>
+
+            <img src="dragon_cult_illustration_271.jpg" 
+                 alt="Ilustração do Culto aos Dragões" 
+                 class="column-illustration-center" 
+                 style="width: 60%;"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            
+            <div class="img-placeholder">
+                <strong>IMAGEM FALTANDO</strong><br>
+                Recorte a ilustração vermelha (figura com chapéu cônico) e salve como:<br>
+                <code>dragon_cult_illustration_271.jpg</code>
+            </div>
+
+            <p>
+                Até mesmo as sentinelas da Térvore, guardiãs de seu governo, foram inspiradas pelo poder de Gransax e seus companheiros. Tanto que elas também incorporaram seu poder em suas vestimentas, como podemos ver nas Sentinelas da Árvore Draconianos, que são, em essência, versões modificadas das Sentinelas da Árvore regulares...
+            </p>
+        </div>
+
+        <div class="page-number">271</div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elden Ring Lore - Páginas 298-299</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalhos e Rodapés */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+        
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        /* Tipografia de Conteúdo */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+            padding-bottom: 40px;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        em { font-style: italic; }
+
+        /* Citações e Títulos */
+        .item-quote { font-style: italic; margin: 15px 0 5px 0; text-indent: 0; font-size: 0.95em; }
+        .quote-source { display: block; text-align: left; margin-top: 0; margin-bottom: 15px; font-style: italic; font-size: 0.9em; color: #555; }
+        
+        /* Placeholders automáticos */
+        .img-placeholder {
+            display: none;
+            background-color: #ffeba7;
+            border: 2px dashed #c5a059;
+            color: #333;
+            padding: 15px;
+            text-align: center;
+            margin: 15px auto;
+            font-family: sans-serif;
+            font-size: 0.85rem;
+            break-inside: avoid;
+        }
+        
+        .column-illustration-right {
+            width: 100%;
+            display: block;
+            margin: 20px auto;
+            mix-blend-mode: multiply;
+            break-inside: avoid;
+        }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; padding-bottom: 0; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="book-spread">
+    <div class="page page-left">
+        <div class="header">
+            <svg class="header-icon" viewBox="0 0 24 24">
+                <path d="M12,2L15,5L12,8L9,5L12,2M12,6C13.66,6 15,7.34 15,9C15,10.66 13.66 12 12 12C10.34 12 9 10.66 9 9C9 7.34 10.34 6 12 6M6,10V12H8V14H6V22H4V14H2V12H4V10H6M18,10V12H20V14H18V22H16V14H14V12H16V10H18Z"/>
+            </svg>
+            <div class="header-title">Radagon da Ordem Dourada</div>
+        </div>
+
+        <div class="content">
+            <p class="no-indent">Fiquei com a impressão de que ele se apaixonou por Rennala e também viu valor nos Carianos depois que eles resistiram tão ferozmente por duas guerras. Radagon certamente apreciava os caminhos de feitiçaria e inteligência de Caria, pois aproveitou a oportunidade, enquanto casado com Rennala, para se tornar um líder mais completo estudando suas práticas. Aprendemos isso via Ícone de Radagon:</p>
+
+            <p class="item-quote">
+                “Como marido de Rennala de Caria, o ruivo Radagon estudou feitiçaria, e como marido da Rainha Marika, ele estudou encantamentos. Assim o herói aspirava ser completo.”
+            </p>
+            <span class="quote-source">– Ícone de Radagon</span>
+
+            <p>
+                Esta é realmente a primeira instância de Radagon se desenvolvendo como algo mais do que apenas um campeão de ouro, e lança as sementes para sua interpretação da Ordem Dourada e seu eventual desacordo com Marika.
+            </p>
+
+            <p>
+                Talvez o aspecto mais importante do casamento de Radagon com Rennala sejam as crianças que ele produziu: Rykard, Radahn e Ranni. Cada uma dessas figuras se tornaria jogadores massivos nos anos vindouros, e se considerarmos que Radagon já era um aspecto do deus de um único corpo, então o poder deles faz muito sentido.
+            </p>
+
+            <p>
+                Tenho visto pessoas sugerirem que Ranni pode não ser uma filha direta de Radagon, mas uma criança nascida do Ovo de Âmbar. Eu não compro isso, principalmente porque sua forma original parece ostentar o vibrante cabelo vermelho de seu pai e sabemos como funcionam as convenções de nomes neste jogo. Aqueles descendentes de Godfrey frequentemente têm um prefixo "God" em seu nome. Se aplicarmos a mesma regra aos filhos de Radagon, podemos ver o prefixo "R" para Rykard, Ranni e Radahn.
+            </p>
+
+            <p>
+                Infelizmente não recebemos muita informação sobre o relacionamento entre Radagon e seus filhos com Rennala, mas sabemos que seus dois filhos parecem ter sua linhagem em alta estima. Sabemos pelo peitoral de Radahn que ele era um grande admirador de Godfrey, o primeiro Lorde Prístino, mas ele também estava orgulhoso de seu pai. A juba vermelha tornou-se uma parte icônica de sua imagem, como vemos via Elmo de Cavaleiro da Juba Vermelha:
+            </p>
+
+            <p class="item-quote">
+                “A pluma vermelha é um símbolo do pedigree de Radahn como filho do Lorde Radagon – a juba do orgulhoso Leão Vermelho.”
+            </p>
+            <span class="quote-source">– Elmo de Cavaleiro da Juba Vermelha</span>
+
+            <p>
+                O Leão Vermelho combina o simbolismo de Godfrey e Radagon. Da mesma forma, os cavaleiros de Rykard, os Cavaleiros de Gelmir, também celebram esse pedigree – e acho que isso é um bom indicador de quão bem visto Radagon era. Ele foi visto tão bem que seus filhos tentariam se apegar a essa linhagem, já que seu prestígio elevaria o deles também. Sem dúvida, reivindicar linhagem a ele também teria ajudado a legitimar suas reivindicações ao trono quando a Ruptura eclodiu.
+            </p>
+        </div>
+
+        <div class="page-number">298</div>
+    </div>
+
+    <div class="page page-right">
+        <div class="header">
+            <svg class="header-icon" viewBox="0 0 24 24">
+                <path d="M12,2L14.5,9.5L22,12L14.5,14.5L12,22L9.5,14.5L2,12L9.5,9.5L12,2Z"/>
+            </svg>
+            <div class="header-title">Graça Concedida</div>
+        </div>
+
+        <div class="content">
+            <p class="no-indent">Um dos principais resultados do casamento de Radagon seria unir as duas casas reais e incorporar a família Cariana, junto com suas forças e ideais. Ter Caria e Liurnia efetivamente trazidas para o rebanho é uma vitória massiva para a realeza da Térvore. Como parte de seu pacto de casamento com a Rainha da Lua Cheia, ele teria recebido uma espada lendária – uma espada da lua cheia. Sabemos dessa tradição graças à descrição do Espadão da Lua Sombria:</p>
+
+            <p class="item-quote">
+                “Um Espadão da Lua, concedido por uma rainha de Caria ao seu cônjuge para honrar uma tradição de longa data. Um dos armamentos lendários.”
+            </p>
+            <span class="quote-source">– Espadão da Lua Sombria</span>
+
+            <p>
+                Como esta lâmina nos é dada por Ranni da Lua Sombria, podemos presumir que Radagon terá recebido um "Espadão da Lua Cheia" de Rennala. É isso que leva muitos a acreditarem que o Espadão da Ordem Dourada já foi um Espadão da Lua Cheia:
+            </p>
+
+            <p class="item-quote">
+                “Espadão feito de luz, modelado à semelhança do próprio Elden Ring. Forjado pelo Rei Consorte Radagon para simbolizar orgulhosamente os dogmas da Ordem Dourada. Um dos armamentos lendários. Sinais reveladores traem que este foi outrora o espadão legado a ele por sua primeira esposa, Rennala.”
+            </p>
+            <span class="quote-source">– Espadão da Ordem Dourada</span>
+
+            <img src="radagon_sword_illustration.jpg" 
+                 alt="Ilustração de Radagon com Espada" 
+                 class="column-illustration-right" 
+                 style="width: 70%;"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            
+            <div class="img-placeholder">
+                <strong>IMAGEM FALTANDO</strong><br>
+                Recorte a ilustração vermelha (Radagon segurando a espada) e salve como:<br>
+                <code>radagon_sword_illustration.jpg</code>
+            </div>
+
+            <p>
+                Ele aparentemente transformou a espada para refletir sua concepção da Ordem Dourada; seus princípios manifestados na forma do Elden Ring. Isso oferece mais evidências de Radagon desenvolvendo lentamente sua própria filosofia em torno da Ordem Dourada e a forma que ela deveria assumir. Mesmo simbolicamente, esta espada representa Radagon tomando algo Cariano como base e transformando-o para servir sua nova ideologia.
+            </p>
+
+            <p>
+                Não pode ser exagerado o quão importante o tempo de Radagon como consorte Cariano foi em termos de como ele desenvolveu sua filosofia e caráter. Os fundamentalistas da Ordem Dourada realmente são a facção governante quando entramos em cena e é por causa da compreensão de Radagon de fé e inteligência que seus ideais seriam codificados. Enquanto isso, o tempo de Godfrey eventualmente acabaria como Lorde Prístino – como um homem de conflito, governando...
+            </p>
+        </div>
+
+        <div class="page-number">299</div>
+    </div>
+</div>
+
+</body>
+</html>

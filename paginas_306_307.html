@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elden Ring Lore - Páginas 306-307</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalhos e Rodapés */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+        
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        /* Tipografia de Conteúdo */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+            padding-bottom: 40px;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        em { font-style: italic; }
+
+        /* Citações e Títulos */
+        .item-quote { font-style: italic; margin: 15px 0 5px 0; text-indent: 0; font-size: 0.95em; }
+        .quote-source { display: block; text-align: left; margin-top: 0; margin-bottom: 15px; font-style: italic; font-size: 0.9em; color: #555; }
+        
+        h2.subsection-title {
+            font-family: 'Cinzel', serif;
+            color: #c56c38; /* Laranja avermelhado */
+            font-size: 1.3rem;
+            text-align: center;
+            margin: 25px 0 15px 0;
+            line-height: 1.2;
+            break-inside: avoid;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; padding-bottom: 0; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="book-spread">
+    <div class="page page-left">
+        <div class="header">
+            <svg class="header-icon" viewBox="0 0 24 24">
+                <path d="M12,2L15,5H9L12,2M12,6C13.66,6 15,7.34 15,9C15,10.66 13.66 12 12 12C10.34 12 9 10.66 9 9C9 7.34 10.34 6 12 6M6,10V12H8V14H6V22H4V14H2V12H4V10H6M18,10V12H20V14H18V22H16V14H14V12H16V10H18Z"/>
+            </svg>
+            <div class="header-title">Radagon da Ordem Dourada</div>
+        </div>
+
+        <div class="content">
+            <p class="no-indent">...nos desafiando para uma luta. Suas palavras durante o combate nos dão alguma pista sobre sua motivação:</p>
+
+            <p class="item-quote">
+                “Louvo teu espírito, mas infelizmente, ninguém deve tomar o trono. A Rainha Marika tem grandes esperanças para nós. Que continuemos a lutar. Pela eternidade.”
+            </p>
+            <span class="quote-source">– Sir Gideon Ofnir, o Onisciente</span>
+
+            <p>
+                Gideon afirma conhecer a mente da própria Marika e parece acreditar que ela está agindo em seus interesses. Mas como? E por que ele se importaria em primeiro lugar?
+            </p>
+
+            <p>
+                A resposta é dada através de seu conjunto de armadura:
+            </p>
+
+            <p class="item-quote">
+                “Mas quando Gideon vislumbrou a vontade da Rainha Marika, ele estremeceu de medo. No final, o que não deve ser.”
+            </p>
+            <span class="quote-source">– Elmo do Onisciente</span>
+
+            <p>
+                Gideon tem acumulado conhecimento, e sabemos pela descrição do item Fortificação Divina do Lorde que Gideon teve longas trocas com os Dois Dedos. E da miríade de feitiços com os quais ele nos recompensa – e luta contra nós – sabemos que ele é alguém que buscou conhecimento de todos os lugares, proibido ou não. Podemos assumir que, no curso de sua busca, ele se conectou com o Rebis imortal. Como ilustramos claramente, o ser que é Marika e Radagon é uma entidade cósmica que abriga o Elden Ring dentro de seu próprio corpo. Novamente: está além da nossa compreensão.
+            </p>
+
+            <p>
+                Marika claramente quer que atinjamos o Trono Prístino, pois há evidências de que ela queria acabar com a era atual e sua estagnação, e então ela ajuda o Maculado a alcançar esse objetivo. A principal evidência disso é Hewg.
+            </p>
+
+            <p>
+                Aprendemos em diálogos que Hewg foi aprisionado por Marika na Mesa da Graça para forjar para o Maculado uma arma matadora de deuses:
+            </p>
+
+            <p class="item-quote">
+                “Use minha obra-prima para matar um deus. Isso é tudo o que eu vivi. E minha promessa à rainha Marika.”
+            </p>
+            <span class="quote-source">– Hewg, Mestre Ferreiro</span>
+
+            <p>
+                Isso contradiz o que Gideon acredita que Marika quer. Eu sugeriria que Gideon não olhou para a vontade de Marika, mas sim para a de Radagon. Duvido que quaisquer palavras tenham sido trocadas. O que Gideon experimentou ao se conectar com o Rebis deve ter sido avassalador e aterrorizante.
+            </p>
+
+            <p>
+                De fato, Hewg também descreve sua exposição a Marika como "puro terror":
+            </p>
+
+            <p class="item-quote">
+                “Meu ser um prisioneiro não é culpa vossa. Além disso, não me importo de forjar. Apesar das minhas diferenças, as armas ficam mais fortes, o mesmo. Dado tempo, a técnica nunca falha. Além disso, me ajuda a esquecer. O puro terror dela...”
+            </p>
+            <span class="quote-source">– Hewg, Mestre Ferreiro</span>
+
+            <p>
+                O objetivo de Gideon de nos bloquear se alinha mais facilmente com os objetivos de Radagon de nos impedir de entrar na Térvore. É ele quem bloqueia a entrada e é ele quem nos combate em um confronto final. Assim, penso que Radagon dobrou Ofnir à sua vontade – tudo em defesa de sua preciosa Ordem Dourada.
+            </p>
+        </div>
+
+        <div class="page-number">306</div>
+    </div>
+
+    <div class="page page-right">
+        <div class="header">
+            <svg class="header-icon" viewBox="0 0 24 24">
+                <path d="M12,2C14.2,2 16,3.8 16,6V9H18L19,13H5L6,9H8V6C8,3.8 9.8,2 12,2M12,4C10.9,4 10,4.9 10,6V9H14V6C14,4.9 13.1,4 12,4M5,14H19V22H5V14Z"/>
+            </svg>
+            <div class="header-title">Graça Concedida</div>
+        </div>
+
+        <div class="content">
+            <p class="no-indent">No final, Radagon não conseguiu impedir Marika de despedaçar o Elden Ring – enquanto ela o lembra, ela é a forma divina, não ele. Em sua batalha final conosco, ele pode empunhar o poder do Elden Ring despedaçado, mas o Maculado também tem reunido as runas fragmentadas do Elden Ring, e com a espada matadora de deuses de Hewg na mão, Marika se vinga de sua metade rebelde.</p>
+
+            <h2 class="subsection-title">Os Bastardos</h2>
+
+            <p>
+                Antes de chegar aos meus pensamentos finais sobre Radagon, quero abordar o elefante na sala sobre a lore. Nós tocamos no fato de que elementos do Cadinho sofreram muito no reinado de Radagon; os Agouros foram submetidos a um abate brutal ou banimento e os Bastardos são claramente empregados como escravos. O Talismã de Escama e o Talismã de Pena do Cadinho são referências às formas quiméricas dessas criaturas, e a descrição não deixa dúvidas de que foram vilipendiados ao lado dos Cavaleiros do Cadinho e dos Agouros. No entanto, existem algumas conexões incomuns com Radagon que não podemos ignorar. Em um vídeo de Zullie the Witch chamado “Little mistakes”, eles revelam que internamente, os Bastardos são referidos como “Filhos de Radagon”.
+            </p>
+
+            <p>
+                Isso é fascinante quando consideramos o cabelo vermelho vivo dos Leoninos, bem como o fato de que um de seus números, o Cruzado Bastardo, empunha a Espada Grande da Ordem Dourada – a arma pessoal do próprio Radagon. Então, o que está acontecendo aqui?
+            </p>
+
+            <p>
+                Existem tantas partes da lore para amar em *Elden Ring* e uma das regiões que eu realmente amo por seus elementos de história é o Campo de Neve Consagrado e o que ele representa. É a entrada para o reino de Miquella e um asilo para os indesejados e aqueles que não se encaixam no reino da graça. É por isso que encontramos Albinaúricos, Bastardos e até Assassinas da Faca Negra se escondendo nessas terras.
+            </p>
+
+            <p>
+                Uma das melhores ilustrações dessa ideia é a Caverna dos Desamparados. Esta caverna conta uma história, e que começa com o próprio nome da caverna. Desamparados: triste, abandonado, solitário. Considere os habitantes encontrados aqui. Os Bastardos, como aqueles encontrados na Árvore Sacra, buscaram santuário dentro desta caverna.
+            </p>
+
+            <p>
+                O lugar atual dos Bastardos na sociedade da Ordem Dourada é essencialmente encapsulado pelos Talismãs de Escama e Pena do Cadinho:
+            </p>
+
+            <p class="item-quote">
+                “Um vestígio do cadinho da vida primordial. Nascido parcialmente da involução, já foi considerado um significante do divino em tempos antigos, mas agora é cada vez mais desprezado como uma impureza à medida que a civilização avançou.”
+            </p>
+            <span class="quote-source">– Talismã de Pena do Cadinho</span>
+        </div>
+
+        <div class="page-number">307</div>
+    </div>
+</div>
+
+</body>
+</html>
