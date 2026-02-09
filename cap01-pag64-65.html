@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grace Given - Páginas 64 e 65</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1100px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 50px 45px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; }
+        .header-icon { display: block; margin: 0 auto 10px auto; width: 25px; fill: #a3905e; }
+        .header-title { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #a3905e; font-weight: 600; }
+
+        /* Conteúdo */
+        .content {
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 14px;
+            line-height: 1.5;
+            text-align: justify;
+            orphans: 3;
+            widows: 3;
+            flex-grow: 1;
+        }
+
+        p { margin-bottom: 12px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+
+        /* Citações em caixas */
+        .quote-box {
+            margin: 15px 0;
+            break-inside: avoid;
+            padding: 0 5px;
+        }
+
+        .quote-text {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #333;
+            line-height: 1.4;
+            text-indent: 0;
+        }
+
+        .quote-author {
+            display: block;
+            font-style: normal;
+            font-size: 0.8rem;
+            color: #777;
+            text-align: right;
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Títulos de Seção (Verde) */
+        .special-title {
+            column-span: all;
+            text-align: center;
+            color: #92b3a5;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin: 25px 0;
+            font-weight: 400;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+        }
+
+        /* Rodapé */
+        .footer {
+            margin-top: auto;
+            padding-top: 20px;
+            font-size: 0.9rem;
+            color: #a3905e;
+            font-weight: 600;
+            font-family: serif;
+            border-top: 1px solid rgba(163, 144, 94, 0.3);
+        }
+        .footer-left { text-align: left; }
+        .footer-right { text-align: right; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2L4 8l2 8 6 6 6-6 2-8-8-6zm0 3l5 4-1 5-4 4-4-4-1-5 5-4z"/><path d="M9 10h2v2H9zm4 0h2v2h-2z" fill="#a3905e"/></svg>
+                <div class="header-title">O Tempo Antes da Térvore</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Agora que cobrimos a criação e propósito dessas feras, quero falar sobre sua mortalidade.</p>
+
+                <p>Se você decidir fazer o impensável e atacar Blaidd enquanto ele está em seu estado amigável, você pode descobrir mais sobre sua verdadeira natureza. Após sua morte, ele faz uma observação bastante sinistra:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Você é... você é forte de braço. Mas pergunte a si mesmo... Que mal pode ser feito... a uma sombra?"</p>
+                    <span class="quote-author">— Blaidd, o Meio-Lobo</span>
+                </div>
+
+                <p>Seguindo isso, se você sair do jogo e recarregar, Blaidd renasce e lhe dá um belo "eu te avisei":</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Eu não disse? Nenhum mal pode recair sobre uma sombra."</p>
+                    <span class="quote-author">— Blaidd, o Meio-Lobo</span>
+                </div>
+
+                <p>Essa linha implica que as Sombras podem não morrer tão facilmente no sentido corpóreo normal, e vai tão longe a ponto de sugerir que Gurranq pode existir em dois locais de forma totalmente independente – pois mesmo depois de você matar Maliketh, Gurranq ainda existe.</p>
+
+                <p>Para levar essa ideia adiante, eu especularia que uma Sombra só pode ser verdadeiramente morta se seu vínculo com seu Empyreano for totalmente cortado. Elas são criaturas vinculadas e para mim isso sugere que seu destino está amarrado ao de seu mestre.</p>
+
+                <p>No caso de Blaidd, eu sugeriria que ele seria verdadeiramente destruído quando Ranni destruísse seus Dois Dedos, cortando totalmente sua conexão com a Vontade Maior que lhe concedeu Blaidd em primeiro lugar. É por isso que somos capazes de derrotar Blaidd permanentemente quando enfrentamos sua forma enfurecida na Torre de Ranni.</p>
+
+                <p>Antes de passarmos adiante, queria tocar em outra coisa: as Sombras Funestas (Baleful Shadows). Ranni descreve estas como os assassinos dos Dois Dedos, soltas contra ela devido às escolhas que ela fez. No entanto, essas Sombras são cópias de Blaidd, não são? São versões fantasmas vermelhas do cão leal de Ranni, mas aparentemente sem seu livre arbítrio.</p>
+
+                <p>Isso faz sentido para mim; Blaidd também é uma criação de Sombra dos Dedos, mas ele é uma criação complexa capaz de miríades de ações e tomadas de decisão independentes. Ele é um verdadeiro companheiro para seu Empyreano.</p>
+
+                <p>As Sombras Funestas são Sombras criadas pelos Dedos, mas com um propósito simples singular. Elas se parecem e se movem como Blaidd porque são geradas pelo mesmo processo e pelos mesmos Dois Dedos. Eu também acredito que essas Sombras estão conectadas a Ranni assim como Blaidd está, e que ela precisa dessas Sombras eliminadas para se livrar totalmente de seus apegos aos Dois Dedos.</p>
+
+                <h2 class="special-title">Maliketh</h2>
+
+                <p class="no-indent">Não podemos discutir as Feras Vinculadas às Sombras sem falar sobre a maior entre elas: Maliketh.</p>
+
+                <p>O Lâmina Negra não é diferente de Blaidd em exibir sua própria personalidade e sua lealdade absoluta ao seu Empyreano.</p>
+            </div>
+            <div class="footer footer-left">64</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24"><path d="M11 2h2v14h-2z M7 6h10v2H7z M12 16l-1 1-1 4h4l-1-4-1-1z"/></svg>
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Já discutimos algumas das referências de lore no jogo a Maliketh, mas vamos rever a história deste personagem fascinante desde o início, porque acredito que há alguns detalhes que podemos não ter tocado.</p>
+
+                <p>Primeiramente, sabemos que Gurranq é o alter ego de Maliketh. A missão de Gurranq se conecta com a aparência de Maliketh mais tarde, e seu diálogo pode diferir dependendo de quanto da missão de Gurranq você completou. Se você completou a missão de Gurranq para recuperar toda a Raiz da Morte, então ele o reconhece quando você entra em sua arena em Farum Azula:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Maculado. Por que tu irias... Por quê... Não importa. Eu, por meio deste, juro, que a Morte Destinada não será roubada novamente."</p>
+                    <span class="quote-author">— Maliketh, a Lâmina Negra</span>
+                </div>
+
+                <p>Gurranq está confuso, porque anteriormente você o havia ajudado a tentar restaurar a Runa da Morte, e ainda assim agora você está aqui para roubá-la.</p>
+
+                <p>Para reforçar que esses personagens são um e o mesmo, podemos olhar para a descrição do item Pedra de Gurranq, que diz:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Há muito tempo, Gurranq era uma fera de ferocidade tão aterrorizante que seu antigo nome significava 'Morte dos Semideuses'."</p>
+                    <span class="quote-author">— Pedra de Gurranq</span>
+                </div>
+
+                <p>Então Gurranq é a aparência despretensiosa que Maliketh assumiu após a Noite das Facas Negras. Vamos rever o passado de Maliketh e retornaremos à sua nova identidade.</p>
+
+                <p>Como aprendemos de sua lembrança, Maliketh foi dado a Marika quando ela se tornou uma Empyreana. Assim como Ranni usa Blaidd para seus próprios fins, da mesma forma Marika usa Maliketh para promover sua agenda.</p>
+
+                <p>A vinda de Maliketh como o conhecemos centra-se em torno da apostasia liderada pela Rainha do Globo Ocular (Gloam-Eyed Queen) e seu movimento da Pele Divina (Godskin), algo que discutiremos em muito mais detalhes nos próximos capítulos. Depois disso, como afirma a Garra Blasfema, Maliketh acabaria se tornando conhecido como a fera negra da Morte Destinada – um ser sinônimo da Morte Destinada.</p>
+
+                <p>É sugerido que este poder foi voltado contra Marika e sua laia, dado que foi Maliketh quem acabaria por derrotá-los. E, claro, Maliketh estaria agindo sob as ordens de Marika. De fato, obtemos confirmação da Espada Grande do Deicida de que foi Maliketh quem derrotou a Rainha do Globo Ocular e, em última análise, o movimento da Pele Divina como um todo, confirmando novamente que o alvo da Pele Divina era a ninhada de Marika.</p>
+
+                <p>Sabemos pela descrição do item Chama Negra Purificadora que, antes de Maliketh selar a Morte Destinada, esses apóstolos podiam matar os deuses com...</p>
+            </div>
+            <div class="footer footer-right">65</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

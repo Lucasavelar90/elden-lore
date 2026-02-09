@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grace Given - Páginas 8 e 9</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container que segura as duas páginas (8 e 9) */
+        .book-spread {
+            display: flex;
+            gap: 2px; /* Espaço simulando a dobra */
+            max-width: 1100px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 50px 45px;
+            position: relative;
+            color: #1a1a1a;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Sombras internas */
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header-icon {
+            display: block;
+            margin: 0 auto 10px auto;
+            width: 25px;
+            fill: #a3905e;
+        }
+
+        .header-title {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #a3905e;
+            font-weight: 600;
+        }
+
+        .content {
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 14px;
+            line-height: 1.5;
+            text-align: justify;
+            orphans: 3;
+            widows: 3;
+        }
+
+        p { margin-bottom: 12px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+
+        .quote-box {
+            margin: 15px 0;
+            break-inside: avoid;
+            padding: 0 5px;
+        }
+
+        .quote-text {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #333;
+            line-height: 1.4;
+            text-indent: 0;
+        }
+
+        .quote-author {
+            display: block;
+            font-style: normal;
+            font-size: 0.8rem;
+            color: #777;
+            text-align: right;
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer {
+            margin-top: auto;
+            padding-top: 20px;
+            font-size: 0.9rem;
+            color: #a3905e;
+            font-weight: 600;
+            font-family: serif;
+        }
+
+        .footer-left { text-align: left; }
+        .footer-right { text-align: right; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24"><path d="M11 2h2v14h-2z M7 6h10v2H7z M12 16l-1 1-1 4h4l-1-4-1-1z"/></svg>
+                <div class="header-title">Deuses e o Elden Ring</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Poderíamos ir ainda mais longe e sugerir que foi o próprio Elden Ring que estimulou a fragmentação do Um Grande. Considere o que sabemos sobre a Vontade Maior. É uma força que nunca age diretamente, mas apenas através do Elden Ring, o deus eleito e o Lorde Prístino (Elden Lord). A chegada do Elden Ring poderia ter exercido a visão de Ordem da Vontade Maior sobre o Um Grande e o fraturado em nova vida.</p>
+                
+                <p>Isso também poderia explicar por que a destruição total da Térvore e do Elden Ring pela Chama Frenética, no final "Lorde do Caos", abre caminho para que toda a vida se torne uma só novamente – ausente da influência do Elden Ring.</p>
+                
+                <p>Este é um momento adequado para falar diretamente sobre este Elden Ring, a força titular que é o coração e a alma da Ordem do mundo.</p>
+
+                <p>A verdadeira natureza do Elden Ring é nebulosa e uma verdadeira compreensão dele deve estar além da compreensão humana. Dito isto, podemos avançar um pouco na compreensão do papel que ele desempenha no mundo se examinarmos de perto a <i>lore</i> que o cerca.</p>
+
+                <p>Primeiramente, sabemos que é um objeto composto por diferentes runas, e que essas runas individuais compõem o Elden Ring como um todo maior e trabalham em conjunto para fornecer as regras da Ordem atual.</p>
+
+                <p>Sabemos disso graças aos vários finais de "Runas de Reparo", em cada um dos quais uma forma diferente de Ordem é implementada, dependendo de qual runa modificadora é usada. Isso deixa claro que cada runa pode implementar um novo aspecto da Ordem que é então fortalecido pelo Elden Ring, sendo a Ordem a soma de todas as runas que compõem o Elden Ring total.</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"É meramente um ciclo. Coloque-se diante do Elden Ring. Torne-se o Lorde Prístino."</p>
+                    <span class="quote-author">— Memória da Graça</span>
+                </div>
+
+                <p>Os jogos da FromSoftware sempre tiveram uma natureza cíclica; as noites de caça em Bloodborne, o acender do fogo em Dark Souls e os múltiplos flagelos de demônios em Demon’s Souls. Elden Ring parece não ser diferente a esse respeito, e se o subtexto não fosse suficiente, o texto do jogo confirma isso abertamente.</p>
+            </div>
+            <div class="footer footer-left">8</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2C9 2 7 4 7 7v5c0 1.5 1 2.5 2 3l-1 4h8l-1-4c1-.5 2-1.5 2-3V7c0-3-2-5-5-5z"/></svg>
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">De fato, é a forma física real do Elden Ring e sua composição de runas que cria a base para a Ordem governante atual. Quando o Maculado se coloca diante da representação do Elden Ring em Farum Azula, torna-se prontamente aparente que o Elden Ring teve diferentes formas e diferentes composições de runas ao longo de sua história.</p>
+
+                <p>A versão expansiva retratada em Farum Azula, com suas muitas runas e galhos retorcidos, está muito longe da versão simplificada encontrada estampada nos livros de oração da Ordem Áurea.</p>
+
+                <p>Isso sugere novamente a longevidade do Elden Ring, e que ele foi adaptado e reformado para impor as regras da Ordem do dia; da Ordem Primordial dos Dragões à Ordem Áurea Imortal.</p>
+
+                <p>De fato, é a forma física real do Elden Ring e sua composição de runas que cria a base para a Ordem governante atual. Isso é confirmado por Enia, uma leitora de dedos que descreve o Elden Ring como a "raiz" da Ordem Áurea. E é ainda reforçado pela descrição da espada lendária de Radagon, a Espada Grande da Ordem Áurea:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Espada grande feita de luz, modelada após o próprio Elden Ring. Forjada pelo Rei Consorte Radagon para simbolizar orgulhosamente os princípios da Ordem Áurea."</p>
+                    <span class="quote-author">— Espada Grande da Ordem Áurea</span>
+                </div>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Era a fera vassala da Vontade Maior e a encarnação viva do conceito de Ordem."</p>
+                    <span class="quote-author">— Lembrança da Fera de Elden</span>
+                </div>
+
+                <p>A Fera de Elden em si é um ser cósmico de origens e poder insondáveis. Mas claramente é um instrumento desta Vontade Maior e é usada para impor sua vontade no plano mortal. Dado que o Elden Ring e a Fera de Elden são um e o mesmo, podemos aplicar isso ao próprio Elden Ring; ele é a personificação da própria Ordem.</p>
+
+                <p>Isso provavelmente é melhor ilustrado pela configuração da Ordem Áurea Imortal do Elden Ring, uma configuração que foi feita pela remoção da Runa da Morte. Aprendemos sobre isso de várias fontes, como via Enia, que diz:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"A Runa da Morte atende por dois nomes; o outro é Morte Destinada. A sombra proibida, arrancada da Ordem Áurea após sua criação..."</p>
+                    <span class="quote-author">— Leitora de Dedos Enia</span>
+                </div>
+
+                <p>Também ouvimos esse sentimento repetido na descrição da Runa de Reparo do Príncipe da Morte, que diz:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"A Ordem Áurea foi criada confinando a Morte Destinada. Assim, esta nova Ordem será uma de Morte restaurada."</p>
+                    <span class="quote-author">— Runa de Reparo do Príncipe da Morte</span>
+                </div>
+
+                <p>Esta descrição não apenas confirma que a remoção da Runa da Morte criou a configuração da Ordem Áurea, mas também nos diz que a adição desta runa altera a própria natureza da realidade.</p>
+            </div>
+            <div class="footer footer-right">9</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

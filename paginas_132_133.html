@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 5: As Cidades Eternas - Páginas 132 e 133</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+            padding: 0; /* Remove padding para imagem de página inteira */
+            overflow: hidden;
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+
+        /* Conteúdo Texto */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        
+        em { font-style: italic; }
+
+        /* Citações de Itens */
+        .item-quote {
+            font-style: italic;
+            margin: 15px 0 5px 0;
+            text-indent: 0;
+            font-size: 0.95em;
+        }
+
+        .quote-source {
+            display: block;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Citação Verde Grande (Pull Quote) */
+        .pull-quote-green {
+            color: #8abeb4;
+            font-size: 1.35rem;
+            line-height: 1.3;
+            margin: 0 0 25px 0;
+            text-indent: 0;
+            text-align: left;
+            break-inside: avoid;
+            font-weight: 400;
+        }
+
+        /* Imagem de Página Inteira */
+        .full-page-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .img-placeholder-full {
+            width: 100%;
+            height: 100%;
+            background-color: #1a1a1a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #8abeb4;
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        /* Rodapé (Número da página) */
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+            z-index: 10; /* Garante que apareça sobre imagem se necessário */
+        }
+        
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; color: #fcfbf7; text-shadow: 0 2px 4px rgba(0,0,0,0.8); } /* Cor clara para fundo escuro da imagem */
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+            .page-right { height: 500px; } /* Altura fixa para imagem em mobile */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2L4 10h5v12h6V10h5L12 2z"/></svg> 
+                <div class="header-title">As Cidades Eternas</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">curando efetivamente qualquer tipo de relacionamento antagônico. Suas inovações não terminam com a marionetaria. De fato, parece que os Nox desenvolveram todo tipo de procedimentos, sem dúvida na tentativa de ganhar poder contra a Vontade Maior e finalmente trazer sua Era das Estrelas.</p>
+
+                <p>Outro exemplo disso são os Soldados Draconianos. Os três que encontramos estão todos situados nas Cidades Eternas ou perto delas e, portanto, são claramente criações dos Nox. Isso é confirmado pela encantação Lança de Relâmpago Congelado:</p>
+
+                <p class="item-quote">“Encantação que canaliza o poder dos Soldados Draconianos... Os Draconianos nasceram na Cidade Eterna, onde não conheceram céu verdadeiro, nem relâmpago verdadeiro. Em vez disso, o relâmpago de gelo era sua arma.”</p>
+                <span class="quote-source">- Lança de Relâmpago Congelado</span>
+
+                <p>Portanto, eles não são apenas um produto das Cidades Eternas, mas suas habilidades e capacidades são um produto de seu ambiente.</p>
+
+                <p>Aprendemos mais sobre a criação desses seres Frankenstein através da Lâmina de Escama de Dragão:</p>
+
+                <p class="item-quote">“Uma arma feita afiando uma escama de Pedra de Cascalho, considerada a fonte da imortalidade dos dragões antigos, em uma Lâmina límpida. Infelizmente, os Soldados Draconianos nunca alcançaram a imortalidade e pereceram como imitações decrépitas e pálidas de seus parentes nascidos no céu.”</p>
+                <span class="quote-source">- Lâmina de Escama de Dragão</span>
+
+                <p>Novamente, a ciência inovadora, ainda que grotesca, dos Nox nunca deixa de me surpreender.</p>
+
+                <div class="pull-quote-green">
+                    Os Nox estão buscando empunhar o poder desses Dragões Antigos criando essencialmente seus próprios guerreiros dragão híbridos. Mas por que?
+                </div>
+
+                <p class="no-indent">Assim como Aldia e os cultistas da Escama de Dragão de <em>Dark Souls II</em>, os Nox tentaram recriar o poder dos dragões em um sentido artificial.</p>
+
+                <p>Assim como em <em>Dark Souls</em>, a imortalidade dos dragões parece estar ligada a essas escamas de pedra. Para obter uma compreensão mais profunda disso, gostaria de apontar a descrição da encantação Ataque de Relâmpago, que diz:</p>
+
+                <p class="item-quote">“Uma das encantações do antigo culto ao dragão da capital... Ancestrais dos dragões modernos, os dragões antigos tinham escamas de Pedra de Cascalho e empunhavam relâmpagos como arma. Diz-se que uma vez atacaram Leyndell, a Capital Real.”</p>
+                <span class="quote-source">- Ataque de Relâmpago</span>
+
+                <p>Isso cria duas classes diferentes de dragões. Existem os dragões antigos imortais, como os que vemos em Farum Azula, que existem além do tempo e podem empunhar relâmpagos, com o Lichdragon...</p>
+            </div>
+            
+            <div class="page-number">132</div>
+        </div>
+
+        <div class="page page-right">
+            <img src="nox_living_jars_art.jpg" alt="Ilustração Jarros Vivos na Floresta" class="full-page-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder-full" style="display:none;">
+                [Arte de Página Inteira: Jarros Vivos]<br>Salve como: nox_living_jars_art.jpg
+            </div>
+            
+            <div class="page-number">133</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

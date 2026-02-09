@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Tempo Antes da Térvore - Páginas 46 e 47</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+
+        /* Conteúdo Texto */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        
+        em { font-style: italic; }
+
+        /* Títulos de Subseção */
+        h2.subsection-title {
+            font-family: 'Cinzel', serif;
+            color: #8abeb4;
+            font-size: 1.2rem;
+            text-align: center;
+            margin: 25px 0 15px 0;
+            line-height: 1.2;
+            break-inside: avoid;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        /* Citações de Itens */
+        .item-quote {
+            font-style: italic;
+            margin: 15px 0 5px 0;
+            text-indent: 0;
+            font-size: 0.95em;
+        }
+
+        .quote-source {
+            display: block;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Rodapé (Número da página e Footnotes) */
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        .footnote {
+            position: absolute;
+            bottom: 50px;
+            left: 50px;
+            right: 50px;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            font-size: 0.8em;
+            color: #555;
+        }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><circle cx="12" cy="12" r="3"/></svg> 
+                <div class="header-title">O Tempo Antes da Térvore</div>
+            </div>
+
+            <div class="content">
+                <h2 class="subsection-title">IRA VS. SABEDORIA</h2>
+
+                <p>Isso, em última análise, me traz ao enigma central em relação aos Homens-Fera, os temas interligados, mas opostos, da natureza bestial e da sabedoria.</p>
+
+                <p>Então, vamos começar com os componentes mais básicos das bestas. E digo componente no sentido mais literal, pois em <em>Elden Ring</em> temos acesso a todos os tipos de ingredientes para criação e alquimia, incluindo restos corporais de bestas que matamos. Um desses componentes de criação é o Fígado de Besta, que diz:</p>
+
+                <p class="item-quote">“O fígado fresco de uma besta; um fruto da vida delicioso.”</p>
+                <span class="quote-source">- Fígado de Besta</span>
+
+                <p>O "fruto da vida"! Então, claramente, já estamos olhando para uma alusão à vida e vitalidade – sem surpresa, talvez, já que, no mundo real, animais selvagens são a abreviatura mais comum para essas ideias em mitos e simbolismo.</p>
+
+                <p>Então temos o Sangue de Besta, que diz:</p>
+
+                <p class="item-quote">“Sangue fresco de besta, brilhando com ouro... Este sangue cintilante nunca apodrece ou decai.”</p>
+                <span class="quote-source">- Sangue de Besta</span>
+
+                <p>Embora seja menos diretamente uma referência à vitalidade, ele se liga aos mesmos temas. O "sangue nunca apodrece ou decai", sugerindo o poder sobrenatural de vigor vital encontrado dentro do sangue de uma besta. Também sabemos que o ouro está associado ao conceito de vida, como podemos ver claramente no maior...</p>
+
+                <p class="no-indent">...item de lore no jogo, o Coágulo de Sangue Albinaúrico, que deixa claro que formas de vida artificiais são vistas como impuras porque lhes falta a graça do ouro – um assunto que discutiremos com mais detalhes no Capítulo 7.</p>
+
+                <p>O Sangue de Besta está em forte contraste com seu primo pálido. Onde o último representa prata, artificialidade e a ausência de graça, o Sangue de Besta representa ouro, graça, vida natural e vitalidade. Esses conceitos referem-se à besta em seu estado e forma naturais – falam do lobo, do leão, do urso, animais que são cruéis e intransigentes, cheios de vida e fiéis à sua natureza. Em outro lugar, a descrição do Selo da Marca de Garra fala da "ira" de Gurranq e, em conjunto com a encantação Garra de Besta descrevendo a natureza bestial de Gurranq retornando, podemos ver a ira e a violência como outro traço bestial.</p>
+
+                <p>O aspecto irado da natureza das bestas é fácil de entender. Humanos se comportam de maneira civilizada, enquanto aqueles em contato com seu lado bestial primitivo são mais propensos a sucumbir a atos de grande violência ou luxúria. Essa abordagem de oposição à civilização e bestialidade é bem ilustrada pela descrição do item Máscara de Regente⁴, que diz:</p>
+
+                <p class="item-quote">“Tal máscara ilustra as qualidades de um lorde ideal: principalmente, sábio e possuindo uma certa genialidade desdentada. Alguém no centro da sociedade muitas vezes acha essas qualidades as mais convenientes.”</p>
+                <span class="quote-source">- Máscara de Regente</span>
+            </div>
+            
+            <div class="footnote">
+                4 "The Color Theory of Elden Ring | Elden Ring Lore" - Hawkshaw
+            </div>
+            <div class="page-number">46</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2L4 10h5v12h6V10h5L12 2z"/></svg> 
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">A implicação aqui é clara. Comportamento desdentado – equilíbrio, sabedoria e similares – está alinhado com a civilização. Comportamento com presas – violência e impulsos animalísticos – está associado a bestas. E, no entanto, confusamente, as bestas em <em>Elden Ring</em> são usadas para representar tanto sabedoria quanto poder animalístico.</p>
+
+                <p>Vamos pegar Serosh, por exemplo. Ele é uma besta, mas firmemente associada à sabedoria e ao conselho. Uma menção que temos de Serosh é via o Grande Martelo da Garra de Besta, que diz o seguinte:</p>
+
+                <p class="item-quote">“Grande martelo com uma extremidade de impacto modelada para se assemelhar a cinco garras bestiais. Diz-se que as unhas pretas saindo da pele dourada representam Serosh, Lorde das Bestas, que se tornou o Regente do Rei Godfrey.”</p>
+                <span class="quote-source">- Grande Martelo da Garra de Besta</span>
+
+                <p>Aqui temos um martelo modelado em Serosh que faz referência aos Cinco Dedos, ou garras, da inteligência. Além disso, encontramos o seguinte descrito no Escudo de Brasão da Besta Dourada, que diz:</p>
+
+                <p class="item-quote">“A besta representada é Serosh, conselheiro idoso que guia a linhagem dourada.”</p>
+                <span class="quote-source">- Escudo de Brasão da Besta Dourada</span>
+
+                <p>Então, aqui o poderoso Serosh é descrito principalmente como um conselheiro – um assessor, valorizado por sua sabedoria em vez de sua destreza física. Além disso, como vemos na descrição do talismã Ícone de Godfrey, é a presença de Serosh que na verdade acalma a sede de sangue de Godfrey, drenando-a em vez de exacerba-la.</p>
+
+                <p>De fato, Godfrey é na verdade <em>menos</em> besta quando está emparelhado com Serosh, e Hoarah Loux revela-se como uma besta quando quebra violentamente essa conexão matando Serosh com suas próprias mãos. No entanto, no momento de sua ascensão à senciência, as bestas claramente lutaram para lidar com sua recém-descoberta consciência e esta é uma dicotomia fascinante; discuti o assunto com Lokey, autor do <em>Abyssal Archive</em>, em grandes detalhes.</p>
+
+                <p>Lokey apontou a descrição do capacete de Bernahl, que diz:</p>
+            </div>
+            
+            <div class="page-number">47</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

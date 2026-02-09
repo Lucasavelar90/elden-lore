@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Celestial & Grace Given - Páginas 106 e 107</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+
+        /* Conteúdo Texto */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        
+        em { font-style: italic; }
+
+        /* Citações de Itens */
+        .item-quote {
+            font-style: italic;
+            margin: 15px 0 5px 0;
+            text-indent: 0;
+            font-size: 0.95em;
+        }
+
+        .quote-source {
+            display: block;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Imagem Central (Sigil) com Efeito Transparente */
+        .center-img {
+            width: 100%;
+            max-width: 220px;
+            display: block;
+            margin: 10px auto 20px auto;
+            break-inside: avoid;
+            
+            /* O SEGREDO DO FUNDO TRANSPARENTE: */
+            mix-blend-mode: multiply; 
+            /* Aumenta brilho/contraste para garantir que o fundo do jpg fique branco puro e suma */
+            filter: contrast(1.1) brightness(1.05); 
+        }
+        
+        .img-placeholder-small {
+            width: 100%;
+            height: 150px;
+            background-color: rgba(138, 190, 180, 0.2);
+            border: 1px dashed #8abeb4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #8abeb4;
+            text-align: center;
+            font-size: 0.8rem;
+            margin: 20px 0;
+            break-inside: avoid;
+        }
+
+        /* Rodapé (Notas e Números) */
+        .footnote-divider {
+            width: 30%;
+            height: 1px;
+            background-color: #c5a059;
+            margin: 20px 0 10px 0;
+            opacity: 0.5;
+            break-inside: avoid;
+        }
+
+        .footnote-text {
+            font-size: 0.75rem;
+            color: #c5a059;
+            line-height: 1.3;
+            break-inside: avoid;
+            margin-bottom: 5px;
+        }
+        
+        .footnote-ref {
+            font-size: 0.7em;
+            vertical-align: super;
+            font-weight: bold;
+        }
+
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/></svg>
+                <div class="header-title">O Celestial</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Buracos brancos são as regiões teóricas opostas do espaço: áreas de fluxo externo do espaço-tempo onde tudo é empurrado para fora a partir do ponto central.</p>
+
+                <p>Seria fácil se perder em uma toca de coelho aqui, mas eu acho que esta é nossa melhor aposta para entender por que há um Lorde de Ônix para o buraco negro e um Lorde de Alabastro para o buraco branco. Juntos, a atração de um buraco negro e o empurrão de um buraco branco fariam um buraco de minhoca e eu acho que esses seres de maestria gravitacional, como Astel e os lordes, são capazes de manipular essas forças livremente para criar esses buracos de minhoca.</p>
+
+                <img src="gravity_sigil.jpg" alt="Símbolo da Gravidade" class="center-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="img-placeholder-small" style="display:none;">
+                    [Símbolo Verde da Gravidade]<br>Salve como: gravity_sigil.jpg
+                </div>
+
+                <p>São, é claro, esses efeitos que Radahn desejava exercer por razões pessoais, como afirma sua lembrança:</p>
+
+                <p class="item-quote">“O General Leão Vermelho empunhava poderes gravitacionais que aprendeu em Sellia durante sua juventude. Tudo para que ele nunca tivesse que abandonar seu amado, mas magro corcel.”</p>
+                <span class="quote-source">- Lembrança do Flagelo Estelar</span>
+
+                <p>Então parece que seu raciocínio inicial para aprender essa magia era para que ele nunca tivesse que desistir de seu cavalo, conforme ele crescia.</p>
+
+                <p>Na cinemática da história e em nosso conflito com ele, podemos ver que ele ainda está montando este cavalo comicamente pequeno. Obviamente, ele teria sido esmagado pelo grande peso de Radahn se não fosse pela magia gravitacional que ele emprega.</p>
+
+                <p>No entanto, ao final de sua tutela, parece que ele tinha um uso diferente para a magia, como aprendemos a seguir no feitiço Estrelas do Colapso:</p>
+
+                <p class="item-quote">“Uma técnica gravitacional dominada pelo jovem Radahn. ‘Eu te agradeço por tua tutela, pois agora posso desafiar as estrelas.’”</p>
+                <span class="quote-source">- Estrelas do Colapso</span>
+
+                <p>As próprias estrelas! E, claro, ser capaz de manipular magia de puxar e empurrar permitiria a um ser de poder suficiente repelir as estrelas e travá-las no lugar. Como sabemos, isso tem dois efeitos principais. Primeiro, Radahn usa esse poder para manter a cidade de Sellia segura. Aprendemos isso no Monumento da Espada em Caelid:</p>
+
+                <p class="item-quote">“O Conflito do Flagelo Estelar / Radahn sozinho mantém Sellia segura / E permanece de pé, para estilhaçar as estrelas”</p>
+                <span class="quote-source">- Monumento da Espada, Castelo Juba Vermelha, Caelid</span>
+
+                <p>Radahn desafiando as estrelas com seus poderes gravitacionais é, portanto, conhecido como o</p>
+            </div>
+            
+            <div class="page-number">106</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M11 2h2v20h-2z"/><path d="M4.93 4.93l1.41-1.41 12.73 12.73-1.41 1.41z"/><path d="M19.07 4.93l-1.41-1.41-12.73 12.73 1.41 1.41z"/></svg>
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Conflito do Flagelo Estelar e é de onde ele recebe seu epíteto: o Flagelo Estelar. Mas o que ele estava desafiando as estrelas?</p>
+
+                <p>A ameaça pode muito bem ser direta. Quando você derrota o Flagelo Estelar, uma estrela cadente atinge a terra nas proximidades da Península das Lágrimas, o que, claro, causa grandes danos à paisagem. Talvez uma estrela como essa estivesse indo para destruir Sellia, e então Radahn, que havia aprendido a amar seu local de educação, não podia suportar ver isso acontecer.</p>
+
+                <p>Também podemos buscar algumas explicações mais satisfatórias em conteúdo cortado. Em um vídeo de Zullie the Witch sobre as animações não utilizadas de Astel, eles fazem a sugestão de que talvez fosse essa ameaça desses seres que levou Radahn a utilizar magia gravitacional. Neste vídeo, Zullie explica como eles conseguiram encontrar uma animação não utilizada, semelhante ao ataque de meteoro de Radahn, quase como se Astel fosse destinado a despencar do céu e impactar a terra.</p>
+
+                <p>Os efeitos visuais para o impacto são os mesmos que os de Radahn, e a distância de viagem é enorme, sugerindo uma vasta arena. Portanto, Zullie sugere que a sobreposição e o tamanho da arena apontam para Astel tendo desempenhado um papel na luta contra o chefe Radahn<span class="footnote-ref">6</span>. Talvez após derrotar Radahn, Astel teria caído do céu como um meteoro.</p>
+
+                <p>No entanto, claro, o outro efeito de ter interrompido os movimentos das estrelas é que o destino da família real Cariana foi "preso", algo que aprendemos via Sellen:</p>
+
+                <p class="item-quote">“As estrelas alteram o destino da família real Cariana. E o destino de sua senhora, Ranni. Mas há muito tempo, o General Radahn desafiou as constelações giratórias e, em uma vitória esmagadora, prendeu seus ciclos. Agora, ele é a força que repele as estrelas. Se o General Radahn morresse, as estrelas retomariam seu movimento. E assim, também, o destino de Ranni.”</p>
+                <span class="quote-source">- Feiticeira Sellen</span>
+
+                <p>Então, em essência, Radahn não apenas usa a magia gravitacional que aprendeu para repelir estrelas perigosas, mas usa literalmente o empurrar e puxar do movimento gravitacional para parar seus movimentos completamente. Isso frustra os destinos dos Carianos e especificamente interrompe o destino de Ranni, então sugiro que esta é a razão pela qual um Lorde de Ônix está aprisionado no Cárcere Eterno Real na Mansão Caria, como uma espécie de retribuição contra sua espécie. O dano ao plano de Ranni só é desfeito quando matamos Radahn, potencialmente atrasando esses planos em milhares de anos.</p>
+
+                <p>Isso realmente ilustra a força pura da magia gravitacional. Ela pode aplicar força incrível em uma escala que é semelhante ao campo gravitacional de um planeta ou estrela. Não é, portanto, surpresa que as pessoas se referissem a esses seres poderosos que dominavam tais forças como lordes.</p>
+
+                <div class="footnote-divider"></div>
+                <div class="footnote-text">
+                    <span class="footnote-ref">6</span> “Elden Ring – Where were they going to use this?” - Zullie the Witch
+                </div>
+            </div>
+            
+            <div class="page-number">107</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

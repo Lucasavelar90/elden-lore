@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 2: O Tempo Antes da Térvore - Páginas 38 e 39</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho Padrão */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+
+        /* Estilos Específicos do Capítulo 2 (Página 38) */
+        .chapter-illustration {
+            width: 100%;
+            max-width: 300px;
+            display: block;
+            margin: 0 auto 20px auto;
+            mix-blend-mode: multiply;
+        }
+
+        .img-placeholder-round {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: rgba(138, 190, 180, 0.2); /* Verde */
+            border: 1px dashed #8abeb4;
+            margin: 0 auto 30px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #8abeb4;
+            font-size: 0.8rem;
+        }
+        
+        .chapter-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .chapter-number {
+            font-family: 'Cinzel', serif;
+            font-size: 1rem;
+            color: #c5a059;
+            display: block;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .chapter-title {
+            font-family: 'Cormorant Garamond', serif;
+            color: #c5a059;
+            font-size: 2.2rem;
+            line-height: 1.1;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        /* Conteúdo Texto */
+        .content {
+            margin-top: 10px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+        }
+
+        .content-right-page {
+            margin-top: 40px;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        
+        em { font-style: italic; }
+
+        /* Letra Capitular (Drop Cap) */
+        .drop-cap {
+            float: left;
+            font-family: 'Cinzel', serif;
+            font-size: 3.8rem;
+            line-height: 0.8;
+            padding: 6px 8px 2px 2px;
+            margin-right: 8px;
+            margin-top: -4px;
+            color: #1a1a1a;
+            border: 1px solid #1a1a1a;
+            background-color: transparent;
+        }
+
+        /* Citações */
+        .item-quote {
+            font-style: italic;
+            margin: 15px 0 5px 0;
+            text-indent: 0;
+            font-size: 0.95em;
+        }
+
+        .quote-source {
+            display: block;
+            text-align: left; /* Alinhado à esquerda como padrão */
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Rodapé (Número da página) */
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            
+            <img src="chapter_2_art.jpg" alt="Arte do Capítulo 2" class="chapter-illustration" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder-round" style="display:none;">
+                [Arte Circular Verde]<br>chapter_2_art.jpg
+            </div>
+
+            <div class="chapter-header">
+                <span class="chapter-number">Capítulo 2</span>
+                <h1 class="chapter-title">O Tempo Antes da Térvore</h1>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">
+                    <span class="drop-cap">A</span>pós a fratura do Um Grande, a primeira espécie real que ouvimos ter um efeito na linha do tempo são os dragões antigos. Para mim, eles são de certa forma análogos aos dinossauros do mundo real. Eles são bestas reptilianas titânicas e primitivas que governaram o mundo em um tempo muito anterior à chegada da humanidade.
+                </p>
+
+                <p>Sabemos que esta foi uma civilização pré-histórica graças ao Talismã de Escudo de Brasão de Dragão, que diz:</p>
+
+                <p class="item-quote">“Os dragões antigos, que governavam na era pré-histórica antes da Térvore, protegiam seu lorde como uma muralha de rocha viva.”</p>
+                <span class="quote-source">- Talismã de Escudo de Brasão de Dragão</span>
+
+                <p>"Pré-histórico" aqui refere-se a uma era histórica que existiu antes da civilização literária. Esta é claramente uma era que precede em muito a era da Térvore. Olhe mais de perto, no entanto. O talismã afirma que os dragões antigos <em>governavam</em> no tempo antes da Térvore. De fato, parece que os dragões antigos foram os primeiros instrumentos da Vontade Maior. A principal fonte para isso é a lembrança de Placidusax, que diz:</p>
+
+                <p class="item-quote">“Diz-se que o Lorde Dragão, cujo assento fica no coração da tempestade além do tempo, foi um Lorde Prístino na era anterior à Térvore. Uma vez que seu deus fugiu, o lorde continuou a aguardar seu retorno.”</p>
+                <span class="quote-source">- Lembrança do Lorde Dragão</span>
+            </div>
+            
+            <div class="page-number">38</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2L4 10h5v12h6V10h5L12 2z"/></svg> 
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content content-right-page">
+                <p class="no-indent">Placidusax foi um Lorde Prístino, a posição que mais tarde seria ocupada por Godfrey, Radagon e, então, potencialmente, nós mesmos. Lorde Prístino não é apenas um título genérico para um lorde de qualquer deus exterior, em outras palavras. É um título específico para um lorde associado à Vontade Maior e ao Anel Prístino.</p>
+
+                <p>Dentro disso, começamos a ver um padrão, um modelo para cada Ordem. Novamente, há um deus, um Lorde Prístino e o Anel Prístino. A forma deste último determina a natureza da Ordem. De fato, dentro de Farum Azula, a capital da sociedade dos dragões, descobrimos essa representação do Anel Prístino. O Anel Prístino retratado, no entanto, está muito longe da forma refinada da Ordem Áurea, coberto com raízes caóticas engolfando sua forma. A impressão dada é de uma Ordem Primordial para esta era primitiva dos dragões.</p>
+
+                <p>Uma das maiores escolhas de design de <em>Elden Ring</em> é a clara delineação entre os dragões antigos e seus parentes mortais menores, os dragões modernos. Dragões modernos, como Agheel, parecem ser de natureza mais animalesca, semelhantes aos drakes de <em>Dark Souls</em>. Bípedes e selvagens, em vez de terem uma civilização, eles têm áreas de nidificação, o que implica uma espécie de involução de seus ancestrais antigos superiores. (Retornando à analogia dos dinossauros, os dragões modernos têm até uma certa qualidade de penas, fazendo pensar nas aves do mundo real, que são, claro, os descendentes modernos dos dinossauros alados.)</p>
+
+                <p>A principal característica definidora dos dragões antigos, no entanto, a faceta que seus parentes menores não possuem, são as escamas de Pedra de Cascalho. De uma maneira que lembra a lore de <em>Dark Souls</em>, são essas escamas que dão aos dragões antigos sua imortalidade. Aprendemos isso através da Lâmina de Escama de Dragão:</p>
+
+                <p class="item-quote">“Uma arma feita afiando uma escama de Pedra de Cascalho, considerada a fonte da imortalidade dos dragões antigos, em uma lâmina sem mácula.”</p>
+                <span class="quote-source">- Lâmina de Escama de Dragão</span>
+
+                <p>A imortalidade concedida pelas escamas pode ser resultado da manipulação do tempo pela pedra. A Pedra de Forja de Dragão Ancião diz:</p>
+
+                <p class="item-quote">“Pedra de forja feita polindo uma Pedra de Cascalho dourada. Uma escama do Antigo Lorde Dragão e tesouro escondido de Farum Azula... Diz-se que o assento do Antigo Lorde Dragão fica além do tempo. Esta pedra torce levemente o tempo, permitindo a criação de uma arma capaz de matar um deus.”</p>
+                <span class="quote-source">- Pedra de Forja de Dragão Ancião</span>
+
+                <p>Embora esta descrição de item se refira apenas ao Lorde Dragão, ou seja, Placidusax, acredito que podemos estendê-la a todas as Pedras de Cascalho.</p>
+
+                <p>Ser capaz de torcer o tempo pode explicar a imortalidade dos dragões. Isso levanta a questão: e se as pedras significarem que os dragões não existem realmente no tempo como nós? Talvez, como Farum Azula, eles existam além do tempo e, portanto, nunca envelheçam de fato, uma posição que, com efeito, os torna imortais.</p>
+
+                <p>Sendo pedra real, a força das escamas de pedra dos dragões antigos é evidentemente...</p>
+            </div>
+            
+            <div class="page-number">39</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

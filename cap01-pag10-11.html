@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deuses e o Elden Ring - Páginas 10 e 11</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+
+        /* Conteúdo Texto */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        
+        em { font-style: italic; }
+
+        /* Títulos de Subseção */
+        h2.subsection-title {
+            font-family: 'Cinzel', serif;
+            color: #8abeb4;
+            font-size: 1.2rem;
+            text-align: center;
+            margin: 25px 0 15px 0;
+            line-height: 1.2;
+            break-inside: avoid;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        /* Citações de Itens */
+        .item-quote {
+            font-style: italic;
+            margin: 15px 0 5px 0;
+            text-indent: 0;
+            font-size: 0.95em;
+        }
+
+        .quote-source {
+            display: block;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Rodapé (Número da página) */
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><circle cx="12" cy="12" r="3"/></svg> 
+                <div class="header-title">Deuses e o Elden Ring</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Uma nova Runa Restauradora estabelecerá uma nova Ordem. Isso reforça a ideia de que a soma das runas no Elden Ring determina a Ordem exata que será imposta.</p>
+
+                <p>No caso da Ordem Dourada, a ausência de uma Runa que governe a Morte é uma de suas características definidoras. As consequências disso são melhor articuladas pelo conjunto de itens do Velho Aristocrata:</p>
+
+                <p class="item-quote">“Vestes de seda antiga adornadas com fino bordado dourado. Traje usado por nobres na capital. Roupas favorecidas pela idade. Abandonando seu local de nascimento após a Ruptura, os mortos-vivos são o produto lamentável de vidas que se estendem demais.”</p>
+                <span class="quote-source">- Velho Aristocrata</span>
+
+                <p>Não há vida natural nas Terras Intermédias, e essa é a explicação de lore para o motivo de a maioria dos inimigos humanoides parecerem zumbis ressequidos, dos Nobres Errantes aos Soldados de Godrick. É porque eles não conseguem morrer e, com o tempo, tornaram-se cascas ambulantes.</p>
+
+                <p>Isso explica a cena impressionante em que encontramos Agheel Lake. Ali descobrimos dezenas de humanos mortos reunidos no ninho de Agheel, e se escutarmos com atenção é possível ouvi-los rezando por sua morte:</p>
+
+                <p class="item-quote">“Agheel, ó Agheel, Chama de Agheel”</p>
+                <span class="quote-source">- Oração dos Mortos em Agheel</span>
+
+                <p>Durante nossa luta contra o grande dragão, muitos deles têm seu desejo concedido quando Agheel desce sobre eles cuspindo chamas.</p>
+
+                <p>Voltaremos à Morte e às várias formas de imortalidade mais adiante, mas o objetivo de ilustrar esse aspecto curioso da história agora é mostrar que o Elden Ring realmente tem efeito sobre as regras que governam este mundo. Sem a Runa da Morte, o Elden Ring impõe uma lei na qual a morte natural não ocorre.</p>
+
+                <p>Por meio do Elden Ring, a Grande Vontade mantém a ordem e o controle sobre a diversa vida das Terras Intermédias, com a Ordem do dia sendo supervisionada e representada pelo consorte terreno do Elden Ring. Vemos esse arranjo três vezes no jogo: Placidusax e seu deus, Marika e Godfrey, e finalmente Marika e Radagon.</p>
+
+                <p>Também podemos nos tornar parte do mais novo ciclo, como Senhor Prístino ao lado de Marika em ruínas, supervisionando qualquer Ordem que consideremos adequada implementar:</p>
+
+                <p class="item-quote">“A transgressão de Marika exigiu uma sentença severa. Mas mesmo acorrentada, ela permanece uma deusa e o vaso da visão. Confere Grandes Runas para se tornar Senhor Prístino e unir-se à Rainha Marika como seu consorte. Os Dedos assim desejaram.”</p>
+                <span class="quote-source">- Os Dois Dedos, por meio de Marika</span>
+            </div>
+            
+            <div class="page-number">10</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><circle cx="12" cy="12" r="3"/></svg> 
+                <div class="header-title">Deuses e o Elden Ring</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Todos os vassalos, seguidores e poderes da Grande Vontade buscam restaurar esse sistema de equilíbrio após a Ruptura. Dos Dois Dedos, a Enia, até a própria Graça, todos procuram nos guiar para restaurar o Elden Ring, conduzir uma nova Ordem e nos tornar Senhor Prístino.</p>
+
+                <h2 class="subsection-title">OS DEUSES<br>EXTERIORES</h2>
+
+                <p>Os deuses exteriores: nebulosos, influentes e eternamente intrigantes. Poucos tópicos em <em>Elden Ring</em> despertam mais interesse na comunidade do que os deuses exteriores, sem dúvida por conta de sua apresentação enigmática, bem como de sua permeação por diferentes aspectos da história. Na verdade, recebemos poucas avaliações diretas sobre os deuses exteriores ao longo do jogo, mas vamos observar o que temos para criar uma base para essa discussão.</p>
+
+                <p>Comecemos pelo termo “deuses exteriores”, que convida a várias interpretações. Para começar pela mais comumente aceita, o termo “exterior” tem um significado cósmico, e assim esses deuses desempenham um papel semelhante ao dos Grandes Antigos em <em>Bloodborne</em>.</p>
+
+                <p>Essa não é uma visão irracional, dado os enormes elementos cósmicos presentes ao longo do jogo. Certamente há uma lógica clara nisso, especialmente quando consideramos que os termos deuses exteriores e Grandes Antigos existem na mitologia expandida de Lovecraft e são usados para descrever seres cósmicos além da compreensão humana.</p>
+
+                <p>Os deuses lovecraftianos, em particular, são uma força que exerce sua vontade a partir de além dos limites do mundo humano, do cosmos. Isso geralmente parece se alinhar com o que vemos dos deuses exteriores em <em>Elden Ring</em>. Vemos sua influência, mas nunca entramos em contato direto com eles.</p>
+
+                <p>O termo japonês para deuses exteriores é <em>Sotonaru</em>, e essa palavra é usada para definir seres que estão fora de um grupo ou sistema — neste caso, a Ordem Dourada ou o plano mortal. Todas essas explicações funcionam juntas como uma: são seres cósmicos cujo domínio existe fora da Ordem atual. Sangue, Podridão, os ritos de morte e a Chama Frenética estão todos excluídos da Ordem vigente. Portanto, faz sentido que esses seres estejam fazendo tudo ao seu alcance para exercer sua influência e mudar esse fato.</p>
+
+                <p>Com isso em mente, vejamos a formulação encontrada na descrição da Agulha de Ouro Não-Temperado de Miquella:</p>
+
+                <p class="item-quote">“Uma das agulhas de ouro não-temperado que Miquella forjou para afastar a interferência dos deuses exteriores.”</p>
+                <span class="quote-source">- Agulha de Miquella</span>
+            </div>
+            
+            <div class="page-number">11</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

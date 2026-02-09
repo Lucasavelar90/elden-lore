@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rule of the Tree & Grace Given - Páginas 124 e 125</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+
+        /* Conteúdo Texto */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        
+        em { font-style: italic; }
+
+        /* Citações de Itens */
+        .item-quote {
+            font-style: italic;
+            margin: 15px 0 5px 0;
+            text-indent: 0;
+            font-size: 0.95em;
+        }
+
+        .quote-source {
+            display: block;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Imagem Central (Nox Mirror Illustration) */
+        .center-img-wrap {
+            width: 100%;
+            text-align: center;
+            margin: 20px 0;
+            break-inside: avoid;
+        }
+
+        .center-img {
+            max-width: 250px;
+            width: 100%;
+            display: inline-block;
+            mix-blend-mode: multiply;
+            filter: contrast(1.1) brightness(1.05);
+        }
+        
+        .img-placeholder-small {
+            width: 100%;
+            height: 250px;
+            background-color: rgba(138, 190, 180, 0.2);
+            border: 1px dashed #8abeb4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #8abeb4;
+            text-align: center;
+            font-size: 0.8rem;
+            margin: 20px 0;
+            break-inside: avoid;
+        }
+
+        /* Rodapé (Número da página) */
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2L4 10h5v12h6V10h5L12 2z"/></svg> 
+                <div class="header-title">O Reinado da Árvore</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">No entanto, antes de examinarmos sua estrutura social, cultura e objetivos, vamos primeiro abordar o ato que resultaria em seu banimento. Eu postularia que esta ação foi o massacre de um Dois Dedos – pois a descrição do item da Lâmina Caçadora de Dedos diz:</p>
+
+                <p class="item-quote">“O tesouro oculto da Cidade Eterna de Nokron; uma lâmina que se diz ter nascido de um cadáver. Este fetiche encharcado de sangue é a prova da alta traição cometida pela Cidade Eterna e simboliza sua queda. Não pode ser empunhada por aqueles sem um destino, mas diz-se ser capaz de ferir a Vontade Maior e seus vassalos.”</p>
+                <span class="quote-source">- Lâmina Caçadora de Dedos</span>
+
+                <p>Este item simboliza a queda da Cidade Eterna, e assim implica que o evento ligado a este item é a razão de seu banimento. Ranni precisa desta lâmina durante o curso de sua busca a fim de matar seus próprios Dois Dedos. No entanto, é fortemente implícito que os Nox já alcançaram esse feito, já que a descrição diz "encharcado de sangue". Presumivelmente, já está encharcada no sangue de um Dois Dedos diferente, já que Ranni ainda não usou esta lâmina quando a recuperamos.</p>
+
+                <p>Curiosamente, este ato é nomeado aqui como "alta traição", novamente sugerindo que essas pessoas viveram sob os auspícios da Vontade Maior na superfície.</p>
+
+                <p>No entanto, como eles foram capazes de produzir uma arma tão extraordinária? Como discutiremos mais tarde, está claro para mim que os Nox são verdadeiros inovadores, e sua ciência, crenças e desenvolvimentos de algumas maneiras agem como um precursor para muitas práticas Carianas. De fato, vejo o próprio Martelo de Marika como um símbolo de que os Numen são artesãos, algo que combina com a alquimia Nox para explicar sua inventividade geral.</p>
+
+                <p>Com isso em mente, consideremos agora a Lâmina Caçadora de Dedos em si. Podemos ver que a lâmina "nasceu de um cadáver", tanto em sua aparência profana quanto na própria descrição. Há outra arma no jogo que compartilha materiais tão graves: a Espada da Relíquia Sagrada, empunhada pela Elden Beast na luta final do jogo.</p>
+
+                <p>A Elden Beast forma esta espada do corpo de Marika/Radagon, e a descrição da espada diz o seguinte:</p>
+
+                <p class="item-quote">“Espada forjada a partir dos restos de um deus que deveria ter vivido uma vida eterna. Os pensamentos sobre o que a arma pressagia são muitos e variados. Alguns a consideram a marca de um grande pecado, ou um sinal de grande devastação. Alguns pensam nela como o fim de uma era, enquanto outros, o começo.”</p>
+                <span class="quote-source">- Espada da Relíquia Sagrada</span>
+
+                <p>Então, há muitas implicações incríveis aqui que podemos ligar de volta à Lâmina Caçadora de Dedos também. Esta é claramente uma perversão da mesma prática.</p>
+
+                <p>A Espada da Relíquia Sagrada é claramente destinada a ser simbólica, bem como a ser feita para desempenhar um certo propósito. Para alguns, esta espada é claramente uma marca de grande pecado e</p>
+            </div>
+            
+            <div class="page-number">124</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2L4 10h5v12h6V10h5L12 2z"/></svg> 
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">destruição, mas também é destinada a trazer o fim de uma era ou o começo de uma nova. De fato, a Elden Beast empunha a espada no alvorecer de uma nova era, que segue diretamente após nosso confronto com ela.</p>
+
+                <p>Podemos ver que esses fatos também se aplicam à Lâmina Caçadora de Dedos, pois também é uma ferramenta destinada a trazer grande devastação: a morte dos Dois Dedos. Além disso, é destinada a trazer o fim de uma era e o começo de outra, pois tanto os Nox quanto Ranni desejam usar esta ferramenta para iniciar uma nova era, a Era das Estrelas.</p>
+
+                <div class="center-img-wrap">
+                    <img src="nox_mirror_illustration.jpg" alt="Ilustração Nox" class="center-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="img-placeholder-small" style="display:none;">
+                        [Ilustração Verde Nox]<br>Salve como: nox_mirror_illustration.jpg
+                    </div>
+                </div>
+
+                <p>Então, estabelecemos que essas ferramentas desempenham funções semelhantes, mas por que isso é importante? Significa que os Nox inverteram ou perverteram a prática de forjar cadáveres usada pela Elden Beast na conclusão do jogo. Para mim, está claro que o nível de artesanato mostrado pela Elden Beast está em outro nível, e basta olhar para o nível de elegância na Espada da Relíquia Sagrada e compará-lo à Lâmina Caçadora de Dedos para entender que este é o trabalho dos deuses. E, no entanto, também fala da engenhosidade e artesanato dos Nox que eles foram capazes de tentar isso. A descrição da Espada da Relíquia Sagrada parece sugerir que as pessoas estão cientes e ouviram falar da Espada da Relíquia Sagrada.</p>
+
+                <p>Minha especulação é que os Nox roubaram e inverteram esse processo da Vontade Maior, e construíram uma espada de um cadáver, e usaram práticas ocultas, a fim de trazer sua nova era.</p>
+
+                <p>Claramente, essas espadas têm algum poder cósmico conectado ao destino, e com elas os Nox voltaram o destino contra os Dois Dedos.</p>
+
+                <p>Quais Dois Dedos? Isso realmente importa? O sangue na própria lâmina é prova suficiente de que ela foi usada contra seu alvo pretendido. Talvez tenha sido um dos Dedos quebrados que existem nas Torres Divinas. Todos eles?</p>
+
+                <p>Ou talvez os Dedos da Rainha dos Olhos do Crepúsculo (Gloam-Eyed Queen)? Tocaremos nela mais tarde, mas eu especularia que, dado que ela também foi escolhida como uma Empyrean, não é possível que, como Ranni, ela tenha cortado seus próprios Dois Dedos para que pudesse agir contra a Vontade Maior.</p>
+
+                <p>Independentemente das razões por trás disso, este ato, esta traição, esta traição encerrou a sociedade Nox na superfície como a conhecemos e os confinou às terras abaixo.</p>
+            </div>
+            
+            <div class="page-number">125</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

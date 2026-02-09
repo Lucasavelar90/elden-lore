@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grace Given - Páginas 92 e 93</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1100px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 50px 45px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; }
+        .header-icon { display: block; margin: 0 auto 10px auto; width: 25px; fill: #a3905e; }
+        .header-title { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #a3905e; font-weight: 600; }
+
+        /* Conteúdo */
+        .content {
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 14px;
+            line-height: 1.5;
+            text-align: justify;
+            orphans: 3;
+            widows: 3;
+            flex-grow: 1;
+        }
+
+        p { margin-bottom: 12px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+
+        /* Citações em caixas */
+        .quote-box {
+            margin: 15px 0;
+            break-inside: avoid;
+            padding: 0 5px;
+        }
+
+        .quote-text {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #333;
+            line-height: 1.4;
+            text-indent: 0;
+        }
+
+        .quote-author {
+            display: block;
+            font-style: normal;
+            font-size: 0.8rem;
+            color: #777;
+            text-align: right;
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Títulos de Seção (Verde) */
+        .special-title {
+            column-span: all;
+            text-align: center;
+            color: #92b3a5;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin: 25px 0;
+            font-weight: 400;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+        }
+
+        /* Imagem Inline (Cristaliano) */
+        .inline-img-container {
+            width: 100%;
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            break-inside: avoid;
+        }
+        
+        .inline-img {
+            max-width: 90%;
+            height: auto;
+            display: block;
+            mix-blend-mode: multiply;
+        }
+
+        .img-placeholder {
+            width: 90%;
+            height: 250px;
+            border: 1px dashed #92b3a5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #92b3a5;
+            text-align: center;
+            font-size: 0.8rem;
+            background-color: rgba(146, 179, 165, 0.1);
+        }
+
+        /* Rodapé */
+        .footer {
+            margin-top: auto;
+            padding-top: 20px;
+            font-size: 0.9rem;
+            color: #a3905e;
+            font-weight: 600;
+            font-family: serif;
+            border-top: 1px solid rgba(163, 144, 94, 0.3);
+        }
+        .footer-left { text-align: left; }
+        .footer-right { text-align: right; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2l-2 4h-4l-2 4v6l4 4h8l4-4v-6l-2-4h-4z M12 6l1 2h-2L12 6z" opacity="0.8"/></svg>
+                <div class="header-title">O Celestial</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Acho que mais evidências de que esses seres estão conectados à consciência maior da gestalt estelar são encontradas na descrição do feitiço Cristal Estilhaçante:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Os Cristalianos são seres inorgânicos, contudo eles vivem. Eles se mantêm próximos aos ideais da corrente primeva e, como tal, são convidados reverenciados dos feiticeiros."</p>
+                    <span class="quote-author">— Cristal Estilhaçante</span>
+                </div>
+
+                <p>Os Cristalianos ainda estão intimamente ligados à Corrente Primeva, o conduto metafísico que conecta alguém às estrelas, novamente sugerindo que é isso que guia sua 'cogitação'.</p>
+
+                <p>De fato, o feitiço Barragem de Cristais descreve um "Quadro de Cristal" (Crystal Cadre), um grupo de feiticeiros que estão interessados em desvendar os segredos dessa "sabedoria da pedra". Se isso está conectado à Corrente Primeva e ao conhecimento das estrelas em geral, então faz sentido por que os Cristalianos são tão valorizados pelos feiticeiros.</p>
+
+                <div class="inline-img-container">
+                    <img src="cristaliano.jpg" alt="Ilustração de Cristaliano" class="inline-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="img-placeholder" style="display:none;">
+                        <span>Coloque a imagem do cristaliano aqui<br>(cristaliano.jpg)</span>
+                    </div>
+                </div>
+
+                <p>Como um aparte para aqueles que talvez questionem se os Cristalianos são realmente feitos de Pedrilhante, devido à sua cor ser diferente do cristal azul-verde regular: há mais de um tom de Pedrilhante. Especificamente, os Manguitos de Azur referem-se a uma variante azul-esverdeada, enquanto a Coroa de Pedrilhante de Lusat refere-se a uma variante azul.</p>
+
+                <p>De fato, isso é refletido na cor dos cristais encontrados em Azur e Lusat e Smarag e Adula. Obviamente não podemos saber com certeza os significados de cada cor, mas em ambos os casos mostrados aqui, a variante azul é encontrada nos personagens mais fortes ou pelo menos de "final de jogo", Adula e Lusat.</p>
+
+                <p>De fato, a cogitação que lhes é fornecida pelo celestial não é nem tão alienígena. Os Cristalianos, e portanto as estrelas, parecem ter emoções. Afinal, a Torrente de Cristais é descrita como a ira dos Cristalianos feita manifesta. Também os Cristalianos parecem ter uma hierarquia, mostrando que eles têm estruturas sociais muito parecidas com a humanidade. Aprendemos isso através do feitiço Liberação de Cristal:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Esta feitiçaria é usada por adeptos de alto escalão entre os Cristalianos. Alguns também chamam essa feitiçaria de 'o Sol de Cristal'."</p>
+                    <span class="quote-author">— Liberação de Cristal</span>
+                </div>
+
+                <p>Novamente: O fato de terem sido criados por algum criador não significa que sejam golens sem mente; eles quase têm sua própria estrutura social e são capazes de tomar decisões inteligentes.</p>
+            </div>
+            <div class="footer footer-left">92</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2C9 2 7 5 7 8c0 1.5 1 3 2.5 4L7 16l1 2 4-2 4 2 1-2-2.5-4C17 11 18 9.5 18 8c0-3-2-6-5-6zm0 2c1.5 0 3 1.5 3 4s-1.5 4-3 4-3-1.5-3-4 1.5-4 3-4z" opacity="0.8"/></svg>
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">É por isso que eles são capazes de fazer um acordo com os Carianos, como aprendemos através do feitiço Chuva Mágica:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Uma das feitiçarias da família real Carian. Convoca uma massa de magia que dispara projéteis sobre uma área ampla. Esta feitiçaria pode ser conjurada em movimento. Carregar estende a duração. Diz-se ter sido ensinada pelos Cristalianos para marcar o juramento da antiga concordata."</p>
+                    <span class="quote-author">— Chuva Mágica</span>
+                </div>
+
+                <p>Este feitiço é interessante porque parece ser uma forma de chuva mágica, o que novamente nos faz pensar naquele dilúvio estelar original descrito na Chuva Fundadora de Estrelas. Novamente acredito que isso ilustra o quão próximos os Cristalianos estão da Corrente Primeva e das próprias estrelas.</p>
+
+                <p>É claro que é a conexão deles com o Pedrilhante e a Corrente Primeva que levou grupos como os Carianos e o Quadro de Cristal a desejar o conhecimento de seus feitiços e poderes. Qual feiticeiro não desejaria? Estes são seres de Pedrilhante vivo, o material central para a feitiçaria moderna de Pedrilhante, e uma conexão com a misteriosa Corrente Primeva.</p>
+
+                <p>No entanto, a questão permanece: Quem criou esses seres curiosos? Bem, dado que seu propósito é proteger o Pedrilhante, é muito possível que tenha sido um feiticeiro quem os criou. Como notei anteriormente – a referência visual ao filme, <i>O Golem</i>, parece sugerir que teria sido um feiticeiro de Pedrilhante quem os criou para proteger o Pedrilhante. Talvez tenha sido um feiticeiro estimado como Lusat ou Azur, que teria a habilidade e o conhecimento para criar tal ser.</p>
+
+                <h2 class="special-title">A Estrela de Sangue</h2>
+
+                <p class="no-indent">Há uma anomalia que se destaca entre as estrelas, e essa é a Estrela de Sangue (Blood Star), uma entidade sinistra e sobrenatural que é nomeada uma estrela, mas se comporta de maneira muito diferente.</p>
+
+                <p>Há dois feitiços que mencionam a Estrela de Sangue pelo nome, Espinhos do Pecado e Punição, e por essa razão citarei a descrição completa de Espinhos do Pecado:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Uma feitiçaria aberrante descoberta por criminosos exilados. As deles são as feitiçarias mais vilipendiadas pela academia. Fere o conjurador com espinhos de pecado, criando uma espiral de espinhos de sangue. Esta feitiçaria pode ser conjurada repetidamente, até três vezes. Os culpados, seus olhos arrancados por espinhos, viveram na escuridão eterna. Lá, eles descobriram a estrela de sangue."</p>
+                    <span class="quote-author">— Espinhos do Pecado</span>
+                </div>
+
+                <p>Voltaremos ao contexto desses feitiços em breve; o elemento de sacrifício de sangue, a cegueira e a relação com os cegos. Por enquanto, quero focar na identidade fundamental desta entidade: o fato de ser uma estrela. Ao desvendar o...</p>
+            </div>
+            <div class="footer footer-right">93</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

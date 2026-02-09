@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rule of the Tree & Grace Given - Páginas 110 e 111</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+
+        /* Conteúdo Texto */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        
+        em { font-style: italic; }
+
+        /* Citações de Itens */
+        .item-quote {
+            font-style: italic;
+            margin: 15px 0 5px 0;
+            text-indent: 0;
+            font-size: 0.95em;
+        }
+
+        .quote-source {
+            display: block;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Citação Verde Grande (Pull Quote) */
+        .pull-quote-green {
+            color: #8abeb4;
+            font-size: 1.35rem;
+            line-height: 1.25;
+            margin: 0 0 20px 0; /* No topo da coluna */
+            text-indent: 0;
+            text-align: left;
+            break-inside: avoid;
+            font-weight: 400;
+        }
+
+        /* Rodapé (Número da página) */
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2c-4.97 0-9 4.03-9 9 0 4.97 4.03 9 9 9s9-4.03 9-9c0-4.97-4.03-9-9-9zm0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7z"/><path d="M12 4a7 7 0 0 0-7 7c0 3.86 3.14 7 7 7s7-3.14 7-7a7 7 0 0 0-7-7zm0 12c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/></svg>
+                <div class="header-title">O Reinado da Árvore</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">É uma prática dos Corníferos (Hornsent), já que cada um desses potentados usa a Máscara de Lagarta, que tem chifres saindo do topo, e é também a máscara usada pelo Cornífero dos companheiros de Miquella.</p>
+
+                <p>Suas facas, as Facas de Açougueiro de Bonny, dizem:</p>
+
+                <p class="item-quote">“Arma dos grandes potentados da Vila Bonny. Um cutelo de açougueiro descomunal usado para desmembrar corpos humanos na fabricação dos grandes jarros armazenados nos cárceres.”</p>
+                <span class="quote-source">- Faca de Açougueiro de Bonny</span>
+
+                <p>Cortar corpos é apenas metade do processo, no entanto. Aprendemos sobre a outra metade obtendo o Chicote de Dentes na já mencionada Cabana do Açoite. Ele diz:</p>
+
+                <p class="item-quote">“Chicote coberto de dentes podres e deformados. Imundos e fervilhando de doenças, os dentes estão incrustados no chicote e dosam a vítima com veneno mortal a cada golpe. À medida que as feridas amadurecem, elas inflamam e exalam pus. Dizia-se que a carne dos xamãs se fundia harmoniosamente com a de outros.”</p>
+                <span class="quote-source">- Chicote de Dentes</span>
+
+                <p>São os Xamãs, o povo de Marika, que são usados como um componente central desses jarros. Há um fantasma na Cabana do Açoite que aparentemente está se dirigindo a um Xamã que está sofrendo sob o chicote:</p>
+
+                <p class="item-quote">“Pelo amor de Deus, seu lugar é no jarro. A quase santidade aguarda você lá dentro. Para Xamãs como você, este é o seu destino.”</p>
+                <span class="quote-source">- Fantasma na Vila Bonny</span>
+
+                <p>Perto da vila de Marika estão as Ruínas dos Dedos de Dheo, uma área de onde surgem Mãos (Fingercreepers) e Dois Dedos. Ymir, estudioso dos Dedos, nos conta sobre o longo relacionamento de Marika com os Dois Dedos:</p>
+
+                <p class="item-quote">“Os conceitos – a hipocrisia – do mundo construído sobre a Térvore. As loucuras dos homens. Seu sofrimento amargo. Não há esperança de redenção? A resposta, infelizmente, é clara. Nunca houve esperança. Eles eram, cada um deles, defeituosos. Desequilibrados, desde o início. A própria Marika. E os dedos que a guiaram. E é isso que me perturba. Não importam nossos esforços, se as raízes estão podres...”</p>
+                <span class="quote-source">- Conde Ymir, Sumo Sacerdote</span>
+            </div>
+            
+            <div class="page-number">110</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M11 2h2v20h-2z"/><path d="M4.93 4.93l1.41-1.41 12.73 12.73-1.41 1.41z"/><path d="M19.07 4.93l-1.41-1.41-12.73 12.73 1.41 1.41z"/></svg>
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <div class="pull-quote-green">
+                    Se completarmos a missão de Ymir, somos levados a uma revelação chocante: As raízes podres a que Ymir se refere são Metyr, Mãe dos Dedos, outro vassalo da Vontade Maior.
+                </div>
+
+                <p class="no-indent">Metyr é uma confusão emaranhada de dedos, e é o ser que dá à luz as Mãos e os Dois Dedos.</p>
+
+                <p>Como a Elden Beast, Metyr foi enviada para as Terras Intermédias pela Vontade Maior e a lembrança de Metyr nos diz que ela foi “a primeira estrela cadente” a chegar nas Terras Intermédias, significando que ela precede até mesmo a Elden Beast.</p>
+
+                <p>Isso faz sentido, dado que Metyr e os Dedos deveriam agir como a linha de comunicação entre as Terras Intermédias e a Vontade Maior. No entanto, há um problema aqui, melhor descrito pelo Cajado do Grande Além:</p>
+
+                <p class="item-quote">“A Mãe recebeu sinais da Vontade Maior do além do microcosmo. Apesar de estar quebrada e abandonada, ela continuou esperando por outra mensagem que viria.”</p>
+                <span class="quote-source">- Cajado do Grande Além</span>
+
+                <p>Isso significa que em algum momento a Vontade Maior cortou o contato com Metyr? Se sim, os Dedos agiram por instinto todo esse tempo, mesmo ao guiar a Rainha Marika?</p>
+
+                <p>O criador de conteúdo Kosmos fez uma ótima observação no X. Ele sugeriu que Gideon Ofnir poderia muito bem estar ciente desse fato o tempo todo. Kosmos apontou a descrição do item da Fortificação Divina do Lorde, que diz:</p>
+
+                <p class="item-quote">“Gideon obteve o verdadeiro conhecimento após sua longa troca com os Dois Dedos – descobrindo que tudo havia sido quebrado há muito tempo; que os dedos trêmulos, curvados pela idade, e a própria Térvore, não eram exceção.”</p>
+                <span class="quote-source">- Fortificação Divina do Lorde</span>
+
+                <p>Ao dizer a Ofnir que você pretende queimar a Térvore, ele diz:</p>
+
+                <p class="item-quote">“Vá, se quiser. Não dê ouvidos ao 'pecado cardinal'. Os Dois Dedos perderam seu propósito há muito, muito tempo.”</p>
+                <span class="quote-source">- Gideon Ofnir</span>
+
+                <p>Em retrospectiva, parece quase uma certeza que Gideon está se referindo ao fato de que os Dois Dedos não tiveram contato genuíno com a Vontade Maior por eras, e que, com efeito, sua palavra é inútil.</p>
+
+                <p>Isso também põe em dúvida cada ação da Rainha Marika, que há muito assumimos ter agido sob a orientação da Vontade Maior através dos Dois Dedos.</p>
+
+                <p>Se os Dedos estavam em contato direto com a Vontade Maior ou não, acho que está claro que foram eles que a guiaram à divindade e lhe deram as ferramentas necessárias para produzir a Térvore.</p>
+
+                <p>O Talismã de Semente Carmesim +1 diz:</p>
+
+                <p class="item-quote">“A semente da Térvore deste talismã era presumida ser um objeto de mito. Este artefato antigo também retrata os Dois Dedos, talvez remetendo ao nascimento da Térvore.”</p>
+                <span class="quote-source">- Talismã de Semente Carmesim +1</span>
+            </div>
+            
+            <div class="page-number">111</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

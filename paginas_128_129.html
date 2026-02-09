@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 5: As Cidades Eternas - Páginas 128 e 129</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+
+        /* Conteúdo Texto */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        
+        em { font-style: italic; }
+
+        /* Citações de Itens */
+        .item-quote {
+            font-style: italic;
+            margin: 15px 0 5px 0;
+            text-indent: 0;
+            font-size: 0.95em;
+        }
+
+        .quote-source {
+            display: block;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Citação Verde Grande (Pull Quote) */
+        .pull-quote-green {
+            color: #8abeb4;
+            font-size: 1.35rem;
+            line-height: 1.3;
+            margin: 0 0 25px 0;
+            text-indent: 0;
+            text-align: left;
+            break-inside: avoid;
+            font-weight: 400;
+        }
+
+        /* Rodapé (Número da página) */
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2L4 10h5v12h6V10h5L12 2z"/></svg> 
+                <div class="header-title">As Cidades Eternas</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Como discutimos anteriormente, a antiga civilização que compreende o Palácio de Mohgwyn, Uhl e Uld é claramente modelada na arquitetura da Grécia e Roma clássicas. Em contraste, pode-se ver que a arquitetura Noxiana é muito mais moderna, com bordas góticas afiadas e arcos pontiagudos – e, é claro, as janelas.</p>
+
+                <p>No Capítulo 2 falamos sobre os Homens de Barro dessas civilizações antigas e como eles são provavelmente os restos distorcidos de sacerdotes que um dia foram humanos. No entanto, existe outra possibilidade: talvez eles sejam formas de vida artificiais criadas por aquela velha sociedade. Eles são de barro, afinal, e talvez sempre tenham sido – e também são irracionais em seu comportamento. Tudo isso me leva a concluir que essas são formas de vida artificiais que, na ausência de seus mestres, se transformaram em autômatos irracionais que infestam as ruínas de sua antiga civilização sem qualquer propósito real.</p>
+
+                <p>Sua presença é significativa para mim, no entanto, porque eles são uma forma de vida artificial claramente criada a partir de alguma combinação de alquimia e magia. Os Nox são mestres da alquimia e da manipulação da vida, e portanto acho a proximidade dos Homens de Barro com os Nox extremamente interessante também.</p>
+
+                <p>É possível que os Nox tenham derivado parte de sua ciência e tecnologia dos restos dessa sociedade antiga? Em breve nos voltaremos para este assunto. Antes disso, gostaria que examinássemos a estrutura e as nuances da própria sociedade Noxiana.</p>
+
+                <p>Apesar de terem sido exilados da superfície, os Nox conseguiram desenvolver uma comunidade robusta, rica e avançada que é um testemunho da força desse povo. Podemos ver pela maneira como suas cidades são construídas que essas eram comunidades reais, com igrejas, casas e espaços abertos. Como veremos na próxima seção, e como já discutimos, os Nox eram um povo inventivo fazendo o melhor de seu novo ambiente. Inovações incluíram o uso de Chama Fantasma para postes de luz, e os Nox também desenvolveram elevadores realmente avançados que superam em muito qualquer coisa que vemos nas sociedades da superfície.</p>
+
+                <p>Em torno dessas fundações sólidas foi construída uma sociedade religiosa oferecendo um reflexo sombrio da Ordem Dourada. Ela presumivelmente venerava a Lua Negra de Nokstella, como podemos ver em relevos circulares pretos em seus edifícios. Também vemos alusões a isso nos encostos de mármore preto de suas cadeiras – o mesmo marmoreio que os fragmentos da Lua Negra que vemos nas Pedras de Memória.</p>
+
+                <p>O talismã Lua de Nokstella descreve a lua como um guia para as estrelas. Muito provavelmente, os Nox acreditavam que a lua guiaria as estrelas até eles, ajudando a trazer sua Era das Estrelas.</p>
+            </div>
+            
+            <div class="page-number">128</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2L4 10h5v12h6V10h5L12 2z"/></svg> 
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Este clero da noite é liderado pelas Donzelas da Noite, um oposto adequado às Donzelas dos Dedos da Vontade Maior. Aprendemos sobre essas mulheres a partir de suas vestes, por exemplo, sua Coroa Gêmea, cuja descrição diz:</p>
+
+                <p class="item-quote">“Coroas gêmeas usadas pelas donzelas da noite da Cidade Eterna. Indica a mais alta patente clerical e esconde os olhos com seda.”</p>
+                <span class="quote-source">- Coroa Gêmea de Donzela da Noite</span>
+
+                <p>Este é um trecho interessante de lore. Confirma que essas donzelas estão no topo da hierarquia quando se trata da sociedade Nox, e claramente detêm uma posição de grande autoridade religiosa. Além de esconder os olhos, outro aspecto interessante desta coroa que temos que considerar é o fato de que duas pontas se projetam da peça de cabeça.</p>
+
+                <p>Novamente, como gêmeos são uma constante cosmológica importante no mundo de <em>Elden Ring</em>, não é uma grande surpresa que os vejamos representados aqui em uma peça de iconografia religiosa. Infelizmente não temos uma quantidade enorme de informações adicionais sobre qual conceito geminado este aspecto da coroa está representando. Poderia ser provavelmente as cidades gêmeas de Nokron e Nokstella ou o contraponto entre a Ordem da Graça e a Era das Estrelas; sendo a Ordem da Graça Marika e aqueles que existem sob a regra da Térvore e da Vontade Maior.</p>
+
+                <p>Esta hierarquia é então apoiada por uma casta guerreira feminina conhecida como Espadachins, e a descrição de sua armadura diz o seguinte:</p>
+
+                <p class="item-quote">“Armadura usada pelas espadachins da Cidade Eterna. Essas mulheres são as guardas pessoais das Donzelas da Noite e usam capas de seda.”</p>
+                <span class="quote-source">- Armadura de Espadachim de Nox</span>
+
+                <p>Então as Donzelas da Noite são importantes o suficiente para garantir guardas pessoais dessas guerreiras extraordinárias e ágeis. Na minha opinião, a maneira como essas guerreiras se movem é indicativa do fato de que as igualmente ágeis Assassinas das Facas Negras foram recrutadas de suas fileiras – mas mais sobre isso depois.</p>
+
+                <div class="pull-quote-green">
+                    O talismã Lua de Nokstella descreve a lua como um guia para estrelas. Muito provavelmente, os Nox acreditavam que a lua guiaria as estrelas até eles, ajudando a trazer sua Era das Estrelas.
+                </div>
+
+                <p>Finalmente, temos a única casta masculina da qual temos conhecimento: os Monges Nox. Dado que sabemos que as Donzelas da Noite Nox estão no topo da pilha e as Espadachins são suas guardas pessoais, podemos assumir que os...</p>
+            </div>
+            
+            <div class="page-number">129</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

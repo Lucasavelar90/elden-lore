@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Tempo Antes da Térvore - Páginas 42 e 43</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+
+        /* Conteúdo Texto */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        
+        em { font-style: italic; }
+
+        /* Títulos de Subseção */
+        h2.subsection-title {
+            font-family: 'Cinzel', serif;
+            color: #8abeb4;
+            font-size: 1.2rem;
+            text-align: center;
+            margin: 25px 0 15px 0;
+            line-height: 1.2;
+            break-inside: avoid;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        /* Citações de Itens */
+        .item-quote {
+            font-style: italic;
+            margin: 15px 0 5px 0;
+            text-indent: 0;
+            font-size: 0.95em;
+        }
+
+        .quote-source {
+            display: block;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Rodapé (Número da página e Footnotes) */
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        .footnote {
+            position: absolute;
+            bottom: 50px;
+            left: 50px;
+            right: 50px;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            font-size: 0.8em;
+            color: #555;
+        }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><circle cx="12" cy="12" r="3"/></svg> 
+                <div class="header-title">O Tempo Antes da Térvore</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Dada a associação de Placidusax com a criação e a vida caótica primitiva, é justo supor que esse deus desaparecido possa ter assumido uma forma semelhante. Em última análise, então, eles teriam sido um deus representativo da vida primordial caótica, muito parecido com seu Lorde Prístino.</p>
+
+                <p>No entanto, Lokey, meu amigo e autor do <em>Abyssal Archive</em>, sugeriu que a figura feminina retratada em Farum Azula cercada por três lobos poderia ser o deus com o qual Placidusax foi casado uma vez. Isso certamente faz sentido, dado o lugar de orgulho da estátua na arena de Maliketh, onde ela fica diretamente abaixo da representação do Anel Prístino que ela teria portado uma vez. Os lobos que cercam a donzela também poderiam ser simbólicos das bestas que este deus governou no passado.</p>
+
+                <p>E isso nos leva perfeitamente ao nosso próximo assunto, onde discutiremos os outros membros constituintes da sociedade de Farum Azula. Estes são os Homens-Fera.</p>
+
+                <h2 class="subsection-title">OS HOMENS-FERA<br>(THE BEASTMEN)</h2>
+
+                <p>Os Homens-Fera são uma raça de seres sencientes, mas nem sempre foram assim. Antes de ganhar inteligência e ficar de pé, a implicação é que eles eram apenas bestas. Existem alguns exemplos que mostram conexões entre animais normais não sencientes e os Homens-Fera. Por exemplo, na Caverna da Beira do Bosque, encontramos uma matilha de lobos...</p>
+
+                <p>...que aparentemente está sendo liderada por um Homem-Fera de Farum Azula. Juntos, eles massacraram os soldados que estavam originalmente aqui e fixaram residência em seu lugar.</p>
+
+                <p>Como apontado para mim por Lokey em nossa discussão sobre este assunto, há outra instância de uma "matilha" de Homens-Fera, por assim dizer. Esta fica na Caverna da Dracopira, uma caverna cheia de um Urso Rúnico e outra matilha de lobos. Mais uma vez, todos parecem ser liderados por um par de Homens-Fera.</p>
+
+                <p>Como esses Homens-Fera chegaram lá? Talvez tenham caído na caverna com os escombros e formado uma nova matilha. Independentemente das razões específicas, isso sugere um certo parentesco entre os lobos e os Homens-Fera.</p>
+
+                <p>Também se pode observar algo fascinante ao entrar em Farum Azula pela primeira vez. Alguns dos Homens-Fera aqui parecem estar revertendo aos seus comportamentos bestiais anteriores, rastejando de quatro e comendo no chão como se esse fosse realmente seu estado natural de ser³.</p>
+
+                <p>Minha conclusão, portanto, é que os Homens-Fera são variantes evoluídas e sencientes de animais regulares, como lobos, leões e cavalos. Encontramos diferentes tipos de crânios de animais nos locais de sepultamento de Farum Azula que correspondem a leões e cavalos. Os Homens-Fera mortos-vivos têm crânios que se assemelham aos de lobos, por exemplo, com um focinho longo. Enquanto isso, os esqueletos dos Homens-Fera encontrados presos às colunas são muito mais...</p>
+            </div>
+            
+            <div class="footnote">
+                3 "Elden Ring Archaeology: Farum Azula and the Dawn of Unalloyed Gold" - The Tarnished Archaeologist
+            </div>
+            <div class="page-number">42</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2L4 10h5v12h6V10h5L12 2z"/></svg> 
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">...leonescos em natureza. Quaisquer Homens-Fera vivos que encontramos são um pouco mais amorfos, no entanto, sugerindo que, com o tempo, a aparência atual do Homem-Fera tomou forma após o cruzamento entre espécies.</p>
+
+                <p>A teoria de que os Homens-Fera evoluíram de animais não sencientes é apoiada pela encantação Vitalidade Bestial, que diz:</p>
+
+                <p class="item-quote">“Tendo ganhado inteligência, as bestas devem ter sentido como sua selvageria escapulia à medida que a civilização se estabelecia.”</p>
+                <span class="quote-source">- Vitalidade Bestial</span>
+
+                <p>Esse processo de transformação de besta em espécie senciente é um evento bem documentado em alguns outros itens, mais notavelmente a Cinquedea, que diz:</p>
+
+                <p class="item-quote">“O design celebra os cinco dedos de uma besta, simbólico da inteligência uma vez concedida à sua espécie.”</p>
+                <span class="quote-source">- Cinquedea</span>
+
+                <p>A própria Cinquedea significa cinco dedos, descrevendo a largura da lâmina na guarda, e <em>Elden Ring</em> torna isso mais literal ao ter cinco dedos inscritos na lâmina. De fato, o nome, a largura e o design são todos representativos dos cinco dedos, a representação simbólica de sua inteligência. (Funciona como um símbolo devido aos polegares opositores que ajudaram os humanos com o uso de ferramentas, então é a mão que serve como uma abreviação para tudo o que separa essa raça bípede inteligente de seus ancestrais não sencientes.) Revisitaremos isso mais tarde, quando olharmos para o clero dos Homens-Fera.</p>
+
+                <p>Por enquanto, o fato de esse simbolismo estar associado a uma lâmina empunhada pelo braço religioso da sociedade dos Homens-Fera realmente mostra o quão importante esse evento formativo ainda é. É a gênese deles – o início de sua história como povo.</p>
+
+                <p>O método pelo qual os Homens-Fera ganharam inteligência é descrito de uma maneira incomum, na minha opinião. Vamos reexaminar mais uma vez a Cinquedea, que diz: "a inteligência uma vez concedida à sua espécie". Não foi resultado da evolução natural.</p>
+
+                <p>Quando falamos sobre o advento da inteligência em animais, muitas vezes penso em nossos ancestrais pegando a ferramenta como um dos primeiros indicadores de nossa própria ascensão. Enquanto a evolução é, por definição, um processo gradual e incremental, há uma interpretação fascinante de um momento tão crucial no filme <em>2001: Uma Odisseia no Espaço</em>.</p>
+
+                <p><em>2001: Uma Odisseia no Espaço</em> é ficção científica em uma vasta tela. É uma narrativa que salta eras e traça o avanço da humanidade desde os primeiros hominídeos até uma raça que está dando seus primeiros passos além de seu planeta natal. Mas o que torna essa história mais do que apenas uma avaliação desapaixonada de nossa história é o fato de que cada estágio do avanço humano é marcado pelo contato com uma força cósmica, representada pelos monólitos negros e rígidos do filme.</p>
+
+                <p>A implicação é que cada encontro com esses monólitos de alguma forma dá à humanidade o conhecimento necessário para ascender ao próximo nível de consciência. Depois que uma tribo de hominídeos entra em contato...</p>
+            </div>
+            
+            <div class="page-number">43</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Tempo Antes da Térvore - Páginas 40 e 41</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+
+        /* Conteúdo Texto */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        
+        em { font-style: italic; }
+
+        /* Citações de Itens */
+        .item-quote {
+            font-style: italic;
+            margin: 15px 0 5px 0;
+            text-indent: 0;
+            font-size: 0.95em;
+        }
+
+        .quote-source {
+            display: block;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Citação Verde Grande (Pull Quote) */
+        .pull-quote-green {
+            color: #8abeb4;
+            font-size: 1.35rem;
+            line-height: 1.3;
+            margin: 0 0 25px 0;
+            text-indent: 0;
+            text-align: left;
+            break-inside: avoid;
+            font-weight: 400;
+        }
+
+        /* Rodapé (Número da página e Footnotes) */
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        .footnote {
+            position: absolute;
+            bottom: 50px;
+            left: 50px;
+            right: 50px;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            font-size: 0.8em;
+            color: #555;
+        }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><circle cx="12" cy="12" r="3"/></svg> 
+                <div class="header-title">O Tempo Antes da Térvore</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">...lendária. Com o tempo, os dragões viriam a representar a própria ideia de proteção, como aprendemos com qualquer um dos talismãs de dragão:</p>
+
+                <p class="item-quote">“E assim é que a forma do dragão tornou-se simbólica de todo tipo de proteção.”</p>
+                <span class="quote-source">- Talismã de Escudo de Brasão de Dragão</span>
+
+                <p>Os quatro dragões antigos nomeados que encontramos são Fortissax, Lannseax, Placidusax e Gransax¹. Esses nomes são derivados do latim e, portanto, podemos traduzi-los da seguinte forma: Fortissax, o Forte; Gransax, o Grande; Lannseax, a Portadora da Lança; e Placidusax, o Calmo ou Pacífico.</p>
+
+                <p>Acho que isso se encaixa em cada caso. Fortissax é poderoso, Lansseax carrega sua lança ou glaive, Gransax é inegavelmente massivo e Placidusax está acalmado quando o encontramos pela primeira vez. No entanto, é a segunda parte que me interessa: "sax", que poderia ser traduzido como "pedra". Acho que isso está correto, porque a descrição da Lança de Relâmpago de Fortissax parece traduzir isso da mesma maneira: <em>forti sax</em>, "pedra mais poderosa".</p>
+
+                <p>Com as formas básicas dos majestosos dragões discutidas, quero tocar em seu Lorde Prístino e deus. Placidusax é obviamente um ser muito maior que o resto de seus parentes. Ele está tão fortemente conectado ao poder do Anel Prístino que respira fogo dourado, como aprendemos via a descrição do item Ruína de Placidusax – e como somos capazes de testemunhar em primeira mão em sua luta conosco.</p>
+
+                <p>Aqueles astutos o suficiente reconhecerão que há apenas um outro ser que pode soprar fogo dourado: a própria Fera Prístina, que também possui uma espécie de forma dracônica.</p>
+
+                <p>Ora, isso poderia ser apenas um indicador de que Placidusax tem um relacionamento próximo com o Anel Prístino e, portanto, seus poderes foram transmitidos a ele. No entanto, poderia ser uma dica de como o Anel Prístino teve um cuidado especial ao moldar esses seres em particular.</p>
+
+                <p>Outra coisa a notar: se você olhar de perto o suficiente para as feridas de Placidusax e a pele carnuda nelas, você não pode deixar de...</p>
+
+                <div class="pull-quote-green">
+                    Isso poderia ser apenas um indicador de que Placidusax tem um relacionamento próximo com o Anel Prístino e, portanto, seus poderes foram transmitidos a ele. No entanto, poderia ser uma dica de como o Anel Prístino teve um cuidado especial ao moldar esses seres em particular.
+                </div>
+            </div>
+            
+            <div class="footnote">
+                1 Comentário no Reddit por u/SnooPeppers9223 da postagem "The Uncanny Naming Convention of Elden Ring’s Lightning Dragons?": bit.ly/44HhM0V
+            </div>
+            <div class="page-number">40</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2L4 10h5v12h6V10h5L12 2z"/></svg> 
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">...notar que ela também é dourada². Para mim, tudo isso sugere que os dragões têm uma relação muito mais próxima com o Anel Prístino e a Fera Prístina do que quaisquer outras formas de vida, e que isso é particularmente verdadeiro para Placidusax.</p>
+
+                <p>Além da capacidade de Placidusax de dobrar o tempo, ele também já teve pelo menos quatro cabeças, como visto pelas feridas em seu pescoço e pela representação no Talismã do Antigo Lorde. Acredito que isso seja uma referência a Tiamat, a deusa mesopotâmica do mar e o símbolo da criação primordial.</p>
+
+                <p>Com representações mais antigas de Tiamat, a imagem não combina tão bem, já que Tiamat frequentemente aparece como uma criatura serpentina semelhante a um hipogrifo. No entanto, graças a <em>Dungeons & Dragons</em> nos anos 1970, Tiamat renasceu como o dragão de várias cabeças que todos conhecemos e amamos, e é nessa representação que <em>Elden Ring</em> parece estar se baseando.</p>
+
+                <p>Ligar Placidusax a Tiamat é uma conexão fascinante para ponderar. Tiamat é uma figura importante na mitologia mesopotâmica. Ela cria uma série de bestas, incluindo dragões e serpentes (note que na mitologia de D&D ela é diretamente a mãe dos dragões). Isso se encaixa com Placidusax sendo o lorde dos dragões. Talvez até sugira que Placidusax foi o primeiro de sua espécie e gerou os outros através do acasalamento com o deus enigmático de quem é consorte.</p>
+
+                <p>Se olharmos para a redação encontrada na Lâmina Rochosa do Rei Dragão, poderíamos até supor que Placidusax foi o primeiro a invocar o relâmpago, pois a descrição da lâmina diz o seguinte:</p>
+
+                <p class="item-quote">“Espada perfurante de Pedra de Cascalho contendo relâmpago primordial.”</p>
+                <span class="quote-source">- Lâmina Rochosa do Rei Dragão</span>
+
+                <p>O que fica claro é que Placidusax é um ser muito antigo, muito provavelmente a criatura viva mais velha que encontramos durante nossa jornada, e potencialmente o progenitor de toda a vida dracônica.</p>
+
+                <p>Vamos agora tentar abordar o deus mencionado na lembrança de Placidusax, pois não há outra menção a esse deus na lore. Este deus é presumivelmente comparável a Marika, um deus vaso da Vontade Maior, apoiado por seu Lorde Prístino, Placidusax.</p>
+
+                <p>Vamos tentar relacionar isso a Tiamat mais uma vez. Na mitologia, ela tinha um marido conhecido como Abzu. Abzu é o deus sumério do mar profundo – do abismo, o mar primordial abaixo do submundo.</p>
+
+                <p>No Enuma Elish, um épico babilônico, Tiamat e seu marido são representativos do mar superficial e do mar profundo, respectivamente. Os dois acasalam misturando suas águas – antes de serem ambos assassinados por seus filhos, que os derrubam. Em todas as mitologias em que aparecem, ambos são vistos como os deuses primordiais que geraram a primeira geração de divindades.</p>
+            </div>
+            
+            <div class="footnote">
+                2 "Elden Ring - A horrible nightmare" - Zullie the Witch
+            </div>
+            <div class="page-number">41</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

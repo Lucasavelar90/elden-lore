@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grace Given - Páginas 70 e 71</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1100px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 50px 45px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; }
+        .header-icon { display: block; margin: 0 auto 10px auto; width: 25px; fill: #a3905e; }
+        .header-title { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #a3905e; font-weight: 600; }
+
+        /* Conteúdo */
+        .content {
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 14px;
+            line-height: 1.5;
+            text-align: justify;
+            orphans: 3;
+            widows: 3;
+            flex-grow: 1;
+        }
+
+        p { margin-bottom: 12px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+
+        /* Citações em caixas */
+        .quote-box {
+            margin: 15px 0;
+            break-inside: avoid;
+            padding: 0 5px;
+        }
+
+        .quote-text {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #333;
+            line-height: 1.4;
+            text-indent: 0;
+        }
+
+        .quote-author {
+            display: block;
+            font-style: normal;
+            font-size: 0.8rem;
+            color: #777;
+            text-align: right;
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Títulos de Seção (Verde) */
+        .special-title {
+            column-span: all;
+            text-align: center;
+            color: #92b3a5;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin: 25px 0;
+            font-weight: 400;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+        }
+
+        /* Rodapé */
+        .footer {
+            margin-top: auto;
+            padding-top: 20px;
+            font-size: 0.9rem;
+            color: #a3905e;
+            font-weight: 600;
+            font-family: serif;
+            border-top: 1px solid rgba(163, 144, 94, 0.3);
+        }
+        .footer-left { text-align: left; }
+        .footer-right { text-align: right; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><circle cx="12" cy="12" r="3" fill="#a3905e"/></svg>
+                <div class="header-title">O Tempo Antes da Térvore</div>
+            </div>
+
+            <div class="content">
+                <div class="quote-box" style="margin-top:0;">
+                    <p class="quote-text">"Os Cavaleiros Cão de Caça são treinados como caçadores e conhecidos por serem rastreadores inabaláveis. Sem o uso da linguagem, cada cavaleiro escolhe seu próprio mestre. Uma vez tomada a decisão, o cavaleiro permanece leal por toda a vida."</p>
+                    <span class="quote-author">— Armadura de Cavaleiro Cão de Caça</span>
+                </div>
+
+                <p>Então podemos ver instantaneamente algumas semelhanças entre os Cães de Caça e os Vinculados às Sombras. Primeiramente o termo "cão" (hound) nos faz pensar na natureza "lupina" das Feras Vinculadas às Sombras, como aludido pelo conjunto de armadura de Vargram. Em segundo lugar, há a própria natureza de seu serviço conforme descrito pela armadura que acabamos de ler. Os Cavaleiros Cão de Caça se apegam a um mestre e o servem por toda a vida. O cão vadio Floh mostra o quão importantes são esses laços para o credo deles:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Espírito de um Cavaleiro Cão de Caça chamado Vadio Raivoso. Atacará sem pausa imediatamente após ser invocado. Floh jurou que havia apenas um lorde a quem ele serviria: um verdadeiro rei. E assim, o Vadio Raivoso nunca encontrou um mestre."</p>
+                    <span class="quote-author">— Cinzas de Cavaleiro Cão de Caça Floh</span>
+                </div>
+
+                <p>Muito como os Vinculados às Sombras, então, os Cães de Caça são vinculados a um único mestre. (No entanto, esta descrição também destaca uma diferença importante entre o Vinculado às Sombras e o Vinculado pelo Sangue – e retornaremos a isso em um momento.)</p>
+
+                <p>Os cães também se comportam e até se movem como lobos. Eles não usam linguagem como outros humanos, e seu movimento, de quatro, é reminiscente de seus contrapartes quadrúpedes. Até suas armas, as garras e presas, são destinadas a substituir o dente e a garra autênticos de um cão de caça.</p>
+
+                <p>Então isso levanta a questão – qual é a relação do Cão de Caça com o Vinculado às Sombras? Eles podem se tornar vinculados às sombras?</p>
+
+                <p>Em suma, acredito que haja principalmente uma conexão simbólica entre os dois. Como argumentarei mais tarde, os Vinculados às Sombras são criados, não treinados. Eles são feitos sob medida para serem a forma mais útil para seu Empyreano particular. Os Cães de Caça, no entanto, tornam-se o que são através de treinamento rigoroso e seguindo seus ideais particulares.</p>
+
+                <p>Outra diferença é que a maneira pela qual os Cães de Caça se tornam vinculados também é claramente diferente da dos Vinculados às Sombras. Os Cães de Caça escolhem seu mestre, enquanto os Vinculados às Sombras são dados ao seu mestre.</p>
+
+                <p>Ainda assim, eles são claramente análogos aos Vinculados às Sombras. Para mim, muito como Vargram, esta organização Cão de Caça é um credo claramente inspirado para refletir o vínculo cósmico da Fera Sombria e do Empyreano. Mas alcança isso de uma maneira mais terrena – através de treinamento e disciplina.</p>
+
+                <p>Finalmente, há um Cavaleiro Cão de Caça que encontramos durante a missão de Blaidd, então vale a pena discuti-lo.</p>
+
+                <p>A primeira vez que encontramos Blaidd, ele quer nossa assistência para localizar um "traidor", que é chamado Darriwil e que acaba sendo um Cavaleiro Cão de Caça. Então por que ele é um traidor? Bem, mais obviamente poderíamos assumir que Darriwil era um Cão de Caça jurado a serviço de Ranni. Mas podemos ir um pouco mais longe, se me permitirem...</p>
+            </div>
+            <div class="footer footer-left">70</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2C9 2 7 5 7 8c0 1.5 1 3 2.5 4L7 16l1 2 4-2 4 2 1-2-2.5-4C17 11 18 9.5 18 8c0-3-2-6-5-6zm0 2c1.5 0 3 1.5 3 4s-1.5 4-3 4-3-1.5-3-4 1.5-4 3-4z"/></svg>
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">...alguma especulação, pois podemos encontrar a Máscara de Lobo Negro perto da Torre de Seluvis, uma máscara que imita claramente o rosto de Blaidd. Sua descrição diz:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Uma máscara moldada após a cabeça de um lobo negro. Relíquia de um assassino que assumiu o disfarce da leal sombra de Ranni, a Bruxa. A semelhança é impressionante."</p>
+                    <span class="quote-author">— Máscara de Lobo Negro</span>
+                </div>
+
+                <p>Então, em algum momento, alguém se disfarçou de Blaidd em uma tentativa de matar Ranni. Não faria sentido que o aspirante a assassino pudesse muito bem ser uma criatura que pode facilmente passar por um meio-lobo? Bem como possivelmente ser próximo de Ranni e Blaidd já, se ele tivesse jurado à corte deles, isso também explicaria perfeitamente por que Blaidd o chama de traidor e está tão determinado a caçá-lo.</p>
+
+                <p>É apenas especulação. Mas é a história que eu escolho acreditar.</p>
+
+                <h2 class="special-title">E Quanto a Vargram?</h2>
+
+                <p class="no-indent">Então vamos fechar o círculo com o assunto final deste capítulo. Vargram: o homem que se tornaria a Sombra de um Empyreano. Mas de qual Empyreano ele está tentando se tornar a Sombra?</p>
+
+                <p>Nunca nos é dita a resposta diretamente, mas acredito que a Empyreana que ele está buscando é a Rainha do Globo Ocular. Não apenas ela é a única Empyreana desaparecida, mas o próprio Vargram empunha a Espada Grande do Deicida. Esta é a própria espada uma vez empunhada pela Rainha do Globo Ocular, e embora possa ser apenas uma escolha de arma, eu sempre acredito que muito pouco nos jogos da FromSoftware é feito por acaso.</p>
+
+                <p>Sua busca é infrutífera? Ou é algo que ele pode alcançar?</p>
+
+                <p>Eu acho que Vargram está desempenhando um papel que vimos antes em jogos Souls: o de um guerreiro poderoso que embarca em uma busca infrutífera para alcançar algo que está simplesmente além de seu alcance. Sinto que vemos caminhos semelhantes tomados por Solaire, em sua busca para reivindicar um sol, e por Hawkwood, em sua busca para se tornar um dragão. Ambos são guerreiros poderosos, e ambos encontram fins lamentáveis.</p>
+
+                <p>Ranni deixa claro em seu discurso para nós como as Sombras são criadas. Elas são fornecidas na forma que são – na forma de um vassalo adequado para um Empyreano, e são criadas na sombra deles. Elas são moldadas para serem do jeito que são e, como discuti no início desta seção, acredito que cada Sombra nasce ligada ao seu Empyreano e cada uma é, em essência, parte de seu próprio ser.</p>
+            </div>
+            <div class="footer footer-right">71</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

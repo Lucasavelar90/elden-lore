@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 5: As Cidades Eternas - Páginas 130 e 131</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+
+        /* Conteúdo Texto */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        
+        em { font-style: italic; }
+
+        /* Títulos de Subseção */
+        h2.subsection-title {
+            font-family: 'Cinzel', serif;
+            color: #8abeb4;
+            font-size: 1.2rem;
+            text-align: center;
+            margin: 25px 0 15px 0;
+            line-height: 1.2;
+            break-inside: avoid;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        /* Citações de Itens */
+        .item-quote {
+            font-style: italic;
+            margin: 15px 0 5px 0;
+            text-indent: 0;
+            font-size: 0.95em;
+        }
+
+        .quote-source {
+            display: block;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Citação Verde Grande (Pull Quote) */
+        .pull-quote-green {
+            color: #8abeb4;
+            font-size: 1.35rem;
+            line-height: 1.3;
+            margin: 0 0 25px 0;
+            text-indent: 0;
+            text-align: left;
+            break-inside: avoid;
+            font-weight: 400;
+        }
+
+        /* Ilustração na coluna */
+        .column-illustration {
+            width: 100%;
+            display: block;
+            margin: 20px 0;
+            mix-blend-mode: multiply;
+        }
+
+        .img-placeholder-column {
+            width: 100%;
+            height: 350px;
+            background-color: rgba(138, 190, 180, 0.2);
+            border: 1px dashed #8abeb4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #8abeb4;
+            font-size: 0.8rem;
+            margin: 20px 0;
+        }
+
+        /* Rodapé (Número da página) */
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2L4 10h5v12h6V10h5L12 2z"/></svg> 
+                <div class="header-title">As Cidades Eternas</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">monges caem mais abaixo na hierarquia.</p>
+
+                <p>Tudo isso me leva a acreditar que a sociedade Noxiana é um matriarcado. A evidência mais óbvia para isso são as próprias Donzelas da Noite: uma posição exclusivamente feminina que engloba o mais importante poder religioso e político. Suas guardas pessoais também são uma ordem de guerreiras exclusivamente femininas; até as estátuas e gravuras nos baús Nox são todas femininas.</p>
+
+                <img src="nox_night_maiden_art.jpg" alt="Arte Donzela da Noite" class="column-illustration" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="img-placeholder-column" style="display:none;">
+                    [Ilustração Donzela da Noite]<br>Salve como: nox_night_maiden_art.jpg
+                </div>
+
+                <p>Também se deve considerar o fato de que Marika, uma vez parte desta sociedade Numen antes de se tornarem os Nox, também é feminina, e foi a figura escolhida entre o número deles para ser o vaso da Vontade Maior.</p>
+
+                <p>Além disso, podemos considerar o fato de que os Esqueletos Gigantes nos tronos são femininos. (Estes são monumentos importantes que também discutiremos mais tarde.) Finalmente, os principais seres escolhidos pela lua também são femininos: Rennala, Rainha da Lua Cheia e Ranni da Lua Negra, sugerindo que há alguma conexão entre o feminino e a lua. Este é um tema que foi explorado superficialmente nos jogos Souls anteriores, mas é tornado muito mais explícito aqui.</p>
+
+                <p>Então, com uma compreensão básica da composição desta sociedade, vamos agora examinar algumas das extensas e impressionantes inovações dos Nox.</p>
+
+                <h2 class="subsection-title">CIÊNCIA DA<br>NOITE</h2>
+
+                <p>De muitas maneiras, as crenças Noxianas em relação à astrologia, destino e estrelas são muito precursoras das práticas que vemos adotadas pelos Preceptores da família real Cariana. Por exemplo, foram os Nox que desenvolveram a técnica de manipulação do destino, conhecida por nós como marionetaria. Isso mais tarde seria revivido pelos reais Carianos, que vemos claramente usando Marionetes para compensar a falta de números durante seu conflito com Raya Lucaria.</p>
+
+                <p>Aprendemos que esta é uma prática Noxiana a partir da descrição do item Fragmentos de Luz Estelar, que diz:</p>
+
+                <p class="item-quote">“Um item precioso que foi usado uma vez na Cidade Eterna como ingrediente em bebidas intoxicantes.”</p>
+                <span class="quote-source">- Fragmentos de Luz Estelar</span>
+
+                <p>Esta bebida intoxicante é a poção que Seluvis mais tarde prepara para escravizar pessoas como suas Marionetes. Podemos extrapolar que é o destino latente dentro das estrelas que está sendo manipulado para alcançar isso, lendo a descrição do item Luz Estelar Âmbar:</p>
+            </div>
+            
+            <div class="page-number">130</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2L4 10h5v12h6V10h5L12 2z"/></svg> 
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <p class="item-quote">“Se as estrelas comandam nossos destinos, então estrelas de tom âmbar devem comandar os destinos dos deuses. Tal é a crença que inspirou o uso desses fragmentos para preparar uma poção muito especial.”</p>
+                <span class="quote-source">- Luz Estelar Âmbar</span>
+
+                <p>Então, por simples dedução, Fragmentos de Luz Estelar regulares devem comandar o destino de seres comuns, e através de alguma alquimia desconhecida o destino do bebedor torna-se amarrado a quem quer que tenha preparado a poção, tornando-os marionetes em uma corda.</p>
+
+                <p>Apesar disso, parece que cada Marionete retém alguma individualidade, algo de si mesma por dentro, já que, de acordo com Seluvis, controlar diferentes Marionetes parece diferente de pessoa para pessoa:</p>
+
+                <p class="item-quote">“A alma de cada marionete tem sua própria ambição. Você logo saberá, uma vez que possua algumas. E uma vez que as predileções de cada uma sejam conhecidas por você, melhor você será capaz de amá-las.”</p>
+                <span class="quote-source">- Preceptor Seluvis</span>
+
+                <p>No entanto, enquanto Seluvis ataca indivíduos desavisados ou facilmente manipuláveis para sua fonte de Marionetes, na cultura Nox eles realmente não tiveram nenhum problema quando se tratava de obter candidatos frescos.</p>
+
+                <p>A descrição das Marionetes da Donzela da Noite e da Espadachim diz o seguinte:</p>
+
+                <p class="item-quote">“Essas irmãs, membros de uma raça de sangue frio que empunham armas fluidas, tornaram-se marionetes por sua própria vontade.”</p>
+                <span class="quote-source">- Marionetes da Donzela da Noite e da Espadachim</span>
+
+                <p>Então aqui podemos ver que a sociedade Nox é tão fervorosa em suas crenças que os Nox sacrificarão voluntariamente sua própria carne e independência pelo bem maior de seus objetivos. Mas por que fazer isso? O que isso alcança? Bem, se você pensar sobre a maneira como as Marionetes funcionam, essencialmente cria um par de soldados reutilizáveis.</p>
+
+                <p>Marionetes funcionam tendo um corpo sequestrado em outro lugar, e então sendo capazes de invocar um fantasma azul delas a qualquer momento: um fantasma que, quando derrotado, pode simplesmente ser reinvocado repetidamente.</p>
+
+                <div class="pull-quote-green">
+                    Foram os Nox que primeiro desenvolveram a técnica de manipulação do destino, conhecida por nós como marionetaria. Isso mais tarde seria revivido pelos reais Carianos.
+                </div>
+
+                <p>A habilidade Noxiana de alterar alquimicamente o destino dentro das estrelas também é destacada por outra criação deles: o Orvalho Celestial, uma mistura que parece capaz de voltar o destino.</p>
+            </div>
+            
+            <div class="page-number">131</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

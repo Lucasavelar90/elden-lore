@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rule of the Tree & Grace Given - Páginas 114 e 115</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-img { display: block; margin: 0 auto 5px auto; width: 35px; height: 35px; mix-blend-mode: multiply; filter: contrast(1.1); }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+
+        /* Conteúdo Texto */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        
+        em { font-style: italic; }
+
+        /* Citações de Itens */
+        .item-quote {
+            font-style: italic;
+            margin: 15px 0 5px 0;
+            text-indent: 0;
+            font-size: 0.95em;
+        }
+
+        .quote-source {
+            display: block;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Citação Verde Grande (Pull Quote) */
+        .pull-quote-green {
+            color: #8abeb4;
+            font-size: 1.4rem;
+            line-height: 1.3;
+            margin: 10px 0 25px 0;
+            text-indent: 0;
+            text-align: left;
+            break-inside: avoid;
+            font-weight: 400;
+        }
+
+        /* Rodapé (Número da página) */
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                 <img src="fire_giant_icon.jpg" class="header-img" alt="" onerror="this.style.display='none';">
+                 <div class="header-title">O Reinado da Árvore</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Térvore ao longo da história. Por exemplo, ouvimos sobre esta profecia terrível através do encantamento Chama da Captura:</p>
+
+                <p class="item-quote">“Encantamento originário de uma profecia sinistra... A chama da ruína é anátema para a Térvore. Mas os profetas às vezes a vislumbram dentro da fé de qualquer maneira. Infelizmente, quando isso ocorre, sua única recompensa é o banimento.”</p>
+                <span class="quote-source">- Chama da Captura</span>
+
+                <p>Este encantamento descreve a Chama da Ruína como anátema — um termo que significa, quando usado em um contexto religioso ou organizacional, algo denunciado ou considerado abominável. Em outras palavras, sua própria existência era oposta à Térvore, e sua lealdade a outro deus, o Deus Exterior (Fell God), significava que era algo que nunca poderia ser incorporado pela Ordem nascente. De fato, o Medalhão de Rugido descreve os Gigantes de Fogo como inimigos mortais da Térvore e sugere que eles estavam muito provavelmente sempre destinados a lutar pela supremacia das Terras Intermédias.</p>
+
+                <p>Nesta fase, está claro que Marika acreditava plenamente na missão da Térvore. Ela era forte em convicção e totalmente sem misericórdia para com seus inimigos:</p>
+
+                <p class="item-quote">“Nas próprias palavras de Marika. Ouçam, bravos guerreiros. Ouça, meu senhor Godfrey. Nós elogiamos seus feitos. A orientação entregou vocês através da provação ao lugar onde estão. Passem os gigantes pela espada e confinem a chama no topo do monte. Que uma nova época comece. Uma época brilhando com vida.”</p>
+
+                <p>Empunhe o Elden Ring, pela Era da Térvore!” — Rainha Marika via Melina. Eu acho algo de interesse particular o fato de que Marika usa o termo "brandir" (brandish) em relação ao Elden Ring. A palavra brandir é geralmente usada em referência a uma arma sendo empunhada, sugerindo, portanto, que o Elden Ring foi visto como uma arma nesta batalha.</p>
+
+                <p>Ouvimos muito sobre a Rainha Marika sem realmente saber nada sobre ela em seu tempo como deusa. Vemos alguns poderes diretamente do Elden Ring, através da Elden Beast, Radagon e os Avatares da Térvore. Considerando o imenso poder que Marika teria empunhado nesta época, suspeito que dominar o poder do Elden Ring é algo que provavelmente nem fomos feitos para compreender. Independentemente disso, com Godfrey, os Cavaleiros do Crisol, a traição dos Trolls e os Zamor, Marika inclinou a balança desta guerra seriamente a seu favor.</p>
+
+                <p>A maneira como ela lida com o último membro sobrevivente desta raça nos diz novamente muito sobre a crueldade de Marika quando se trata de seus inimigos. A lembrança do Gigante de Fogo diz:</p>
+
+                <p class="item-quote">“O Gigante de Fogo é um sobrevivente da Guerra contra os Gigantes. Ao perceber que as chamas de sua forja nunca morreriam, a Rainha Marika o marcou com uma maldição. ‘Ó gigante insignificante, que possas cuidar da tua chama por toda a eternidade.’”</p>
+                <span class="quote-source">- Lembrança do Gigante de Fogo</span>
+            </div>
+            
+            <div class="page-number">114</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                 <img src="grace_given_icon_115.jpg" class="header-img" alt="" onerror="this.style.display='none';">
+                 <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Eu não estou julgando Marika por ser implacável — guerra é guerra. Eu admiro Marika grandemente e simpatizo com a posição difícil em que ela estava. Independentemente, objetivamente, seu tratamento do último gigante é calculado. Percebendo que não havia como abafar a Chama da Ruína completamente, não havia benefício em matar o último gigante. Na verdade, como aprendemos com Queime, Ó Chama!, matá-lo teria sido uma misericórdia, pois o libertaria de seu dever interminável como guardião da chama. Em vez disso, Marika usou essa maldição para seu benefício, condenando o último gigante a uma vida de dever solitário cuidando da chama e, em um sentido prático, servindo como um guarda poderoso, um obstáculo para qualquer um que tentasse acessar o poder da chama.</p>
+
+                <p>A guerra com os Gigantes de Fogo teria um efeito duradouro e indelével na cultura da Térvore, especialmente no que diz respeito à sua percepção do fogo. Isso é algo que aprendemos através do Aromático de Faísca:</p>
+
+                <p class="item-quote">“Arte dos perfumistas que lutaram no Estilhaçamento. Criável com um frasco de perfume... Embora o fogo fosse proibido para aqueles que serviam à Térvore, esta regra foi esquecida à medida que a guerra se arrastava.”</p>
+                <span class="quote-source">- Aromático de Faísca</span>
+
+                <p>O medo da chama, conjurado pelo conflito com os gigantes e o medo de sua Chama da Ruína, se integraria à adoração da Térvore como uma ferramenta proibida. A queima da Térvore se tornaria, é claro, o primeiro pecado cardinal da fé.</p>
+
+                <div class="pull-quote-green">
+                    A Rainha Marika havia derrotado os gigantes. Como contado pelo Monumento da Espada encontrado nos topos das montanhas, isso marcou o início da Era da Térvore.
+                </div>
+
+                <p class="no-indent">Independentemente disso, a carismática e poderosa Rainha Marika havia derrotado os gigantes. E, como contado pelo Monumento da Espada encontrado nos topos das montanhas, isso marcou o início da Era da Térvore. Através de Marika, a Vontade Maior estabeleceu uma base poderosa no plano mortal e logo as Terras Intermédias seriam dominadas pela luz imponente da Térvore. A primeira igreja de Marika seria estabelecida no local da maior vitória da Térvore e, com o tempo, muitas igrejas para o novo deus seriam erguidas.</p>
+
+                <p>Como uma deusa com um lorde humano por seu marido, Marika teria a primeira</p>
+            </div>
+            
+            <div class="page-number">115</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

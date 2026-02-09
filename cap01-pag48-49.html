@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grace Given - Páginas 48 e 49</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0; /* Páginas coladas */
+            max-width: 1100px; /* Largura total do livro aberto */
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        /* Estilo base da página */
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* PÁGINA ESQUERDA (TEXTO) */
+        .page-left {
+            padding: 50px 45px;
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%); /* Sombra da dobra à direita */
+        }
+
+        /* PÁGINA DIREITA (ARTE) */
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background-color: #fcfbf7;
+            padding: 0; /* Sem margem para a imagem cobrir tudo */
+            overflow: hidden; /* Corta o que passar do limite */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* HEADER */
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header-icon {
+            display: block;
+            margin: 0 auto 10px auto;
+            width: 25px;
+            fill: #a3905e;
+        }
+
+        .header-title {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #a3905e;
+            font-weight: 600;
+        }
+
+        /* CONTEÚDO DE TEXTO */
+        .content {
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 14px;
+            line-height: 1.5;
+            text-align: justify;
+            orphans: 3;
+            widows: 3;
+        }
+
+        p { margin-bottom: 12px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+
+        /* CITAÇÕES */
+        .quote-box {
+            margin: 15px 0;
+            break-inside: avoid;
+            padding: 0 5px;
+        }
+
+        .quote-text {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #333;
+            line-height: 1.4;
+            text-indent: 0;
+        }
+
+        .quote-author {
+            display: block;
+            font-style: normal;
+            font-size: 0.8rem;
+            color: #777;
+            text-align: right;
+            margin-top: 4px;
+            text-transform: italic;
+            letter-spacing: 0.5px;
+        }
+
+        /* RODAPÉ */
+        .footer {
+            margin-top: auto;
+            padding-top: 20px;
+            font-size: 0.9rem;
+            color: #a3905e;
+            font-weight: 600;
+            font-family: serif;
+            border-top: 1px solid rgba(163, 144, 94, 0.3);
+        }
+
+        .footer-left { text-align: left; }
+        
+        /* ESTILO DA IMAGEM NA PÁGINA DIREITA */
+        .full-page-art {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Faz a imagem preencher todo o espaço sem distorcer */
+            display: block;
+        }
+
+        /* Placeholder caso não tenha imagem */
+        .art-placeholder {
+            width: 100%;
+            height: 100%;
+            background-color: #222;
+            color: #555;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        .art-placeholder span {
+            font-size: 1.5rem;
+            color: #a3905e;
+            border: 1px solid #a3905e;
+            padding: 20px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        .art-instruction {
+            margin-top: 10px;
+            font-size: 0.8rem;
+            color: #888;
+            font-family: sans-serif;
+            max-width: 80%;
+        }
+
+        /* RESPONSIVIDADE */
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: 800px; }
+            .page-right { min-height: 600px; } /* Altura menor para a imagem no celular */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24">
+                    <path d="M12 2l-2 4h-4l-2 4v6l4 4h8l4-4v-6l-2-4h-4z M8 10h2v2h-2z M14 10h2v2h-2z" opacity="0.8"/>
+                </svg>
+                <div class="header-title">O Tempo Antes da Térvore</div>
+            </div>
+
+            <div class="content">
+                <div class="quote-box" style="margin-top: 0;">
+                    <p class="quote-text">"As feras, com olhos e ouvidos cobertos, representam um juramento: 'Não ver nada, não ouvir nada, não duvidar de nada, e seguir em frente, ao longo do caminho cravado em pedra.'"</p>
+                    <span class="quote-author">— Elmo do Campeão das Feras</span>
+                </div>
+
+                <p>Isso pode estar aludindo ao mantra de "não veja o mal, não fale o mal, não ouça o mal" ou uma cegueira intencional para tudo fora do seu objetivo imediato.</p>
+
+                <p>Então talvez haja menos contradição do que se poderia acreditar inicialmente. Sim, há uma sabedoria nas feras, mas tematicamente ela ainda se conecta com o que sabemos de seus comportamentos mais básicos. É uma sabedoria direta que te coloca em um único caminho, mas te cega para os mistérios maiores e questões da vida e de suas ações.</p>
+
+                <p>Independentemente do que signifique, ou como aconteceu, o advento da inteligência mudou claramente os Homens-Fera para sempre. Eles deixaram de lado o poder selvagem e tiveram que aceitar sua inteligência. E com essa ideia em mente, quero revisitar as palavras de <i>Vitalidade Bestial</i> mais uma vez.</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Tendo ganhado inteligência, as feras devem ter sentido como sua selvageria escapava à medida que a civilização se estabelecia."</p>
+                    <span class="quote-author">— Vitalidade Bestial</span>
+                </div>
+
+                <p>A frase aqui me sugere uma espécie de pânico, como se as feras pudessem sentir a si mesmas sendo despojadas de suas verdadeiras naturezas em tempo real. E não é de admirar. Elas são deixadas quase nuas, indefesas e recentemente conscientes do mundo e deste fato.</p>
+
+                <p>Com isso em mente, Lokey diria o seguinte sobre a perda da selvageria inata das feras:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Vemos a ideia de que, à medida que desenvolvem uma cultura/religião, eles também veem suas qualidades inatas como feras selvagens (cura natural superior) declinarem agora que podem contar com cidades e ferramentas para proteção... Uma espécie de troca. Quando você tem apenas a si mesmo, seu corpo se adapta ao desafio. Mas quando você tem todos esses complementos para recorrer, seu corpo relaxa. E lentamente evoluímos para ser quase dependentes desses apetrechos. Até que eles sejam arrancados, então o instinto assume e voltamos aos velhos hábitos. Como os homens-fera que caíram de Farum Azula desmoronando e agora se escondem em cavernas liderando matilhas de lobos."</p>
+                    <span class="quote-author">— Lokey, autor do Abyssal Archive</span>
+                </div>
+
+                <p>Esta é uma nuance muito perspicaz que eu não tinha percebido. Em essência, os Homens-Fera construíram uma civilização não porque podiam, mas porque precisavam para sobreviver. Humanos modernos são extremamente frágeis comparados a alguns dos predadores mais poderosos que existem na natureza. Mas porque temos muros, ferramentas e armas, somos capazes de olhar além da nossa falta de força animal.</p>
+                
+                <p>Da mesma forma em Elden Ring, temos os Homens-Fera que sentiram sua selvageria desaparecer – e assim perderam seu poder animalesco, fúria e violência. E então nós os vemos construir muros, armas e escudos. E da mesma forma, quando vemos que Gurranq tem sua selvageria...</p>
+            </div>
+
+            <div class="footer footer-left">48</div>
+        </div>
+
+        <div class="page page-right">
+            <img src="dragao.jpg" alt="Arte de Dragão com Raios Vermelhos" class="full-page-art" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            
+            <div class="art-placeholder" style="display:none;">
+                <span>Arte do Dragão</span>
+                <p class="art-instruction">Para ver a imagem, salve a foto do dragão na mesma pasta com o nome <b>dragao.jpg</b></p>
+            </div>
+            
+            <div style="position: absolute; bottom: 20px; right: 20px; color: rgba(255,255,255,0.7); font-weight: bold;">49</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 9: As Guerras de Unificação da Térvore - Páginas 224 e 225</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho Padrão */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+
+        /* Conteúdo Texto */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        
+        em { font-style: italic; }
+
+        /* Citações de Itens */
+        .item-quote {
+            font-style: italic;
+            margin: 15px 0 5px 0;
+            text-indent: 0;
+            font-size: 0.95em;
+        }
+
+        .quote-source {
+            display: block;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Rodapé */
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><circle cx="12" cy="12" r="3"/></svg> 
+                <div class="header-title">As Guerras de Unificação da Térvore</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">mentalidade de "a força faz o direito". É um tropo clássico usado para exibir uma cultura bárbara, e nos olhos de Loux uma coroa é garantida pela força, e força sozinha.</p>
+
+                <p>Godfrey, entretanto, é um símbolo: Um símbolo de uma nova era de civilização, ordem e senhoria controlada. O nome de Godfrey significa até "paz celestial", um indicador claro do que ele representa. Isso está em forte oposição a Hoarah Loux, que estava possuído por uma sede de sangue incessante, e era um guerreiro de raiva e poder inigualáveis – acoplado a uma distinta falta de restrição.</p>
+
+                <p>Temos um vislumbre deste homem no segundo estágio de sua luta conosco, quando ele libera seu poder de abalar a terra com suas próprias mãos. E obtemos mais evidências do que este senhor da guerra bárbaro representava através da Bandana de Campeão, que descreve a cultura "badland", uma tribo que ele estabeleceu após seu banimento:</p>
+
+                <p class="item-quote">“Bandana reservada para os mais bravos das terras baldias. Prova de que o usuário massacrou incontáveis inimigos. Seguindo o exemplo de seu chefe Hoarah Loux, os bravos guerreiros das terras baldias evitam o excesso de adornos.”</p>
+                <span class="quote-source">- Bandana de Campeão</span>
+
+                <p>Tudo isso fundamenta Hoarah Loux na era com a qual ele está mais associado, a do Crisol. É um período de guerra, vitalidade bestial e competição, e está muito longe da civilizada Térvore e das Eras da Ordem Dourada. Então vamos fazer uma rápida avaliação da era para entender melhor Hoarah Loux.</p>
+
+                <p>Conhecemos a natureza da Era do Crisol graças às descrições dela. Por exemplo, as descrições da Escama do Crisol, Pena do Crisol e Talismã do Nó do Crisol leem:</p>
+
+                <p class="item-quote">“Um vestígio do crisol da vida primordial. Nascido parcialmente da involução, foi considerado um significador do divino em tempos antigos, mas agora é cada vez mais desdenhado como uma impureza à medida que a civilização avançou.”</p>
+                <span class="quote-source">- Talismã de Escama do Crisol</span>
+
+                <p>Isso liga o Crisol aos Misbegotten e aos Omen, dado que o Talismã do Nó é deixado por um Omenkiller e visualmente representa os chifres nodosos que cobrem seus corpos.</p>
+
+                <p>De fato, tanto os Misbegotten quanto os Omen são exemplos de vida transbordante, quase cancerosa. Aqui estão seres com crescimentos vestigiais selvagens que não são o resultado de design evolutivo cuidadoso, mas parecem ser representações de algo selvagem e descontrolado.</p>
+
+                <p>Isso é ainda mais enfatizado pela descrição dos Aspectos do Crisol:</p>
+
+                <p class="item-quote">“Esta é uma manifestação das energias vitais primais da Térvore – um aspecto do crisol primordial, onde toda a vida foi uma vez misturada.”</p>
+                <span class="quote-source">- Aspectos do Crisol: Chifres</span>
+            </div>
+            
+            <div class="page-number">224</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2L4 10h5v12h6V10h5L12 2z"/></svg> 
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Isso está pintando muito claramente a imagem de uma era de vida caótica excessiva. Este caos se estende às representações artísticas do Crisol vistas na Árvore de Siluria, onde aparece como uma árvore irregular. Não é de admirar que tudo isso venha sob esse termo "Crisol" em si, significando não apenas um vaso no qual as coisas são misturadas, mas um lugar de competição desesperada, governado pela sobrevivência do mais apto.</p>
+
+                <p>Novamente, a Era do Crisol em si era uma era de bestas, violência, vida, energia, caos e barbárie, e de muitas maneiras estes são todos encapsulados por uma simples peça de iconografia: o leão rampante de Godfrey.</p>
+
+                <p>Isso se torna o sigilo da Linhagem Dourada como vemos na armadura dos homens de Godrick, visível em Stormveil e na Mansão Fortificada. Esses locais estão associados ao início do governo de Godfrey, e para entender este período específico, temos que tentar entender a besta que inspirou essa imagem.</p>
+
+                <p>E sabemos a identidade desta besta graças ao Sobretudo da Árvore e da Besta usado pelos homens de Godrick:</p>
+
+                <p class="item-quote">“O sobretudo retrata a distante Térvore e o regente das bestas, um emblema da linhagem dourada. Ambos são símbolos de glória agora passada.”</p>
+                <span class="quote-source">- Sobretudo da Árvore e da Besta</span>
+
+                <p>O Regente das Bestas também é conhecido como Serosh, um fato confirmado para nós através da descrição do item Ícone de Godfrey. "Regente" em seu título denota sua posição submissa e consultiva a Godfrey, mas esta criatura foi uma vez um lorde por direito próprio, algo que aprendemos através do Grande Martelo da Garra de Besta:</p>
+
+                <p class="item-quote">“As unhas pretas saindo da pele dourada dizem representar Serosh, Lorde das Bestas, que foi se tornar o Regente do Rei Godfrey.”</p>
+                <span class="quote-source">- Grande Martelo da Garra de Besta</span>
+
+                <p>Este é um trecho fascinante de lore. Sugere que Serosh foi uma vez o senhor de seu próprio povo, as bestas. Sabemos de nomes como a Espada Grande da Lâmina Enxertada e a declaração de força de Godfrey condizente com uma coroa, bem como sua lista de vitórias em seu conjunto de armadura, que Godfrey foi um grande conquistador que se ergueu desta era de violência como um vencedor sobre muitos clãs e governantes. Como tal, faria sentido que a transição de Serosh de lorde para regente de Godfrey também fosse o resultado de Godfrey derrotando a civilização de bestas de Serosh e ligando-os à sua vontade.</p>
+
+                <p>Tenho certeza de que muitos notaram que a iconografia do leão é muito prevalente tanto em Farum Azula quanto no Santuário Bestial. Este, claro, tem que ser Serosh, Lorde das Bestas. A importância potencial de Serosh para a sociedade das bestas está ligada à ideia de sua inteligência. Já olhamos para a descrição do item Arremesso Bestial, que fala dos Homens-Fera ganhando inteligência pela primeira vez à medida que evoluíam de bestas selvagens para uma sociedade que começou a usar ferramentas de pedra.</p>
+            </div>
+            
+            <div class="page-number">225</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Tempo Antes da Térvore - Páginas 44 e 45</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+
+        /* Conteúdo Texto */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        
+        em { font-style: italic; }
+
+        /* Citações de Itens */
+        .item-quote {
+            font-style: italic;
+            margin: 15px 0 5px 0;
+            text-indent: 0;
+            font-size: 0.95em;
+        }
+
+        .quote-source {
+            display: block;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Citação Verde Grande (Pull Quote) */
+        .pull-quote-green {
+            color: #8abeb4;
+            font-size: 1.35rem;
+            line-height: 1.3;
+            margin: 0 0 25px 0;
+            text-indent: 0;
+            text-align: left;
+            break-inside: avoid;
+            font-weight: 400;
+        }
+
+        /* Rodapé (Número da página) */
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><circle cx="12" cy="12" r="3"/></svg> 
+                <div class="header-title">O Tempo Antes da Térvore</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">...com um desses monólitos na sequência de abertura do filme, um deles, o Observador da Lua, aprende a empunhar a primeira arma – um osso que é usado como porrete para expulsar um grupo rival de um poço de água. O filme então avança para mostrar a raça humana com uma base na lua e um hotel orbital – implicando fortemente que essa influência alienígena foi responsável por conceder à humanidade os primeiros elementos cruciais da inteligência.</p>
+
+                <p>Agora, embora eu não esteja sugerindo que os Homens-Fera de <em>Elden Ring</em> encontraram um monólito, acredito que a redação na Cinquedea sugere da mesma forma que a inteligência foi semeada de uma maneira que resultaria nos Homens-Fera. E acho que isso se liga à redação de Vitalidade Bestial, que novamente sugere que as bestas estavam cientes dessa transição de mera besta para forma de vida inteligente, algo que não faria sentido se tudo isso tivesse sido um processo evolutivo gradual.</p>
+
+                <p>Isso agora nos leva à grande questão. Se a inteligência foi concedida aos Homens-Fera, quais forças foram responsáveis por isso?</p>
+
+                <p>É aqui que devemos entrar no território da especulação. Para mim, os culpados mais prováveis por esse ato foram os senhores do dia, os guardiões anteriores da Ordem e do Anel Prístino: os dragões.</p>
+
+                <p>É claro que havia uma espécie de relacionamento formado entre os dragões e as bestas, conforme indicado pelas estátuas encontradas por toda Farum Azula, e que era de servidão. Como já discutimos, Placidusax era Lorde Prístino e, ao lado de seu deus, eles governaram essa era.</p>
+
+                <p>Há uma gravura encontrada na arena de Maliketh que exibe o Anel Prístino, mas com muito mais anéis e uma aparência geral feroz, sugerindo que a civilização dos dragões já foi a capital da Ordem, assim como Leyndell se tornaria mais tarde.</p>
+
+                <p>Portanto, faria sentido se a inteligência fosse concedida às bestas pelo deus dragão ou Lorde Prístino, ou pelo menos pelo Anel Prístino. Como já observamos, a ideia de inteligência está intimamente ligada ao clero dos Homens-Fera, através do design da Cinquedea. Da mesma forma, vemos estátuas do que parecem ser Clérigos Homens-Fera adorando dragões. Faria sentido, então, se o clero bestial e a religião fossem construídos em torno do advento de sua inteligência como um todo? Isso daria sentido à celebratória Cinquedea e à adoração dos Homens-Fera aos mestres dragões, a quem eles atribuem a concessão de sua inteligência.</p>
+
+                <p>Então, sim, isso é especulação, mas acredito que foi muito provavelmente o deus consorte de Placidusax, o então portador do Anel Prístino, quem concedeu inteligência às bestas. Se não eles, então é mais ou menos certo para mim que a Vontade Maior e o Anel Prístino são, em última análise, responsáveis por isso. E, dado que os dragões eram os vasos escolhidos por ambos na época, eles ainda teriam recebido o crédito por este evento.</p>
+            </div>
+            
+            <div class="page-number">44</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2L4 10h5v12h6V10h5L12 2z"/></svg> 
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <div class="pull-quote-green">
+                    É claro que havia uma espécie de relacionamento formado entre os dragões e as bestas, conforme indicado pelas estátuas encontradas por toda Farum Azula, e era de servidão.
+                </div>
+
+                <p class="no-indent">Há outra questão aqui. Como discutimos anteriormente, há algumas evidências para mostrar que certos Homens-Fera estavam revertendo à sua natureza anterior. O que poderia estar causando isso?</p>
+
+                <p>Encontramos uma referência a esse ressurgimento da natureza bestial na lore de Gurranq, vista na descrição da encantação Garra de Besta, que diz:</p>
+
+                <p class="item-quote">“Esta encantação representa a fúria de Gurranq, sua natureza bestial retornando, tanto quanto o faz sua agitação inquieta.”</p>
+                <span class="quote-source">- Garra de Besta</span>
+
+                <p>Há uma sensação aqui de que a verdadeira natureza de Gurranq está retornando, sugerindo que uma força externa foi responsável por sua inteligência. Talvez sua reversão faça sentido se considerarmos que ele é uma Sombra da Rainha Marika, e a Ordem da Rainha Marika foi despedaçada.</p>
+
+                <p>Aqui pode ser útil tirar um momento para discutir rapidamente as Sombras do Empíreo, pois acredito que seja uma ilustração útil da ideia de uma influência externa impondo inteligência a um ser. Ranni, em seu discurso frequentemente citado, nos dá uma breve visão de como uma Besta Sombria (<em>Shadowbound Beast</em>) nasce:</p>
+
+                <p class="item-quote">“Eu fui uma vez uma Empírea. Dos semideuses, apenas eu, Miquella e Malenia poderíamos reivindicar esse título. Cada um de nós foi escolhido pelos nossos próprios Dois Dedos, como candidato para suceder a Rainha Marika, para se tornar o novo deus da era vindoura. Foi quando recebi Blaidd. Na forma de um vassalo feito sob medida para um Empíreo.”</p>
+                <span class="quote-source">- Ranni, a Bruxa</span>
+
+                <p>Isso descreve o processo pelo qual os Empíreos recebem suas Bestas Sombrias, elas mesmas vassalas do poder superior conhecido como Vontade Maior. Portanto, acredito que o poder da Vontade Maior, ou do Anel Prístino, adapta especificamente essas bestas para que sejam capangas úteis para seu Empíreo eleito. Isso nos dá algum precedente para bestas sendo moldadas, adaptadas, por forças externas.</p>
+
+                <p>Em relação aos Homens-Fera, acredito que os vemos revertendo aos seus caminhos bestiais, sem dúvida novamente como resultado do colapso de sua civilização, deus e ordem. E isso sugere um paralelo interessante. Se os dragões são um tanto análogos aos dinossauros, então poderíamos ver a evolução da sociedade dos Homens-Fera como sendo análoga ao homem pré-histórico.</p>
+            </div>
+            
+            <div class="page-number">45</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grace Given - Páginas 54 e 55</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1100px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 50px 45px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; }
+        .header-icon { display: block; margin: 0 auto 10px auto; width: 30px; fill: #a3905e; }
+        .header-title { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #a3905e; font-weight: 600; }
+
+        /* Conteúdo */
+        .content {
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 14px;
+            line-height: 1.5;
+            text-align: justify;
+            orphans: 3;
+            widows: 3;
+            flex-grow: 1;
+        }
+
+        p { margin-bottom: 12px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+
+        /* Citações em caixas */
+        .quote-box {
+            margin: 15px 0;
+            break-inside: avoid;
+            padding: 0 5px;
+        }
+
+        .quote-text {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #333;
+            line-height: 1.4;
+            text-indent: 0;
+        }
+
+        .quote-author {
+            display: block;
+            font-style: normal;
+            font-size: 0.8rem;
+            color: #777;
+            text-align: right;
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Destaque Verde Grande (Pull Quote) */
+        .pull-quote-green {
+            color: #92b3a5; /* Verde Água */
+            font-size: 1.5rem;
+            line-height: 1.2;
+            margin: 30px 0;
+            text-indent: 0;
+            text-align: left;
+            break-inside: avoid; /* Evita quebrar no meio da coluna */
+            font-weight: 400;
+        }
+
+        /* Imagem Pequena no Texto (Falcão) */
+        .inline-img-container {
+            width: 100%;
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            break-inside: avoid;
+        }
+        
+        .inline-img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            mix-blend-mode: multiply; /* Faz o fundo branco da imagem sumir se houver */
+        }
+
+        /* Placeholder para imagem */
+        .img-placeholder {
+            width: 100%;
+            height: 150px;
+            border: 1px dashed #92b3a5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #92b3a5;
+            text-align: center;
+            font-size: 0.8rem;
+            background-color: rgba(146, 179, 165, 0.1);
+        }
+
+        /* Rodapé */
+        .footer {
+            margin-top: auto;
+            padding-top: 20px;
+            font-size: 0.9rem;
+            color: #a3905e;
+            font-weight: 600;
+            font-family: serif;
+            border-top: 1px solid rgba(163, 144, 94, 0.3);
+        }
+        .footer-left { text-align: left; }
+        .footer-right { text-align: right; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><circle cx="12" cy="12" r="3" fill="#a3905e"/></svg>
+                <div class="header-title">O Tempo Antes da Térvore</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Os Homens-Fera são guardas escolhidos, o que significa que são guardas de honra a serviço dos dragões.</p>
+                
+                <p>Esta descrição também alude ao fato de que esses Homens-Fera escolhidos empunham armas revestidas de relâmpago, e vemos alguns Homens-Fera em Farum Azula cobrindo suas armas com relâmpago, especificamente o relâmpago vermelho dos dragões. Relâmpago, em outras palavras, parece ser um elemento básico daqueles conectados a esta sociedade, dos dragões aos falcões e aos próprios Homens-Fera.</p>
+
+                <div class="inline-img-container">
+                    <img src="falcao_verde.jpg" alt="Ilustração de Falcão Verde" class="inline-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="img-placeholder" style="display:none;">
+                        <span>Coloque a imagem do falcão aqui<br>(falcao_verde.jpg)</span>
+                    </div>
+                </div>
+
+                <p>Eu argumentaria que o comando sobre o relâmpago se origina do próprio Placidusax, não apenas porque seu comando sobre o relâmpago vai além do de qualquer outro dragão (ele é capaz de assumir a forma de uma nuvem de tempestade literal), mas também porque a Lâmina Rochosa do Rei Dragão descreve seu relâmpago como "primordial".</p>
+
+                <p>Quando Placidusax usa seu ataque "nuclear", nós o vemos erguer uma estaca de relâmpago antes de cravá-la no chão. O interessante aqui é que esta estaca tem exatamente a mesma forma que o Raio de Gransax, como se esta arma que canaliza relâmpagos fosse modelada no controle inato de Placidusax sobre a tempestade.</p>
+
+                <p>Meu ponto ao destacar essa conexão entre dragões e a tempestade é que eu quero que você tenha isso em mente quando falarmos da próxima espécie de fera que compõe esta sociedade: os falcões.</p>
+
+                <p>Embora a maioria das pessoas esteja familiarizada com os Falcões de Guerra enxertados de Stormveil, nós realmente encontramos essas criaturas em uma forma mais natural em Farum Azula, vivendo em harmonia com os dragões lá. É a primeira evidência de que os Falcões da Tempestade (Stormhawks) se originam desta sociedade bestial de dragões. Para reforçar o fato de que esses pássaros são muito parte desta sociedade, podemos encontrar iconografia de pássaros nas paredes de Farum Azula e adornando o Selo da Marca de Garra, um selo do clero dos Homens-Fera.</p>
+
+                <p>Também sabemos que os falcões estão intimamente alinhados com a tempestade, como lê a Pena de Falcão da Tempestade:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Uma pena de um falcão que viveu como um só com as tempestades."</p>
+                    <span class="quote-author">— Pena de Falcão da Tempestade</span>
+                </div>
+
+                <p>Isso também parece estar em linha com o que vemos da própria Stormveil, um lugar onde as tempestades também rugem.</p>
+
+                <p>Os Falcões da Tempestade também têm uma forte presença no monte de Stormveil, uma relação descrita pela descrição do Rei dos Falcões da Tempestade, que diz:</p>
+            </div>
+            <div class="footer footer-left">54</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <div class="quote-box" style="margin-top:0;">
+                    <p class="quote-text">"Cinzas de um falcão reverenciado por todos os outros como soberano nos dias em que os ventos de Stormveil ainda rugiam como nenhum outro. Este antigo monarca é orgulhoso, no entanto, recusando-se a responder ao chamado de qualquer um."</p>
+                    <span class="quote-author">— Rei dos Falcões da Tempestade</span>
+                </div>
+
+                <p>Os dois lugares em que encontramos Falcões da Tempestade estão muito alinhados com as tempestades, como poderíamos esperar. Isso novamente sublinha a estreita relação entre falcões e tempestades, uma relação bem ilustrada pelo Machado de Falcão da Tempestade:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Machado de batalha projetado para se assemelhar a um falcão, com suas asas compreendendo a lâmina. Arma de assinatura de guerreiros que se esforçam para permanecer um com a tempestade, apesar de estarem tão longe de seu local de nascimento. Seus corações são orgulhosos e, portanto, facilmente desfeitos."</p>
+                    <span class="quote-author">— Machado de Falcão da Tempestade</span>
+                </div>
+
+                <p>Esta é uma arma forjada em honra desses falcões, e sua habilidade invoca o poder das tempestades e relâmpagos.</p>
+
+                <div class="pull-quote-green">
+                    Embora a maioria das pessoas esteja familiarizada com os Falcões de Guerra enxertados de Stormveil, nós realmente encontramos essas criaturas em uma forma mais natural em Farum Azula.
+                </div>
+
+                <p>Como resultado de tudo isso, suspeito que os Falcões da Tempestade não estão apenas alinhados com os dragões, mas sim que são descendentes deles. Acredito que isso explicaria por que os falcões estão tão inatamente ligados às tempestades.</p>
+
+                <p>Por que acredito nisso? Novamente entramos no território da especulação, mas assim como suspeitei que os dragões são análogos aos nossos dinossauros do mundo real, acredito que faria sentido se seus descendentes estivessem conectados aos nossos pássaros, que evoluíram dos dinossauros alados. E se os falcões de fato descendem dos dragões, isso explicaria por que as duas espécies compartilham a mesma conexão com a tempestade.</p>
+
+                <p>Agora, os exemplos do Rei dos Falcões da Tempestade e Serosh são muito interessantes aqui, porque Serosh é descrito como um "Lorde das Feras" e o Rei dos Falcões da Tempestade era considerado um monarca por todos os outros falcões. Embora esteja claro que os dragões eram a força dominante – e quase deuses – da era inicial dos Homens-Fera, isso não significa que não houvesse lordes entre as próprias bestas. Serosh e o Rei dos Falcões da Tempestade parecem ser líderes por direito próprio.</p>
+
+                <p>Então, por qualquer razão que a civilização dos dragões tenha caído, de certa forma ela viveu através da iconografia e ideais que foram adotados por Godfrey e suas conquistas. Como eu disse anteriormente, Farum Azula claramente existiu no solo nas Terras Intermédias.</p>
+            </div>
+            <div class="footer footer-right">55</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

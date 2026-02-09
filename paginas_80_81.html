@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grace Given - Páginas 80 e 81</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1100px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 50px 45px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; }
+        .header-icon { display: block; margin: 0 auto 10px auto; width: 25px; fill: #a3905e; }
+        .header-title { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #a3905e; font-weight: 600; }
+
+        /* Conteúdo */
+        .content {
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 14px;
+            line-height: 1.5;
+            text-align: justify;
+            orphans: 3;
+            widows: 3;
+            flex-grow: 1;
+        }
+
+        p { margin-bottom: 12px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+
+        /* Citações em caixas */
+        .quote-box {
+            margin: 15px 0;
+            break-inside: avoid;
+            padding: 0 5px;
+        }
+
+        .quote-text {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #333;
+            line-height: 1.4;
+            text-indent: 0;
+        }
+
+        .quote-author {
+            display: block;
+            font-style: normal;
+            font-size: 0.8rem;
+            color: #777;
+            text-align: right;
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Destaque Verde Grande (Pull Quote) */
+        .pull-quote-green {
+            color: #92b3a5;
+            font-size: 1.4rem;
+            line-height: 1.3;
+            margin: 25px 0;
+            text-indent: 0;
+            text-align: left;
+            break-inside: avoid;
+            font-weight: 400;
+        }
+
+        /* Rodapé */
+        .footer {
+            margin-top: auto;
+            padding-top: 20px;
+            font-size: 0.9rem;
+            color: #a3905e;
+            font-weight: 600;
+            font-family: serif;
+            border-top: 1px solid rgba(163, 144, 94, 0.3);
+        }
+        .footer-left { text-align: left; }
+        .footer-right { text-align: right; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24"><path d="M11 2h2v14h-2z M7 6h10v2H7z M12 16l-1 1-1 4h4l-1-4-1-1z"/></svg>
+                <div class="header-title">O Celestial</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Quer os Gigantes tenham em algum ponto entrado voluntariamente neste contrato ou se foram sempre amaldiçoados desta forma, o resultado é o mesmo.</p>
+
+                <p>Eles são servos da chama para sempre, devem vigiá-la não importa o que aconteça – um fato ilustrado pelo destino do último gigante que, mesmo depois de derrotado e deixado como o último de sua espécie, está condenado a cuidar das brasas fumegantes da chama pela eternidade.</p>
+
+                <p>Enquanto o Deus Caído tem muitas manifestações de seu poder, a Chama Ruinosa da forja parece ser sua ferramenta mais potente e importante. Dado que todo o propósito de sua raça de Gigantes de Fogo é salvaguardar e cuidar desta chama, podemos ver que é o aspecto mais forte do Deus Caído nesta terra. É um testamento ao poder do deus, dado que é a única coisa no reino mortal que conhecemos que representa uma ameaça direta à própria Térvore.</p>
+
+                <p>Outro resultado bastante horrível desta maldição é que os Gigantes de Fogo têm o Deus Caído literalmente impresso em sua fisiologia. Refiro-me ao rosto de um olho só em seus abdomens. Este Deus Caído está inexoravelmente ligado a cada um dos gigantes; algo que aprendemos da Chama do Deus Caído, que diz:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Arghanthy, o guardião chefe da Chama, manteve este encantamento um segredo bem guardado até que fosse roubado por Adan. O Deus Caído ainda espreita dentro dos Gigantes de Fogo."</p>
+                    <span class="quote-author">— Chama do Deus Caído</span>
+                </div>
+
+                <p>Então o Deus Caído existe dentro de cada Gigante de Fogo, sugerindo que é essa própria conexão que os torna o que são. O poder desses gigantes, infundido com o poder de seu deus, é expandido no Medalhão do Rugido:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Nos tempos antigos, os gigantes eram inimigos mortais da Térvore. Seus rugidos estrondosos desolavam a natureza, desencadeavam avalanches e açoitavam tempestades de chama."</p>
+                    <span class="quote-author">— Medalhão do Rugido</span>
+                </div>
+
+                <p>Esses gigantes podiam açoitar "tempestades de chama" e em nossa batalha com um podemos ver como isso é verdade, pois o último Gigante de Fogo é capaz de liberar as chamas do Deus Caído sobre seu inimigo e causar destruição insondável no campo de batalha, quando o olho desperta no segundo estágio desta luta.</p>
+
+                <p>Para mim é claro que o rosto no estômago é um aspecto do Deus Caído manifestado, mostrando que o Deus Caído realmente existe dentro de cada um e de todos os Gigantes de Fogo.</p>
+
+                <p>Quando ele desperta – como faz na luta do gigante conosco – o deus está ativamente presente, um fato marcado pela abertura de seu olho. Incidentalmente, eu hipotetizaria que é por isso que os Trolls têm um buraco enorme em suas regiões estomacais, pois eles repudiariam sua lealdade ao Deus Caído. Mas mais sobre isso depois.</p>
+
+                <p>Sabemos que este rosto de um olho só é a face de seu Deus Caído, pois vemos seu semblante representado em muitas fontes.</p>
+            </div>
+            <div class="footer footer-left">80</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2L4 5v6c0 5.5 3.5 10.5 8 12 4.5-1.5 8-6.5 8-12V5l-8-3zm0 18c-3.3-1.1-6-4.7-6-8V6.3l6-2.2 6 2.2V12c0 3.3-2.7 6.9-6 8z"/></svg>
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Nós o vemos no Escudo de Um Olho, no Selo do Gigante e na Armadura de Monge do Fogo. Olhando para a descrição do Escudo de Um Olho, podemos aprender mais sobre esta divindade enigmática:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Escudo enganoso feito de pedra branca retratando um deus deformado de um olho só. O cano de uma arma de fogo sai pela boca aberta. Uma vez adorada pelos gigantes, acredita-se que esta divindade maligna foi morta pela Rainha Marika."</p>
+                    <span class="quote-author">— Escudo de Um Olho</span>
+                </div>
+
+                <p>A palavra "maligna" é usada aqui em referência ao Deus Caído, e é possível que este seja mais um exemplo de um narrador não confiável; isto é, somos levados a acreditar que este deus é mau, como se fosse escrito por um membro fiel da fé da Térvore, e eu argumentaria que não há verdadeiras forças más ou boas em Elden Ring.</p>
+
+                <div class="pull-quote-green">
+                    Sabemos que este rosto de um olho só é a face de seu Deus Caído, pois vemos seu semblante representado em muitas fontes. Nós o vemos no Escudo de Um Olho, no Selo do Gigante e na Armadura de Monge do Fogo.
+                </div>
+
+                <p>Dito isso, eu acredito que, olhando para as mitologias do mundo real que muito provavelmente inspiraram o Deus Caído, podemos ver que há alguma verdade na implicação de que este é um deus da destruição.</p>
+
+                <p>Há um número de seres em mitologias do mundo real que têm um olho e também são retratados como "maus". Por exemplo, há Balor, Senhor dos Fomorianos da mitologia irlandesa e Likho na mitologia eslava. Há, claro, o ciclope da mitologia grega e o Ojáncanu da mitologia cantábrica.</p>
+
+                <p>Eu acho que é claro que o Deus Caído e seus gigantes extraem pesadamente dessas tradições, com a maioria dos mitos do mundo real desses tipos de seres extraindo dos ciclopes da mitologia grega. Balor, o ciclope e Ojáncanu são todos seres malignos de grande tamanho e poder. Mas eu especificamente penso que a história do Deus Caído foi inspirada por uma combinação de Balor, Senhor dos Fomorianos, e o Ojáncanu.</p>
+
+                <p>Os Ojáncanu eram seres ciclópicos gigantes que eram a encarnação da crueldade e brutalidade, com sua aparência notavelmente parecida com a de um Gigante de Fogo: eles tinham juba vermelha e eram massivos, e até ostentavam um olho só. Balor, o líder dos enormes Fomorianos, dizia-se ter um único olho que, quando aberto, causava destruição incalculável, altamente reminiscente da cena de abertura do olho em nossa batalha com o Gigante de Fogo.</p>
+            </div>
+            <div class="footer footer-right">81</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

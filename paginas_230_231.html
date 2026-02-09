@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 9: As Guerras de Unificação da Térvore - Páginas 230 e 231</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+
+        /* Conteúdo Texto */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+            padding-bottom: 40px;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        
+        em { font-style: italic; }
+
+        /* Citações de Itens */
+        .item-quote {
+            font-style: italic;
+            margin: 15px 0 5px 0;
+            text-indent: 0;
+            font-size: 0.95em;
+        }
+
+        .quote-source {
+            display: block;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Rodapé e Footnotes */
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        .footnote {
+            position: absolute;
+            bottom: 50px;
+            left: 50px;
+            right: 50px;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            font-size: 0.8em;
+            color: #555;
+        }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; padding-bottom: 0; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+            .footnote { position: relative; bottom: auto; margin-top: 30px; left: 0; right: 0; text-align: left; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><circle cx="12" cy="12" r="3"/></svg> 
+                <div class="header-title">As Guerras de Unificação da Térvore</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Ter um conselho de guerreiros, onde todos são considerados iguais em termos de sua voz, seria muito adequado para seus dias anteriores.</p>
+
+                <p>Este é o conceito visto na lenda Arturiana, onde o conselho de Arthur era composto por seus cavaleiros confiáveis e lendários. Quando eles estavam naquela mesa, nenhuma voz era mais valorizada que a outra. Ao provar seu valor em batalha, você ganhava o direito de falar livremente.</p>
+
+                <p>O foco inicial de Godfrey na cultura guerreira é refletido no design da Mansão Fortificada. Em forte contraste com o design opulento da alta Leyndell, a Mansão Fortificada é muito espartana, claramente um posto avançado defensivo funcional⁶. O interior é extremamente básico, com salas dedicadas a armazenamento, forja, armamento e uma câmara do conselho. Pode-se facilmente imaginá-la como a fortaleza de um guerreiro. A evidência arqueológica aqui e em Stormveil conta uma história interessante dessa cultura inicial da mesa redonda também. A primeira coisa a notar é a simbologia usada tanto aqui quanto em Stormveil: o leão rampante.</p>
+
+                <p>Já discutimos a história de Serosh, mas é interessante quando consideramos a libré posterior da Linhagem Dourada, representada por Godrick. Esta libré é equilibrada entre o que agora é considerado os dois símbolos do governo de Godfrey, o leão Serosh e a Térvore. O próprio fato de essas construções usarem apenas a parte do leão desta libré de duas partes mostra que isso foi muito cedo no governo de Godfrey, antes de ele ser associado a qualquer coisa além de Serosh.</p>
+
+                <p>A prevalência não apenas de Armaduras de Cavaleiro Banido e armas novamente faz a conexão com Stormveil. Para mim, é mais uma evidência de que os Cavaleiros Banidos serviram sob Godfrey, quer você acredite que eles sejam guerreiros originais do Senhor da Tempestade ou não. Para mim, esta não é apenas a herança de Godfrey, mas a dos Maculados, de nosso próprio personagem. Os Maculados são zombeteiramente referidos como um povo guerreiro por gente como Margit:</p>
+
+                <p class="item-quote">“Bem, tens uma habilidade razoável. Sangue de guerreiro deve realmente correr em tuas veias, Maculado.”</p>
+                <span class="quote-source">- Margit, o Agouro Caído</span>
+
+                <p>Mais tarde ouvimos que Godfrey não é maculado e banido sozinho; ao contrário, é ele e seus guerreiros. O machado de Godfrey afirma que ele liderou seus parentes maculados para fora das Terras Intermédias, e no discurso de Marika ela deixa claro que aqueles sendo maculados são os guerreiros de Godfrey:</p>
+
+                <p class="item-quote">“Meu Senhor, e teus guerreiros. Eu retiro de cada um de vós a vossa graça. Com teus olhos escurecidos, sereis expulsos das Terras Intermédias. Vós travreis guerra em uma terra distante, onde vivereis, e morrereis.”</p>
+                <span class="quote-source">- Rainha Marika via Melina</span>
+
+                <p>Então, quando estamos olhando para esta mesa redonda inicial e cultura inicial do governo de...</p>
+            </div>
+            
+            <div class="footnote">
+                6 “The secret story behind the Crucible” - The Tarnished Archaeologist
+            </div>
+            <div class="page-number">230</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2L4 10h5v12h6V10h5L12 2z"/></svg> 
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Godfrey, estamos realmente olhando para a herança dos Maculados e sua cultura guerreira original como era antes de seu exílio. Tenha isso em mente quando voltarmos a falar dos Maculados mais tarde.</p>
+
+                <p>Em essência, vejo a Mesa da Graça, Castelo Morne e Stormveil como antigas fortalezas de Hoarah Loux, construídas por ele ou capturadas e modificadas. Eles são todos edifícios funcionais construídos em um tempo de guerreiros, com Stormveil sendo adaptado mais tarde para parecer mais grandioso e cerimonial. As primeiras conquistas de Hoarah Loux foram um produto da época, uma era agressiva de sobrevivência do mais apto que estava alinhada com o que sabemos do Crisol. Com o tempo, ele e seus guerreiros viriam a venerar e ser associados a essa Térvore emergente. O sinal mais antigo disso são seus Cavaleiros do Crisol, que aprendemos estarem associados ao rei guerreiro, através de suas manoplas:</p>
+
+                <p class="item-quote">“Manoplas dos Cavaleiros do Crisol que serviram Godfrey, o primeiro Lorde Prístino.”</p>
+                <span class="quote-source">- Manoplas do Crisol</span>
+
+                <p>Podemos até ver iconografia de árvores aparecendo em certas formas por todo Stormveil e a Mansão Fortificada, e mais importante, as estátuas de jardineiros que acreditamos estar fortemente associadas ao próprio Crisol.</p>
+
+                <p>Minha suposição é que os Cavaleiros Banidos, que eram representativos da era mais antiga das bestas, se tornariam menos importantes e seriam parcialmente usurpados por esses novos Cavaleiros do Crisol, à medida que Godfrey começou a emergir e se tornar mais associado à nova Ordem nascente em torno do Crisol e da Térvore.</p>
+
+                <p>Só podemos especular sobre quando Hoarah Loux se tornou Godfrey e quando ele fez esse voto de se tornar um lorde. Mas eu imaginaria que teria vindo com seu casamento com Marika e sua ascensão a Lorde Prístino – a transformação de um rei guerreiro com seus conselheiros da mesa redonda para uma figura monárquica mais tradicional.</p>
+
+                <p>O <em>Tarnished Archaeologist</em> aponta que essa nuance é ilustrada pela própria Mesa da Graça. Em uma sala vemos o campo de jogo nivelado da mesa redonda, que contrasta fortemente com a pequena câmara fora da mesa redonda, que é essencialmente uma sala do trono para um lorde. Uma representa uma cultura guerreira de vozes iguais, e a outra representa uma monarquia tradicional, o oposto de uma filosofia de mesa redonda e um lugar onde uma voz está muito acima das outras. Portanto, podemos assumir que, mesmo após sua ascensão a Lorde Prístino, as antigas fortalezas de Godfrey continuaram a ser usadas. Dado que há um Trono Prístino tanto em Stormveil quanto na Mansão Fortificada, isso é muito implícito.</p>
+
+                <p>Parece claro que Leyndell foi construída algum tempo depois desses edifícios, devido ao design mais grandioso e ao mais claro...</p>
+            </div>
+            
+            <div class="page-number">231</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

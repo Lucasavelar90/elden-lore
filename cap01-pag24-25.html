@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deuses e o Elden Ring - Páginas 24 e 25</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+
+        /* Conteúdo Texto */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        
+        em { font-style: italic; }
+
+        /* Citações de Itens */
+        .item-quote {
+            font-style: italic;
+            margin: 15px 0 5px 0;
+            text-indent: 0;
+            font-size: 0.95em;
+        }
+
+        .quote-source {
+            display: block;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Citação Verde Grande (Pull Quote) */
+        .pull-quote-green {
+            color: #8abeb4;
+            font-size: 1.35rem;
+            line-height: 1.3;
+            margin: 20px 0;
+            text-indent: 0;
+            text-align: left;
+            break-inside: avoid;
+            font-weight: 400;
+        }
+
+        /* Rodapé (Número da página) */
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><circle cx="12" cy="12" r="3"/></svg> 
+                <div class="header-title">Deuses e o Elden Ring</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">No entanto, acredito que existe uma conexão que precisa ser abordada aqui: a Estrela de Sangue. Essencialmente ligamos a Mãe da Verdade ao sangue e ao derramamento de sangue, e há uma região específica deste mundo que realmente parece definida por essas ideias. Trata-se da Terra de Juncos.</p>
+
+                <p>Essa é a região da qual a classe inicial Samurai herda sua origem, e aprendemos bastante sobre ela a partir da descrição da armadura, que diz:</p>
+
+                <p class="item-quote">“A Terra de Juncos há muito está presa em uma guerra sem sentido, durante a qual permaneceu alienada das culturas vizinhas. Não é de se admirar que toda a nação tenha sucumbido à loucura do derramamento de sangue, assim se diz.”</p>
+                <span class="quote-source">- Elmo da Terra de Juncos</span>
+
+                <p>Acho essa descrição verdadeiramente fascinante. Embora a ideia de uma guerra civil em uma região claramente baseada no Japão medieval seja provavelmente uma referência ao período Sengoku do mundo real — a era na qual <i>Sekiro</i> também se baseia — acredito que haja algo além disso.</p>
+
+                <p>O termo “loucura ensanguentada” sugere que a guerra pode não ser inteiramente mundana, e que outra força pode estar incentivando esse derramamento constante de sangue. De fato, a Terra de Juncos é quase inteiramente caracterizada pelo sangue, pois a aparência padrão do habitante da Terra de Juncos nos diz que esta é uma terra onde o sangue é uma visão comum, e todas as armas típicas da região, variações de katanas, são projetadas especificamente para enfatizar a perda de sangue em seus oponentes.</p>
+
+                <p>Essa loucura banhada em sangue é melhor personificada por um dos guerreiros mais famosos da região, Okina. Aprendemos com a máscara que ele usava, cuja descrição diz:</p>
+
+                <p class="item-quote">“Quanto mais a loucura consumia sua mente, mais as absurdidades do mundo se tornavam claras. E assim Okina renunciou a tudo e ascendeu a um plano superior. Restava apenas ele mesmo. Sua katana. E sua maestria. Não demorou, e Okina se tornou um demônio entre espadachins.”</p>
+                <span class="quote-source">- Máscara de Okina</span>
+
+                <div class="pull-quote-green">
+                    O Palácio Mohgwyn pinta um retrato sombrio do futuro, caso Mohg e seu patrono tenham sucesso: uma paisagem infernal de pântanos fétidos e sangrentos, repletos de seguidores enlouquecidos obcecados pela ideia de derramamento de sangue.
+                </div>
+            </div>
+            
+            <div class="page-number">24</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2L4 10h5v12h6V10h5L12 2z"/></svg> 
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Okina realmente destaca o ponto ao qual estou chegando: que o derramamento de sangue, para alguns, é quase um ato de religião e crença, além de uma guerra ou de orgulho na própria habilidade com a espada. A descrição do item o retrata como alguém que ascendeu a um plano superior, como se estivesse se tornando um instrumento do divino.</p>
+
+                <p>De certa forma isso é verdade, pois através do derramamento de sangue de Okina ele estava indiretamente honrando e fortalecendo o kami do Sangue, a Mãe Sem Forma. Assim, faz sentido que ele viesse a chamar a atenção de Mohg, Senhor do Sangue. Aprendemos isso através da descrição do item Rios de Sangue, que diz:</p>
+
+                <p class="item-quote">“Quando Mohg, o Senhor do Sangue, sentiu a espada de Okina e a loucura sobre sua carne, ele fez uma proposta: oferecer a Okina a vida de um demônio, que suas duas artes jamais se tornariam obsoletas.”</p>
+                <span class="quote-source">- Rios de Sangue</span>
+
+                <p>Faz sentido que o Senhor do Sangue procurasse Okina e utilizasse sua proeza no derramamento de sangue. Quanto mais sangue é derramado, mais sua agenda é cumprida como um deus do sangue no centro da nova Ordem. Tudo isso é coerente, mas há uma conexão entre as terras ensanguentadas da Terra de Juncos e a Estrela de Sangue.</p>
+
+                <p>Temos essa força misteriosa nas Feitiçarias de Espinhos, os Espinhos do Pecado e os Espinhos da Punição. Ambos dizem:</p>
+
+                <p class="item-quote">“Os culpados, com os olhos perfurados por espinhos, viveram na escuridão eterna. Lá, descobriram a Estrela de Sangue.”</p>
+                <span class="quote-source">- Espinhos da Punição</span>
+
+                <p>Esses “Culpados” são os Feiticeiros de Espinhos, que ao terem seus olhos removidos na cegueira, aprenderam o poder da Feitiçaria de Espinhos aparentemente através de seu contato com a Estrela de Sangue. De maneira semelhante à forma como os Feiticeiros Primordiais comungam com as estrelas, mas de um modo muito mais visceral e sangrento.</p>
+
+                <p>Essa Estrela de Sangue também parece existir em um abismo — o abismo da cegueira. E o derramamento de sangue nos leva a perguntar se essa Estrela de Sangue é um instrumento ou forma da Mãe da Verdade.</p>
+
+                <p>Mas por que isso se conecta com a sangrenta Terra de Juncos? Bem, a classe Samurai empunha o Escudo Redondo de Espinhos Vermelhos, e esses espinhos só podem simbolizar uma coisa: os Espinhos do Pecado e, por extensão, a Estrela de Sangue. Seria coincidência que tanto a Mãe da Verdade quanto a Estrela de Sangue estejam conectadas a essa região sangrenta?</p>
+            </div>
+            
+            <div class="page-number">25</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

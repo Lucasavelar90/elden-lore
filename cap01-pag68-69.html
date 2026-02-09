@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grace Given - Páginas 68 e 69</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1100px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 50px 45px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; }
+        .header-icon { display: block; margin: 0 auto 10px auto; width: 25px; fill: #a3905e; }
+        .header-title { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #a3905e; font-weight: 600; }
+
+        /* Conteúdo */
+        .content {
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 14px;
+            line-height: 1.5;
+            text-align: justify;
+            orphans: 3;
+            widows: 3;
+            flex-grow: 1;
+        }
+
+        p { margin-bottom: 12px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+
+        /* Citações em caixas */
+        .quote-box {
+            margin: 15px 0;
+            break-inside: avoid;
+            padding: 0 5px;
+        }
+
+        .quote-text {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #333;
+            line-height: 1.4;
+            text-indent: 0;
+        }
+
+        .quote-author {
+            display: block;
+            font-style: normal;
+            font-size: 0.8rem;
+            color: #777;
+            text-align: right;
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Títulos de Seção (Verde) */
+        .special-title {
+            column-span: all;
+            text-align: center;
+            color: #92b3a5;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin: 25px 0;
+            font-weight: 400;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+        }
+
+        /* Rodapé */
+        .footer {
+            margin-top: auto;
+            padding-top: 20px;
+            font-size: 0.9rem;
+            color: #a3905e;
+            font-weight: 600;
+            font-family: serif;
+            border-top: 1px solid rgba(163, 144, 94, 0.3);
+        }
+        .footer-left { text-align: left; }
+        .footer-right { text-align: right; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><circle cx="8.5" cy="9.5" r="1.5" fill="#a3905e"/><circle cx="15.5" cy="9.5" r="1.5" fill="#a3905e"/></svg>
+                <div class="header-title">O Tempo Antes da Térvore</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Sua adaga, a Cinquedea, pode nos dar alguma pista sobre o que é a persona de Gurranq. A descrição do item diz:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Espada curta dada aos clérigos de alto escalão de Farum Azula. Aumenta a potência dos encantamentos bestiais. O design celebra os cinco dedos de uma fera, simbólico da inteligência uma vez concedida à sua espécie."</p>
+                    <span class="quote-author">— Cinquedea</span>
+                </div>
+
+                <p>Este é um item realmente importante, como já discutimos, e quando eu refleti pela primeira vez sobre o assunto de Gurranq, acreditei que isso era apenas um disfarce, e não uma posição que ele realmente ocupava.</p>
+
+                <p>Enquanto ele retorna para Farum Azula, ele também estabeleceu uma base dentro do Santuário Bestial em Caelid. Isso é claro mesmo antes de chegarmos à própria fera, pois esta área é guardada por Membros da Lâmina Negra e pela Milícia Vulgar. A partir daqui, Gurranq tem cooperado com fundamentalistas da Ordem Áurea como D, a fim de rastrear os fragmentos perdidos da Runa da Morte: a Raiz da Morte.</p>
+
+                <p>O diálogo de Gurranq parece sugerir que ele tem <i>fome</i> de ingerir todo esse material, e sugere que esse apetite se sobrepõe ao seu senso de "pecado", como ele afirma:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"É... está tudo... consumido. Ainda, não estou saciado... Nem de longe saciado... (grita) Marika... É isso... o que é... pecar? As coisas... nunca serão as mesmas... novamente?" (ofegante)</p>
+                </div>
+
+                <p>É quase como se – tendo sido, como Maliketh, o portador da Runa da Morte – ele pudesse sentir que parte dela está ausente, como uma fome que só pode ser saciada temporariamente pela Raiz da Morte. Essa fome parece consumi-lo genuinamente, como podemos ver quando ele fica furioso e nos ataca depois de termos fornecido a ele três Raízes da Morte.</p>
+
+                <p>Afinal, a Raiz da Morte nasce desse fragmento roubado, como diz sua descrição:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Na noite da trama sinistra, a Runa da Morte roubada possibilitou a primeira Morte de um semideus. Mais tarde, a Runa da Morte espalhou-se pelas Terras Intermédias através das raízes subterrâneas da Grande Árvore, brotando na forma de Raiz da Morte."</p>
+                    <span class="quote-author">— Raiz da Morte</span>
+                </div>
+
+                <p>Esta é a penitência de Maliketh por seu pecado, seu fracasso em proteger a Runa da Morte, e agora ele procura desfazer o dano que fez anteriormente reunindo os fragmentos da Runa da Morte.</p>
+
+                <p>E ainda assim chegamos ao elefante na sala: o relacionamento de Maliketh com Marika, quais foram suas ordens finais, e quanto ele realmente sabia do plano final de Marika.</p>
+
+                <p>É mencionado que Marika traiu Maliketh, e eu acredito que a razão para isso seja bem direta. Se você derrotar Maliketh em Farum Azula depois de completar a missão de Gurranq, então ele essencialmente se desculpará com Marika, afirmando que a Ordem Áurea não pode ser restaurada.</p>
+
+                <p>Isso sugere que em seu exílio, e através de seu desejo de reparar a Runa da Morte, ele busca restaurar a Ordem Áurea, e trabalhou na obscuridade desde a Noite das Facas Negras para alcançar esse fim.</p>
+            </div>
+            <div class="footer footer-left">68</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24"><path d="M11 2h2v14h-2z M7 6h10v2H7z M12 16l-1 1-1 4h4l-1-4-1-1z"/></svg>
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">No entanto, se matarmos Maliketh como Gurranq no santuário bestial, ele parece ferido e surpreso pelas ações de Marika ao quebrar o Elden Ring, pois diz isto:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Marika... por que... tu me... enganarias? Por que... quebrar..."</p>
+                </div>
+
+                <p>Isso para mim é a traição mencionada na lembrança de Maliketh, pois essa linha deixa claro que Maliketh não teve participação em nada do que Marika fez ou planejou após a Noite das Facas Negras. Ele viu o roubo da Runa da Morte como um fracasso em cumprir seu dever para com Marika, mas não estava a par do fato de que, apesar de sua penitência, Marika tentaria quebrar o Elden Ring de qualquer maneira.</p>
+
+                <p>Então é assim que vejo Maliketh, uma vez um orgulhoso e poderoso campeão da Ordem de Marika, reduzido a uma vida de penitência e culpa, mas ainda leal ao seu juramento. E é um juramento que ele morre defendendo, enquanto Marika trai sua lealdade ao quebrar a Ordem que ela uma vez o comandou a defender.</p>
+
+                <h2 class="special-title">Lobos e Homens</h2>
+
+                <p class="no-indent">Então, há, é claro, dois outros Empyreanos que foram escolhidos pelos Dedos, Miquella e Malenia – e isso levanta a questão: quem são suas Feras Vinculadas às Sombras?</p>
+
+                <p>Em suma, nós simplesmente não os vemos no jogo – mas temos que assumir que cada um recebeu uma fera. Ranni menciona que eles foram eleitos como Empyreanos no mesmo fôlego em que nos conta sobre ter recebido Blaidd.</p>
+
+                <p>Temos que considerar que Miquella e Malenia escolheram um caminho contrário à Vontade Maior. Pode ser que os gêmeos já tenham lidado com suas Sombras, da mesma forma que vemos Ranni ter que lidar com a dela em sua missão. Pode ser que tenham simplesmente abandonado suas Feras Vinculadas às Sombras, ou que elas estejam de fato enviando-as em missões, assim como Blaidd ainda serve Ranni.</p>
+
+                <p>Eu vi muita especulação de que Malenia é de fato a Sombra de Miquella, dado que ela é sua "lâmina" e concordo que esta é certamente uma referência simbólica, e que Malenia efetivamente assumiu esse papel. No entanto, ela não é uma verdadeira Vinculada às Sombras. Ela é uma Empyreana por si mesma, e finalmente se torna um deus, algo claramente além de um Vinculado às Sombras. Então, não, Malenia não é a Sombra dada pelos Dedos a Miquella, e acho que simplesmente não vemos os Vinculados às Sombras dos gêmeos no jogo.</p>
+
+                <p>Não podemos falar sobre as Feras Vinculadas às Sombras sem lidar com outro elefante na sala: os Cavaleiros Cão de Caça (Bloodhound Knights). Vamos começar a discussão lendo a descrição do item de sua armadura:</p>
+            </div>
+            <div class="footer footer-right">69</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

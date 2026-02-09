@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grace Given - Páginas 98 e 99</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1100px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 50px 45px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+            padding: 0; /* Remove padding para imagem full-bleed */
+            overflow: hidden; /* Garante que a imagem não saia */
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; }
+        .header-icon { display: block; margin: 0 auto 10px auto; width: 25px; fill: #a3905e; }
+        .header-title { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #a3905e; font-weight: 600; }
+
+        /* Conteúdo */
+        .content {
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 14px;
+            line-height: 1.5;
+            text-align: justify;
+            orphans: 3;
+            widows: 3;
+            flex-grow: 1;
+        }
+
+        p { margin-bottom: 12px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+
+        /* Citações em caixas */
+        .quote-box {
+            margin: 15px 0;
+            break-inside: avoid;
+            padding: 0 5px;
+        }
+
+        .quote-text {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #333;
+            line-height: 1.4;
+            text-indent: 0;
+        }
+
+        .quote-author {
+            display: block;
+            font-style: normal;
+            font-size: 0.8rem;
+            color: #777;
+            text-align: right;
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Destaque Verde Grande (Pull Quote) */
+        .pull-quote-green {
+            color: #92b3a5;
+            font-size: 1.4rem;
+            line-height: 1.3;
+            margin: 25px 0;
+            text-indent: 0;
+            text-align: left;
+            break-inside: avoid;
+            font-weight: 400;
+        }
+
+        /* Imagem de Página Inteira */
+        .full-page-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .img-placeholder-full {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #92b3a5;
+            text-align: center;
+            font-size: 1rem;
+            background-color: rgba(146, 179, 165, 0.1);
+        }
+
+        /* Rodapé */
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            width: calc(100% - 90px); /* Ajusta largura considerando padding da página */
+            padding-top: 10px;
+            font-size: 0.9rem;
+            color: #a3905e;
+            font-weight: 600;
+            font-family: serif;
+            border-top: 1px solid rgba(163, 144, 94, 0.3);
+        }
+        .footer-left { text-align: left; left: 45px; }
+        
+        /* Rodapé especial para página de imagem */
+        .footer-right-overlay {
+            position: absolute;
+            bottom: 20px;
+            right: 45px;
+            color: rgba(255, 255, 255, 0.8); /* Cor clara para sobrepor imagem */
+            font-weight: 600;
+            font-family: serif;
+            z-index: 10;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .footer { position: relative; bottom: auto; width: 100%; left: auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><circle cx="12" cy="12" r="3" fill="#a3905e"/></svg>
+                <div class="header-title">O Celestial</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Portanto, penso que os Culpados, punidos pelo regime de Marika, foram as primeiras pessoas a encontrar a Estrela de Sangue. Se a primeira interação da Estrela de Sangue com humanos foi com aqueles que tinham sido cegados com espinhos, faria sentido que ela armasse esses espinhos, concedendo aos cegos a habilidade de empunhar esses espinhos.</p>
+
+                <p>Quero discutir outro jogador que é relevante para esta história, alguém que mencionamos algumas vezes: Alberich. Sabemos que Alberich era um Maculado e uma vez membro da Mesa Redonda, algo que aprendemos através de suas vestes:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Alberich era um feiticeiro herético recluso, contudo perturbado, dito ter sido levado à loucura por línguas zombeteiras durante seu serviço à Mesa Redonda há muito tempo."</p>
+                    <span class="quote-author">— Veste de Alberich</span>
+                </div>
+
+                <p>Antes de falarmos sobre a história de Alberich, quero focar em outra palavra nesta descrição de item: herético.</p>
+
+                <p>Já vimos como o regime de Marika prontamente emprega Feitiçarias de Espinhos, então elas realmente seriam consideradas heréticas? Acho que é mais provável que seja considerada herética pelos praticantes reais da magia de Pedrilhante, os Carianos e Raya Lucaria.</p>
+
+                <p>Parece que Alberich foi "levado à loucura por línguas zombeteiras" na Mesa Redonda. Ele dropa a Língua do Atormentador, sugerindo que esta é de fato a língua de alguém na Mesa Redonda que costumava provocá-lo. Por que zombavam dele? Por sua crença herética na Estrela de Sangue? É tudo o que temos para continuar.</p>
+
+                <p>Há outro detalhe interessante sobre Alberich, no entanto, que precisamos levar em conta: o uso de Feitiçarias de Frio por Alberich. Especificamente, ele parece usar Penhasco de Gelo de Pedrilhante e Névoa Congelante, e isso tem algumas implicações <i>muito</i> interessantes.</p>
+
+                <p>Ambos esses feitiços referem-se ao relacionamento de Ranni com a Bruxa da Neve, e eu frequentemente especulei que foi a tutela de Ranni sob a Bruxa da Neve que a ajudou a conceituar a Noite das Facas Negras e a magia de culto necessária para transpor a Runa da Morte para as lâminas. E, claro, realizar o ritual que dividiu a</p>
+
+                <div class="pull-quote-green">
+                    Eu frequentemente especulei que foi a tutela de Ranni sob a Bruxa da Neve que a ajudou a conceituar a Noite das Facas Negras.
+                </div>
+            </div>
+            <div class="footer footer-left">98</div>
+        </div>
+
+        <div class="page page-right">
+            <img src="malenia_arte.jpg" alt="Arte de Malenia/Deusa da Podridão" class="full-page-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder-full" style="display:none;">
+                <span>Coloque a arte da Malenia aqui<br>(malenia_arte.jpg)</span>
+            </div>
+            
+            <div class="footer-right-overlay">99</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

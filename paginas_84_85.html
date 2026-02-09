@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grace Given - Páginas 84 e 85</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1100px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 50px 45px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; }
+        .header-icon { display: block; margin: 0 auto 10px auto; width: 25px; fill: #a3905e; }
+        .header-title { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #a3905e; font-weight: 600; }
+
+        /* Conteúdo */
+        .content {
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 14px;
+            line-height: 1.5;
+            text-align: justify;
+            orphans: 3;
+            widows: 3;
+            flex-grow: 1;
+        }
+
+        p { margin-bottom: 12px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+
+        /* Citações em caixas */
+        .quote-box {
+            margin: 15px 0;
+            break-inside: avoid;
+            padding: 0 5px;
+        }
+
+        .quote-text {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #333;
+            line-height: 1.4;
+            text-indent: 0;
+        }
+
+        .quote-author {
+            display: block;
+            font-style: normal;
+            font-size: 0.8rem;
+            color: #777;
+            text-align: right;
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Texto Japonês */
+        .jp-text {
+            font-family: 'Noto Serif JP', serif;
+            font-size: 0.8rem;
+            color: #555;
+            display: inline;
+        }
+
+        /* Destaque Verde Grande (Pull Quote) */
+        .pull-quote-green {
+            color: #92b3a5;
+            font-size: 1.4rem;
+            line-height: 1.3;
+            margin: 0 0 25px 0;
+            text-indent: 0;
+            text-align: left;
+            break-inside: avoid;
+            font-weight: 400;
+        }
+
+        /* Rodapé */
+        .footer {
+            margin-top: auto;
+            padding-top: 20px;
+            font-size: 0.9rem;
+            color: #a3905e;
+            font-weight: 600;
+            font-family: serif;
+            border-top: 1px solid rgba(163, 144, 94, 0.3);
+        }
+        .footer-left { text-align: left; }
+        .footer-right { text-align: right; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2l-2 4h-4l-2 4v6l4 4h8l4-4v-6l-2-4h-4z M12 6l1 2h-2L12 6z" opacity="0.8"/></svg>
+                <div class="header-title">O Celestial</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Além disso, se olharmos para o japonês original da Chuva Fundadora de Estrelas, encontramos novamente referência ao abismo do espaço, mais uma vez conectando esta região ou dimensão ao primevo, especialmente quando você considera que este feitiço é a feitiçaria de pedrilhante fundadora.</p>
+
+                <p><i>Last Protagonist</i> destaca que o uso do termo "escuridão" especificamente está novamente ausente na tradução em inglês. Em vez disso, <i>Last Protagonist</i> traduz este feitiço da seguinte forma: <span class="jp-text">"空に暗黒の星雲を呼び"</span> é como "chamar uma nebulosa de escuridão no céu".</p>
+
+                <p>O ponto de tudo isso é cimentar de onde as estrelas parecem ser: um espaço escuro, um vazio muito distante do plano mortal.</p>
+
+                <p>E, no entanto, enquanto as estrelas geralmente permanecem muito distantes das Terras Intermédias, felizmente para aqueles que as estudam, existe um meio que permite aos feiticeiros acessar o poder do celestial: Pedrilhante.</p>
+
+                <p>A feitiçaria de pedrilhante fundadora, Chuva Fundadora de Estrelas, reputadamente descreve como o Pedrilhante veio a estar no plano mortal: através de uma conexão com a Corrente Primeva um astrólogo essencialmente convocou uma nebulosa de escuridão da qual veio o "âmbar das estrelas".</p>
+
+                <p>Eu quero fazer uma breve transição para os detalhes do que realmente aconteceu aqui e como aconteceu, porque eu acredito que não apenas este abismo existe fisicamente</p>
+
+                <div class="pull-quote-green">
+                    A feitiçaria de pedrilhante fundadora, Chuva Fundadora de Estrelas, reputadamente descreve como o Pedrilhante veio a estar no plano mortal.
+                </div>
+
+                <p class="no-indent">no "espaço", mas também existe metafisicamente, que é como certas pessoas são capazes de interagir com ele.</p>
+
+                <p>Por exemplo, neste conto que nos foi narrado pela Chuva Fundadora de Estrelas, o astrólogo vislumbrou a Corrente Primeva e o que ele viu dentro da corrente então se manifestou.</p>
+
+                <p>Da mesma forma, o astrólogo descrito para nós na feitiçaria Chuva Fundadora de Estrelas não viajou realmente para o espaço fisicamente, mas sim tocou a Corrente Primeva e manifestou o que viu como uma feitiçaria.</p>
+
+                <p>Então, o que é esta Corrente Primeva? Precisamos entender isso para entender a natureza do Pedrilhante e as estrelas às quais ele se conecta.</p>
+
+                <p>Minha interpretação da Corrente Primeva é na verdade bastante simples; a Corrente Primeva é apenas outro termo para o cosmos ou espaço.</p>
+
+                <p>Primeiramente, vamos considerar o nome em si, Primevo. Isso é relevante para o espaço como o entendemos; a corrente do espaço</p>
+            </div>
+            <div class="footer footer-left">84</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><path d="M12 6l-2 4h4l-2-4z" opacity="0.6"/></svg>
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">de fato é muito mais antiga do que qualquer água em qualquer planeta. E como o abismo do espaço é frequentemente comparado à água, temos o nome Corrente Primeva.</p>
+
+                <p>Com esse entendimento, se substituirmos o termo "Corrente Primeva" pelo abismo ou espaço na descrição de qualquer um dos feitiços relevantes, certamente faz sentido. Por exemplo, vamos ler o Cometa Azur mas trocar a "Corrente Primeva" por "Cosmos". Leria:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Feitiçaria lendária criada por Azur, feiticeiro primevo. Dispara um cometa tremendo em uma torrente semelhante à expansão estrelada distante, o lugar que se diz ser a origem do Pedrilhante. Segure para continuar liberando o poder da feitiçaria. Quando Azur vislumbrou o Cosmos, ele viu a escuridão. Ele ficou tanto enfeitiçado quanto temeroso do abismo."</p>
+                    <span class="quote-author">— Cometa Azur</span>
+                </div>
+
+                <p>Isso também se encaixa muito bem com o trabalho fornecido por <i>Last Protagonist</i>; sua tradução da Chuva Fundadora de Estrelas associa a Corrente Primeva com "uma nebulosa de escuridão".</p>
+
+                <p>As estrelas estão espacialmente desconectadas do mundo terrestre, mas o material milagroso do Pedrilhante permite invocar seu poder ou espiar seu mundo. Os feiticeiros primevos pagam um preço por utilizar o poder do Pedrilhante dessa maneira, no entanto. Eles abrem sua mente para o cosmos, mas olhe por tempo suficiente para o abismo e ele olhará de volta para você.</p>
+
+                <p>Como tal, suas mentes, estando em contato constante com a Corrente Primeva, começam a se transformar no próprio Pedrilhante. Isso é algo que aprendemos através das peças de cabeça de Azur e Lusat; a de Lusat diz:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"A gigantesca coroa de pedrilhante azul usada por Lusat, feiticeiro da corrente primeva. Esta coroa substituiu o cérebro e o crânio de Lusat completamente, e agora, removida de seu corpo, está quase morta. O poder que resta dentro aumenta a potência das feitiçarias da corrente primeva de Lusat ao custo de consumo adicional de PF."</p>
+                    <span class="quote-author">— Coroa de Pedrilhante de Lusat</span>
+                </div>
+
+                <p><i>Zullie the Witch</i> fez um vídeo realmente excelente chamado "Os riscos da Magia de Sangue" que focou no personagem Alberich da Língua Louca. Ao remover seu chapéu, Zullie mostrou que, por baixo, Alberich parece estar sofrendo um destino semelhante ao de Lusat e Azur, exceto com Pedrilhante vermelho.</p>
+
+                <p>O "âmbar da estrela" que é mencionado na Chuva Fundadora de Estrelas é Pedrilhante, já que é assim que Sellen o descreve quando tenta explicar a natureza do Pedrilhante. Então foi assim que o estudo das estrelas evoluiu – começou com os astrólogos sobre as montanhas. E, de fato, aquele que descobriu o Pedrilhante através da Chuva Fundadora de Estrelas era ele mesmo um astrólogo, e é por isso que o Grande Chapéu do Preceptor descreve os feiticeiros de pedrilhante como os descendentes dos astrólogos.</p>
+            </div>
+            <div class="footer footer-right">85</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

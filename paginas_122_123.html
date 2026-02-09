@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rule of the Tree & Grace Given - Páginas 122 e 123</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+
+        /* Conteúdo Texto */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        
+        em { font-style: italic; }
+
+        /* Títulos de Subseção */
+        h2.subsection-title {
+            font-family: 'Cinzel', serif;
+            color: #8abeb4;
+            font-size: 1.2rem;
+            text-align: center;
+            margin: 25px 0 15px 0;
+            line-height: 1.2;
+            break-inside: avoid;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        /* Citações de Itens */
+        .item-quote {
+            font-style: italic;
+            margin: 15px 0 5px 0;
+            text-indent: 0;
+            font-size: 0.95em;
+        }
+
+        .quote-source {
+            display: block;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Citação Verde Grande (Pull Quote) */
+        .pull-quote-green {
+            color: #8abeb4;
+            font-size: 1.4rem;
+            line-height: 1.3;
+            margin: 0 0 25px 0;
+            text-indent: 0;
+            text-align: left;
+            break-inside: avoid;
+            font-weight: 400;
+        }
+
+        /* Rodapé (Número da página) */
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2L4 10h5v12h6V10h5L12 2z"/></svg> 
+                <div class="header-title">O Reinado da Árvore</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Então, por sua vez, ligamos as assassinas aos Nox através de um diálogo de Rogier, que diz isto das Facas Negras:</p>
+
+                <p class="item-quote">“Você se lembra da nossa conversa sobre a Noite das Facas Negras, sim? Dizem que as assassinas que realizaram o ato eram descendentes da Cidade Eterna. Um grupo inteiramente de mulheres, vestidas com armaduras de prata sob capas que enganavam os olhos.”</p>
+                <span class="quote-source">- Feiticeiro Rogier</span>
+
+                <p>Rogier afirma que essas mulheres eram da Cidade Eterna. Isso faz sentido, pois elas são semelhantes às donzelas da espada destras que podemos enfrentar lá. Portanto, é quase certo que os Nox são uma civilização Numen. A armadura delas as descreve abertamente como Numen, mas Rogier as nomeia como "descendentes da Cidade Eterna", ou seja, filhos das Cidades Eternas, o que significa que elas são Nox.</p>
+
+                <p>Se isso não for suficiente para convencê-lo de que os Nox são Numen caídos, então sinto que há alguma narrativa ambiental que pode ajudar a ligar os Numen aos Nox, especificamente através das Formigas Gigantes que encontramos no jogo. As formigas são interessantes por causa de seus hábitos alimentares. Acredito que elas podem realmente confirmar que a terceira Cidade Eterna destruída (encontrada nas Profundezas da Raiz) foi outrora habitada por Numen, confirmando assim também que os Nox e Numen são a mesma coisa.</p>
+
+                <div class="pull-quote-green">
+                    Eu especularia que os Nox, antes de serem conhecidos como tal, eram originalmente Numen que, como sabemos, são descendentes de Marika e dos Xamãs.
+                </div>
+
+                <p>No Rio Ainsel, perto do Local de Graça Profundezas do Poço do Rio Ainsel, parece haver algum tipo de depósito de cadáveres, como evidenciado pelos caixões e sarcófagos que vemos espalhados. Esses cadáveres parecem cair no rio e são levados rio abaixo para o covil das formigas, que se banqueteiam com eles.</p>
+
+                <p>Então, mais adiante, encontramos uma formiga inchada que, se a matarmos, nos dá uma Runa. Esta formiga inchada é claramente baseada em formigas pote-de-mel, aquelas formigas que se empanturram com tanta comida que seus abdômens se expandem massivamente. Isso me leva a especular que essas Formigas Gigantes devoram carniça, e assim as Runas que recebemos delas são provavelmente as Runas que a carniça segurava.</p>
+
+                <p>Então vamos aplicar isso às Formigas Gigantes que encontramos nas Profundezas da Raiz, ao lado da Cidade Eterna potencialmente destruída. Neste ninho há numerosas formigas inchadas,</p>
+            </div>
+            
+            <div class="page-number">122</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><circle cx="12" cy="12" r="3"/></svg> 
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">mal conseguindo se mover após o banquete que claramente desfrutaram. Essas formigas engorgitadas em particular dropam Runas de Numen exclusivamente e, dada a cidade destruída ao lado, sugere que as formigas têm se alimentado dos cadáveres de Numen (Nox) daquela cidade.</p>
+
+                <p>Para mim, isso confirma que esta foi uma vez uma Cidade Eterna dos Nox que enfrentou a destruição, antes que as formigas carniceiras viessem e devorassem os cadáveres daqueles que morreram lá. O fato de seus cadáveres produzirem Runas de Numen confirma que os Nox são uma ramificação do estoque original de Numen do qual Marika vem. Voltaremos à destruição desta cidade mais tarde.</p>
+
+                <p>Então quem são os Numen?</p>
+
+                <p>Como mencionado anteriormente, o criador de personagens tem uma predefinição de aparência "Numen" que nos conta sobre suas longas vidas e nascimentos raros. Eles são pessoas de vida longa de outro mundo, com o mesmo tipo de cabelo loiro que a própria Marika. Esta informação também é fornecida por dois itens no jogo relacionados aos Numen: o Martelo de Marika e a Runa dos Numen. Ambos os itens dizem mais ou menos a mesma coisa, que os Numen são de fora das Terras Intermédias e são do mesmo estoque que a Rainha Marika.</p>
+
+                <p>Que imagem podemos construir com essa informação? Eu especularia que os Nox, antes de serem conhecidos como tal, eram originalmente Numen que, como sabemos, são descendentes de Marika e dos Xamãs. Sabemos que esta comunidade Numen viveria, por um tempo, sob o domínio de Marika e da Vontade Maior.</p>
+
+                <p>Sabemos disso porque a Vontade Maior seria a força a bani-los para o subsolo, como os encontramos no jogo. Aprendemos isso na Armadura de Monge Nox:</p>
+
+                <p class="item-quote">“Há muito tempo, os Nox invocaram a ira da Vontade Maior, e foram banidos para as profundezas do subsolo.”</p>
+                <span class="quote-source">- Armadura de Monge Nox</span>
+
+                <p>Por implicação, então, eles viveram uma vez na superfície, sujeitos à autoridade da Vontade Maior, e assim sua transição de Numen para Nox é um conceito interessante para ponderar. Dado o que vemos das Cidades Eternas, eles devem ter desenvolvido sua própria cultura, arquitetura e crenças. Seria o compromisso deles com esta última que marcaria sua transição completa para os Nox – e levaria ao seu primeiro ato de traição contra a Vontade Maior.</p>
+
+                <h2 class="subsection-title">ASCENSÃO DOS NOX<br>(RISE OF THE NOX)</h2>
+
+                <p>O próprio nome dos Nox sugere seu sistema de crenças central: Nox é latim para "noite" ou "escuridão". Dado que a sociedade Nox está focada em trazer a Era das Estrelas, assume-se que seu nome seguiu o desenvolvimento de tais crenças.</p>
+            </div>
+            
+            <div class="page-number">123</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

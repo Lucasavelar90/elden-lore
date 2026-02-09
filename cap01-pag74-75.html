@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grace Given - Páginas 74 e 75</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1100px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 50px 45px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; }
+        .header-icon { display: block; margin: 0 auto 10px auto; width: 25px; fill: #a3905e; }
+        .header-title { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #a3905e; font-weight: 600; }
+
+        /* Conteúdo */
+        .content {
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 14px;
+            line-height: 1.5;
+            text-align: justify;
+            orphans: 3;
+            widows: 3;
+            flex-grow: 1;
+        }
+
+        p { margin-bottom: 12px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+
+        /* Citações em caixas */
+        .quote-box {
+            margin: 15px 0;
+            break-inside: avoid;
+            padding: 0 5px;
+        }
+
+        .quote-text {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #333;
+            line-height: 1.4;
+            text-indent: 0;
+        }
+
+        .quote-author {
+            display: block;
+            font-style: normal;
+            font-size: 0.8rem;
+            color: #777;
+            text-align: right;
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Destaque Verde Grande (Pull Quote) */
+        .pull-quote-green {
+            color: #92b3a5;
+            font-size: 1.4rem;
+            line-height: 1.3;
+            margin: 0 0 25px 0;
+            text-indent: 0;
+            text-align: left;
+            break-inside: avoid;
+            font-weight: 400;
+        }
+
+        /* Imagem Inline (Gárgula/Quimérico) */
+        .inline-img-container {
+            width: 100%;
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            break-inside: avoid;
+        }
+        
+        .inline-img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            mix-blend-mode: multiply;
+        }
+
+        .img-placeholder {
+            width: 100%;
+            height: 180px;
+            border: 1px dashed #92b3a5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #92b3a5;
+            text-align: center;
+            font-size: 0.8rem;
+            background-color: rgba(146, 179, 165, 0.1);
+        }
+
+        /* Rodapé e Notas */
+        .footer-note {
+            font-size: 0.75rem;
+            color: #a3905e;
+            border-top: 1px solid rgba(163, 144, 94, 0.3);
+            padding-top: 10px;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        .footer {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #a3905e;
+            font-weight: 600;
+            font-family: serif;
+        }
+        .footer-left { text-align: left; }
+        .footer-right { text-align: right; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><circle cx="12" cy="12" r="3" fill="#a3905e"/></svg>
+                <div class="header-title">O Tempo Antes da Térvore</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">...e que esta profecia era central para sua cultura e religião<sup style="font-size:0.6em">7</sup>.</p>
+
+                <p>Também sabemos que esta civilização tinha suas próprias práticas funerárias, pois o Palácio de Mohgwyn, um edifício agora reaproveitado por Mohg, foi claramente um Mausoléu, com os locais de enterro situados abaixo da estrutura do templo no topo.</p>
+
+                <p>Os seres que estão mais claramente ligados a essas ruínas antigas são os Homens de Argila (Claymen), os irritantes inimigos semelhantes a zumbis que encontramos em grande número abaixo da superfície. Os Homens de Argila são os criadores dos feitiços de bolha, e as descrições dos itens para esses feitiços podem nos dizer algo sobre eles. O feitiço Grande Bolha Oracular diz:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Feitiçaria dos homens de argila que serviam como sacerdotes na antiga dinastia... Os homens de argila buscam oráculos perdidos dentro de suas bolhas."</p>
+                    <span class="quote-author">— Grande Bolha Oracular</span>
+                </div>
+
+                <p>Então esses Homens de Argila serviam à antiga dinastia como sacerdotes, reforçando a ideia de que esta antiga civilização tinha sua própria cultura e religião. Esses sacerdotes aparentemente desempenhavam o papel de oráculos, novamente chamando à mente o Oráculo de Delfos da Grécia antiga do mundo real.</p>
+
+                <p>Não se pode deixar de notar que os Homens de Argila parecem ter uma associação com a água; seus cajados são chamados de arpões, eles veem sua profecia em bolhas e agora são feitos de argila, um material que frequentemente tem água adicionada a ele.</p>
+
+                <div class="pull-quote-green">
+                    Estes são os "restos deformados" de sacerdotes, o que para mim sugere que eles eram humanos, mas alguma calamidade os transformou nos remanescentes de argila que vemos hoje. Isso explicaria por que eles não conseguem mais funcionar além de ações muito simples.
+                </div>
+
+                <p>Além disso, é difícil ignorar o fato de que muitos dos palácios são encontrados ao redor de corpos d'água: Uhl fica próximo ao Ainsel, Mohgwyn fica próximo ao Siofra e o Grande Claustro fica ao lado do Lago da Podridão.</p>
+
+                <p>Como discutiremos no Capítulo 22, o Lago da Podridão já foi um lago, mas tornou-se infestado pela podridão por causa do deus exterior selado abaixo dele. Será que esta antiga civilização adorava a água? É certamente algo interessante a se considerar.</p>
+
+                <p>Independentemente de qual propósito esses Homens de Argila desempenhavam antes, há muito tempo se perdeu e agora eles não são nada mais do que drones sem mente. O Arpão do Homem de Argila até descreve a ocupação dos Homens de Argila...</p>
+            </div>
+
+            <div class="footer-note">
+                7 "Uma tabuleta conta a história secreta da Dinastia Antiga de Elden Ring" - The Tarnished Archaeologist
+            </div>
+            <div class="footer footer-left">74</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24"><path d="M11 2h2v14h-2z M7 6h10v2H7z M12 16l-1 1-1 4h4l-1-4-1-1z"/></svg>
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">...das ruínas antigas como uma infestação. Eles são quase bestiais e selvagens sem seus mestres no lugar. Além disso, a descrição das Cinzas de Homem de Argila diz:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Os restos deformados de sacerdotes que buscavam revelação a serviço da antiga dinastia, eles empregam duas feitiçarias que produzem bolhas menores e maiores."</p>
+                    <span class="quote-author">— Cinzas de Homem de Argila</span>
+                </div>
+
+                <p>Estes são os "restos deformados" de sacerdotes, o que para mim sugere que eles eram humanos, mas alguma calamidade os transformou nos remanescentes de argila que vemos hoje. Isso explicaria por que eles não conseguem mais funcionar além de ações muito simples. Talvez eles sejam capazes apenas de realizar sua função primária, ler oráculos em bolhas, mas sem qualquer propósito real.</p>
+
+                <p>Talvez eles tenham sido deformados pela exposição prolongada às próprias bolhas, ou talvez tenham sido afetados pela calamidade que derrubou esta civilização.</p>
+
+                <div class="inline-img-container">
+                    <img src="gargula.jpg" alt="Ilustração de Gárgula ou Quimérico" class="inline-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="img-placeholder" style="display:none;">
+                        <span>Coloque a imagem da gárgula aqui<br>(gargula.jpg)</span>
+                    </div>
+                </div>
+
+                <p>Quando ponderamos qual foi tal calamidade, temos que considerar o estado atual do Grande Claustro. O Grande Claustro é indiscutivelmente a estrutura mais impressionante desta civilização perdida e claramente era um local de grande importância para eles.</p>
+
+                <p>No entanto, agora é lar do Lago da Podridão e transformado em um local de adoração pelos Membros da Podridão; as pestes. A pergunta precisa ser feita: a podridão tomou este local numa época em que o Grande Claustro ainda era ocupado por seus habitantes originais? A adoração da podridão foi alimentada pela própria Civilização Antiga?</p>
+
+                <p>Novamente é impossível saber com certeza e discutiremos os velhos senhores da podridão em um capítulo posterior, mas tudo o que importa é que agora o Grande Claustro foi reaproveitado como um templo de podridão com uma relíquia do próprio Deus Exterior da Podridão sendo adorada em seu santuário central; o Ferrão de Escorpião.</p>
+
+                <p>As ruínas desta grande civilização permanecem um lembrete impressionante do que veio antes e certamente adicionam alguma profundidade e escala à história das Terras Intermédias. O fato de essas estruturas terem durado por tal era é um testamento à sua proeza de construção e agora são o lar de diferentes facções, que elas mesmas não poderiam igualar essa grandeza com suas próprias mãos.</p>
+            </div>
+            <div class="footer footer-right">75</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

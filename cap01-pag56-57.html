@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grace Given - Páginas 56 e 57</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1100px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 50px 45px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; }
+        .header-icon { display: block; margin: 0 auto 10px auto; width: 25px; fill: #a3905e; }
+        .header-title { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #a3905e; font-weight: 600; }
+
+        /* Conteúdo */
+        .content {
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 14px;
+            line-height: 1.5;
+            text-align: justify;
+            orphans: 3;
+            widows: 3;
+            flex-grow: 1;
+        }
+
+        p { margin-bottom: 12px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+
+        /* Citações em caixas */
+        .quote-box {
+            margin: 15px 0;
+            break-inside: avoid;
+            padding: 0 5px;
+        }
+
+        .quote-text {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #333;
+            line-height: 1.4;
+            text-indent: 0;
+        }
+
+        .quote-author {
+            display: block;
+            font-style: normal;
+            font-size: 0.8rem;
+            color: #777;
+            text-align: right;
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Títulos de Seção (Verde) */
+        .special-title {
+            column-span: all;
+            text-align: center;
+            color: #92b3a5;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin: 25px 0;
+            font-weight: 400;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+        }
+
+        /* Destaque Verde Grande (Pull Quote) */
+        .pull-quote-green {
+            color: #92b3a5;
+            font-size: 1.4rem;
+            line-height: 1.3;
+            margin: 0 0 25px 0;
+            text-indent: 0;
+            text-align: left;
+            break-inside: avoid;
+            font-weight: 400;
+        }
+
+        /* Rodapé */
+        .footer {
+            margin-top: auto;
+            padding-top: 20px;
+            font-size: 0.9rem;
+            color: #a3905e;
+            font-weight: 600;
+            font-family: serif;
+            border-top: 1px solid rgba(163, 144, 94, 0.3);
+        }
+        .footer-left { text-align: left; }
+        .footer-right { text-align: right; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2C9 2 7 5 7 8c0 1.5 1 3 2.5 4L7 16l1 2 4-2 4 2 1-2-2.5-4C17 11 18 9.5 18 8c0-3-2-6-5-6zm0 2c1.5 0 3 1.5 3 4s-1.5 4-3 4-3-1.5-3-4 1.5-4 3-4z"/></svg>
+                <div class="header-title">O Tempo Antes da Térvore</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">...faz todo o sentido que aspectos desta sociedade se espalhem para diferentes regiões. Seus descendentes, dragões modernos, residem em Dragonbarrow e no topo da Montanha dos Gigantes, e mais especificamente, temos um nexo da história de Farum Azula em Stormveil. Mas este é um assunto que discutiremos mais tarde.</p>
+
+                <h2 class="special-title">A Fera Interior</h2>
+
+                <p class="no-indent">O membro constituinte final desta sociedade sobre o qual quero falar é a humanidade. Para começar, temos as várias cenas humanas retratadas na alvenaria por toda Farum Azula, e embora eu pudesse apenas descartar isso como preenchimento artístico genérico, não acho que essa seja uma abordagem sábia em um jogo da FromSoftware.</p>
+
+                <p>Para explicar essas cenas, muitas pessoas apontam para o fato de que dragões são capazes de assumir a forma humana, algo que destacamos anteriormente via a Glaive de Lansseax. No entanto, Lansseax assumindo a forma humana é uma resposta a uma situação específica – isto é, o estabelecimento do Culto aos Dragões em Leyndell. Além disso, há uma referência específica a humanos que viveram entre os dragões, através do modelo de aparência de personagem Draconiano, cuja descrição diz:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"O rosto pedregoso do povo dos antigos dragões, entre os quais a vida é tipicamente curta."</p>
+                    <span class="quote-author">— Modelo de aparência de personagem Draconiano</span>
+                </div>
+
+                <p>Há muita lore interessante aqui para considerar. Primeiramente, suas vidas sendo tipicamente curtas faria sentido se essas pessoas estivessem entre os primeiros humanos, já que a expectativa de vida humana cresceu ao longo do tempo. Então, talvez a vida mais curta seja uma referência a isso ser uma forma de homem primitivo. Eu sugeriria que esses humanos Draconianos são aqueles que viveram entre a civilização dos dragões e são, como resultado, os humanos que são retratados nas várias artes de Farum Azula.</p>
+
+                <p>Poderíamos apenas deixar por isso mesmo e dizer que os humanos em algum momento surgiram e se juntaram à civilização principal na época. No entanto, há uma sugestão mais selvagem, porém muito mais interessante, a ser feita aqui – que os humanos evoluíram dos Homens-Fera.</p>
+
+                <p>Essa ideia foi trazida à minha atenção pela primeira vez pelo YouTuber <i>Dark Tark</i>, um criador de conteúdo conhecido por explorações cômicas de Elden Ring. Em um vídeo sobre Farum Azula, eles fizeram a excelente observação de que os Homens-Fera Esqueletos de Farum Azula dropam Fragmentos de Osso Humano.</p>
+
+                <p>Admitidamente, isso poderia ser apenas um drop, representando que os Homens-Fera comem ou matam humanos. Mas eu não penso assim, já que a descrição do Fragmento de Osso Humano afirma especificamente que estes são "encontrados caçando Aqueles Que Vivem na Morte" e...</p>
+            </div>
+            <div class="footer footer-left">56</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2L4 8l2 8 6 6 6-6 2-8-8-6zm0 3l5 4-1 5-4 4-4-4-1-5 5-4z"/><path d="M9 10h2v2H9zm4 0h2v2h-2z" fill="#a3905e"/></svg>
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <div class="pull-quote-green">
+                    Dado que Farum Azula já foi ligada à terra, seria o Reino do Sol um reino sucessor construído por Homens-Fera e seus descendentes humanos? Algo para se pensar.
+                </div>
+
+                <p class="no-indent">...é apenas dos Homens-Fera mortos-vivos que os obtemos. Isso sugere, por sua vez, que esses Fragmentos de Osso Humano estão se desprendendo do corpo dos próprios Homens-Fera.</p>
+
+                <p>Já traçamos um paralelo entre a evolução dos Homens-Fera e a evolução humana do mundo real, então por que não ir até o fim? Argumentar que os humanos são descendentes dos Homens-Fera faz ainda mais sentido nesse paralelo, porque os Homens-Fera são para os humanos o que os primeiros hominídeos são para nós. (Isso resolveria muitos pequenos mistérios, como a questão de por que a Raiz da Morte parece afetar os Homens-Fera exatamente da mesma maneira que afeta os humanos.)</p>
+
+                <p>Há uma conexão adicional para aqueles que buscam ligar as civilizações do homem e do Homem-Fera que vem na forma de um escudo particular: o Escudo do Reino do Sol (Sun Realm Shield). Podemos encontrar este escudo na posse de dois inimigos. O primeiro é o Soldado Esqueleto e o segundo é o Homem-Fera Esqueleto. Ambos esses inimigos são totalmente modelados segurando este escudo, reforçando-o como um drop intencional.</p>
+
+                <p>A descrição deste escudo diz:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Escudo de honra retratando uma cidade coroada pelo sol. Já viu dias melhores. Muito parecido com o desgaste sobre o escudo, o Trono do Sol já desvaneceu há muito tempo."</p>
+                    <span class="quote-author">— Escudo do Reino do Sol</span>
+                </div>
+
+                <p>Eu acreditei por muito tempo que este "Trono do Sol" era um aceno inteligente para Anor Londo, ou uma referência a Leyndell nos dias em que a luz da Térvore primitiva era mais brilhante – uma possibilidade que eu senti ser mais provável, dado que encontramos muitos desses Soldados Esqueletos nos cemitérios ao redor da capital.</p>
+
+                <p>No entanto, reavaliando o potencial elo evolutivo entre Homem-Fera e homem, é possível que isso seja outro sinal de uma herança compartilhada? É possível que Farum Azula seja o Reino do Sol? Ou, dado que Farum Azula já foi ligada à terra, seria o Reino do Sol um reino sucessor construído por Homens-Fera e seus descendentes humanos?</p>
+
+                <p>Isso tudo é apenas especulação, mas fornece algo interessante para se pensar. E se o homem descende da fera, então isso adiciona maior peso ao que vemos de homens como Hoarah Loux, e a diferença entre a Era do Crisol e a Era da Ordem Áurea.</p>
+
+                <p>Revisitando a descrição da Máscara do Regente, a civilização moderna é essencialmente um processo de desarmamento, uma contenção das coisas...</p>
+            </div>
+            <div class="footer footer-right">57</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

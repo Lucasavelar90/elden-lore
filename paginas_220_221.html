@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parte II: História e Ideologia - Páginas 220 e 221</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Centralizado verticalmente para capa de seção */
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+            background-color: #fcfbf7; /* Garante fundo claro no livro */
+        }
+
+        .page {
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centraliza conteúdo verticalmente */
+            align-items: center;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+            border-right: 1px solid #e0e0e0;
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Arte da Esquerda (Numeral II) */
+        .part-illustration {
+            width: 100%;
+            max-width: 450px;
+            display: block;
+            mix-blend-mode: multiply;
+        }
+
+        .img-placeholder-large {
+            width: 80%;
+            height: 500px;
+            background-color: rgba(197, 160, 89, 0.15); /* Tom dourado leve */
+            border: 1px dashed #c5a059;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #c5a059;
+            font-family: 'Cinzel', serif;
+            font-size: 1rem;
+        }
+
+        /* Texto da Direita (Título da Parte) */
+        .part-header {
+            text-align: center;
+        }
+
+        .part-label {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #1a1a1a;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .part-title {
+            font-family: 'Cinzel', serif;
+            font-size: 4rem;
+            line-height: 1.1;
+            color: #1a1a1a;
+            margin: 0;
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+
+        /* Decoração pequena abaixo do "PART II" */
+        .part-divider {
+            width: 50px;
+            height: 2px;
+            background-color: #c5a059;
+            margin: 20px auto;
+            display: block;
+        }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 0; }
+            .page { width: 100%; max-width: 550px; min-height: 400px; }
+            .part-title { font-size: 3rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <img src="part_ii_art.jpg" alt="Arte Parte II" class="part-illustration" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder-large" style="display:none;">
+                [Arte Numeral II com Raízes]<br>Salve como: part_ii_art.jpg
+            </div>
+        </div>
+
+        <div class="page page-right">
+            <div class="part-header">
+                <span class="part-label">Parte II:</span>
+                <span class="part-divider"></span>
+                <h1 class="part-title">História<br>e<br>Ideologia</h1>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

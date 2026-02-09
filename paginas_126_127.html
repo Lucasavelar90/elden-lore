@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 5: As Cidades Eternas - Páginas 126 e 127</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho Padrão */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+
+        /* Estilos do Capítulo 5 */
+        .chapter-illustration {
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            margin: 0 auto 20px auto;
+            mix-blend-mode: multiply;
+        }
+
+        .img-placeholder-top {
+            width: 100%;
+            height: 300px;
+            background-color: rgba(138, 190, 180, 0.2);
+            border: 1px dashed #8abeb4;
+            margin: 0 auto 30px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #8abeb4;
+            font-size: 0.8rem;
+        }
+        
+        .chapter-title {
+            font-family: 'Cormorant Garamond', serif;
+            color: #c5a059;
+            font-size: 2.2rem;
+            line-height: 1.1;
+            font-weight: 600;
+            text-align: center;
+            margin: 10px 0 30px 0;
+        }
+
+        .chapter-number-text {
+            color: #c5a059;
+            font-family: 'Cinzel', serif;
+            font-size: 1.2rem;
+        }
+
+        /* Conteúdo Texto */
+        .content {
+            margin-top: 10px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 14.5px; /* Leve ajuste para garantir que tudo caiba */
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+            padding-bottom: 60px; /* Espaço extra para não bater na footnote */
+        }
+
+        .content-right-page {
+            margin-top: 40px;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        
+        em { font-style: italic; }
+
+        /* Letra Capitular (Drop Cap) */
+        .drop-cap {
+            float: left;
+            font-family: 'Cinzel', serif;
+            font-size: 3.8rem;
+            line-height: 0.8;
+            padding: 6px 8px 2px 2px;
+            margin-right: 8px;
+            margin-top: -4px;
+            color: #1a1a1a;
+            border: 1px solid #1a1a1a;
+            background-color: transparent;
+        }
+
+        /* Citações */
+        .item-quote {
+            font-style: italic;
+            margin: 15px 0 5px 0;
+            text-indent: 0;
+            font-size: 0.95em;
+        }
+
+        .quote-source {
+            display: block;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Rodapé e Footnotes */
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        .footnote {
+            position: absolute;
+            bottom: 45px; /* Subi um pouco a posição */
+            right: 50px;
+            left: 50px;
+            text-align: right;
+            border-top: 1px solid #ccc; /* Linha divisória */
+            padding-top: 8px;
+            font-size: 0.85em;
+            color: #555;
+            background-color: transparent; /* Garante que não tape nada, mas o padding do content resolve */
+            z-index: 10;
+        }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; padding-bottom: 0; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+            .footnote { position: relative; bottom: auto; margin-top: 30px; left: 0; right: 0; text-align: left; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            
+            <img src="nox_throne_illustration.jpg" alt="Arte Nox no Trono" class="chapter-illustration" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder-top" style="display:none;">
+                [Ilustração Trono Nox]<br>Salve como: nox_throne_illustration.jpg
+            </div>
+
+            <h1 class="chapter-title"><span class="chapter-number-text">Capítulo 5:</span> As Cidades Eternas</h1>
+
+            <div class="content">
+                <p class="no-indent">
+                    <span class="drop-cap">P</span>or que as Cidades Eternas são assim chamadas? E por que elas têm um falso céu sobre suas cabeças?
+                </p>
+
+                <p>Retornando à descrição dos conjuntos de armadura dos Nox, podemos ver que diz o seguinte:</p>
+
+                <p class="item-quote">“Há muito tempo, os Nox invocaram a ira da Vontade Maior, e foram banidos para as profundezas subterrâneas. Agora eles vivem sob um falso céu noturno, em eterna antecipação de seu soberano.”</p>
+                <span class="quote-source">- Armadura de Espadachim de Nox</span>
+
+                <p>Acho que isso deixa muito claro que a Vontade Maior é a força por trás das atuais condições de vida dos Nox. Essa palavra "agora", seguindo a descrição dos atos de traição dos Nox, sugere um vínculo causal.</p>
+
+                <p>Nokstella e Nokron existem no subsolo, e podemos ver que elas têm um falso céu estrelado acima delas – talvez uma criação da Vontade Maior, colocado lá para provocar as cidades com a Era das Estrelas que elas estão destinadas a nunca ver. Em vez disso, essas cidades são feitas para esperar em "eterna antecipação", uma punição verdadeiramente cruel.</p>
+
+                <p>Obtemos mais evidências sobre esse estado de coisas com o feitiço Névoa da Donzela Noturna:</p>
+            </div>
+            
+            <div class="page-number">126</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2L4 10h5v12h6V10h5L12 2z"/></svg> 
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content content-right-page">
+                <p class="item-quote">“Abaixo de Sellia, a Cidade Eterna de Nokron dorme. Esta feitiçaria origina-se da donzela daquele lugar.”</p>
+                <span class="quote-source">- Névoa da Donzela Noturna</span>
+
+                <p>É minha crença que, sob aquele falso céu, os Nox estão limitados no que podem fazer. Eles têm seu destino detido devido à maldição colocada sobre eles. Portanto, cada ação que tomam é uma tentativa de quebrar essa maldição.</p>
+
+                <p>Conhecemos três Cidades Eternas dos Nox: Nokron, Nokstella e uma cidade sem nome que foi destruída. Curiosamente, Iji descreve Nokron e Nokstella como cidades gêmeas:</p>
+
+                <p class="item-quote">“Presumo que você tenha ouvido falar da Cidade Eterna de Nokstella? Bem, ela tem uma irmã gêmea, conhecida como Nokron. A outra Cidade Eterna. Após anos de expedições, determinamos a localização de Nokron.”</p>
+                <span class="quote-source">- Conselheiro de Guerra Iji</span>
+
+                <p>Gêmeos são uma ocorrência comum em <em>Elden Ring</em>, e isso sugere que até as Cidades Eternas caem dentro das regras das Terras Intermédias. Se o jogo ama gêmeos, talvez a terceira cidade sem nome estivesse sempre condenada a cair? Mas mais sobre isso depois.</p>
+
+                <p>Agora temos que considerar se as Cidades Eternas foram construídas no subsolo pelos Nox ou se por alguma força elas foram literalmente teletransportadas para o subsolo. Quase sempre vou com a explicação mais mundana para as coisas, e este caso não é diferente: as cidades parecem ter sido construídas de forma inteligente em torno da topografia incomum que se encontraria no subsolo. Isso inclui torres invertidas que permitem aos Nox usar o espaço apertado de forma mais eficaz construindo nos tetos das cavernas.</p>
+
+                <p>Dito isso, há alguns argumentos convincentes a serem feitos de que as cidades foram literalmente empurradas abaixo da superfície. Uma observação impressionante é feita pelo <em>Tarnished Archaeologist</em> em seu ensaio em vídeo "A História Oculta de Leyndell". Eles argumentam que se você sobrepor o mapa subterrâneo com o mapa da superfície, pode realmente ver onde as Cidades Eternas ficariam se estivessem na superfície¹.</p>
+
+                <p>Este espaço alinha-se quase perfeitamente com áreas no mundo superior onde parece que a terra deslizou: no abismo entre a baixa Leyndell e a muralha externa para a terceira cidade perdida, na parte norte da Liurnia colapsada para Nokstella, e na lacuna ocidental de Liurnia para Nokron.</p>
+
+                <p>De qualquer forma, após serem banidos, os Nox escolheram construir suas novas cidades entre os ossos de uma civilização ainda mais antiga. Isso faz sentido, pois haveria fundações e terra plana nessas áreas para construir. Os Nox parecem ter se adaptado bem ao seu novo habitat, construindo represas onde necessário e de alguma forma treinando as formigas gigantes locais como montarias.</p>
+            </div>
+            
+            <div class="footnote">
+                1 “Leyndell’s Hidden History” - The Tarnished Archaeologist
+            </div>
+            <div class="page-number">127</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

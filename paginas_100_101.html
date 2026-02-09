@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grace Given - Páginas 100 e 101</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap'); /* Adicionei Cinzel para títulos, se necessário, ou mantemos Cormorant */
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px; /* Aumentei um pouco para acomodar melhor duas paginas de texto */
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px; /* Ajustei padding para bater com o visual anterior */
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+
+        /* Conteúdo */
+        .content {
+            margin-top: 40px; /* Espaço para o cabeçalho absoluto */
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px; /* Ajuste fino de leitura */
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+        }
+
+        p { margin-bottom: 12px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        
+        em { font-style: italic; }
+
+        /* Títulos internos (The Lords of Gravity) */
+        h2.section-title {
+            font-family: 'Cinzel', serif;
+            color: #8abeb4; /* Verde azulado do titulo */
+            font-size: 1.4rem;
+            text-align: center;
+            margin: 25px 0 15px 0;
+            line-height: 1.1;
+            break-inside: avoid;
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+
+        /* Rodapé / Notas */
+        .footnote-divider {
+            width: 30%;
+            height: 1px;
+            background-color: #c5a059;
+            margin: 20px 0 10px 0;
+            opacity: 0.5;
+            break-inside: avoid;
+        }
+
+        .footnote-text {
+            font-size: 0.8rem;
+            color: #c5a059;
+            line-height: 1.3;
+            break-inside: avoid;
+        }
+        
+        .footnote-ref {
+            font-size: 0.7em;
+            vertical-align: super;
+        }
+
+        .quote-source {
+            display: block;
+            text-align: right;
+            margin-top: 5px;
+            font-style: italic;
+        }
+        
+        /* Citação dentro do texto (italico) */
+        .inline-quote {
+            font-style: italic;
+        }
+
+        /* Rodapé (Número da página) */
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/></svg>
+                <div class="header-title">O Celestial</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">efeitos da Runa da Morte entre ela e Godwyn.</p>
+                
+                <p>Então, qual é a relevância de Alberich conhecer esses feitiços? Ela ensinou a ele também? Temos que assumir que sim, dado que ela parece ser a fonte de tal feitiçaria.</p>
+
+                <p>Isso significa que ela também o ensinou sobre a Estrela de Sangue, seus segredos e sobre a Pedra Cintilante vermelha? Talvez. Afinal, Alberich parece ser um dos únicos indivíduos que não é cego e ainda assim tem conhecimento disso. Ele é capaz de usar os feitiços dos Culpados sem ter sofrido um destino tão terrível. Então faria sentido para mim que essa misteriosa velha, versada no ocultismo e no lado sombrio dos corpos celestes, tenha sido quem ensinou Alberich sobre a Estrela de Sangue.</p>
+
+                <p>Sempre assumi que a Bruxa da Neve provavelmente está localizada na Montanha dos Gigantes, dado que ela é a <em>Bruxa da Neve</em>; talvez ela seja uma remanescente da antiga comunidade de astrólogos que viveu ao lado dos Gigantes de Fogo.</p>
+
+                <p>Existe um feitiço de frio que não está associado à Bruxa da Neve, no entanto: Tempestade de Gelo de Zamor, cuja descrição chama os Zamor de um povo antigo que tem uma velha inimizade com os Gigantes de Fogo. Minha especulação é que os Zamor são os criadores originais das magias de frio, e isso foi posteriormente desenvolvido por feiticeiros humanos como a Bruxa da Neve.</p>
+
+                <p>Se for esse o caso, talvez não seja surpresa que a Bruxa tenha conhecimento da Estrela de Sangue, dados os cadáveres dos gigantes, empalados por magia de espinhos, encontrados por todos os topos das montanhas. Talvez ela até tenha testemunhado a guerra?</p>
+
+                <p>Há também outra observação interessante feita por um espectador que comentou em um dos meus posts na comunidade, Monsieur Dorgat. Ele sugeriu que pode haver uma conexão com Alberich na Torre Herética, uma possibilidade que eu nunca havia considerado. As conexões sendo feitas aqui são que as Feitiçarias Gélidas provavelmente vêm da Montanha dos Gigantes e que o interior possivelmente está cheio de Pedra Cintilante vermelha.</p>
+
+                <p>Este local sempre foi de grande interesse para mim. É uma torre que claramente foi selada por Raya Lucaria, como é evidente pelo selo bloqueando a porta e as marionetes que guardam a torre – dentro e fora.</p>
+
+                <p>Chama-se Torre Herética, o que é interessante, pois, novamente, Alberich foi considerado um feiticeiro herético, provavelmente por Raya Lucaria. No entanto, o ponto de heresia parece ser uma feitiçaria da Corrente Primordial, já que você é recompensado com a Chuva de Estrelas Primordial desta torre, não uma Feitiçaria de Espinhos. Isso significa que Alberich não</p>
+            </div>
+            
+            <div class="page-number">100</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M11 2h2v20h-2z"/><path d="M4.93 4.93l1.41-1.41 12.73 12.73-1.41 1.41z"/><path d="M19.07 4.93l-1.41-1.41-12.73 12.73 1.41 1.41z"/></svg>
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">investigou também a Corrente Primordial? Claro que não. Ele poderia muito bem ter tentado pesquisar a Corrente Primordial para entender melhor a natureza da Estrela de Sangue.</p>
+
+                <p>Finalmente, quanto à possibilidade de Pedra Cintilante vermelha mencionada por Monsieur Dorgat, parece haver aglomerados de pedra escura aqui. Eles não são tão vermelhos brilhantes quanto a Pedra Cintilante encontrada no Traje de Alberich, mas talvez esta seja a Pedra Cintilante vermelha em sua forma pura, antes de ser cortada, moldada e polida. Deixo para você decidir.</p>
+
+                <p>Alberich é um invasor fantasma vermelho e temos que questionar por que ele se comporta assim. Talvez ele apenas busque mais sangue para a Estrela de Sangue. De fato, ele empunha uma foice, uma grande arma de sangramento. Ou talvez ele queira vingança contra a Mesa Redonda – afinal, é lá que ele invade, quebrando as regras de não-conflito deste lugar sagrado.</p>
+
+                <p>Ultimamente, isso é o que sabemos sobre a Estrela de Sangue e como ela interage com seus aderentes. Os fiéis da Térvore parecem forçar propositalmente os condenados a ter uma interação com ela, dando-lhes o sacrifício de sangue que ela parece desejar. No entanto, parece que aqueles com conhecimento dela podem contornar a necessidade de se ferir, ferindo ou sacrificando outros – para que possam criar Pedra Cintilante vermelha para usar os poderes, mantendo sua visão intacta.</p>
+
+                <h2 class="section-title">OS SENHORES DA<br>GRAVIDADE</h2>
+
+                <p>Gravidade, em termos leigos, é essencialmente uma força de atração entre corpos de massa. Quando essa atração é mútua entre certos corpos, como planetas, estrelas, etc., então ela determina o movimento desses corpos em um sistema de equilíbrio.</p>
+
+                <p>Portanto, faz sentido que a magia da gravidade seja apenas uma feitiçaria de Pedra Cintilante, ou estelar, que manipula forças gravitacionais<span class="footnote-ref">2</span>. Estrelas são corpos celestes e, portanto, faz todo o sentido que um ser como Astel, uma estrela malformada, possa manipular naturalmente a gravidade para redirecionar meteoritos conforme achar conveniente – especialmente quando consideramos que, neste universo, as estrelas estão conectadas às magias.</p>
+
+                <p>Dito isso, há muitas alusões fascinantes que podem ser usadas para enriquecer nossa compreensão de algum simbolismo encontrado no jogo. Por sua vez, isso pode ajudar nosso entendimento deste curioso campo da magia e dos misteriosos seres conhecidos como os Lordes de Alabastro e Ônix, que estão muito intimamente associados à magia da gravidade.</p>
+
+                <p>Aprendemos que os Lordes de Alabastro e Ônix são uma raça antiga que veio a este mundo via meteorito, como dizem suas espadas:</p>
+
+                <p class="inline-quote">“Uma arma única dos Lordes de Ônix, uma raça de anciões com pele de pedra que</p>
+
+                <div class="footnote-divider"></div>
+                <div class="footnote-text">
+                    <span class="footnote-ref">2</span> As descrições dos itens para feitiços de gravidade nos dizem que são feitiçarias de Pedra Cintilante; por exemplo, Estrelas do Colapso diz: “Uma das feitiçarias de pedra cintilante que manipula forças gravitacionais... Uma técnica gravitacional dominada pelo jovem Radahn. ‘Eu te agradeço por tua tutela, pois agora posso desafiar as estrelas.’”
+                    <span class="quote-source">- Estrelas do Colapso</span>
+                </div>
+            </div>
+            
+            <div class="page-number">101</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

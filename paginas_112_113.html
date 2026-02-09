@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rule of the Tree & Grace Given - Páginas 112 e 113</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+
+        /* Conteúdo Texto */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        
+        em { font-style: italic; }
+
+        /* Citações de Itens */
+        .item-quote {
+            font-style: italic;
+            margin: 15px 0 5px 0;
+            text-indent: 0;
+            font-size: 0.95em;
+        }
+
+        .quote-source {
+            display: block;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Imagem Central (Marika Sketch) */
+        .center-img {
+            width: 100%;
+            max-width: 250px;
+            display: block;
+            margin: 15px auto;
+            break-inside: avoid;
+            mix-blend-mode: multiply;
+            filter: contrast(1.1) brightness(1.05);
+        }
+        
+        .img-placeholder-small {
+            width: 100%;
+            height: 200px;
+            background-color: rgba(197, 160, 89, 0.2);
+            border: 1px dashed #c5a059;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #c5a059;
+            text-align: center;
+            font-size: 0.8rem;
+            margin: 20px 0;
+            break-inside: avoid;
+        }
+
+        /* Rodapé (Número da página) */
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2L4 10h5v12h6V10h5L12 2z"/></svg>
+                <div class="header-title">O Reinado da Árvore</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">A semente mostrada neste talismã é especial, e sua representação ao lado dos Dois Dedos visa ilustrar o nascimento da Térvore. Para mim, a interpretação é clara: os Dois Dedos deram a Marika a semente que se tornaria a Térvore. Ela então ascendeu ao Portão da Divindade e se tornou uma deusa de uma nova era.</p>
+
+                <p>As guerras da Térvore se seguiriam, e os descendentes e o povo de Marika não seriam mais conhecidos como Xamãs. Eles agora seriam os Numen, descendentes daqueles de outro mundo: os Xamãs da Terra das Sombras.</p>
+
+                <p>Eu proponho que os Nox são os Numen, mas eles agora são definidos por sua lealdade à Era das Estrelas. Rogier refere-se aos Assassinos da Faca Negra como descendentes da Cidade Eterna, enquanto a Armadura da Faca Negra refere-se a eles como Numen. Em meu capítulo sobre a Cidade Eterna e os Nox, discuto a ramificação dos Nox em mais detalhes, mas apenas tenha em mente que eles compartilham uma herança comum; eles apenas se desenvolveram em duas culturas distintas.</p>
+
+                <p>Então, estes são uma raça de outro mundo de vida longa que claramente tem biologia diferente dos humanos normais, pois são “raramente nascidos”, mas também têm expectativas de vida sobrenaturais. Isso é particularmente interessante, porque temos duas conexões Numen que usam o termo “eterno”: as Cidades Eternas e a Rainha Marika, a Eterna.</p>
+
+                <p>Em ambas as instâncias podemos encontrar explicações para sua natureza eterna, como Marika recebendo vida eterna com sua ascensão à divindade, e as Cidades Eternas sendo amaldiçoadas a existir eternamente sob um céu noturno falso. Isso é o que eu havia sugerido anteriormente em meu vídeo de lore “Os Nox e as Cidades Eternas”. Mas, como acontece frequentemente, minha posição mudou um pouco e agora não consigo deixar de pensar que o termo “eterno” tem mais a ver com as longas vidas dessas pessoas Numen.</p>
+
+                <img src="marika_sketch.jpg" alt="Desenho da Rainha Marika" class="center-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="img-placeholder-small" style="display:none;">
+                    [Desenho Marika]<br>Salve como: marika_sketch.jpg
+                </div>
+
+                <p>Não sabemos por que Marika foi escolhida. Talvez ela já fosse a Rainha Marika dos Numen ou dos Nox, ou talvez ela fosse apenas uma líder ou guerreira poderosa. Independentemente disso, sabemos que os Numen são uma raça notável e, portanto, um entre seu número faria um deus muito poderoso.</p>
+
+                <p>E ser elevado à divindade é muito mais do que apenas um título aqui. Marika se tornou um receptáculo para o próprio Elden Ring:</p>
+
+                <p class="item-quote">“A Rainha Marika é o receptáculo do Elden Ring, portadora de sua visão. Uma deusa, na verdade.”</p>
+                <span class="quote-source">- Leitora de Dedos Enia</span>
+
+                <p>A Rainha Marika carrega literalmente o Elden Ring, como vemos quando ele aparece no corpo de Radagon/Marika no final do dia. É claramente parte dela; quando ela estilhaça o Elden Ring no trailer de anúncio, ela estilhaça a si mesma. A Vontade Maior precisava de Marika para operar como sua procuradora, pois a Térvore enfrentaria grande oposição, e exigia um deus de poder inabalável para cimentar seu domínio sobre o mundo. E assim Marika formou sua aliança. Como consorte, ela tomou Hoarah Loux, doravante conhecido como Godfrey, Primeiro Lorde Prístino.</p>
+            </div>
+            
+            <div class="page-number">112</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2L4 10h5v12h6V10h5L12 2z"/></svg> 
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Este é evidentemente um movimento calculado e necessário, dados os tempos em que Marika vivia; ela estava ciente de que para cimentar sua divindade e a Era da Térvore ela precisaria de poder marcial. Como discutimos, a chegada da Térvore não teria sido vista positivamente; teria sido vista como uma ameaça.</p>
+
+                <p>Como tal, Godfrey foi uma excelente escolha para Lorde Prístino neste momento, e acredito que ambos os Lordes Prístinos são um tipo de sinal dos tempos. Godfrey é o guerreiro mais poderoso do mundo em um tempo de grande conflito, enquanto Radagon é um homem forte de crença em um tempo de fé minguante. (Discutiremos Radagon em breve.)</p>
+
+                <p>Juntando-se a Godfrey estariam os Cavaleiros do Crisol, e aprendemos sobre esses guerreiros no Elmo do Machado do Crisol, que diz:</p>
+
+                <p class="item-quote">“Elmo dos Cavaleiros do Crisol que serviram a Godfrey, o primeiro Lorde Prístino. A ornamentação do machado é a marca do cavaleiro Ordovis, exibida também por seus homens. Detém o poder do crisol da vida, a forma primordial da Térvore. Fortalece encantamentos dos Aspectos do Crisol.”</p>
+                <span class="quote-source">- Elmo do Machado do Crisol</span>
+
+                <p>Então esses guerreiros poderosos são uma ordem de cavaleiros que ainda veneram a forma primordial da Térvore, e canalizam o poder do Crisol da Vida. Isso os torna aliados naturais das forças da Térvore; servir a Godfrey foi sem dúvida resultado de respeitar sua força inegável.</p>
+
+                <p>Com tal poder ao seu comando, Marika procuraria proteger suas novas posses como uma deusa e brandir o próprio poder do Elden Ring contra a ameaça mais perigosa que existia: os Gigantes de Fogo. Sabemos que a decisão de fazer guerra aos Gigantes de Fogo foi lógica. Não apenas eles eram uma raça poderosa que adorava um deus que caiu fora da alçada da Vontade Maior, mas eles realmente representavam um perigo para a árvore emergente. Aprendemos isso via o encantamento "Surge, Ó Chama!", que nos diz que a Chama da Ruína era capaz de queimar a Térvore – portanto, tornando-a uma das poucas ameaças diretas à árvore.</p>
+
+                <p>Sabemos que pessoas da fé da Térvore, profetas, teriam visões da Chama da Ruína queimando a</p>
+            </div>
+            
+            <div class="page-number">113</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

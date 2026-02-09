@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 9: As Guerras de Unificação da Térvore - Páginas 226 e 227</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+
+        /* Conteúdo Texto */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+            padding-bottom: 40px;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        
+        em { font-style: italic; }
+
+        /* Citações de Itens */
+        .item-quote {
+            font-style: italic;
+            margin: 15px 0 5px 0;
+            text-indent: 0;
+            font-size: 0.95em;
+        }
+
+        .quote-source {
+            display: block;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Citação Verde Grande (Pull Quote) */
+        .pull-quote-green {
+            color: #c5a059; /* Laranja/Dourado para este capítulo */
+            font-size: 1.35rem;
+            line-height: 1.3;
+            margin: 0 0 25px 0;
+            text-indent: 0;
+            text-align: left;
+            break-inside: avoid;
+            font-weight: 400;
+        }
+
+        /* Rodapé e Footnotes */
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        .footnote {
+            position: absolute;
+            bottom: 50px;
+            left: 50px;
+            right: 50px;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            font-size: 0.8em;
+            color: #555;
+        }
+
+        .footnote.right { text-align: right; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; padding-bottom: 0; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+            .footnote { position: relative; bottom: auto; margin-top: 30px; left: 0; right: 0; text-align: left; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><circle cx="12" cy="12" r="3"/></svg> 
+                <div class="header-title">As Guerras de Unificação da Térvore</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Como discutimos no Capítulo 2, os "cinco dedos" das bestas são um símbolo de sua inteligência emergente, representada artisticamente pela Cinquedea.</p>
+
+                <p>Isso é importante, porque há outra referência a cinco dedos, e essa é do Grande Martelo da Garra de Besta que já analisamos.</p>
+
+                <p>É possível, então, que Serosh estivesse entre as primeiras bestas a ganhar inteligência? Poderia Serosh ter sido realmente o primeiro?</p>
+
+                <p>Talvez não. Mesmo assim, a referência às cinco garras no Grande Martelo da Garra de Besta e sua relevância para Serosh parece importante para mim. No mínimo, acredito que mostre que, entre as bestas, Serosh é representativo dessa inteligência. Daí sua senhoria.</p>
+
+                <p>Serosh teria que ser uma besta de grande inteligência, já que a importância de sua mente é refletida pelo Escudo de Brasão da Besta Dourada:</p>
+
+                <p class="item-quote">“A besta representada é Serosh, conselheiro idoso que guia a linhagem dourada.”</p>
+                <span class="quote-source">- Escudo de Brasão da Besta Dourada</span>
+
+                <p>A imagem aqui é de Serosh como um ser sábio em quem se podia confiar para conselhos sagazes. Isso se encaixa tematicamente em seu papel na senhoria de Godfrey, onde sua presença torna Hoarah Loux menos besta e mais lorde.</p>
+
+                <p>A submissão de Serosh pode muito bem ser representada simbolicamente pelo machado de Godfrey¹, uma sugestão originalmente feita pelo usuário do Reddit Kurenai_Jack. A base de Kurenai_Jack para essa sugestão deriva das semelhanças de design entre o Machado de Godfrey e o Cutelo do Homem-Fera, em relação aos relevos em ambos e o material usado, talvez indicando que o machado de Godfrey foi uma vez de Serosh.</p>
+
+                <div class="pull-quote-green">
+                    Serosh é um ser sábio em quem se podia confiar para conselhos sagazes. Isso se encaixa com seu papel na senhoria de Godfrey; sua presença torna Hoarah Loux menos besta.
+                </div>
+
+                <p class="no-indent">O outro detalhe interessante da descrição deste Escudo de Brasão da Besta Dourada é que Serosh é descrito como "idoso". Isso poderia potencialmente ser tomado como evidência de que Serosh é um ser antigo que remonta à civilização de Farum Azula. Talvez ele fosse lorde entre seu povo mesmo que seu povo fosse subserviente aos dragões.</p>
+
+                <p>Seja qual for a verdade, Serosh seria o oponente ideal para o homem conhecido como Hoarah Loux, e eles sem dúvida operavam sob máximas semelhantes: apenas os fortes sobrevivem e apenas um pode ser dominante. Essas são as regras da natureza.</p>
+
+                <p>Seria simples o suficiente deixar por isso mesmo, concordando que Serosh era um lorde entre as bestas e que Hoarah Loux derrotou os Homens-Fera em uma de suas muitas conquistas. No entanto, há uma consideração final quando falamos da cultura da besta e de Farum Azula. Essa é a conexão bastante interessante com Stormveil e a Mansão Fortificada.</p>
+            </div>
+            
+            <div class="footnote">
+                1 Comentário no Reddit por u/Kurenai_Jack da postagem “Isn’t this another aspect of the crucible? (axe of Godfrey)”: bit.ly/4aO0sbT
+            </div>
+            <div class="page-number">226</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2L4 10h5v12h6V10h5L12 2z"/></svg> 
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Podemos encontrar falcões tanto em Farum Azula quanto em Stormveil, bem como o leão rampante de Serosh. Claro, uma das conexões entre os dois locais é a presença dos Cavaleiros Banidos, que existem não apenas em Farum Azula e Stormveil – evidência de seus armamentos também é encontrada na Mansão Fortificada. Esses cavaleiros claramente têm alguma conexão com a civilização dos dragões. Não apenas eles estão presentes em cada local, mas eles também usam Encantações de Comunhão do Dragão e carregam o dragão em seus elmos.</p>
+
+                <p>Se Stormveil e a Mansão Fortificada fossem originalmente ramificações de uma sociedade bestial que foi posteriormente cooptada por Godfrey, isso explicaria os laços com Farum Azula, a sociedade original das bestas.</p>
+
+                <p>Um fato interessante adicional sobre os Cavaleiros Banidos é que, no japonês original, as duas Cinzas de Cavaleiros Banidos, Oleg e Engvall, são referidas como as "Asas do Senhor da Tempestade" em vez de apenas "Asas da Tempestade²". Isso torna muito mais claro que esses cavaleiros uma vez tiveram lealdade ao Senhor da Tempestade e que Godfrey mais tarde vincularia esses guerreiros à sua vontade após derrotar seu lorde.</p>
+
+                <p>Assim, esses Cavaleiros Banidos, com seus elmos com topo de dragão e associação com Farum Azula, poderiam muito bem ter sido humanos draconianos que serviram aos dragões em anos passados. De fato, as decorações de dragão nos canhões de chamas encontrados em Stormveil poderiam ser mais uma evidência da orgulhosa herança antiga de Stormveil. Isso é especulação, mas ajudaria a explicar a sociedade bastante heterogênea encontrada em Stormveil. E em vez de acreditar que era uma fortaleza de Serosh especificamente, eu concederia mais provavelmente que este era um posto avançado do Senhor da Tempestade e dessa sociedade em geral.</p>
+
+                <p>Então poderia ser que a estrutura Normanda³ original de Stormveil tenha sido construída pelo povo do Senhor da Tempestade, daí a imagética de falcão de pedra que está cozida nela. E então foi tomada e reaproveitada por Godfrey e mais tarde seu descendente, Godrick. Isso, por sua vez, é quando obtemos a ornamentação dourada e estandartes quase enxertados no topo do castelo para representar seu novo mestre⁴.</p>
+
+                <p>Stormveil também parece estar intimamente associado aos falcões e ao Rei Falcão da Tempestade, que poderia ter governado o poleiro.</p>
+            </div>
+            
+            <div class="footnote right">
+                2 Tradução via “Fear the Old Lore - The Storm Lord - Elden Ring” - Last Protagonist<br>
+                3 “The History & Architecture of Stormveil Castle” - The Lore Hunter<br>
+                4 “Elden Ring Lore: The Golden Lineage” - Eredin (unlisted)
+            </div>
+            <div class="page-number">227</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

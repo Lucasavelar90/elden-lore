@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grace Given - Páginas 50 e 51</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1100px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 50px 45px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Página Esquerda */
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Página Direita */
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header-icon {
+            display: block;
+            margin: 0 auto 10px auto;
+            width: 30px;
+            fill: #a3905e;
+        }
+
+        .header-title {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #a3905e;
+            font-weight: 600;
+        }
+
+        /* Conteúdo em Colunas */
+        .content {
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 14px;
+            line-height: 1.5;
+            text-align: justify;
+            orphans: 3;
+            widows: 3;
+            flex-grow: 1;
+        }
+
+        p { margin-bottom: 12px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+
+        /* Citações Padrão */
+        .quote-box {
+            margin: 15px 0;
+            break-inside: avoid;
+            padding: 0 5px;
+        }
+
+        .quote-text {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #333;
+            line-height: 1.4;
+            text-indent: 0;
+        }
+
+        .quote-author {
+            display: block;
+            font-style: normal;
+            font-size: 0.8rem;
+            color: #777;
+            text-align: right;
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Títulos de Seção (Verde) */
+        .special-title {
+            column-span: all;
+            text-align: center;
+            color: #92b3a5;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin: 25px 0;
+            font-weight: 400;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+        }
+
+        /* Destaque Grande (Pull Quote) da Pág 51 */
+        .highlight-quote {
+            color: #92b3a5; /* Mesmo verde do título */
+            font-size: 1.3rem;
+            line-height: 1.3;
+            margin-top: 20px;
+            text-indent: 0;
+            text-align: left;
+            break-inside: avoid;
+        }
+
+        /* Rodapé */
+        .footer {
+            margin-top: auto;
+            padding-top: 20px;
+            font-size: 0.9rem;
+            color: #a3905e;
+            font-weight: 600;
+            font-family: serif;
+            border-top: 1px solid rgba(163, 144, 94, 0.3);
+        }
+
+        .footer-left { text-align: left; }
+        .footer-right { text-align: right; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24">
+                    <path d="M12 2C9 2 7 5 7 8c0 1.5 1 3 2.5 4L7 16l1 2 4-2 4 2 1-2-2.5-4C17 11 18 9.5 18 8c0-3-2-6-5-6zm0 2c1.5 0 3 1.5 3 4s-1.5 4-3 4-3-1.5-3-4 1.5-4 3-4z" opacity="0.8"/>
+                </svg>
+                <div class="header-title">O Tempo Antes da Térvore</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">...retornando a ele mais uma vez, ele se torna mais associado à garra novamente.</p>
+                
+                <p>Isso poderia ajudar a explicar a relação quase obsessiva que a sociedade dos Homens-Fera tem com a morte. Farum Azula, o coração de sua civilização, é um mausoléu gigante com corpos de Homens-Fera em exibição por toda parte – em enterros ornamentados, posados dramaticamente contra colunas e embutidos no chão e nas paredes. É ainda mais evidente nas proximidades do Santuário Bestial (Bestial Sanctum), claramente uma região que já foi parte da sociedade dos Homens-Fera. Aqui encontramos pilares cobrindo a encosta, todos embutidos com os restos mortais de Homens-Fera.</p>
+
+                <p>Todas as espécies sencientes precisam lidar com o espectro aterrorizante da morte; no mundo real, muitas religiões lidam com a morte e a questão do que vem a seguir. No contexto de <i>Elden Ring</i>, isso faz sentido para mim. Mover-se de uma raça animal predatória para uma espécie mais inteligente teria trazido a morte para um foco aterrorizante para os Homens-Fera. Sem dúvida, isso explica a veneração de seus mortos que vemos por toda Farum Azula.</p>
+
+                <p>Então, para resumir: Homens-Fera em uma era muito antiga eram bestas comuns. Receberam inteligência de um ser superior, um evento ainda memorializado pelo Clero Bestial do qual Gurranq já foi membro, e um evento que eles atribuem aos dragões a quem serviam. É o presente de inteligência deles, sua adoração aos dragões e seu foco na morte que formariam os pilares de seus ideais religiosos e culturais.</p>
+
+                <p>Dito isto, vamos agora olhar para a evolução da sociedade das feras através desta era pré-histórica.</p>
+
+                <h2 class="special-title">Farum Azula</h2>
+
+                <p class="no-indent">Um conceito que me foi apresentado pelo <i>Tarnished Archaeologist</i>, em seu vídeo de lore "Elden Ring Archaeology: Farum Azula and the Dawn of Unalloyed Gold", é que o design ambiental de Farum Azula pode ser comparado à arqueologia do mundo real.</p>
+
+                <p>Ao fazer isso, podemos traçar as várias eras pré-históricas dos Homens-Fera enquanto seguem uma trajetória semelhante à nossa própria pré-história humana.</p>
+
+                <p>Primeiro de tudo, vamos esclarecer por que estamos chamando isso de pré-história. Pré-história, no mundo real, é o período da história humana que ocorreu antes do advento dos registros escritos. A pré-história é geralmente marcada por três eras principais, embora existam vários subperíodos dentro de cada uma delas. Estas são a Idade da Pedra, a Idade do Bronze e a Idade do Ferro – todas nomeadas pelos materiais usados para ferramentas e armas durante esse período. Isso está sujeito a grande variação de uma cultura para outra, mas é uma boa estrutura para empregar a fim de começar a entender este período da história.</p>
+            </div>
+
+            <div class="footer footer-left">50</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24">
+                    <path d="M12 2L4 8l2 8 6 6 6-6 2-8-8-6zm0 3l5 4-1 5-4 4-4-4-1-5 5-4z"/>
+                    <path d="M9 10h2v2H9zm4 0h2v2h-2z" fill="#a3905e"/>
+                </svg>
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Apenas uma civilização em <i>Elden Ring</i> poderia ser considerada parte da pré-história. A civilização dos dragões está claramente situada no início da linha do tempo, de acordo com o Talismã de Escudo com Brasão de Dragão, que a coloca antes da Era da Térvore, e o escudo refere-se a ela, consequentemente, como "pré-histórica".</p>
+
+                <p>Como tal, dado que a sociedade dos Homens-Fera está intimamente ligada aos dragões, podemos inferir de forma plausível que sua sociedade também é uma que emergiu durante a pré-história. Tematicamente, isso faz todo o sentido, já que estamos falando de um grupo de animais evoluindo para uma espécie ereta e inteligente, representando uma analogia clara à nossa própria evolução e desenvolvimento humano.</p>
+
+                <p>E curiosamente, podemos então observar a sociedade dos Homens-Fera passando pelas três maiores eras da pré-história humana. Primeiro, podemos ver a Idade da Pedra, graças à descrição da Funda Bestial (Bestial Sling) que diz:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Diz-se que no tempo anterior à Térvore, pedras foram as primeiras armas das feras que haviam ganhado inteligência."</p>
+                    <span class="quote-author">— Funda Bestial</span>
+                </div>
+
+                <p>Novamente: "Pedras foram as primeiras armas das feras que ganharam inteligência", combinando perfeitamente com a pré-história humana na qual humanos usavam ferramentas e armas básicas de pedra na Idade da Pedra mais antiga.</p>
+
+                <p>Então passamos para a evidência apresentada pelo <i>Tarnished Archaeologist</i>, que destacou evidências arqueológicas que poderiam alinhar os Homens-Fera com a Era Calcolítica do mundo real.</p>
+
+                <p>A Era Calcolítica é também conhecida como a Idade do Cobre, e é geralmente vista como um período de transição entre o Neolítico e a Idade do Bronze. Este é um período na história em que os humanos ainda não haviam descoberto a liga de bronze, mas haviam iniciado a manipulação do cobre.</p>
+
+                <p>O <i>Tarnished Archaeologist</i> identifica esta era na estratigrafia de Farum Azula, através de suas práticas funerárias. Alguns dos enterros de feras são mais ou menos réplicas exatas dos enterros de Varna, um local de enterro calcolítico na Bulgária.</p>
+
+                <p>Finalmente nos movemos para a Idade do Ferro quando consideramos o armamento atual dos Homens-Fera. Pegue o Cutelo de Homem-Fera (Beastman's Cleaver):</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Espada grande curva de tamanho colossal forjada de ferro cego e empunhada pelos homens-fera de Farum Azula."</p>
+                    <span class="quote-author">— Cutelo de Homem-Fera</span>
+                </div>
+
+                <p class="highlight-quote">
+                    Dado que a sociedade dos Homens-Fera está intimamente ligada aos dragões, poderíamos inferir de forma plausível que sua sociedade também é uma que emergiu durante a pré-história.
+                </p>
+            </div>
+
+            <div class="footer footer-right">51</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grace Given - Páginas 78 e 79</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1100px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 50px 45px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; }
+        .header-icon { display: block; margin: 0 auto 10px auto; width: 25px; fill: #a3905e; }
+        .header-title { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #a3905e; font-weight: 600; }
+
+        /* Conteúdo */
+        .content {
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 14px;
+            line-height: 1.5;
+            text-align: justify;
+            orphans: 3;
+            widows: 3;
+            flex-grow: 1;
+        }
+
+        p { margin-bottom: 12px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+
+        /* Citações em caixas */
+        .quote-box {
+            margin: 15px 0;
+            break-inside: avoid;
+            padding: 0 5px;
+        }
+
+        .quote-text {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #333;
+            line-height: 1.4;
+            text-indent: 0;
+        }
+
+        .quote-author {
+            display: block;
+            font-style: normal;
+            font-size: 0.8rem;
+            color: #777;
+            text-align: right;
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Títulos de Seção (Verde) */
+        .special-title {
+            column-span: all;
+            text-align: center;
+            color: #92b3a5;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin: 25px 0;
+            font-weight: 400;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+        }
+
+        /* Rodapé e Notas */
+        .footer-note {
+            font-size: 0.75rem;
+            color: #a3905e;
+            border-top: 1px solid rgba(163, 144, 94, 0.3);
+            padding-top: 10px;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        .footer {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #a3905e;
+            font-weight: 600;
+            font-family: serif;
+        }
+        .footer-left { text-align: left; }
+        .footer-right { text-align: right; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><circle cx="12" cy="12" r="3" fill="#a3905e"/></svg>
+                <div class="header-title">O Celestial</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Isso nos mostra que os dragões modernos já governaram as montanhas antes que os Gigantes de Fogo os expulsassem e se estabelecessem como os mestres das montanhas e eventualmente vivessem pacificamente ao lado dos astrólogos.</p>
+
+                <p>Dado que a Névoa de Borealis afirma que isso aconteceu "há muito tempo", podemos assumir que isso coloca o tempo dos gigantes um pouco depois do reinado dos dragões antigos, mas antes da era de Marika.</p>
+
+                <p>Podemos determinar que foi depois que eles reivindicaram a montanha propriamente dita que eles construiriam algum tipo de sociedade aqui. Vemos evidências de seu artesanato na forma da forja, um ponto focal de sua civilização.</p>
+
+                <p>Embora para nós seja apenas um recipiente para a destrutiva Chama da Ruína, o termo "forja" implica que foi usado para trabalho em metal. Foram os gigantes que realmente foram pioneiros na prática da ferraria, algo que aprendemos da descrição do item Martelo:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Originalmente uma ferramenta de ferreiro. A arte da ferraria diz-se ter se originado entre os gigantes. Os ataques marcantes desta arma ostentam um peso amplo por trás deles."</p>
+                    <span class="quote-author">— Martelo</span>
+                </div>
+
+                <p>Dado o quão básica é a habilidade de ferraria, isso sublinha que esta civilização dos gigantes realmente foi uma das primeiras que desenvolveu práticas fundamentais e ciência.</p>
+
+                <p>De fato, o Martelo de Troll sugere muito que isso foi uma pedra angular de sua sociedade, pois lê:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Trolls são descendentes dos gigantes, e estes eram supostamente usados uma vez como ferramentas cerimoniais de ferreiro. No passado distante, a ferraria era considerada divina."</p>
+                    <span class="quote-author">— Martelo de Troll</span>
+                </div>
+
+                <p>Dado que o fogo de seu próprio deus teria sido usado para forjar armas, não é surpresa que tivesse sido considerado divino. Podemos assumir que os ferreiros gigantes teriam forjado suas joias, como o anel de cozinha de metal empunhado pelo Gigante de Fogo e as grandes correntes que conectam os topos das montanhas.</p>
+
+                <p>A forja em si parece ser construída sobre a mesma arquitetura do tipo que encontramos espalhado pelos topos das montanhas, e, portanto, podemos especular que os gigantes eram construtores também.</p>
+
+                <p>As Torres Divinas são um mistério, aquelas seis estruturas que contêm cada uma um Dois Dedos e a ressonância de uma Grande Runa. Mas uma coisa que não é um mistério é que elas foram construídas antes que a Térvore surgisse; como o criador de conteúdo Eredin aponta em seu soberbo vídeo sobre a Linhagem Dourada<sup style="font-size:0.6em">1</sup>, há uma pintura em Stormveil que mostra Stormhill. Duas coisas estão conspicuamente ausentes aqui; 1) Castelo Tempesvéu (Stormveil Castle), que trataremos mais tarde, e 2) a Térvore e sua luz.</p>
+            </div>
+
+            <div class="footer-note">
+                1 "Elden Ring Lore: The Golden Lineage" - Eredin (não listado)
+            </div>
+            <div class="footer footer-left">78</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2l-2 4h-4l-2 4v6l4 4h8l4-4v-6l-2-4h-4z M12 6l1 2h-2L12 6z" opacity="0.8"/></svg>
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Então isso pelo menos restringe para pré-Térvore e conquista pré-Godfrey, e eu coloco isso próximo no tempo da civilização dos gigantes, porque seu estilo arquitetônico combina muito com o da Forja da Chama Caída. Quanto ao propósito desses edifícios? Só podemos adivinhar. Talvez eles sejam uma tentativa de alcançar o céu para estar mais perto de seu deus?</p>
+
+                <p>No entanto, seu deus não era um de criação, mas de destruição, e, novamente, é implícito que os gigantes são os inimigos daqueles que são antitéticos à sua chama ruinosa.</p>
+
+                <p>Isso incluiria seres como os dragões de gelo e os campeões da Térvore. Mas também é reforçado por seu conflito com outro de seus antigos inimigos: o povo de Zamor.</p>
+
+                <p>Podemos ver pelas Ruínas de Zamor, a coleção de estruturas nas encostas inferiores da montanha dos gigantes, que essas pessoas também habitavam esta região. Os Zamor são um povo que aparentemente adora o inverno, como descrito pela Espada Curva de Zamor:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Em aparente devoção ao inverno, a lâmina curva é estilizada após um vento gelado e imbuída com um poderoso efeito de gelo."</p>
+                    <span class="quote-author">— Espada Curva de Zamor</span>
+                </div>
+
+                <p>No entanto, seu conjunto de armadura deixa claro que essas pessoas guerreiras têm lutado contra os gigantes mesmo antes da guerra com a Térvore:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Estes guerreiros de vida longa, vestidos em ventos cortantes e congelantes, dizem ter sido os inimigos mortais dos Gigantes de Fogo desde tempos imemoriais."</p>
+                    <span class="quote-author">— Armadura de Zamor</span>
+                </div>
+
+                <p>A associação dos Zamor com o gelo já está sendo deixada clara, como se eles fossem um com ele tanto quanto os gigantes são um com a chama. De fato, a feitiçaria Tempestade de Gelo de Zamor até vai tão longe a ponto de sugerir que eles são "cobertos" de gelo e, portanto, faz sentido que essas duas tribos batalhassem pela dominância.</p>
+
+                <p>O termo imemorial deixa claro que os Zamor vinham lutando contra os Gigantes de Fogo desde muito antes do conflito da Térvore com eles e que eles apenas se tornaram aliados de conveniência neste estágio posterior.</p>
+
+                <p>Mas para entender melhor a natureza dos Gigantes de Fogo, devemos explorar sua divindade: o Deus Caído (Fell God), pois este ser é central para sua identidade.</p>
+
+                <h2 class="special-title">O Deus Caído</h2>
+
+                <p class="no-indent">É sugerido que os Gigantes de Fogo são do jeito que são devido a uma maldição que os prende ao seu dever como guardiões da Chama da Ruína e, portanto, o Deus Caído. O encantamento Queime, Ó Chama! diz:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Os Gigantes de Fogo tomaram emprestado o poder de um deus caído, e ainda assim foram derrotados. No entanto, seu fracasso os libertou de sua maldição solitária: servir como guardiões da Chama pela eternidade."</p>
+                    <span class="quote-author">— Queime, Ó Chama!</span>
+                </div>
+            </div>
+            <div class="footer footer-right">79</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rule of the Tree & Grace Given - Páginas 120 e 121</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+
+        /* Conteúdo Texto */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        
+        em { font-style: italic; }
+
+        /* Títulos de Subseção (THE NUMEN AND THE ETERNAL CITIES) */
+        h2.subsection-title {
+            font-family: 'Cinzel', serif;
+            color: #8abeb4;
+            font-size: 1.2rem;
+            text-align: center;
+            margin: 25px 0 15px 0;
+            line-height: 1.2;
+            break-inside: avoid;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        /* Citações de Itens */
+        .item-quote {
+            font-style: italic;
+            margin: 15px 0 5px 0;
+            text-indent: 0;
+            font-size: 0.95em;
+        }
+
+        .quote-source {
+            display: block;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Imagem Central (Cavaleiro Verde) */
+        .center-img {
+            width: 100%;
+            max-width: 250px;
+            display: block;
+            margin: 20px auto;
+            break-inside: avoid;
+            mix-blend-mode: multiply;
+            filter: contrast(1.1) brightness(1.05);
+        }
+        
+        .img-placeholder-small {
+            width: 100%;
+            height: 250px;
+            background-color: rgba(138, 190, 180, 0.2);
+            border: 1px dashed #8abeb4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #8abeb4;
+            text-align: center;
+            font-size: 0.8rem;
+            margin: 20px 0;
+            break-inside: avoid;
+        }
+
+        /* Rodapé (Número da página) */
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2L4 10h5v12h6V10h5L12 2z"/></svg> 
+                <div class="header-title">O Reinado da Árvore</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Por exemplo, os Corníferos (Hornsent) de Belurat, uma cultura inteira que floresceu no tempo do Crisol, representa o Crisol como uma árvore espiral. O Selo da Árvore Espiral diz:</p>
+
+                <p class="item-quote">“Selo sagrado de âmbar sujo gravado com um design de árvore espiral... A majestade da torre branca, estendendo-se para alcançar os deuses, até inspirou uma fé secreta nos invasores, o povo da Térvore.”</p>
+                <span class="quote-source">- Selo da Árvore Espiral</span>
+
+                <p>Torna-se claro que o que é importante aqui não é a árvore, mas a forma espiral. O Crisol pode ser retratado como uma árvore espiral, mas a espiral está presente em toda parte na cultura dos Corníferos: as colunas, escadas, cortinas e velas dos Corníferos são todas espirais. Enir-Ilim em si é uma espiral maciça que alcança os céus – até o Portão da Divindade.</p>
+
+                <p>Assim, sinto que a representação do Crisol como uma árvore é apenas uma representação simbólica de um poder esotérico que seria difícil para seres mortais compreenderem. Para os Corníferos, é uma graciosa árvore espiral que segue uma corrente até os céus, manifestando-se no Portão da Divindade e na Besta Divina do alto. Para os guerreiros Cavaleiros do Crisol, seu poder é visto como uma árvore caótica, talvez um reflexo da maneira violenta como eles exercem seu poder.</p>
+
+                <img src="crucible_knight_green.jpg" alt="Cavaleiro do Crisol" class="center-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="img-placeholder-small" style="display:none;">
+                    [Cavaleiro Verde]<br>Salve como: crucible_knight_green.jpg
+                </div>
+
+                <p>No entanto, uma boa ponte entre o DLC e o jogo base é encontrada nos Cavaleiros do Crisol, pois os tabardos dos cavaleiros mostram uma forma espiral, e a habilidade para a Árvore de Siluria também é uma espécie de ataque de energia espiral.</p>
+
+                <p>O que mais toma uma forma de espiral ou dupla hélice? DNA. E, novamente, isso se alinha com a avaliação de Ratatoskr do Crisol como uma analogia para a evolução. Em termos de tradição do jogo, vejo o Crisol como um poder esotérico que frequentemente se manifesta como uma espiral. O encantamento Espira dos Corníferos diz o seguinte:</p>
+
+                <p class="item-quote">“Envolver os braços juntos e segurá-los para os céus para convocar uma espiral de luz que irrompe aos pés do inimigo... A espiral é uma corrente do Crisol normalizada que, um dia, formará uma coluna que se estende aos deuses.”</p>
+                <span class="quote-source">- Espira</span>
+
+                <p>Eu especulo que Enir-Ilim é uma estrutura que traçou uma dessas correntes até um ponto no espaço onde as energias do Crisol coalesceram – o Portão da Divindade, um poço de poder e energia onde alguém pode se tornar um deus. Para mim, isso também é o porquê de o portão ser feito de muitos corpos que estão misturados; é um local onde o poder do Crisol ainda se manifesta.</p>
+
+                <p>As correntes do Crisol permeiam este mundo, e é essa corrente que encoraja a evolução e a tendência para a vida diversa. É uma força trazida pela influência do Elden Ring que dividiu o Um Grande. Acredito que o Crisol existiu desde aquele momento.</p>
+            </div>
+            
+            <div class="page-number">120</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2L4 10h5v12h6V10h5L12 2z"/></svg> 
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">O encantamento Aspecto do Crisol diz:</p>
+
+                <p class="item-quote">“Esta é uma manifestação das energias vitais primais da Térvore – um aspecto do crisol primordial, onde toda a vida foi uma vez misturada.”</p>
+                <span class="quote-source">- Aspecto do Crisol: Chifres</span>
+
+                <p>Então esta é a fonte de toda a vida, e existiu desde o início da vida diversa neste mundo. A história do Crisol remonta pelo menos até a Era Antiga da linha do tempo do Elden Ring, e isso se liga à minha hipótese de que ele existe desde a divisão do Um Grande. Mas como isso conecta o Crisol à Térvore? De que maneira este é o precursor primal da árvore dourada?</p>
+
+                <p>A Térvore é essencialmente a era da ordem, conformidade e regressão. E então eu especulo que foram as energias primais do Crisol que foram usadas para formar a Térvore quando Marika ascendeu à divindade com a semente que recebeu dos Dois Dedos.</p>
+
+                <p>No entanto, as energias primais do Crisol inicialmente cruzariam para a Era da Térvore, e como tal entraríamos na era da Térvore antiga, a Era da Abundância.</p>
+
+                <h2 class="subsection-title">OS NUMEN E AS<br>CIDADES ETERNAS</h2>
+
+                <p>Não acredito que os Nox sejam os mesmos que o Povo da Noite (Nightfolk), e estudei seus modelos extensivamente para provar isso. O Povo da Noite tem olhos prateados, pele prateada cinza clara e estão claramente ligados aos mímicos de prata, um relacionamento que examinaremos mais tarde. O Povo da Noite é claramente sua própria raça separada. Os Nox têm pele de cinza ainda mais escura e olhos amarelos, e acredito que sejam um grupo de Numen corrompidos, o que explicaria sua aparência única. Embora isso seja minha especulação, acredito que haja evidências suficientes para confirmá-lo.</p>
+
+                <p>Vamos começar com a Armadura da Faca Negra:</p>
+
+                <p class="item-quote">“As assassinas que realizaram os atos da Noite das Facas Negras eram todas mulheres, e rumores diziam ser Numen que tinham laços estreitos com a própria Marika.”</p>
+                <span class="quote-source">- Armadura da Faca Negra</span>
+
+                <p>A maneira como leio isso é que os laços estreitos das assassinas com Marika são porque elas são parentes, então elas são do mesmo ramo de Numen que Marika.</p>
+            </div>
+            
+            <div class="page-number">121</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

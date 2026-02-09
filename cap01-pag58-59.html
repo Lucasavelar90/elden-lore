@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grace Given - Páginas 58 e 59</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1100px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 50px 45px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; }
+        .header-icon { display: block; margin: 0 auto 10px auto; width: 25px; fill: #a3905e; }
+        .header-title { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #a3905e; font-weight: 600; }
+
+        /* Conteúdo */
+        .content {
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 14px;
+            line-height: 1.5;
+            text-align: justify;
+            orphans: 3;
+            widows: 3;
+            flex-grow: 1;
+        }
+
+        p { margin-bottom: 12px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+
+        /* Citações em caixas */
+        .quote-box {
+            margin: 15px 0;
+            break-inside: avoid;
+            padding: 0 5px;
+        }
+
+        .quote-text {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #333;
+            line-height: 1.4;
+            text-indent: 0;
+        }
+
+        .quote-author {
+            display: block;
+            font-style: normal;
+            font-size: 0.8rem;
+            color: #777;
+            text-align: right;
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Títulos de Seção (Verde) */
+        .special-title {
+            column-span: all;
+            text-align: center;
+            color: #92b3a5;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin: 25px 0;
+            font-weight: 400;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+        }
+
+        /* Destaque Verde Grande (Pull Quote) */
+        .pull-quote-green {
+            color: #92b3a5;
+            font-size: 1.4rem;
+            line-height: 1.3;
+            margin: 0 0 25px 0;
+            text-indent: 0;
+            text-align: left;
+            break-inside: avoid;
+            font-weight: 400;
+        }
+
+        /* Rodapé */
+        .footer {
+            margin-top: auto;
+            padding-top: 20px;
+            font-size: 0.9rem;
+            color: #a3905e;
+            font-weight: 600;
+            font-family: serif;
+            border-top: 1px solid rgba(163, 144, 94, 0.3);
+        }
+        .footer-left { text-align: left; }
+        .footer-right { text-align: right; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2L4 5v6c0 5.5 3.5 10.5 8 12 4.5-1.5 8-6.5 8-12V5l-8-3zm0 18c-3.3-1.1-6-4.7-6-8V6.3l6-2.2 6 2.2V12c0 3.3-2.7 6.9-6 8z"/></svg>
+                <div class="header-title">O Tempo Antes da Térvore</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">...que conectam homem à fera. Coisas como violência, selvageria e luxúria animal.</p>
+
+                <p>Uma das descrições de itens que <i>Hawkshaw</i> destaca em seu vídeo de lore "A Teoria das Cores de Elden Ring" é o item Carne de Pescoço de Tartaruga. Na versão atual do jogo, ele tem uma descrição muito genérica, mas na versão 1.00 do jogo, teria dito o seguinte:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Diz-se que tartaruga aumenta a virilidade, mas ninguém nas Terras Intermédias parece ter muito apetite por isso hoje em dia. Nas Terras Intermédias, o desejo de reproduzir diminuiu há muito tempo."</p>
+                    <span class="quote-author">— Carne de Pescoço de Tartaruga, v 1.00</span>
+                </div>
+
+                <p>Agora, embora este "desejo de reproduzir" minguante possa estar ligado ao estado imortal do mundo, ou ao papel que a Térvore desempenha em prover vida, também podemos vê-lo seguindo um padrão de instintos mais básicos e selvageria sendo suprimidos à medida que a civilização avançou.</p>
+
+                <p>Isso é claramente visto nos exemplos dos Agouros (Omen) e Quiméricos (Misbegotten), duas espécies de natureza e aparência muito selvagem e animalesca, que sofreram grandemente sob a Ordem Áurea "civilizada". De fato, até mesmo os Cavaleiros do Crisol – outrora grandes heróis da Ordem – são vistos como caóticos e selvagens demais, e são deixados de lado à medida que as ideias de civilização são codificadas – um ponto bem feito pelas Manoplas do Crisol.</p>
+
+                <p>No entanto, a relação entre feras e campeões é claramente ainda venerada em alguns lugares. A armadura de Bernahl é coberta da cabeça aos pés em feras, e lê o seguinte:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Usada por Bernahl, o Recusante. Feras são atraídas por campeões e por lordes. E esta armadura convém a um campeão digno de se tornar um lorde. E isso é o que Bernahl era. Até que sua donzela se jogou no fogo."</p>
+                    <span class="quote-author">— Armadura de Campeão das Feras</span>
+                </div>
+
+                <p>Bernahl foi ele mesmo quase um lorde, e o simbolismo da fera pode muito bem ser direto. Feras são fortes, violentas e bravas, muito como o próprio Bernahl – e outros como Godfrey, cujo brasão de armas é o de um leão rampante.</p>
+
+                <p>Como havíamos discutido anteriormente, o elo do set Campeão das Feras fala de uma certa cegueira intencional, uma determinação em colocar as viseiras. Esta é uma...</p>
+
+                <div class="pull-quote-green">
+                    Embora este "desejo de reproduzir" minguante possa estar ligado ao estado imortal do mundo, ou ao papel que a Térvore desempenha em prover vida, também podemos vê-lo seguindo um padrão de instintos mais básicos e selvageria sendo suprimidos à medida que a civilização avançou.
+                </div>
+            </div>
+            <div class="footer footer-left">58</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2C9 2 7 5 7 8c0 1.5 1 3 2.5 4L7 16l1 2 4-2 4 2 1-2-2.5-4C17 11 18 9.5 18 8c0-3-2-6-5-6zm0 2c1.5 0 3 1.5 3 4s-1.5 4-3 4-3-1.5-3-4 1.5-4 3-4z"/></svg>
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">...foco animalesco em sua presa ou objetivo, e isso poderia descrever Bernahl tanto em seu caminho para lorde quanto em seu caminho de blasfêmia. Ser como uma fera significa perder essa nuance humana, essa consciência humana, e focar apenas em seu instinto básico ou objetivo. Em termos de traços, isso é muito relacionável a campeões ou heróis.</p>
+
+                <p>A fera dentro do homem, e a domesticação dela, não é melhor ilustrada em lugar nenhum do que por Godfrey e Hoarah Loux. Ao pegar seu machado e título de primeiro Lorde Prístino, Godfrey se separa de sua contraparte mais bestial. Quando ele descarta suas afetações de Godfrey e se torna Hoarah Loux mais uma vez, você teria dificuldade em encontrar alguém que seja mais animalesco, rasgando e despedaçando com abandono selvagem. Não são necessárias armas aqui, apenas a força e selvageria de uma fera selvagem.</p>
+
+                <p>Então, enquanto os links simbólicos entre violência e bestialidade são fáceis de traçar, talvez a <i>fera dentro dos homens</i> seja mais literal do que se pensava inicialmente. Talvez todos os humanos devam lutar com sua ancestralidade de Homem-Fera.</p>
+
+                <h2 class="special-title">Feras Vinculadas às Sombras</h2>
+
+                <p class="no-indent">Um dos primeiros Maculados a chegar à Mesa Redonda é o lendário Vargram, o Lobo Furioso, assim chamado devido à pele de lobo característica que adorna seu elmo. No entanto, há mais em sua pele do que aparenta. Não é mero enfeite ou afetação. É um símbolo do verdadeiro objetivo de Vargram.</p>
+
+                <p>Parece que as aspirações de Vargram não eram reivindicar o Trono Prístino. De fato, mesmo entre a miríade de esquemas e tramas de sua espécie, os objetivos de Vargram se destacam como verdadeiramente únicos entre os Maculados.</p>
+
+                <p>A cada Empyreano, resplandecente em seu poder e fascínio, é concedido um reflexo sombrio, uma besta guerreira sem igual para impor sua vontade e decretar seus planos. Estas são as Feras Vinculadas às Sombras (Shadowbound Beasts), as próprias Sombras de seus mestres, e parte de seu próprio ser.</p>
+
+                <p>Embora na superfície a relação entre Feras Vinculadas às Sombras e seus mestres possa parecer um assunto bastante direto, há algumas complexidades e nuances que eu gostaria de explorar.</p>
+
+                <p>Então vamos começar com como esses seres vêm a existir. E vamos tirar o óbvio do caminho. As Feras Vinculadas às Sombras tomam a forma de lobos, um fato confirmado tanto pelas aparições de Maliketh quanto de Blaidd, e a descrição da Armadura de Lobo Furioso, que diz:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"De acordo com as lendas antigas, lobos são as sombras do Empyreano."</p>
+                    <span class="quote-author">— Armadura de Lobo Furioso</span>
+                </div>
+
+                <p>Enquanto Maliketh é a mais famosa das Vinculadas às Sombras, sinto que nós...</p>
+            </div>
+            <div class="footer footer-right">59</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

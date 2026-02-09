@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 1: Deuses e o Anel Prístino - Páginas 4 e 5</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho Padrão */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+
+        /* Estilos Específicos do Capítulo 1 (Página 4) */
+        .chapter-illustration {
+            width: 100%;
+            max-width: 300px;
+            display: block;
+            margin: 0 auto 20px auto;
+            mix-blend-mode: multiply;
+        }
+
+        .img-placeholder-round {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: rgba(138, 190, 180, 0.2); /* Verde */
+            border: 1px dashed #8abeb4;
+            margin: 0 auto 30px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #8abeb4;
+            font-size: 0.8rem;
+        }
+        
+        .chapter-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .chapter-number {
+            font-family: 'Cinzel', serif;
+            font-size: 1rem;
+            color: #c5a059;
+            display: block;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .chapter-title {
+            font-family: 'Cormorant Garamond', serif;
+            color: #c5a059;
+            font-size: 2.2rem;
+            line-height: 1.1;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        /* Conteúdo Texto */
+        .content {
+            margin-top: 10px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+        }
+
+        .content-right-page {
+            margin-top: 40px;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        
+        em { font-style: italic; }
+
+        /* Letra Capitular (Drop Cap) */
+        .drop-cap {
+            float: left;
+            font-family: 'Cinzel', serif;
+            font-size: 3.8rem;
+            line-height: 0.8;
+            padding: 6px 8px 2px 2px;
+            margin-right: 8px;
+            margin-top: -4px;
+            color: #1a1a1a;
+            border: 1px solid #1a1a1a;
+            background-color: transparent;
+        }
+
+        /* Citações */
+        .quote-box {
+            font-style: italic;
+            margin: 20px 0;
+            padding: 0 10px;
+            border-left: 2px solid #c5a059;
+            break-inside: avoid;
+        }
+
+        .quote-source {
+            display: block;
+            text-align: right;
+            margin-top: 5px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Rodapé (Número da página) */
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            
+            <img src="chapter_1_art.jpg" alt="Arte do Capítulo 1" class="chapter-illustration" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder-round" style="display:none;">
+                [Arte Circular Verde]<br>chapter_1_art.jpg
+            </div>
+
+            <div class="chapter-header">
+                <span class="chapter-number">Capítulo 1</span>
+                <h1 class="chapter-title">Deuses e o Anel Prístino</h1>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">
+                    <span class="drop-cap">P</span>ara realmente entender a história de <em>Elden Ring</em> e a história das Terras Intermédias, precisamos olhar para a estrutura de seu universo. Isso significa examinar a Vontade Maior, os deuses exteriores e o Anel Prístino.
+                </p>
+
+                <p>Estas são as grandes forças cósmicas que influenciam o mundo no qual os personagens realizam seus esquemas. Tentar entender esses elementos mais eldritch enriqueceu muito minha apreciação da construção de mundo de <em>Elden Ring</em>, e o capítulo a seguir buscará desvendar esses mistérios por sua vez. Começaremos com as origens da vida diversa, o Um Grande.</p>
+
+                <div class="quote-box">
+                    “Tudo o que existe veio do Um Grande. Então vieram fraturas, e nascimentos, e almas.”
+                    <span class="quote-source">- Hyetta, a Buscadora da Luz</span>
+                </div>
+
+                <p>A interação entre o Um Grande e a Vontade Maior parece ser o evento do <em>big bang</em>, por assim dizer, no qual a vida foi primeiro "fraturada" para criar formas de vida diversas.</p>
+
+                <p>Agora, acho que vale a pena dizer que as ideias da história antiga em <em>Elden Ring</em> são um pouco difíceis de entender e não temos evidências de quanto tempo atrás tudo isso realmente aconteceu. Independentemente disso, somos capazes de obter um vislumbre da origem primordial da vida durante nosso encontro com o ser eldritch conhecido como os Três Dedos.</p>
+
+                <p>Hyetta busca esses Três Dedos para se tornar sua donzela. Ao ser tocada pelo Lorde Maculado do Caos, ela também é tocada pela Chama Frenética. Seus olhos já cegos queimam e derretem em suas órbitas e ela revela uma visão surpreendente do mundo, através dos próprios Três Dedos:</p>
+
+                <div class="quote-box">
+                    “As palavras dos Três Dedos. Como sua donzela, permita-me adivinhá-las. Tudo o que existe veio do Um Grande. Então vieram fraturas, e nascimentos, e almas. Mas a Vontade Maior cometeu um erro. Tormento, desespero, aflição... cada pecado, cada maldição. Cada um, nascido do erro. E assim, o que foi emprestado deve ser devolvido. Derreta tudo, com a chama amarela do caos. Até que tudo seja Um novamente.”
+                    <span class="quote-source">- Hyetta, a Buscadora da Luz</span>
+                </div>
+
+                <p>Estas são as palavras dos Três Dedos, uma fonte com sua própria agenda. Mesmo assim, não acho que tenhamos uma grande razão para não confiar na maior parte do que é dito aqui, particularmente porque não temos nenhuma evidência contraditória.</p>
+            </div>
+            
+            <div class="page-number">4</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2L4 10h5v12h6V10h5L12 2z"/></svg> 
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content content-right-page">
+                <p class="no-indent">A imagem pintada por Hyetta com essas linhas é fascinante. No início, a vida era "uma", uma grande forma singular de vida. Que forma isso tomou está realmente além do escopo da lore no jogo, no entanto.</p>
+
+                <p>Era senciente? Existia nas Terras Intermédias? Acho que o fato de não sabermos muito sobre esse Um Grande é, na verdade, o ponto. Este é um conceito cósmico que deve estar além da compreensão da humanidade.</p>
+
+                <p>Hyetta está sobrecarregada com conhecimento de um ser superior neste momento, e desta forma é apropriado que ela seja cega. Videntes cegos são um arquétipo clássico no mito e na literatura, cujas fileiras incluem figuras como Tirésias, da mitologia grega. Hyetta não pode ver no sentido convencional, mas interiormente ela vê muito mais do que qualquer humano, testemunhando visões não destinadas a olhos mortais.</p>
+
+                <p>Diante de tudo isso, minha própria representação interna deste Um Grande provavelmente diferirá muito da sua. Todas as ideias são igualmente válidas. Para mim, imagino uma esfera gigante existindo dentro do vazio. Qualquer que seja a forma que essa forma de vida cósmica tomou, é claro que a fratura deste Um Grande é onde a linha do tempo de <em>Elden Ring</em> começa – pois é a partir deste evento de fratura que a vida diversa surgiu.</p>
+
+                <p>O que me interessa mais, no entanto, é o papel que a Vontade Maior desempenhou neste evento, pois isso parece cimentar o quão importante a Vontade Maior é para esta história.</p>
+
+                <p>A Vontade Maior tem influenciado as Terras Intermédias desde o início. Embora esta Vontade Maior possa não ser um deus criador, ela parece, no entanto, ser responsável por estimular a vida como a conhecemos.</p>
+            </div>
+            
+            <div class="page-number">5</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

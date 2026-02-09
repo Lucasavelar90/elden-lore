@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grace Given - Páginas 52 e 53</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1100px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            padding: 50px 45px;
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background-color: #fcfbf7;
+            padding: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header-icon {
+            display: block;
+            margin: 0 auto 10px auto;
+            width: 25px;
+            fill: #a3905e;
+        }
+
+        .header-title {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #a3905e;
+            font-weight: 600;
+        }
+
+        .content {
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 14px;
+            line-height: 1.5;
+            text-align: justify;
+            orphans: 3;
+            widows: 3;
+            flex-grow: 1;
+        }
+
+        p { margin-bottom: 12px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+
+        .quote-box {
+            margin: 15px 0;
+            break-inside: avoid;
+            padding: 0 5px;
+        }
+
+        .quote-text {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #333;
+            line-height: 1.4;
+            text-indent: 0;
+        }
+
+        .quote-author {
+            display: block;
+            font-style: normal;
+            font-size: 0.8rem;
+            color: #777;
+            text-align: right;
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Rodapé com Nota */
+        .footer-note {
+            font-size: 0.75rem;
+            color: #a3905e;
+            border-top: 1px solid rgba(163, 144, 94, 0.3);
+            padding-top: 10px;
+            margin-top: 20px;
+            font-style: italic;
+        }
+
+        .footer {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #a3905e;
+            font-weight: 600;
+            font-family: serif;
+        }
+
+        .footer-left { text-align: left; }
+
+        /* Imagem Full Page */
+        .full-page-art {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .art-placeholder {
+            width: 100%;
+            height: 100%;
+            background-color: #222;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        .art-placeholder span {
+            color: #a3905e;
+            border: 1px solid #a3905e;
+            padding: 20px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        
+        .art-instruction {
+            color: #888;
+            margin-top: 10px;
+            font-size: 0.8rem;
+            font-family: sans-serif;
+        }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .page-right { min-height: 600px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24">
+                    <path d="M11 2h2v14h-2z M7 6h10v2H7z M12 16l-1 1-1 4h4l-1-4-1-1z"/>
+                </svg>
+                <div class="header-title">O Tempo Antes da Térvore</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Assim, com uma arma forjada em ferro cego, o caminho através da pré-história dos Homens-Fera está completo, reforçando o fato de que esta provavelmente é a primeira ou uma das primeiras culturas a se desenvolver na história das Terras Intermédias. Onde as outras culturas usam armas de aço mais avançadas que geralmente seriam associadas à história antiga posterior, Farum Azula é uma cultura que usou as ferramentas associadas à pré-história: pedra, cobre e ferro.</p>
+
+                <p>Farum Azula claramente não foi construída para ser uma cidade flutuante. Pelo contrário, ela já esteve situada nas Terras Intermédias antes de ser arrancada de lá. Isso fica ainda mais claro pelos segmentos de terra e árvores ainda presos à sua base.</p>
+
+                <p>Podemos dizer isso porque parte desta civilização ainda permanece na Terra, a saber, o Santuário Bestial em Caelid. O Santuário Bestial não é apenas onde Gurranq, um clérigo das feras desta sociedade, reside, mas também compartilha exatamente as mesmas marcas arquitetônicas de Farum Azula. Tem os mesmos enterros, a mesma iconografia de leão e os mesmos exteriores de construção.</p>
+
+                <p>O elo final é o Local de Graça logo ao sul do Santuário Bestial, que é chamado de Grande Ponte de Farum. Esta ponte, que leva ao Santuário Bestial, é do design de Farum Azula, sugerindo que Farum Azula já esteve localizada na enorme cratera a oeste de Caelid e a leste de Liurnia.</p>
+
+                <p>Dito isso, tentemos agora entender a estrutura e cultura desta sociedade.</p>
+
+                <p>Enquanto os Homens-Fera comuns parecem compor a vasta maioria desta sociedade, existem outras espécies e animais que também pertencem a ela. No topo desta sociedade estão os dragões, claramente adorados pelo clero dos Homens-Fera. Já discutimos esses seres poderosos, mas em resumo, não apenas são poderosos, mas também incrivelmente inteligentes. Podemos ver nas ações de Lansseax, onde dragões tinham a habilidade de aparecer como humanos e lideraram o Culto aos Dragões de Leyndell:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Lansseax era irmã de Fortissax. Diz-se que ela assumiu a forma de uma humana para comungar com os cavaleiros como uma sacerdotisa do antigo culto aos dragões."</p>
+                    <span class="quote-author">— Glaive de Lansseax</span>
+                </div>
+
+                <p>De fato, Farum Azula, a conquista máxima da sociedade dos Homens-Fera, parece ter sido construída em honra de um dragão em particular, como leem as Cinzas de Homem-Fera de Azula:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Espíritos de homens-fera da condenada Farum Azula, as ruínas lentamente desmoronando nos céus. Diz-se que essas ruínas são os restos de um mausoléu gigante consagrando um dragão antigo, guardado por homens-fera escolhidos que empunham armas revestidas em relâmpagos."</p>
+                    <span class="quote-author">— Cinzas de Homem-Fera de Azula</span>
+                </div>
+
+                <p>Novamente, isso reforça muito a subserviência dos Homens-Fera dentro de sua sociedade. Não apenas toda a Farum Azula foi construída em honra de um dragão, mas...</p>
+            </div>
+
+            <div class="footer-note">
+                5 "Elden Ring Archaeology: Farum Azula and the Dawn of Unalloyed Gold" - The Tarnished Archaeologist
+            </div>
+            <div class="footer footer-left">52</div>
+        </div>
+
+        <div class="page page-right">
+            <img src="dragao_vermelho.jpg" alt="Arte de Dragão Vermelho com Raios" class="full-page-art" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            
+            <div class="art-placeholder" style="display:none;">
+                <span>Arte do Dragão</span>
+                <p class="art-instruction">Salve a imagem do dragão vermelho nesta pasta como <b>dragao_vermelho.jpg</b></p>
+            </div>
+            
+            <div style="position: absolute; bottom: 20px; right: 20px; color: rgba(255,255,255,0.7); font-weight: bold;">53</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

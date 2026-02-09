@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leitor - Elden Ring Lore</title>
+
+<style>
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: #111;
+    font-family: 'Cinzel', serif;
+}
+
+/* ===== BOTÃO GLOBAL ===== */
+#global-toggle {
+    position: fixed;
+    top: 15px;
+    left: 270px; /* começa ao lado da sidebar */
+    z-index: 1300;
+    background: rgba(20,20,20,0.9);
+    color: #c5a059;
+    border: 1px solid rgba(197,160,89,0.5);
+    padding: 8px 12px;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    backdrop-filter: blur(3px);
+    transition: all 0.3s ease;
+}
+#global-toggle:hover {
+    background: #c5a059;
+    color: #111;
+    box-shadow: 0 0 12px rgba(197,160,89,0.6);
+}
+
+/* Quando sidebar estiver fechada */
+body.sidebar-collapsed #global-toggle {
+    left: 15px;
+}
+
+/* ===== SIDEBAR ===== */
+#sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 260px;
+    height: 100%;
+    background: linear-gradient(to bottom, #0d0d0d, #141414);
+    border-right: 1px solid rgba(197,160,89,0.25);
+    box-shadow: 5px 0 25px rgba(0,0,0,0.6);
+    z-index: 1200;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+#sidebar.collapsed { transform: translateX(-100%); }
+
+#sidebar-header {
+    padding: 15px;
+    font-size: 18px;
+    color: #c5a059;
+    border-bottom: 1px solid rgba(197,160,89,0.3);
+    letter-spacing: 1px;
+}
+
+/* ===== LISTA ===== */
+#page-list { overflow-y: auto; padding: 10px 0; flex: 1; }
+
+.page-item {
+    padding: 8px 20px;
+    cursor: pointer;
+    color: #aaa;
+    font-size: 14px;
+    transition: all 0.15s ease;
+}
+.page-item:hover { background: rgba(197,160,89,0.12); color: #fff; }
+.page-item.active {
+    background: rgba(197,160,89,0.25);
+    color: #c5a059;
+    font-weight: bold;
+}
+
+/* ===== IFRAME AJUSTE ===== */
+body.with-sidebar #book-frame {
+    margin-left: 260px;
+    width: calc(100% - 260px);
+}
+#book-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+/* ===== BOTÕES LATERAIS ===== */
+.nav-btn {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(197, 160, 89, 0.15);
+    color: #c5a059;
+    border: 1px solid rgba(197, 160, 89, 0.4);
+    padding: 20px 15px;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 24px;
+    border-radius: 4px;
+}
+#prev-btn { left: 20px; }
+#next-btn { right: 20px; }
+
+/* ===== INFO BAR ===== */
+#info-bar {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(10, 10, 10, 0.85);
+    color: #c5a059;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-size: 14px;
+    border: 1px solid #c5a059;
+    pointer-events: none;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    min-width: 200px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.file-name { font-size: 0.8em; opacity: 0.7; }
+</style>
+</head>
+
+<body>
+
+<button id="global-toggle">☰</button>
+
+<div id="sidebar">
+    <div id="sidebar-header">Índice</div>
+    <div id="page-list"></div>
+</div>
+
+<button id="prev-btn" class="nav-btn" onclick="prevPage()">&#10094;</button>
+<button id="next-btn" class="nav-btn" onclick="nextPage()">&#10095;</button>
+
+<div id="info-bar">
+    <span id="page-counter"></span>
+    <span id="file-display" class="file-name"></span>
+</div>
+
+<iframe id="book-frame"></iframe>
+
+<script>
+const pages = [/* lista mantida */ 
+"cap01-pag04-05.html","cap01-pag06-07.html","cap01-pag08-09.html","cap01-pag10-11.html",
+"cap01-pag12-13.html","cap01-pag14-15.html","cap01-pag16-17.html","cap01-pag18-19.html",
+"cap01-pag20-21.html","cap01-pag22-23.html","cap01-pag24-25.html","cap01-pag26-27.html",
+"cap01-pag28-29.html","cap01-pag30-31.html","cap01-pag32-33.html","cap01-pag34-35.html",
+"cap01-pag36-37.html","cap01-pag38-39.html","cap01-pag40-41.html","cap01-pag42-43.html",
+"cap01-pag44-45.html","cap01-pag46-47.html","cap01-pag48-49.html","cap01-pag50-51.html",
+"cap01-pag52-53.html","cap01-pag54-55.html","cap01-pag56-57.html","cap01-pag58-59.html",
+"cap01-pag60-61.html","cap01-pag62-63.html","cap01-pag64-65.html","cap01-pag66-67.html",
+"cap01-pag68-69.html","cap01-pag70-71.html","cap01-pag72-73.html","cap01-pag74-75.html",
+"cap01-pag76-77.html","paginas_78_79.html","paginas_80_81.html","paginas_82_83.html",
+"paginas_84_85.html","paginas_86_87.html","paginas_88_89.html","paginas_90_91.html",
+"paginas_92_93.html","paginas_94_95.html","paginas_96_97.html","paginas_98_99.html",
+"paginas_100_101.html","paginas_102_103.html","paginas_104_105.html","paginas_106_107.html",
+"paginas_108_109.html","paginas_110_111.html","paginas_112_113.html","paginas_114_115.html",
+"paginas_116_117.html","paginas_118_119.html","paginas_120_121.html","paginas_122_123.html",
+"paginas_124_125.html","paginas_126_127.html","paginas_128_129.html","paginas_130_131.html",
+"paginas_132_133.html","paginas_134_135.html","paginas_136_137.html","paginas_138_139.html",
+"paginas_140_141.html","paginas_142_143.html","paginas_144_145.html","paginas_146_147.html",
+"paginas_148_149.html","paginas_150_151.html","paginas_152_153.html","paginas_154_155.html",
+"paginas_156_157.html","paginas_158_159.html","paginas_160_161.html","paginas_162_163.html",
+"paginas_164_165.html","paginas_166_167.html","paginas_168_169.html","paginas_170_171.html",
+"paginas_172_173.html","paginas_174_175.html","paginas_176_177.html","paginas_178_179.html",
+"paginas_180_181.html","paginas_182_183.html","paginas_184_185.html","paginas_186_187.html",
+"paginas_188_189.html","paginas_190_191.html","paginas_192_193.html","paginas_194_195.html",
+"paginas_196_197.html","paginas_198_199.html","paginas_200_201.html","paginas_202_203.html",
+"paginas_204_205.html","paginas_206_207.html","paginas_208_209.html","paginas_210_211.html",
+"paginas_212_213.html","paginas_214_215.html","paginas_216_217.html","paginas_218_219.html",
+"paginas_220_221.html","paginas_222_223.html","paginas_224_225.html","paginas_226_227.html",
+"paginas_228_229.html","paginas_230_231.html","paginas_232_233.html","paginas_234_235.html",
+"paginas_236_237.html","paginas_238_239.html","paginas_240_241.html","paginas_242_243.html",
+"paginas_244_245.html","paginas_246_247.html"
+];
+
+let currentIndex = 0;
+const iframe = document.getElementById('book-frame');
+const counter = document.getElementById('page-counter');
+const fileDisplay = document.getElementById('file-display');
+const pageList = document.getElementById("page-list");
+const sidebar = document.getElementById("sidebar");
+const globalToggle = document.getElementById("global-toggle");
+
+/* Criar índice */
+pages.forEach((file, index) => {
+    const item = document.createElement("div");
+    item.className = "page-item";
+    const match = file.match(/(\d+)[-_](\d+)/);
+    item.textContent = match ? `Páginas ${match[1]}–${match[2]}` : file;
+    item.onclick = () => loadPage(index);
+    pageList.appendChild(item);
+});
+
+function updateActiveItem() {
+    document.querySelectorAll(".page-item").forEach((el, i) =>
+        el.classList.toggle("active", i === currentIndex)
+    );
+}
+
+function toggleSidebar() {
+    const collapsed = sidebar.classList.toggle("collapsed");
+    document.body.classList.toggle("with-sidebar", !collapsed);
+    document.body.classList.toggle("sidebar-collapsed", collapsed);
+    localStorage.setItem("sidebarState", collapsed ? "closed" : "open");
+}
+
+globalToggle.onclick = toggleSidebar;
+
+document.addEventListener("keydown", e => {
+    if (e.key.toLowerCase() === "i") toggleSidebar();
+    if (e.key === "ArrowRight") nextPage();
+    if (e.key === "ArrowLeft") prevPage();
+});
+
+function loadPage(index) {
+    if (index >= 0 && index < pages.length) {
+        iframe.style.opacity = 0;
+        setTimeout(() => {
+            currentIndex = index;
+            iframe.src = pages[currentIndex];
+            updateUI();
+            localStorage.setItem('eldenBookPage_v2', currentIndex);
+            iframe.onload = () => iframe.style.opacity = 1;
+        }, 200);
+    }
+}
+
+function updateUI() {
+    counter.innerText = `Página ${currentIndex + 1} de ${pages.length}`;
+    fileDisplay.innerText = pages[currentIndex];
+    updateActiveItem();
+}
+
+function nextPage(){ if(currentIndex < pages.length-1) loadPage(currentIndex+1); }
+function prevPage(){ if(currentIndex > 0) loadPage(currentIndex-1); }
+
+/* Restaurar estado */
+const savedPage = localStorage.getItem('eldenBookPage_v2');
+const sidebarState = localStorage.getItem("sidebarState");
+
+if (sidebarState === "closed") {
+    sidebar.classList.add("collapsed");
+    document.body.classList.add("sidebar-collapsed");
+} else {
+    document.body.classList.add("with-sidebar");
+}
+
+loadPage(savedPage ? parseInt(savedPage) : 0);
+</script>
+
+</body>
+</html>

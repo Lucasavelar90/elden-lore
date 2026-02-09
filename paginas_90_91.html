@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grace Given - Páginas 90 e 91</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1100px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 50px 45px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; }
+        .header-icon { display: block; margin: 0 auto 10px auto; width: 25px; fill: #a3905e; }
+        .header-title { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #a3905e; font-weight: 600; }
+
+        /* Conteúdo */
+        .content {
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 14px;
+            line-height: 1.5;
+            text-align: justify;
+            orphans: 3;
+            widows: 3;
+            flex-grow: 1;
+        }
+
+        p { margin-bottom: 12px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+
+        /* Citações em caixas */
+        .quote-box {
+            margin: 15px 0;
+            break-inside: avoid;
+            padding: 0 5px;
+        }
+
+        .quote-text {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #333;
+            line-height: 1.4;
+            text-indent: 0;
+        }
+
+        .quote-author {
+            display: block;
+            font-style: normal;
+            font-size: 0.8rem;
+            color: #777;
+            text-align: right;
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Destaque Verde Grande (Pull Quote) */
+        .pull-quote-green {
+            color: #92b3a5;
+            font-size: 1.4rem;
+            line-height: 1.3;
+            margin: 25px 0;
+            text-indent: 0;
+            text-align: left;
+            break-inside: avoid;
+            font-weight: 400;
+        }
+
+        /* Rodapé */
+        .footer {
+            margin-top: auto;
+            padding-top: 20px;
+            font-size: 0.9rem;
+            color: #a3905e;
+            font-weight: 600;
+            font-family: serif;
+            border-top: 1px solid rgba(163, 144, 94, 0.3);
+        }
+        .footer-left { text-align: left; }
+        .footer-right { text-align: right; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><path d="M12 6l-2 4h4l-2-4z" opacity="0.6"/></svg>
+                <div class="header-title">O Celestial</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Novamente o termo corrompido é usado aqui, mostrando que, embora a forma do Pedrilhante possa ser a de um cristal regular, seu comportamento é diferente. Sellen diz o seguinte a respeito de Lusat: "Ele é quase uma criança das estrelas, tal é o seu corpo agora..."</p>
+
+                <p>Isso não apenas destaca novamente o quanto dos componentes humanos originais de Lusat foram tomados por cristais de Pedrilhante, mas ela também claramente vê isso como algo positivo. Os feiticeiros primevos <i>querem</i> esse tipo de transformação, como evidenciado por suas escolas de graven e o destino final de Sellen.</p>
+
+                <p>De qualquer forma, os efeitos são interessantes de observar e servem para nos lembrar que o Pedrilhante não é um cristal comum – é um receptáculo de poderosa energia vital celestial e, portanto, age de uma maneira bastante alienígena comparada ao que poderíamos esperar. Em última análise, acho que a natureza do Pedrilhante é melhor resumida por um comentário sobre a natureza dos Cristalianos encontrado no feitiço Cristal Estilhaçante, que diz:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Os Cristalianos são seres inorgânicos, contudo eles vivem."</p>
+                    <span class="quote-author">— Cristal Estilhaçante</span>
+                </div>
+
+                <p>É um material inorgânico, mas contém energia vital, resultando em corrupção e disseminação.</p>
+
+                <p>Falando de Cristalianos, não é surpresa que o interesse no Pedrilhante, seu poder e sua conexão com a Corrente Primeva, resultaria na criação desses personagens. Estas são as criaturas enigmáticas semelhantes a golens sobre as quais tentaremos lançar uma luz agora.</p>
+
+                <p>Os Cristalianos, ao contrário dos Lordes de Alabastro, não nasceram, mas foram de fato criados, e aprendemos isso através das Cinzas de Cristaliano:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Espírito que empunha lâminas cristalinas redondas, grandes e pequenas. Seu corpo robusto, ele próprio talhado de cristal há muito tempo..."</p>
+                    <span class="quote-author">— Cinzas de Cristaliano</span>
+                </div>
+
+                <p>Estes eram seres "talhados", significando que foram esculpidos de Pedrilhante, como uma estátua seria de mármore. Por que isso aconteceria? Qual poderia ser o propósito por trás da criação dessas criações bizarras? Eles parecem ter algum tipo de propósito para eles, como aprendemos da Espada de Cristal:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Os inescrutáveis Cristalianos têm apenas um propósito claro; salvaguardar seus cristais até o fim. Uma teoria postula que eles anseiam pelo retorno de seu criador que irá esculpir para eles novos irmãos."</p>
+                    <span class="quote-author">— Espada de Cristal</span>
+                </div>
+
+                <div class="pull-quote-green">
+                    Os efeitos são interessantes de observar e servem para nos lembrar que o Pedrilhante não é um cristal comum – é um receptáculo de poderosa energia vital celestial.
+                </div>
+            </div>
+            <div class="footer footer-left">90</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2l-2 4h-4l-2 4v6l4 4h8l4-4v-6l-2-4h-4z M12 6l1 2h-2L12 6z" opacity="0.8"/></svg>
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Há muita incerteza nesta declaração, mas pelo menos sugere um propósito por trás da elaboração original desses seres: defender os cristais de Pedrilhante. Isso parece se alinhar com seu design visual, já que eles são muito provavelmente inspirados pelo filme mudo de 1915 <i>O Golem</i>. Este filme é baseado no folclore judaico e europeu, e conta a história de um Golem que foi criado por um rabino para proteger o povo judeu. Portanto, faria sentido se este golem de Pedrilhante fosse feito por um feiticeiro de Pedrilhante para proteger o Pedrilhante.</p>
+
+                <p>Isso condiz com a colocação de cada Cristaliano que encontramos no jogo; encontrados como chefes no Túnel de Cristal de Raya Lucaria, Esconderijo de Sellia, Caverna de Cristal da Academia e Túnel de Altus, todos estão em áreas associadas a cristais de Pedrilhante.</p>
+
+                <p>Isso se estende às variantes do mundo aberto que enfrentamos também, que encontramos no Altar do Luar e Liurnia. A única exceção é a variante podre corrompida que encontramos na Árvore Sacra de Miquella, mas isso pode ser explicado pelo poder cósmico da Podridão Escarlate substituindo seus instintos usuais e fazendo-os se reunir ao redor do vetor principal da podridão, Malenia.</p>
+
+                <p>Estes não são apenas autômatos sem mente. Eles são espíritos que têm sua própria maneira de pensar, referida como a "sabedoria da pedra". Por exemplo, a descrição do item Cajado de Cristal diz:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"A tênue cogitação do Cristaliano é conhecida como a 'sabedoria da pedra'. Este cajado só pode ser empunhado por aqueles de intelecto alto o suficiente para compreender tal sabedoria."</p>
+                    <span class="quote-author">— Cajado de Cristal</span>
+                </div>
+
+                <p>Vamos tentar desvendar o que está sendo descrito aqui, embora por sua própria natureza deva ser um conceito difícil de compreender.</p>
+
+                <p>Cogitação é descrita pelo Oxford English Dictionary como: "A ação de pensar ou refletir; consideração atenta, reflexão, meditação." Então, em essência, é apenas o pensamento do Cristaliano. Eu acho que essa palavra é usada para transmitir a ideia de que esses seres ainda tomam decisões, mas sem o uso de um cérebro orgânico.</p>
+
+                <p>Então este processo, para esses seres, parece ser um resultado da "sabedoria da pedra", um conceito que é muito difícil de entender. No entanto, podemos adivinhar como esses seres tomam decisões reexaminando o que eles são. Eles são cristal, sim, mas o que está dentro desses cristais? Dentro do Pedrilhante?</p>
+
+                <p>A energia de vida residual das estrelas. Minha especulação é que, embora esses golens tenham sido talhados e receberam automação e um propósito por seu criador, sem dúvida através de magia, é a vida inerente dentro desses seres que impulsiona sua tomada de decisão – como uma memória coletiva ou mente de colmeia das estrelas que existe dentro das energias estelares residuais.</p>
+            </div>
+            <div class="footer footer-right">91</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

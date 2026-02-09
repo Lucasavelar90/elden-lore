@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 5: As Cidades Eternas - Páginas 134 e 135</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+
+        /* Conteúdo Texto */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        
+        em { font-style: italic; }
+
+        /* Títulos de Subseção */
+        h2.subsection-title {
+            font-family: 'Cinzel', serif;
+            color: #8abeb4;
+            font-size: 1.2rem;
+            text-align: center;
+            margin: 25px 0 15px 0;
+            line-height: 1.2;
+            break-inside: avoid;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        /* Citações de Itens */
+        .item-quote {
+            font-style: italic;
+            margin: 15px 0 5px 0;
+            text-indent: 0;
+            font-size: 0.95em;
+        }
+
+        .quote-source {
+            display: block;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Citação Verde Grande (Pull Quote) */
+        .pull-quote-green {
+            color: #8abeb4;
+            font-size: 1.35rem;
+            line-height: 1.3;
+            margin: 0 0 25px 0;
+            text-indent: 0;
+            text-align: left;
+            break-inside: avoid;
+            font-weight: 400;
+        }
+
+        /* Rodapé (Número da página) */
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2L4 10h5v12h6V10h5L12 2z"/></svg> 
+                <div class="header-title">As Cidades Eternas</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Fortissax entre eles. Depois há dragões modernos, que são do tipo que enfrentamos inúmeras vezes nas Terras Intermédias, como Adula e Agheel – que é claro parecem menos pedregosos e não têm a capacidade de empunhar relâmpagos.</p>
+
+                <p>Os Nox estão buscando empunhar o poder desses dragões antigos criando essencialmente seus próprios guerreiros dragão híbridos. Mas por que? Obviamente, os dragões são poderosos, uma vez até governando como os vasos escolhidos da Vontade Maior, e é provável que aqueles primeiros colonos Numen tenham testemunhado seu reinado antes que um dos seus, Marika, assumisse o manto de deus. No entanto, há mais do que isso, e acredito que podemos obter nossa resposta na descrição da Pedra de Forja de Dragão Ancião, que diz:</p>
+
+                <p class="item-quote">“Pedra de forja feita polindo uma Pedra de Cascalho dourada. Uma escama do Antigo Lorde Dragão e tesouro escondido de Farum Azula... Diz-se que o assento do Antigo Lorde Dragão fica além do tempo. Esta pedra torce levemente o tempo, permitindo a criação de uma arma capaz de matar um deus.”</p>
+                <span class="quote-source">- Pedra de Forja de Dragão Ancião</span>
+
+                <p>Dentro dessas escamas está literalmente o poder de destruir um deus, Marika. Dado que os Nox estão claramente visando acabar com seu governo, esta seria uma ferramenta útil para se ter. No entanto, os Draconianos são falhas bizarras: poderosos, com certeza, mas permanecem abominações aleijadas, incapazes de obter a verdadeira mortalidade [sic, imortalidade?] e assim alcançar seu propósito.</p>
+
+                <p>Mas esses Draconianos não são as únicas formas de vida que encontramos entre os Nox das Cidades Eternas. Devemos, é claro, discutir o fenômeno conhecido como Lágrimas de Prata. As Lágrimas de Prata parecem habitar as Cidades Eternas ao lado dos Nox – e na minha opinião essas formas de vida são, novamente, criações artificiais dos próprios Nox.</p>
+
+                <p>Mais sobre isso depois, mas por enquanto precisamos falar de outro produto dos Nox: as Criptas-Cadeira.</p>
+
+                <h2 class="subsection-title">TRONOS DOS<br>NOX</h2>
+
+                <p>Criptas-Cadeira são um assunto difícil porque não há lore direta no jogo que sequer as reconheça. A única coisa que entendemos claramente é que elas são de enorme importância para os Nox.</p>
+
+                <p>Vamos olhar para o que podemos ver desses tronos. Há um em cada Nokron e Nokstella que parece ser ocupado por um esqueleto gigante. Há também alguns vazios, mais significativamente um encontrado em Sellia, Cidade da Feitiçaria, que é guardado por um Monge Nox e uma Espadachim.</p>
+            </div>
+            
+            <div class="page-number">134</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2L4 10h5v12h6V10h5L12 2z"/></svg> 
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Vamos voltar para Sellia em breve, e manter o foco nos tronos por enquanto. Curiosamente, cada um dos grandes tronos que acomoda um esqueleto também tem um baú embaixo – um baú contendo Lírio-do-Vale Fantasma, que de acordo com a descrição do item é usado para confortar espíritos heróicos, e é um tributo àqueles que morreram mortes heróicas. Sabemos que esses tronos são chamados de Criptas-Cadeira graças a um Local de Graça em Sellia.</p>
+
+                <p>Então, como explicamos esses tronos e cadáveres gigantes? O que se segue será minha própria especulação, mas acredito que tudo remonta ao objetivo de toda a sociedade dos Nox e à descrição de sua armadura. Lembre-se de que os Nox são banidos e não têm nada mais a esperar do que a vinda da Era das Estrelas e seu Lorde da Noite. Vimos que os Nox tentaram vários experimentos para trazer isso à tona. Poderia ser que esses gigantes fossem tentativas de criar um Lorde da Noite artificial, um deus artificial?</p>
+
+                <p>Isso é o que eu acredito. Os tronos são simbólicos de senhoria, e o Lírio-do-Vale é deixado embaixo como tributo ao experimento falho – um experimento que teria morrido como um herói tentando libertar seu povo.</p>
+
+                <p>Acho que essa explicação também pode resolver outro dilema: as pessoas petrificadas que vemos em Nokron e Nokstella. Para mim, essas pessoas sempre lembraram os mensageiros de <em>Bloodborne</em>, embora cruzados com o povo petrificado de Pompeia. No entanto, ainda mais intimamente ligado a essas pessoas é a área em <em>Bloodborne</em> chamada Yahar’gul, especificamente a segunda vez que visitamos este lugar depois que a lua é invocada.</p>
+
+                <p>Neste ponto, vemos que a Escola de Mensis está realizando seu ritual para invocar O Renascido, e algo novo foi adicionado ao ambiente: pessoas petrificadas, congeladas como se tivessem sido apanhadas em ondas de algum cataclismo cósmico como resultado da intromissão da Escola de Mensis.</p>
+
+                <div class="pull-quote-green">
+                    Cada um dos grandes tronos que acomoda um esqueleto também tem um baú embaixo – um baú contendo Lírio-do-Vale Fantasma, que é usado para confortar espíritos heróicos, e é um tributo àqueles que morreram mortes heróicas.
+                </div>
+            </div>
+            
+            <div class="page-number">135</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 4: O Reinado da Árvore - Páginas 108 e 109</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho Padrão (Página Direita) */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+
+        /* Estilos Específicos do Capítulo 4 (Página Esquerda) */
+        .chapter-header-img {
+            width: 100%;
+            display: block;
+            margin: -20px auto 20px auto; /* Sobe um pouco para ajustar ao topo */
+            mix-blend-mode: multiply; /* Fundo transparente */
+        }
+        
+        .chapter-title {
+            font-family: 'Cormorant Garamond', serif;
+            color: #c5a059;
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 30px;
+            line-height: 1.1;
+            font-weight: 600;
+        }
+
+        /* Conteúdo Texto */
+        .content {
+            margin-top: 20px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+        }
+
+        .content-right-page {
+            margin-top: 40px; /* Mais espaço na direita por causa do cabeçalho */
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        
+        em { font-style: italic; }
+
+        /* Letra Capitular (Drop Cap) */
+        .drop-cap {
+            float: left;
+            font-family: 'Cinzel', serif;
+            font-size: 3.5rem;
+            line-height: 0.8;
+            padding: 10px 10px 5px 5px;
+            margin-right: 10px;
+            margin-bottom: -5px;
+            color: #1a1a1a;
+            border: 1px solid #1a1a1a; /* Simulando a caixa da imagem */
+            background-color: transparent; /* Ou um cinza muito leve se preferir */
+        }
+
+        /* Citações de Itens */
+        .item-quote {
+            font-style: italic;
+            margin: 15px 0 5px 0;
+            text-indent: 0;
+            font-size: 0.95em;
+        }
+
+        .quote-source {
+            display: block;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Linha Divisória Dourada */
+        .gold-line {
+            border: 0;
+            height: 2px;
+            background-color: #c5a059;
+            margin: 20px 0;
+            width: 100%;
+            opacity: 0.7;
+            break-inside: avoid;
+        }
+
+        /* Rodapé (Número da página) */
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content-right-page { margin-top: 0; }
+            .chapter-header-img { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <img src="chapter_tree_header.jpg" alt="Árvore Decorativa" class="chapter-header-img" onerror="this.style.display='none';">
+            
+            <h1 class="chapter-title">Capítulo 4: O Reinado da Árvore</h1>
+
+            <div class="content">
+                <p class="no-indent">
+                    <span class="drop-cap">C</span>om cada nova era, a Vontade Maior nomeia certos indivíduos para a divindade potencial, marcando-os como Empyrean. Seguindo o padrão que discutimos em um capítulo anterior, Marika foi eleita como Empyrean, e recebeu Maliketh. Isso é algo que aprendemos através da lembrança de Maliketh:
+                </p>
+
+                <p class="item-quote">“Maliketh era uma besta das sombras dada à sua Empyrean. A única necessidade de Marika de sua sombra era um receptáculo para trancar a Morte Destinada. Mesmo assim, ela o traiu.”</p>
+                <span class="quote-source">- Lembrança do Lâmina Negra</span>
+
+                <p>Marika foi eleita dentre o povo conhecido como Numen. Esta é uma conexão que fazemos através do Martelo de Marika e da Armadura da Faca Negra, mas mais especificamente através da Runa dos Numen, que diz abertamente que ela é de ascendência Numen. Os Numen são uma raça fascinante e seu predefinição de aparência no criador de personagens diz o seguinte:</p>
+
+                <p class="item-quote">“O rosto dos Numen, supostos descendentes de habitantes de outro mundo. De vida longa, mas raramente nascidos.”</p>
+                <span class="quote-source">- Predefinição de Aparência Numen</span>
+                
+                <hr class="gold-line">
+            </div>
+            
+            <div class="page-number">108</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M11 2h2v20h-2z"/><path d="M4.93 4.93l1.41-1.41 12.73 12.73-1.41 1.41z"/><path d="M19.07 4.93l-1.41-1.41-12.73 12.73 1.41 1.41z"/></svg>
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content content-right-page">
+                <p class="no-indent">Mais uma vez me voltei para Last Protagonist para uma tradução para nos ajudar a entender melhor a natureza desta raça. Eles forneceram uma tradução para a Armadura da Faca Negra e notaram que no japonês original a palavra "Numen" não é usada. Em vez disso, essas pessoas são referidas como "Marebito".</p>
+
+                <p>Marebito é uma palavra do japonês antigo que é usada em referência a um ser espiritual que vem de um lugar distante, além do horizonte. Isso, claro, se liga à ideia de que os Numen são seres de vida longa de um mundo diferente.</p>
+
+                <p><em>Shadow of the Erdtree</em> finalmente respondeu a algumas perguntas sobre o povo de Marika e suas origens. Atrás de uma estátua da Rainha Marika na Fortaleza das Sombras de Messmer, encontram-se as Terras Interiores, uma bela região intocada pela chama de Messmer.</p>
+
+                <p>O significado da região é indicado pelo seu status protegido, escondido atrás das fortes muralhas da fortaleza e protegido por dois Sentinelas da Térvore. A razão para isso se torna clara quando você sobe uma pequena colina e vê uma luz dourada emanando de um belo prado, enquanto uma vila humilde fica ao fundo.</p>
+
+                <p>Uma versão mais suave da trilha sonora da Elden Beast toca, e uma certa verdade se torna aparente para nós: Esta é a casa de Marika, a Vila dos Xamãs. Isso explica a história dos Numen muito claramente; eles são os descendentes dos Xamãs. Eles são seres de outro mundo, e esse mundo é a Terra das Sombras.</p>
+
+                <p>A confirmação vem quando encontramos dois objetos relacionados a Marika nesta vila: o encantamento da Térvore Menor e o talismã Trança Dourada, ambos os quais a nomeiam diretamente. Térvore Menor diz:</p>
+
+                <p class="item-quote">“Marika banhou a vila de seu lar em ouro, sabendo muito bem que não havia ninguém para curar.”</p>
+                <span class="quote-source">- Térvore Menor</span>
+
+                <p>Então algo ruim aconteceu ao povo de Marika aqui: Não havia ninguém para curar quando ela pôde liberar o poder de cura da Térvore.</p>
+
+                <p>Ao explorarmos a tradição da Terra das Sombras, aprendemos mais sobre os Xamãs. Se você estudar o cadáver da avó encontrado na vila, e o cadáver sem cabeça de outro Xamã na Vila Bonny, você pode ver que ambos parecem estar se transformando em árvores. Essa estranha tendência arbórea pode ajudar a explicar como Marika manifesta seu poder divino como uma árvore.</p>
+
+                <p>No entanto, mais tarde aprendemos verdades mais perturbadoras sobre os destinos desses personagens na Cabana do Açoite na Vila Bonny. A Vila Bonny é um lugar onde os jarros são criados, um fato que aprendemos com os Grandes Potentados que vagam por aqui.</p>
+            </div>
+            
+            <div class="page-number">109</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grace Given - Páginas 76 e 77</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1100px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 50px 45px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; }
+        .header-icon { display: block; margin: 0 auto 10px auto; width: 25px; fill: #a3905e; }
+        .header-title { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #a3905e; font-weight: 600; }
+
+        /* Conteúdo */
+        .content {
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 14px;
+            line-height: 1.5;
+            text-align: justify;
+            orphans: 3;
+            widows: 3;
+            flex-grow: 1;
+        }
+
+        p { margin-bottom: 12px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+
+        /* Citações em caixas */
+        .quote-box {
+            margin: 15px 0;
+            break-inside: avoid;
+            padding: 0 5px;
+        }
+
+        .quote-text {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #333;
+            line-height: 1.4;
+            text-indent: 0;
+        }
+
+        .quote-author {
+            display: block;
+            font-style: normal;
+            font-size: 0.8rem;
+            color: #777;
+            text-align: right;
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Estilos Específicos do Capítulo 3 (Pág 76) */
+        
+        /* Imagem de Topo (Verde) */
+        .top-illustration-container {
+            width: 100%;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        
+        .top-illustration {
+            width: 100%;
+            height: auto;
+            display: block;
+            mix-blend-mode: multiply;
+        }
+
+        .chapter-title {
+            text-align: center;
+            font-size: 1.8rem;
+            color: #a3905e; /* Dourado/Bronze */
+            margin-bottom: 30px;
+            font-weight: 400;
+            font-style: italic; /* A fonte do título parece ser itálico ou serifa clássica */
+        }
+        
+        .chapter-title span {
+            color: #a3905e;
+        }
+
+        /* Letra Capitular (Drop Cap) */
+        .drop-cap {
+            float: left;
+            font-size: 3.8rem;
+            line-height: 0.8;
+            margin-right: 8px;
+            margin-top: -2px;
+            color: #1a1a1a;
+            background-color: #e0ded5; /* Fundo decorativo simulação */
+            padding: 2px 8px;
+            border: 1px solid #999;
+            font-family: serif;
+        }
+
+        .img-placeholder {
+            width: 100%;
+            height: 300px;
+            border: 1px dashed #92b3a5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #92b3a5;
+            text-align: center;
+            font-size: 0.8rem;
+            background-color: rgba(146, 179, 165, 0.1);
+            margin-bottom: 20px;
+        }
+
+        /* Rodapé */
+        .footer {
+            margin-top: auto;
+            padding-top: 20px;
+            font-size: 0.9rem;
+            color: #a3905e;
+            font-weight: 600;
+            font-family: serif;
+            border-top: 1px solid rgba(163, 144, 94, 0.3);
+        }
+        .footer-left { text-align: left; }
+        .footer-right { text-align: right; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="top-illustration-container">
+                <img src="header_celestial.jpg" alt="Ilustração Celestial Verde" class="top-illustration" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="img-placeholder" style="display:none;">
+                    <span>Coloque a imagem do cabeçalho aqui<br>(header_celestial.jpg)</span>
+                </div>
+            </div>
+
+            <h1 class="chapter-title">Capítulo 3: O Celestial</h1>
+
+            <div class="content">
+                <p class="no-indent">
+                    <span class="drop-cap">M</span>uito do que sabemos sobre a história dos gigantes antes da guerra com a Térvore vem em doses e conta-gotas e, portanto, cabe a nós juntá-las em algo parecido com uma linha do tempo.
+                </p>
+
+                <p>Sabemos que os gigantes viveram por muito tempo no topo das montanhas e parece que há muito tempo uma tribo de astrólogos coexistiu com eles lá. Aprendemos isso da Espada da Noite e da Chama, que diz o seguinte:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Astrólogos, que precederam os feiticeiros, estabeleceram-se em topos de montanhas que quase tocavam o céu, e consideravam os Gigantes de Fogo seus vizinhos."</p>
+                    <span class="quote-author">— Espada da Noite e da Chama</span>
+                </div>
+
+                <p>Então este é um tempo muito distante, pois estamos falando de astrólogos que precederam até mesmo os feiticeiros de Raya Lucaria e a família real Carian.</p>
+
+                <p>A prática da astrologia um dia levaria ao desenvolvimento da feitiçaria, um fato confirmado pela Túnica do Preceptor, que descreve feiticeiros como descendentes dos astrólogos:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Feiticeiros de pedrilhante são os descendentes de astrólogos, um fato do qual os Carianos permanecem cientes. Mesmo que seu destino tenha sido cortado das estrelas há muito tempo."</p>
+                    <span class="quote-author">— Túnica do Preceptor</span>
+                </div>
+
+                <p>Temos a evidência arqueológica no topo das montanhas também: as várias bacias astrológicas e as Ruínas do Observador de Estrelas, sem dúvida um assentamento desta comunidade astrológica.</p>
+
+                <p>Então, neste tempo antes da academia, esses astrólogos claramente se estabeleceram nos picos mais altos das Terras Intermédias para estar o mais perto possível do céu. Isso faz sentido, dado que estamos lidando com astrólogos bastante primitivos.</p>
+
+                <p>O aspecto mais interessante disso, no entanto, é que os Gigantes de Fogo viviam em paz com esses humanos estudiosos das estrelas, mostrando que eles não são automaticamente hostis ao resto da civilização.</p>
+
+                <p>É o relacionamento deles com seu deus do fogo que determina sua lealdade, algo que podemos inferir de sua animosidade com os Zamor e a Térvore.</p>
+
+                <p>Mesmo neste período de noite e chama, eles ainda são referidos como Gigantes de Fogo, o que significa que seu Deus Caído não tinha animosidade com as estrelas, permitindo assim que a chama e a noite vivessem em paz.</p>
+            </div>
+            <div class="footer footer-left">76</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2l-2 4h-4l-2 4v6l4 4h8l4-4v-6l-2-4h-4z M12 4l1.5 3h-3L12 4z" opacity="0.8"/></svg>
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Eu acho que um de seus primeiros conflitos é um indicador decente de quando a comunidade dos Gigantes de Fogo floresceu pela primeira vez. O conflito a que me refiro é a guerra que travaram contra os dragões de gelo, algo aprendido na descrição da Névoa de Borealis, que diz:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Os dragões de gelo já foram lordes do topo das montanhas há muito tempo, até serem derrotados pelos Gigantes de Fogo e expulsos do pico."</p>
+                    <span class="quote-author">— Névoa de Borealis</span>
+                </div>
+
+                <p>Então os dragões de gelo devem ter sido uma ramificação dos dragões, parentes do próprio Borealis, que uma vez governou esses topos de montanha. Esta é uma peça útil de lore para situar o estabelecimento da sociedade dos Gigantes de Fogo, porque Borealis e presumivelmente o resto dos dragões de gelo são um tipo de dragão conhecido como "dragões modernos".</p>
+
+                <p>Aprendemos isso do encantamento Ataque Relâmpago:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Um dos encantamentos do antigo culto aos dragões da capital. Ancestrais dos dragões modernos, os dragões antigos tinham escamas de Cascalho de Pedra e empunhavam relâmpagos como sua arma. Diz-se que uma vez eles atacaram Leyndell, a Capital Real."</p>
+                    <span class="quote-author">— Ataque Relâmpago</span>
+                </div>
+
+                <p>Os dragões antigos são aqueles que vemos como Fortissax, com as quatro asas e escamas de pedra, e com a habilidade de empunhar relâmpagos vermelhos. Borealis e os gostos de Agheel formam os dragões modernos.</p>
+            </div>
+            <div class="footer footer-right">77</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

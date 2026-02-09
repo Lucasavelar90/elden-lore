@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grace Given - Páginas 62 e 63</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1100px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 50px 45px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; }
+        .header-icon { display: block; margin: 0 auto 10px auto; width: 25px; fill: #a3905e; }
+        .header-title { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #a3905e; font-weight: 600; }
+
+        /* Conteúdo */
+        .content {
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 14px;
+            line-height: 1.5;
+            text-align: justify;
+            orphans: 3;
+            widows: 3;
+            flex-grow: 1;
+        }
+
+        p { margin-bottom: 12px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+
+        /* Citações em caixas */
+        .quote-box {
+            margin: 15px 0;
+            break-inside: avoid;
+            padding: 0 5px;
+        }
+
+        .quote-text {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #333;
+            line-height: 1.4;
+            text-indent: 0;
+        }
+
+        .quote-author {
+            display: block;
+            font-style: normal;
+            font-size: 0.8rem;
+            color: #777;
+            text-align: right;
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Destaque Verde Grande (Pull Quote) */
+        .pull-quote-green {
+            color: #92b3a5;
+            font-size: 1.4rem;
+            line-height: 1.3;
+            margin: 0 0 25px 0;
+            text-indent: 0;
+            text-align: left;
+            break-inside: avoid;
+            font-weight: 400;
+        }
+
+        /* Rodapé */
+        .footer {
+            margin-top: auto;
+            padding-top: 20px;
+            font-size: 0.9rem;
+            color: #a3905e;
+            font-weight: 600;
+            font-family: serif;
+            border-top: 1px solid rgba(163, 144, 94, 0.3);
+        }
+        .footer-left { text-align: left; }
+        .footer-right { text-align: right; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2l-2 4h-4l-2 4v6l4 4h8l4-4v-6l-2-4h-4z M12 6l1 2h-2L12 6z" opacity="0.8"/></svg>
+                <div class="header-title">O Tempo Antes da Térvore</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">...e recuperar a Lâmina Caçadora de Dedos. Já sabemos que Blaidd foi criado pelos Dois Dedos, no entanto Ranni há muito tempo jurou ser inimiga de seus Dois Dedos:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Mas eu não aquiesceria aos Dois Dedos. Eu roubei a Runa da Morte, matei minha própria carne de Empyreana, jogando-a fora. Eu não seria controlada por aquela coisa. Os Dois Dedos e eu temos amaldiçoado um ao outro desde então... E as Sombras Funestas... são seus assassinos."</p>
+                    <span class="quote-author">— Ranni, a Bruxa</span>
+                </div>
+
+                <p>Então o que vemos aqui é Ranni protestando contra seu destino como uma Empyreana. E isso nos mostra que sua Sombra, embora uma criação da Vontade Maior, tem alguma semelhança de autonomia – pois a descrição da Espada Grande Real, sua espada, lê o seguinte:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Em desafio ao destino para o qual nasceu, Blaidd jurou não servir a nenhum mestre além de Ranni. Como prova, a espada foi imbuída com uma magia fria no momento em que o juramento foi feito."</p>
+                    <span class="quote-author">— Espada Grande Real</span>
+                </div>
+
+                <p>Então, apesar de ser essencialmente um instrumento dos Dois Dedos, Blaidd na verdade escolheu servir sua mestra, mesmo que o caminho dela o levasse a entrar em conflito com seu criador, e ele e Iji juraram a si mesmos como vassalos de Ranni.</p>
+
+                <p>Como resultado, nós o vemos perseguindo ativamente o objetivo final dela em relação a trazer a Era das Estrelas, apesar de sua própria natureza. No entanto, sua natureza permanece, não importa o que Blaidd queira. E começamos a entender que, enquanto na mente de Blaidd ele pode ser a criatura de Ranni, ele é realmente nada mais do que uma ferramenta para os Dois Dedos.</p>
+
+                <p>Iji explica concisamente a situação e simultaneamente revela a verdadeira natureza de um Vinculado às Sombras:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Há algo que você deve saber. Os Dois Dedos deram Blaidd a Lady Ranni, como um seguidor fiel. Sua própria sombra, incapaz de traição. Mas se Lady Ranni, como uma Empyreana, resiste a ser um instrumento dos Dois Dedos, a sombra enlouquecerá, transformando-se de um seguidor em uma maldição horrível. Mas tal é o seu destino. Em tais assuntos, os pensamentos do próprio Blaidd não têm peso. Dói-me tanto, mas ele deve ser neutralizado. Pelo bem de Lady Ranni."</p>
+                    <span class="quote-author">— Conselheiro de Guerra Iji</span>
+                </div>
+
+                <p>Então, não apenas as Sombras são concedidas para ajudar os Empyreanos a reivindicar a divindade, mas eles também são as apólices de seguro dos Dois Dedos. Se um Empyreano fosse se tornar um inimigo da Vontade Maior, para se esquivar de sua obediência, então as Sombras se tornariam o assassino, e cortariam a garganta de seu mestre.</p>
+
+                <p>Mas talvez essa seja uma explicação simplista demais. Será que Iji de fato quer dizer que, devido à natureza contraditória da situação de Blaidd, servir a um objetivo que está em oposição ao seu próprio propósito é paradoxal e o leva à loucura? Acredito que isso esteja mais perto da verdade, embora a explicação anterior de que ele é uma apólice de seguro faça um trabalho mais direto ao ilustrar o resultado final.</p>
+            </div>
+            <div class="footer footer-left">62</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2C9 2 7 5 7 8c0 1.5 1 3 2.5 4L7 16l1 2 4-2 4 2 1-2-2.5-4C17 11 18 9.5 18 8c0-3-2-6-5-6zm0 2c1.5 0 3 1.5 3 4s-1.5 4-3 4-3-1.5-3-4 1.5-4 3-4z" opacity="0.8"/></svg>
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <div class="pull-quote-green">
+                    Não apenas as Sombras são concedidas para ajudar os Empyreanos a reivindicar a divindade, mas eles também são as apólices de seguro dos Dois Dedos. Se um Empyreano fosse se tornar um inimigo da Vontade Maior, então as Sombras se tornariam o assassino.
+                </div>
+
+                <p class="no-indent">Ou seja, o que isso destaca é que, apesar da natureza de sua criação, os Vinculados às Sombras podem desenvolver suas próprias personalidades e ideais. Blaidd é leal a Ranni, não aos Dois Dedos. Ele não entende por que Iji o trancaria, pois em seu coração ele é cem por cento homem de Ranni:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Oh, é você... Sou eu, Blaidd. O velho Iji me prendeu aqui. Me disse que eu não traria nada além de ruína para Lady Ranni. Mas não há chance de isso acontecer. Eu sou parte do ser dela. A própria sombra dela... Eu pensei que o velho Iji soubesse tanto quanto... Honestamente, eu não sei o que está acontecendo mais..."</p>
+                    <span class="quote-author">— Blaidd, o Meio-Lobo</span>
+                </div>
+
+                <p>É triste assistir à deterioração de Blaidd, porque apesar de seu coração, ele é, em última análise, uma criação dos Dedos, e ele parece sucumbir à sua realidade conflitante antes de se jogar contra nós em fúria. E, ao fazer isso, mostrando que os verdadeiros mestres dos Vinculados às Sombras são seus Dois Dedos.</p>
+
+                <p>O destino de Blaidd mostra a natureza suprema dessas bestas, então. Embora sejam seres independentes reais, os Dois Dedos ainda são seus criadores e, como tal, podem obrigá-los a tal ação drástica.</p>
+
+                <p>Ou será que ele resistiu? Foi apenas que ele foi levado à loucura pelas lâminas das Facas Negras? Pois depois que contamos a Iji sobre a morte de Blaidd, quase parece estar implícito que Iji estava errado sobre suas suposições a respeito da natureza de Blaidd. Além disso, Ranni diz o seguinte de Blaidd:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Mesmo quando virei as costas para os Dois Dedos. Blaidd permaneceu meu aliado leal. Heh. Embora ele tenha sido criado como um vassalo para uma Empyreana, ele foi um fracasso colossal, por parte dos Dois Dedos."</p>
+                    <span class="quote-author">— Ranni, a Bruxa</span>
+                </div>
+
+                <p>No mínimo, isso mostra que os Dois Dedos não haviam antecipado que um Vinculado às Sombras teria permanecido leal a uma traidora por tanto tempo quanto ele permaneceu. E mesmo no final, Blaidd protesta contra seu destino, professando sua lealdade à sua querida Ranni.</p>
+
+                <p>E eu penso que Ranni está certa de certa forma, pois mesmo se seu papel paradoxal o alcançou eventualmente, Blaidd serviu à rebelião de Ranni contra os dedos por algum tempo, mostrando que ele foi, em última análise, um fracasso por parte dos Dois Dedos.</p>
+            </div>
+            <div class="footer footer-right">63</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rule of the Tree & Grace Given - Páginas 118 e 119</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+
+        /* Conteúdo Texto */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        
+        em { font-style: italic; }
+
+        /* Títulos de Subseção (THE CRUCIBLE) */
+        h2.subsection-title {
+            font-family: 'Cinzel', serif;
+            color: #8abeb4;
+            font-size: 1.2rem;
+            text-align: center;
+            margin: 25px 0 15px 0;
+            line-height: 1.2;
+            break-inside: avoid;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        /* Citações de Itens */
+        .item-quote {
+            font-style: italic;
+            margin: 15px 0 5px 0;
+            text-indent: 0;
+            font-size: 0.95em;
+        }
+
+        .quote-source {
+            display: block;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Rodapé (Número da página) */
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5zm0 17.9c-3.95-1.12-7-5.31-7-9.9V8.3l7-3.9 7 3.9v1.8c0 4.59-3.05 8.78-7 9.9z"/></svg>
+                <div class="header-title">O Reinado da Árvore</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">as Térvores Menores; estas últimas são mais reais em aparência e ainda fornecem benefícios tangíveis na forma de "lágrimas". A descrição do Elixir Magnífico descreve isso:</p>
+
+                <p class="item-quote">“Bacias são colocadas aos pés das Térvores Menores por todas as Terras Intermédias a fim de coletar suas lágrimas cristalizadas.”</p>
+                <span class="quote-source">- Frasco de Elixir Magnífico</span>
+
+                <p>Dado que isso soa muito como a Térvore da Era da Abundância, isso nos leva novamente a concluir que a Térvore foi uma vez uma árvore mais tradicional, como sua descendência.</p>
+
+                <p>A era seguinte à da Térvore Antiga seria uma era onde os benefícios tangíveis da árvore arbórea original se foram e a fé importaria mais. Isso seria quando os milagres da fé da Térvore seriam desenvolvidos, aqueles marcados por um sigilo que mostra uma árvore mais estilizada. Com esse novo entendimento em mãos, certos diálogos de Marika começam a fazer sentido, como o seguinte:</p>
+
+                <p class="item-quote">“Declaro minha intenção, de buscar as profundezas da Ordem Dourada. Através da compreensão do caminho adequado, nossa fé, nossa graça, é aumentada. Aqueles dias felizes de crença cega já passaram. Meus camaradas; por que devem hesitar?”</p>
+                <span class="quote-source">- Rainha Marika via Melina</span>
+
+                <p>Isso fala de crença vacilante na esteira de tal perda – a perda da árvore doadora de vida. Muitos devem ter se sentido privados dos benefícios tangíveis que a árvore havia dado uma vez, antes de ser substituída por esta imitação pálida.</p>
+
+                <p>E isso explica por que há tanta preocupação com as Térvores Menores encontradas por todas as Terras Intermédias, pois de muitas maneiras elas são as verdadeiras sucessoras daquela árvore original. Quando o Elden Ring é estilhaçado, Avatares da Térvore surgem para defender as Térvores Menores. É como se a própria Térvore reconhecesse que uma das Térvores Menores pode precisar sucedê-la.</p>
+
+                <p>De fato, uma ordem de guardiões é estabelecida através de um pacto antigo para defender a Térvore, algo que aprendemos via a Máscara de Guardião:</p>
+
+                <p class="item-quote">“Máscara dourada gravada. Usada pelos guardiões das Térvores Menores. Em conformidade com um pacto antigo com a Térvore, diz-se que suas mortes não levaram à destruição, mas sim a uma vida eterna renovada como guardiões.”</p>
+                <span class="quote-source">- Máscara de Guardião</span>
+
+                <p>É como se esses humanos fossem tão zelosos em sua crença que eles entregam seus corpos à Térvore e, após a morte, são ressuscitados como parte da própria árvore.</p>
+
+                <p>Quanto à queima da primeira Térvore em si e o que até a precipitou? Isso é algo que discutiremos junto com os Podres (Godskins). Mas, em resumo, há alguma evidência tangencial de que a Apostasia da Pele Divina pode estar por trás de tudo isso. Independentemente do que você acredita ser a fonte da queima da árvore, testemunhar tal evento teria sido apocalíptico em escala – e profundamente traumático para aqueles que viveram na sombra da Térvore por tanto tempo.</p>
+            </div>
+            
+            <div class="page-number">118</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2C8 2 8 8 8 8s-3 2-3 5c0 2.21 1.79 4 4 4s4-1.79 4-4c0-3-3-5-3-5s0-6-4-6zm-1.5 13c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5S12 12.67 12 13.5 11.33 15 10.5 15z"/></svg> 
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <h2 class="subsection-title">O CRISOL<br>(THE CRUCIBLE)</h2>
+
+                <p>Tendo falado sobre a era mais antiga da Térvore, é apenas adequado que falemos sobre o Crisol, que sabemos ser o precursor da Térvore.</p>
+
+                <p>A Térvore é o atual farol da influência da Vontade Maior. Como já discutimos, o Elden Ring veio para as Terras Intermédias há muito tempo, e Placidusax foi Lorde Prístino no tempo antes da Térvore. Como tal, sugiro que o Crisol é uma manifestação do poder da Vontade Maior, daí sua associação com ouro.</p>
+
+                <p>No entanto, ao contrário do ouro puro da Térvore, ouro vermelho é frequentemente associado ao Crisol. Aprendemos isso com o Escudo Grande Dourado que diz:</p>
+
+                <p class="item-quote">“O tom vermelho no revestimento de ouro espelha a matéria primordial que se tornou a Térvore. A cor do anseio de voltar para casa.”</p>
+                <span class="quote-source">- Escudo Grande Dourado</span>
+
+                <p>Também vemos isso no ouro vermelho da armadura dos Cavaleiros do Crisol, e para mim esse vermelho é uma escolha proposital. Afinal, como o criador de conteúdo Hawkshaw nos lembra em seu vídeo “A Teoria das Cores de Elden Ring”, o vermelho é frequentemente associado à violência e vitalidade bestial.</p>
+
+                <p>A Era do Crisol é uma de bestas com chifres, vida caótica e violência, como ilustrado por aqueles mais associados ao Crisol: os Bastardos (Misbegotten), os Agouros (Omen) e as bestas. Em um podcast, meu amigo e colega criador de conteúdo Ratatoskr sugeriu que o Crisol é simplesmente uma analogia para a força da evolução em geral e estou inclinado a concordar.</p>
+
+                <p>A evolução é um processo caótico e violento, com espécies passando por diferentes formas devido a mutações, e de certa forma os Bastardos quase parecem uma personificação da própria evolução. Eles são criaturas incompatíveis com características de todas as espécies diferentes, talvez presos em algum ponto médio do processo evolutivo.</p>
+
+                <p>Antes de <em>Shadow of the Erdtree</em>, não tínhamos muita informação sobre isso além das representações encontradas na Árvore de Siluria e no Elmo da Árvore do Crisol, ambos os quais mostram uma árvore caótica que se destina a representar o Crisol. Assim, por um longo tempo, muitos de nós acreditamos que o Crisol era ele mesmo uma árvore, uma que foi meramente suplantada pela Térvore.</p>
+
+                <p>No entanto, com a tradição adicional fornecida por <em>Shadow of the Erdtree</em>, começamos a entender que talvez a representação do Crisol como uma árvore seja simplesmente uma analogia para sua natureza esotérica. Isso torna o Crisol mais fácil de entender.</p>
+            </div>
+            
+            <div class="page-number">119</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grace Given - Páginas 88 e 89</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1100px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 50px 45px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; }
+        .header-icon { display: block; margin: 0 auto 10px auto; width: 25px; fill: #a3905e; }
+        .header-title { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #a3905e; font-weight: 600; }
+
+        /* Conteúdo */
+        .content {
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 14px;
+            line-height: 1.5;
+            text-align: justify;
+            orphans: 3;
+            widows: 3;
+            flex-grow: 1;
+        }
+
+        p { margin-bottom: 12px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+
+        /* Citações em caixas */
+        .quote-box {
+            margin: 15px 0;
+            break-inside: avoid;
+            padding: 0 5px;
+        }
+
+        .quote-text {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #333;
+            line-height: 1.4;
+            text-indent: 0;
+        }
+
+        .quote-author {
+            display: block;
+            font-style: normal;
+            font-size: 0.8rem;
+            color: #777;
+            text-align: right;
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Títulos de Seção (Verde) */
+        .special-title {
+            column-span: all;
+            text-align: center;
+            color: #92b3a5;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin: 25px 0;
+            font-weight: 400;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+        }
+
+        /* Imagem Inline (Cristais Rodapé) */
+        .inline-img-container {
+            width: 100%;
+            margin-top: auto; /* Empurra para o rodapé */
+            display: flex;
+            justify-content: center;
+            break-inside: avoid;
+            padding-bottom: 20px;
+        }
+        
+        .inline-img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            mix-blend-mode: multiply;
+            opacity: 0.7;
+        }
+
+        .img-placeholder {
+            width: 100%;
+            height: 100px;
+            border: 1px dashed #92b3a5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #92b3a5;
+            text-align: center;
+            font-size: 0.8rem;
+            background-color: rgba(146, 179, 165, 0.1);
+        }
+
+        /* Rodapé */
+        .footer {
+            margin-top: 10px;
+            padding-top: 10px;
+            font-size: 0.9rem;
+            color: #a3905e;
+            font-weight: 600;
+            font-family: serif;
+            border-top: 1px solid rgba(163, 144, 94, 0.3);
+        }
+        .footer-left { text-align: left; }
+        .footer-right { text-align: right; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><path d="M12 4l1.5 3h-3L12 4z" opacity="0.6"/></svg>
+                <div class="header-title">O Celestial</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Dados os detalhes ambientais, este primeiro dilúvio provavelmente aconteceu em uma região em particular, Liurnia, pois esta é a região com o maior crescimento de Pedrilhante por uma margem justa.</p>
+
+                <p>Agora vamos voltar à natureza do Pedrilhante porque preciso chegar ao cerne disso antes de discutirmos os Cristalianos mais tarde.</p>
+
+                <p>Sellen descreve a natureza do Pedrilhante para nós:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Nossos poderes extraem dos poderes embutidos no pedrilhante, mas qual é a natureza de tal poder? Pedrilhante é o âmbar do cosmos, âmbar dourado contém os remanescentes de vida antiga e abriga sua vitalidade, enquanto Pedrilhante contém vida residual. E assim, a vitalidade das estrelas. Não deve ser esquecido que a feitiçaria de pedrilhante é o estudo das estrelas e da vida nelas."</p>
+                    <span class="quote-author">— Feiticeira Sellen</span>
+                </div>
+
+                <p>Então Pedrilhante é uma substância semelhante ao âmbar que contém uma energia de vida residual das estrelas. Isso é matéria estelar cristalizada, e é por isso que Sellen e seus companheiros feiticeiros primevos não querem que as pessoas esqueçam que isso não é apenas "mágica", mas sim o estudo e manipulação da energia estelar.</p>
+
+                <p>Através deste material milagroso, todos os tipos de feitiçarias podem ser produzidos, e aparentemente isso também inclui magia gravitacional, que muitos assumem ser uma coisa própria. Em vez disso, parece ser um tipo de magia ligada ao Pedrilhante ou estrelas, como lê o Meteorito de Astel:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Uma das feitiçarias de Pedrilhante que manipula forças gravitacionais. Convoca um vazio que emite uma chuva de meteoritos. Segure para continuar o efeito. Uma manifestação do poder com o qual Astel arrasou a Cidade Eterna."</p>
+                    <span class="quote-author">— Meteorito de Astel</span>
+                </div>
+
+                <p>O poder das estrelas sendo ligado ao poder da gravidade, claro, faz sentido, quando você considera que Astel, uma estrela, o manipula livremente. Adicionalmente os Lordes de Alabastro e Ônix, que considero seres celestiais, também manipulam livremente forças gravitacionais.</p>
+
+                <p>No mundo real, cristais crescem ou se formam – geralmente quando uma rocha líquida esfria e começa a endurecer e as moléculas se organizam em uma moda uniforme – e eles podem crescer à medida que mais e mais moléculas são adicionadas a esse arranjo.</p>
+
+                <p>No entanto, Pedrilhante é diferente. O líquido que está endurecendo e se reformando é a energia de vida residual da estrela, e esta energia estelar veio a estar neste reino através do evento descrito na Chuva Fundadora de Estrelas:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"A mais antiga feitiçaria primeva, dita ter sido descoberta por um antigo astrólogo. Uma feitiçaria de status lendário. Convoca uma nuvem escura de estrelas acima. Pouco depois, a nuvem liberará um dilúvio violento de chuva estelar. Esta feitiçaria pode ser conjurada em movimento. Carregar aumenta a potência. Pensada ser a feitiçaria de pedrilhante fundadora. O vislumbre da..."</p>
+                </div>
+            </div>
+            <div class="footer footer-left">88</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2C9 2 7 5 7 8c0 1.5 1 3 2.5 4L7 16l1 2 4-2 4 2 1-2-2.5-4C17 11 18 9.5 18 8c0-3-2-6-5-6zm0 2c1.5 0 3 1.5 3 4s-1.5 4-3 4-3-1.5-3-4 1.5-4 3-4z"/></svg>
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">...corrente primeva que o astrólogo viu tornou-se real, e o âmbar das estrelas choveu sobre esta terra."</p>
+                <span class="quote-author" style="display:block; text-align:right; margin-bottom:20px;">— Chuva Fundadora de Estrelas</span>
+
+                <p>"Chuva" estelar: então um líquido que se tornaria um cristal. Novamente esta é uma analogia magistral para o processo científico real de cristalização, exceto que neste caso o líquido que está endurecendo é uma substância viva, e é por isso que age de uma maneira diferente, mais corruptora do que faz com cristais regulares. Eu sugeriria que é quase radioativo em seu comportamento.</p>
+
+                <p>A natureza radioativa desses cristais é mais notavelmente vista sobre outra vida orgânica com a qual interage, especialmente aqueles que tiveram exposição a longo prazo.</p>
+
+                <p>Por exemplo, temos os dragões de Pedrilhante, dos quais Smarag e Adula são dois indivíduos nomeados. Encontramos mais dragões sem nome no Altar do Luar. Tanto Adula quanto Smarag estão literalmente infundidos com o material; não apenas deformou seus corpos com crescimentos de cristal, mas manchou seu fogo com um tom de Pedrilhante e lhes forneceu habilidades mágicas.</p>
+
+                <p>Aprendemos como isso aconteceu através da descrição do Sopro de Pedrilhante de Smarag, que diz:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Smarag era um devorador de feiticeiros e, com o tempo, seu corpo tornou-se corrompido pelos seus Pedrilhantes."</p>
+                    <span class="quote-author">— Sopro de Pedrilhante de Smarag</span>
+                </div>
+
+                <p>Este efeito radioativo pode ser visto muito claramente nos corpos dos Mineiros de Pedrilhante, seres que claramente tiveram uma exposição a longo prazo ao Pedrilhante, e como resultado seus corpos foram tomados pelo Pedrilhante.</p>
+
+                <p>Outra observação interessante das propriedades do Pedrilhante vem quando examinamos Azur e Lusat, dois dos feiticeiros primevos fundadores. Como muitos saberão agora, as roupas que Azur e Lusat usam não são realmente roupas – estes são, na verdade, crescimentos que tomaram conta de seus corpos. Aprendemos isso através de suas vestimentas, por exemplo, a Coroa de Pedrilhante de Lusat:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Esta coroa substituiu o cérebro e o crânio de Lusat completamente, e agora, removida de seu corpo, está quase morta."</p>
+                    <span class="quote-author">— Coroa de Pedrilhante de Lusat</span>
+                </div>
+
+                <p>E agora seus manguitos:</p>
+
+                <div class="quote-box">
+                    <p class="quote-text">"Manguitos corroídos por pedrilhantes azuis. Usados por Lusat, feiticeiro da corrente primeva. Lusat havia alcançado um estado quase inorgânico."</p>
+                    <span class="quote-author">— Manguitos de Lusat</span>
+                </div>
+
+                <div class="inline-img-container">
+                    <img src="cristais_rodape.jpg" alt="Ilustração de Cristais Verdes" class="inline-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="img-placeholder" style="display:none;">
+                        <span>Coloque a imagem dos cristais aqui<br>(cristais_rodape.jpg)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer footer-right">89</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

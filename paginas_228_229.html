@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 9: As Guerras de Unificação da Térvore - Páginas 228 e 229</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+
+        /* Conteúdo Texto */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+            padding-bottom: 40px;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        
+        em { font-style: italic; }
+
+        /* Títulos de Subseção */
+        h2.subsection-title {
+            font-family: 'Cinzel', serif;
+            color: #c5a059; /* Dourado */
+            font-size: 1.2rem;
+            text-align: center;
+            margin: 25px 0 15px 0;
+            line-height: 1.2;
+            break-inside: avoid;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        /* Citações de Itens */
+        .item-quote {
+            font-style: italic;
+            margin: 15px 0 5px 0;
+            text-indent: 0;
+            font-size: 0.95em;
+        }
+
+        .quote-source {
+            display: block;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Ilustração na coluna */
+        .column-illustration {
+            width: 100%;
+            display: block;
+            margin: 20px 0;
+            mix-blend-mode: multiply;
+        }
+
+        .img-placeholder-column {
+            width: 100%;
+            height: 350px;
+            background-color: rgba(197, 160, 89, 0.15);
+            border: 1px dashed #c5a059;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #c5a059;
+            font-size: 0.8rem;
+            margin: 20px 0;
+        }
+
+        /* Rodapé e Footnotes */
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        .footnote {
+            position: absolute;
+            bottom: 50px;
+            right: 50px;
+            left: 50px;
+            text-align: right;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            font-size: 0.8em;
+            color: #555;
+        }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; padding-bottom: 0; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+            .footnote { position: relative; bottom: auto; margin-top: 30px; left: 0; right: 0; text-align: left; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><circle cx="12" cy="12" r="3"/></svg> 
+                <div class="header-title">As Guerras de Unificação da Térvore</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">aqui em nome de Godfrey. A importância do falcão para Stormveil é esclarecida através do Escudo de Madeira com Brasão de Falcão:</p>
+
+                <p class="item-quote">“Adornado com um brasão há muito esquecido de Stormveil, antigo em design.”</p>
+                <span class="quote-source">- Escudo de Madeira com Brasão de Falcão</span>
+
+                <p>Há muito tempo me apego à ideia de que o Rei Falcão da Tempestade, o governante dos falcões, uma vez governou este poleiro e, como Serosh, a derrota do rei foi fundamental no desenvolvimento de Godfrey como um grande conquistador. A descrição da cinza diz:</p>
+
+                <img src="banished_knight_hawk_art.jpg" alt="Arte Cavaleiro Banido" class="column-illustration" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="img-placeholder-column" style="display:none;">
+                    [Ilustração Cavaleiro Banido]<br>Salve como: banished_knight_hawk_art.jpg
+                </div>
+
+                <p class="item-quote">“Cinzas de um falcão reverenciado por todos os outros como soberano nos dias em que os ventos de Stormveil ainda rugiam como nenhum outro. Este antigo monarca é orgulhoso, no entanto, recusando-se a responder às invocações de qualquer um.”</p>
+                <span class="quote-source">- O Rei Falcão da Tempestade</span>
+
+                <p>Isso explicaria a presença de falcões por todo Stormveil e como os Cavaleiros Banidos utilizam o poder do vento de Stormveil. Dois inimigos bestiais, derrotados por um homem que operava de maneira animalesca.</p>
+
+                <p>Eu especularia, portanto, que depois que Godfrey derrotou o Rei Falcão da Tempestade, ele construiu o poderoso Castelo Stormveil e até mesmo escravizou os falcões sobreviventes. Como a descrição das Cinzas de Falcão de Guerra diz:</p>
+
+                <p class="item-quote">“Espírito de um falcão de guerra de Stormveil, cujas garras foram cortadas para que espadas afiadas como navalhas pudessem ser enxertadas em seu lugar. Com seu lorde vencido, e suas asas feridas, o falcão pereceu enquanto olhava solenemente para seu antigo lar. A tempestade é o berço de um falcão de guerra.”</p>
+                <span class="quote-source">- Cinzas de Falcão de Guerra</span>
+
+                <p>Para mim, isso sugere que os falcões, tão quebrados pela perda de seu rei, submeteram-se a Hoarah Loux e seus homens, tendo lâminas e dispositivos de sopro de fogo enxertados neles e servindo Stormveil como o equivalente a cães de guarda. De fato, sua escravidão é mais ou menos confirmada pelas correntes encontradas em suas costas – um forte contraste com os falcões livres e naturais encontrados em Farum Azula.</p>
+
+                <p>Por sua vez, os falcões continuariam a ser um símbolo importante para Godfrey ao longo dos anos, mostrando o quanto ele respeitava seu conflito com eles. Diálogo com Nepheli Loux, por exemplo, mostra que o clã posterior das terras baldias de Godfrey usaria falcões de caça:</p>
+
+                <p class="item-quote">“Ainda assim, esta cinza... Me lembra meu primeiro falcão. Obrigada.”</p>
+                <span class="quote-source">- Nepheli Loux</span>
+
+                <p>Isso é sublinhado pela arma de escolha de Nepheli Loux, o Machado de Falcão da Tempestade – o qual, claro, recorda o poder dos falcões de Stormveil em primeiro lugar.</p>
+            </div>
+            
+            <div class="page-number">228</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2L4 10h5v12h6V10h5L12 2z"/></svg> 
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Isso é muito para processar, e há alguma lore interessante para mastigar aqui, mais obviamente que os falcões ainda são importantes para Hoarah Loux mesmo em seu exílio, muito longe das Terras Intermédias e de Godfrey.</p>
+
+                <p>Um ponto final a ponderar sobre Stormveil é uma pintura encontrada lá. Esta pintura mostra a Torre Divina de Limgrave em si, mas não há castelo e não há Luz Dourada da Térvore lá⁵. Isso me faz pensar se Stormveil era mais um poleiro nu governado pelo Rei Falcão da Tempestade e seus falcões antes que Godfrey o tomasse deles e construísse o castelo ele mesmo.</p>
+
+                <p>Quer você acredite que Stormveil foi construído pelo povo do Senhor da Tempestade ou se você acredita que foi construído por Godfrey após sua conquista, é claro que o castelo final é uma mistura da ideologia de falcão e besta de Godfrey – um pedaço arquitetônico de datação por carbono para o confronto entre Godfrey e a espécie bestial. Em última análise, acredito que o castelo foi parcialmente construído pelo Senhor da Tempestade e depois expandido por Godfrey e seus descendentes.</p>
+
+                <p>A herança de Stormveil como tanto uma fortaleza dos falcões quanto mais tarde a fortaleza de Godfrey é evidenciada pela ascensão de Nepheli ao trono, o que ela só faz depois de aceitar as cinzas do Rei Falcão da Tempestade. Ser do sangue de Godfrey e estar de posse da cinza do antigo monarca Falcão da Tempestade dá a Nepheli a legitimidade que ela precisa para governar sobre Stormveil como Lady Nepheli.</p>
+
+                <h2 class="subsection-title">A MESA REDONDA<br>(THE ROUNDTABLE)</h2>
+
+                <p>Em seu vídeo "Godfrey e Serosh", o <em>Tarnished Archaeologist</em> compara Godfrey ao Rei Arthur, o lendário rei unificador britânico. Mesmo sem os óbvios paralelos da mesa redonda, há muitas conexões a serem feitas aqui. Com esta imagética em mente, vamos dar uma olhada na Mesa da Graça (Roundtable Hold).</p>
+
+                <p>A Mansão Fortificada é, claro, a manifestação original da Mesa da Graça que nós, como Maculados, agora utilizamos em nossa busca pela senhoria. Isso é apropriado, pois há uma boa chance de que os ancestrais dos Maculados provavelmente compuseram os guerreiros que uma vez estiveram ao redor da mesa redonda.</p>
+
+                <p>Sabemos que a Mansão Fortificada estava associada a Godfrey graças aos estandartes do leão rampante, e em geral é muito similarmente equipada a Stormveil. O próprio conceito de uma mesa redonda também se alinha com o que sabemos de Godfrey, um homem que acredita na força e na proeza marcial.</p>
+            </div>
+            
+            <div class="footnote right">
+                5 “Elden Ring Lore: The Golden Lineage” - Eredin (unlisted)
+            </div>
+            <div class="page-number">229</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

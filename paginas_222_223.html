@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 9: As Guerras de Unificação da Térvore - Páginas 222 e 223</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho Padrão */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+
+        /* Estilos do Capítulo 9 */
+        .chapter-illustration-top {
+            width: 100%;
+            max-width: 500px; /* Ilustração larga no topo */
+            display: block;
+            margin: 0 auto 20px auto;
+            mix-blend-mode: multiply;
+        }
+
+        .img-placeholder-header {
+            width: 100%;
+            height: 250px;
+            background-color: rgba(197, 160, 89, 0.15); /* Tom alaranjado/dourado */
+            border: 1px dashed #c5a059;
+            margin: 0 auto 30px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #c5a059;
+            font-size: 0.8rem;
+        }
+        
+        .chapter-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .chapter-number {
+            font-family: 'Cinzel', serif;
+            font-size: 1.2rem;
+            color: #c5a059;
+            display: block;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .chapter-title {
+            font-family: 'Cormorant Garamond', serif;
+            color: #c5a059;
+            font-size: 2rem;
+            line-height: 1.1;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        /* Conteúdo Texto */
+        .content {
+            margin-top: 10px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+        }
+
+        .content-right-page {
+            margin-top: 40px;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        
+        em { font-style: italic; }
+
+        /* Letra Capitular Decorada (Imagem) */
+        .drop-cap-img {
+            float: left;
+            width: 60px; /* Ajuste conforme o recorte */
+            height: auto;
+            margin-right: 10px;
+            margin-top: 5px;
+            margin-bottom: 0;
+            mix-blend-mode: multiply;
+        }
+
+        /* Fallback para Letra Capitular (Texto) */
+        .drop-cap {
+            float: left;
+            font-family: 'Cinzel', serif;
+            font-size: 3.8rem;
+            line-height: 0.8;
+            padding: 6px 8px 2px 2px;
+            margin-right: 8px;
+            margin-top: -4px;
+            color: #1a1a1a;
+            border: 1px solid #1a1a1a;
+            background-color: transparent;
+        }
+
+        /* Citações */
+        .item-quote {
+            font-style: italic;
+            margin: 15px 0 5px 0;
+            text-indent: 0;
+            font-size: 0.95em;
+        }
+
+        .quote-source {
+            display: block;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Rodapé */
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            
+            <img src="godfrey_serosh_header.jpg" alt="Arte Godfrey e Serosh" class="chapter-illustration-top" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder-header" style="display:none;">
+                [Arte Godfrey e Serosh]<br>Salve como: godfrey_serosh_header.jpg
+            </div>
+
+            <div class="chapter-header">
+                <span class="chapter-number">Capítulo 9:</span>
+                <h1 class="chapter-title">As Guerras de Unificação da Térvore</h1>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">
+                    <img src="dropcap_B.jpg" alt="B" class="drop-cap-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span class="drop-cap" style="display:none;">A</span>
+                    o tempo que entramos nas Terras Intermédias, o horizonte é completamente dominado por um objeto singular: a Térvore. Ela lança um halo dourado por todo o mundo diante de nós. É o marco mais importante deste mundo, também, pois é um símbolo da autoridade de Marika e o lar do próprio Anel Prístino.
+                </p>
+
+                <p>A Térvore é o centro do universo e todas as estradas levam a Leyndell. É um destino que permanece sempre em nossa linha de visão, para que não esqueçamos. Esta é a Era da Térvore, a autoridade governante para todos aqueles que existiriam sob sua luz.</p>
+
+                <p>Apesar do domínio esmagador da Térvore na era atual, seus primeiros anos seriam marcados por maciça resistência de todos os cantos. Ela tinha muitos inimigos, e esses inimigos incluíam os Gigantes e o Senhor da Tempestade.</p>
+
+                <p>Aprendemos sobre isso na descrição de Proteção da Térvore:</p>
+
+                <p class="item-quote">“No início, tudo estava em oposição à Térvore. Mas através de inúmeras vitórias na guerra, ela se tornou a personificação da Ordem.”</p>
+                <span class="quote-source">- Proteção da Térvore</span>
+
+                <p>Dada essa hostilidade, faria sentido que a Vontade Maior precisasse de um vassalo para impor o domínio da Térvore sobre as Terras Intermédias. Marika, um membro da raça Numen, que veio de outro mundo, foi escolhida como Empírea para um dia assumir o manto de deus.</p>
+
+                <p>Com Marika no comando, a cruzada da Térvore estava pronta para começar. Mas Marika não travaria essa guerra sozinha. Ela levaria seu primeiro consorte com ela, um homem que se tornaria o primeiro Lorde Prístino: Hoarah Loux, também conhecido como Godfrey, "senhor do campo de batalha".</p>
+
+                <p>As primeiras guerras da Térvore são dominadas por Godfrey e seus guerreiros, como aprendemos no conjunto de armadura de Godfrey:</p>
+
+                <p class="item-quote">“A era da Térvore começou em meio ao conflito, quando Godfrey era senhor do campo de batalha. Ele liderou a Guerra contra os Gigantes. Enfrentou o Senhor da Tempestade, sozinho. E então, chegou um momento. Quando seu último inimigo digno caiu. E foi então, conta a história, que a tonalidade dos olhos do Lorde Godfrey desapareceu.”</p>
+                <span class="quote-source">- Armadura de Lorde Prístino</span>
+
+                <p>Em outras palavras, a Era da Térvore foi trazida através de um período de imenso derramamento de sangue, e Godfrey está no centro disso.</p>
+            </div>
+            
+            <div class="page-number">222</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2L4 10h5v12h6V10h5L12 2z"/></svg> 
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content content-right-page">
+                <p class="no-indent">Não apenas Godfrey é importante para os Maculados, mas de algumas maneiras ele é uma das figuras mais importantes na mitologia da Térvore. Ele é tratado com uma reverência e respeito muito além do estendido a outros personagens. E há uma boa razão para isso, pois, de algumas maneiras, ao lado de Marika, ele é a figura fundadora e unificadora da Era da Térvore.</p>
+
+                <p>Vamos falar sobre essa era com um pouco mais de detalhes, para que possamos entender a forja que temperou o homem que se tornaria o primeiro Lorde Prístino.</p>
+
+                <p>A lembrança de Hoarah Loux diz:</p>
+
+                <p class="item-quote">“Após a Longa Marcha dos Maculados chegar ao fim, Godfrey despojou-se da realeza, tornando-se um simples guerreiro mais uma vez.”</p>
+                <span class="quote-source">- Lembrança de Hoarah Loux</span>
+
+                <p>Esse termo, "tornando-se um simples guerreiro mais uma vez", nos diz que não apenas Hoarah Loux era sua persona quando ele se tornou maculado, mas que ele também era Hoarah Loux antes de se tornar Godfrey. Essa persona de Hoarah Loux, como vemos em nossa luta com ele, é uma pessoa muito diferente do majestoso Godfrey.</p>
+
+                <p>O machado e Serosh em suas costas não estão lá para aumentar seu poder; pelo contrário, eles agem para restringir o homem de violência excepcional que jaz por baixo. Isso é, claro, parcialmente comunicado pelo comportamento de Hoarah Loux e sua...</p>
+            </div>
+            
+            <div class="page-number">223</div>
+        </div>
+
+    </div>
+
+</body>
+</html>
