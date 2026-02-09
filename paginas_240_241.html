@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 9: As Guerras de Unificação da Térvore - Páginas 240 e 241</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+
+        /* Conteúdo Texto */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+            padding-bottom: 40px;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        
+        em { font-style: italic; }
+
+        /* Citações de Itens */
+        .item-quote {
+            font-style: italic;
+            margin: 15px 0 5px 0;
+            text-indent: 0;
+            font-size: 0.95em;
+        }
+
+        .quote-source {
+            display: block;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Ilustração na coluna (flutuante no meio) */
+        .column-illustration-center {
+            width: 100%;
+            display: block;
+            margin: 20px auto;
+            mix-blend-mode: multiply;
+        }
+
+        .img-placeholder-column {
+            width: 100%;
+            height: 200px;
+            background-color: rgba(197, 160, 89, 0.15);
+            border: 1px dashed #c5a059;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #c5a059;
+            font-size: 0.8rem;
+            margin: 20px auto;
+        }
+
+        /* Rodapé e Footnotes */
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; padding-bottom: 0; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><circle cx="12" cy="12" r="3"/></svg> 
+                <div class="header-title">As Guerras de Unificação da Térvore</div>
+            </div>
+
+            <div class="content">
+                <p class="item-quote">guardiões foram designados para vigiá-la.”</p>
+                <span class="quote-source">- Aviva, Ó Chama!</span>
+
+                <p>Parece haver uma profecia prevendo que um dia a Térvore queimaria, e aprendemos sobre essa profecia através da encantação chamada Pecado Mortal do Fogo:</p>
+
+                <p class="item-quote">“Encantação originada de uma profecia profundamente sinistra... O profeta desesperou-se, olhando para a Térvore, pois em breve a lenha irromperia em chamas, trazendo ruína. A queima da Térvore é o primeiro pecado cardinal. Esse não é o domínio de meros homens.”</p>
+                <span class="quote-source">- Pecado Mortal do Fogo</span>
+
+                <p>Então foi sentido por indivíduos perceptivos que a Chama da Ruína teria algo a ver com a eventual destruição da Térvore. Este ato se tornaria o primeiro, e portanto mais vilipendiado, pecado cardinal da fé da Térvore.</p>
+
+                <p>Agora, reconhecidamente, esta versão exata da profecia como dita pelo Pecado Mortal do Fogo pode muito bem ter sido mais próxima do nosso tempo, dado que diz que em breve a lenha irromperia em chamas, em uma referência ao sacrifício de Melina. No entanto, eu penso que é claro que esta é uma profecia que existiu desde os primeiros dias da Térvore – algo que acredito ser reforçado pelo fato de este ser o primeiro pecado cardinal de vários.</p>
+
+                <p>Além disso, obtemos mais evidências de que esta profecia é repetidamente testemunhada por aqueles na fé. A descrição de Pegar Chama diz o seguinte:</p>
+
+                <p class="item-quote">“Encantação originada de uma profecia sinistra... A chama da ruína é anátema para a Térvore. Mas profetas às vezes a vislumbram dentro da fé da mesma forma. Tristemente, quando isso ocorre, sua única recompensa é o banimento.”</p>
+                <span class="quote-source">- Pegar Chama</span>
+
+                <p>Então esta é uma profecia que será vista e apresentada por muitos profetas diferentes repetidas vezes. A propósito, se você escolher a classe inicial de profeta, é fortemente implícito que você é uma dessas pessoas que previu a queima da Térvore. Pois se olharmos para a Venda do Profeta, sua descrição diz:</p>
+
+                <p class="item-quote">“Venda de profetas exilados que previram infortúnio – e foram perseguidos e expulsos de suas casas como resultado. Por que hesitar, se o caminho que leva ao futuro é claro?”</p>
+                <span class="quote-source">- Venda do Profeta</span>
+
+                <p>Isso se liga perfeitamente à lore de Pegar Chama. Mostra que o evento de queimar a Térvore está destinado a acontecer e está tão profundamente escrito na linha do tempo que é visto por várias pessoas – incluindo o personagem do jogador, se essa origem for escolhida.</p>
+
+                <p>Seja por profecia, instrução direta da Vontade Maior, ou por uma conclusão lógica, as fileiras crescentes dos fiéis da Térvore voltariam sua ira para os Gigantes de Fogo, liderados por Marika e Godfrey.</p>
+            </div>
+            
+            <div class="page-number">240</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2L4 10h5v12h6V10h5L12 2z"/></svg> 
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">E assim a guerra épica da lenda começaria: a guerra que decidiu o destino da Térvore e das Terras Intermédias. Os Gigantes de Fogo são poderosos, muito mais poderosos do que aqueles que assaltariam sua montanha – além de Marika e Godfrey, é claro. No entanto, apesar de sua aparente desvantagem de poder, as forças da Térvore estariam muito mais preparadas e muito mais astutas em sua abordagem para este conflito.</p>
+
+                <p>Primeiro de tudo, os guerreiros da Térvore estavam equipados para enfrentar a ameaça dos Gigantes, como aprendemos na descrição da Pedra de Forja [7]:</p>
+
+                <img src="fire_monks_table_art.jpg" alt="Arte Altar dos Monges do Fogo" class="column-illustration-center" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="img-placeholder-column" style="display:none;">
+                    [Arte Altar dos Monges do Fogo]<br>Salve como: fire_monks_table_art.jpg
+                </div>
+
+                <p class="item-quote">“Pedra usada para forjar uma variedade de armamentos. Encontrada em uma região polar, é semi-vitrificada... Acredita-se ter sido usada para afiar as armas dos campeões da Guerra contra os Gigantes no nascimento da Térvore.”</p>
+                <span class="quote-source">- Pedra de Forja [7]</span>
+
+                <p>Então suas armas foram especialmente afiadas com pedras encontradas em regiões polares frias para neutralizar e ferir os Gigantes de Fogo. Além disso, os guerreiros desta era portavam martelos incrivelmente grandes para esmagar os ossos de seus inimigos, como aprendemos com o martelo Esmagador de Gigantes:</p>
+
+                <p class="item-quote">“Um martelo feito de uma rocha, usado na Guerra contra os Gigantes. Uma das armas mais pesadas em todas as Terras Intermédias. Depois que os gigantes foram subjugados, e o homem se voltou contra o homem em violência, esta arma foi quase esquecida. O homem tornou-se fraco em comparação aos seus antepassados.”</p>
+                <span class="quote-source">- Esmagador de Gigantes</span>
+
+                <p>Não foi apenas o ataque deles que foi fortalecido, mas também sua defesa, como vemos na descrição da encantação Chama, Protege-me:</p>
+
+                <p class="item-quote">“A mais antiga das encantações dos Monges do Fogo. Cria um fogo interior que aumenta muito a negação de dano de fogo. Diz-se que esta encantação foi usada durante a Guerra contra os Gigantes há muito tempo, durante a qual protegeu os campeões da Térvore.”</p>
+                <span class="quote-source">- Chama, Protege-me</span>
+
+                <p>Então uma encantação que na verdade continuaria a ser uma encantação fundadora dos Monges do Fogo foi concebida nesta época para dar aos soldados uma grande defesa contra o poder ígneo dos gigantes.</p>
+
+                <p>Ambas as duas últimas peças de evidência devem ser um testemunho da astúcia de Marika, e combinadas com a força bruta de Godfrey, podemos começar a ver que...</p>
+            </div>
+            
+            <div class="page-number">241</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

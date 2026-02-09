@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 9: As Guerras de Unificação da Térvore - Páginas 250 e 251</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+
+        /* Conteúdo Texto */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+            padding-bottom: 40px;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        
+        em { font-style: italic; }
+
+        /* Citações de Itens */
+        .item-quote {
+            font-style: italic;
+            margin: 15px 0 5px 0;
+            text-indent: 0;
+            font-size: 0.95em;
+        }
+
+        .quote-source {
+            display: block;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Rodapé (Número da página) */
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; padding-bottom: 0; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><circle cx="12" cy="12" r="3"/></svg> 
+                <div class="header-title">As Guerras de Unificação da Térvore</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Esta descrição explica como a devoção – e, claramente, o conhecimento – que um Prelado tem em relação à sua tutela da chama literalmente alimenta o caldeirão. Quando ele irrompe, podemos ver que tem um efeito muito semelhante aos poderes dos Gigantes de Fogo. Os Monges do Fogo, especificamente os Prelados conhecedores e devotos, são capazes de empunhar o poder do Deus Caído de maneiras que nós simplesmente nunca poderíamos. Nossa falta de foco e devoção à chama é exatamente o motivo pelo qual, se possuirmos o elmo, não podemos reproduzir tais resultados.</p>
+
+                <p>No entanto, apesar das melhores intenções da ordem e de seus Prelados leais, o poder da chama é tão encantador que pode facilmente causar o arrebatamento de alguém. Até certo ponto, todos os monges a veneram, mas temos exemplos de Monges do Fogo que esquecem completamente seu dever e este medo e tornam-se singularmente obcecados com o poder que a chama pode conceder. Este conceito é explicado através do Conjunto de Monge da Chama Negra:</p>
+
+                <p class="item-quote">“Os Monges da Chama Negra, fascinados pela chama negra matadora de deuses, tornaram-se traidores, abandonando seus postos como guardiões. A sedução de um tabu nunca é facilmente rejeitada.”</p>
+                <span class="quote-source">- Armadura de Monge da Chama Negra</span>
+
+                <p>É por isso que vemos a ascensão dos Monges da Chama Negra, que trocaram seu dever por poder, buscando a força do que viam como uma chama mais poderosa – a Chama Negra matadora de deuses.</p>
+
+                <p>É este tipo de queda que os Prelados supervisionam. Através de seu estoicismo e compromisso, eles buscam manter seus irmãos monges na linha. Acredito que essa ideia de pastoreio religioso é reforçada por outra arma que alguns deles empunham, o Chicote de Espinhos:</p>
+
+                <p class="item-quote">“Chicote robusto coberto de espinhos carmesim. Arma dos Prelados que lideram os Monges do Fogo. Um dispositivo de encorajamento religioso temível, é moldado à imagem dos Espinhos do Pecado.”</p>
+                <span class="quote-source">- Chicote de Espinhos</span>
+
+                <p>Acredito que esta ferramenta, sendo um instrumento de encorajamento religioso, é de domínio e controle para garantir que os monges e os Culpados nunca esqueçam sua carga. Ter esses chicotes formados na forma dos Espinhos do Pecado não é um erro, dado que é uma ferramenta utilizada pela ordem na busca da tutela. Falaremos mais sobre isso em um momento.</p>
+
+                <p>É essa visão e clareza dos Prelados que também lhes dá acesso aos segredos mais sombrios e perigosos do Deus Caído. Estas são as encantações que extraem poder diretamente do poder dos Gigantes de Fogo, uma dessas encantações sendo Chama, Caia Sobre Eles:</p>
+
+                <p class="item-quote">“Uma das encantações que extrai diretamente do poder dos Gigantes de Fogo... Não há registro desta encantação em livros de orações comuns. Apenas alguns poucos prelados selecionados sabem de sua existência.”</p>
+            </div>
+            
+            <div class="page-number">250</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2L4 10h5v12h6V10h5L12 2z"/></svg> 
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <span class="quote-source">- Chama, Caia Sobre Eles</span>
+
+                <p>Os feitiços que extraem diretamente dos Gigantes de Fogo e que liberam o poder total e não adulterado do Deus Caído não são confiados à plebe da ordem. Apenas os Prelados são fundamentados o suficiente para compreender o conhecimento e usá-lo com responsabilidade.</p>
+
+                <p>A maior dessas encantações é a Chama do Deus Caído, na qual se pensa residir o próprio Deus Caído. Este feitiço é tão perigoso que é pessoalmente guardado pelo líder dos Monges do Fogo, Guardião Chefe Arghanthy, e isso é algo que aprendemos na descrição do item da própria encantação.</p>
+
+                <p>Também aprendemos que, em uma virada dramática de eventos, o feitiço foi roubado por Adan. Adan é conhecido como o Ladrão de Fogo. Ele é apropriadamente nomeado, dado que tirou a Chama do Deus Caído bem debaixo do nariz do Guardião Chefe. Curiosamente, ele parece estar parcialmente usando armadura de Prelado, sugerindo que ele era um Prelado ou disfarçado como um.</p>
+
+                <p>Eu iria com a última opção, principalmente porque a armadura parece mal ajustada nele, quase a um grau cômico. Gosto da ideia dele rastejando pela base do Monge do Fogo procurando por este feitiço. Independentemente disso, após seu roubo, ele fugiu para as terras de Liurnia antes de ser aprisionado em um cárcere eterno. No entanto, os Monges do Fogo não sabem sua localização ou destino, e ele é a razão pela qual um grande contingente invadiu Liurnia. Aprendemos isso na Lâmina de Chama do Monge:</p>
+
+                <p class="item-quote">“Os monges vieram para a terra de Liurnia em busca de um fugitivo que roubou seu fogo.”</p>
+                <span class="quote-source">- Lâmina de Chama do Monge</span>
+
+                <p>Para quaisquer leitores deixados em dúvida sobre o quão seriamente os monges levam seu dever, você deve tomar nota dos recursos que eles comprometem para recuperar esta relíquia perdida. Eles até atacaram um forte capital, o Forte Laiedd, massacrando todos os soldados e tomando-o como base de operação. Considero que esta seja a história aqui, pelo menos, já que o único Prelado que vemos fora dos Picos dos Gigantes está no Forte Laiedd.</p>
+
+                <p>Então os monges são um bando fascinante, uma ordem religiosa que venera a chama mas também atua como seu protetor, guardando seu poder e segredos daqueles que poderiam usá-la irresponsavelmente. E, no entanto, os monges não trabalham sozinhos, pois além deles, existem os Feiticeiros de Espinhos, os Culpados que foram confinados aqui, no exílio, para ajudar os monges.</p>
+
+                <p>É um movimento político inteligente da Ordem Dourada, reaproveitar membros perigosos e dissidentes da sociedade em uma ferramenta útil, ao mesmo tempo removendo-os para longe de Leyndell.</p>
+            </div>
+            
+            <div class="page-number">251</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

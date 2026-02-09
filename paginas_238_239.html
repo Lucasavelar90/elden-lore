@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 9: As Guerras de Unificação da Térvore - Páginas 238 e 239</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+
+        /* Conteúdo Texto */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+            padding-bottom: 40px;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        
+        em { font-style: italic; }
+
+        /* Títulos de Subseção */
+        h2.subsection-title {
+            font-family: 'Cinzel', serif;
+            color: #c5a059; /* Dourado */
+            font-size: 1.2rem;
+            text-align: center;
+            margin: 25px 0 15px 0;
+            line-height: 1.2;
+            break-inside: avoid;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        /* Citações de Itens */
+        .item-quote {
+            font-style: italic;
+            margin: 15px 0 5px 0;
+            text-indent: 0;
+            font-size: 0.95em;
+        }
+
+        .quote-source {
+            display: block;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Citação Verde Grande (Pull Quote) */
+        .pull-quote-green {
+            color: #c5a059; /* Laranja/Dourado */
+            font-size: 1.35rem;
+            line-height: 1.3;
+            margin: 0 0 25px 0;
+            text-indent: 0;
+            text-align: left;
+            break-inside: avoid;
+            font-weight: 400;
+        }
+
+        /* Rodapé (Número da página) */
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; padding-bottom: 0; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><circle cx="12" cy="12" r="3"/></svg> 
+                <div class="header-title">As Guerras de Unificação da Térvore</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Godfrey em sua busca por unidade, mas vamos falar sobre algumas das quais temos conhecimento.</p>
+
+                <p>O Cerco de Morne nos dá alguma visão sobre uma dessas batalhas. Vamos olhar para a Espada Grande da Lâmina Enxertada:</p>
+
+                <p class="item-quote">“A célebre espada do Castelo Morne. Arma de um vingador, ela carrega oceanos de raiva e arrependimento. Um dos armamentos lendários. Um campeão solitário sobrevivente de um país agora desaparecido estava tão determinado a continuar lutando que ele reivindicou as espadas de um clã inteiro de guerreiros.”</p>
+                <span class="quote-source">- Espada Grande da Lâmina Enxertada</span>
+
+                <p>Isso sugere que o portador original desta espada é o único sobrevivente de um país perdido, e que a vingança estava em sua mente. Como resultado, eles simbolicamente forjaram uma única espada a partir de todas as espadas de um clã perdido. Quando vemos isso através da lente do Monumento da Espada encontrado no Castelo Morne, temos a imagem completa:</p>
+
+                <p class="item-quote">“O cerco do Castelo Morne / Um herói solitário luta por sua vingança / Apenas para cair nas mãos do Lorde Godfrey”</p>
+                <span class="quote-source">- Monumento da Espada, Península das Lágrimas</span>
+
+                <p>Isso nos mostra que a vingança é dirigida contra Godfrey, sugerindo implicitamente que foi Godfrey quem destruiu o país em questão. Novamente, não temos certeza de quando isso ocorreu, mas dado que é uma nação inteira, eu especularia que foi um povo que foi trazido ao calcanhar durante as guerras de unificação de Godfrey como o Lorde Prístino de Marika; apenas uma cultura entre muitas derrotadas pelo poder ascendente.</p>
+
+                <div class="pull-quote-green">
+                    Sem dúvida, há inúmeras tribos e sociedades menores que não conhecemos que teriam sido trazidas ao calcanhar por Godfrey em sua busca por unidade.
+                </div>
+
+                <p class="no-indent">Eu sugeriria a seguinte cadeia de eventos. Godfrey conquistou esta terra em nome de Marika e então, das cinzas, viria este vingador, empunhando as espadas coletadas de seu povo e atacando o Castelo Morne, antes de ser derrubado pelo próprio senhor do campo de batalha. No entanto, como vimos frequentemente, Godfrey não descartaria a arma do vingador. Em vez disso, seu selo da besta seria enxertado nela, e ela se tornaria mais uma relíquia da Linhagem Dourada, ainda mantida pelos homens de Godfrey até hoje.</p>
+
+                <p>O governo do Senhor da Tempestade em Stormveil parece ter criado o que é quase um reino sucessor ao dos dragões. Ele está ligado às tempestades, muito parecido com os dragões, e já foi governado pelos Falcões da Tempestade, que também vêm de Farum Azula.</p>
+            </div>
+            
+            <div class="page-number">238</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2L4 10h5v12h6V10h5L12 2z"/></svg> 
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">Além disso, tanto Farum Azula quanto Stormveil são habitados pelos cavaleiros banidos, que empunham encantações de Comunhão do Dragão e usam um dragão em seu elmo. Para mim, estes são alguns dos primeiros guerreiros da Comunhão do Dragão, e sabemos que este foi um culto estabelecido pelo próprio Placidusax, graças à Sombra da expansão da Térvore.</p>
+
+                <p>Tão incríveis quanto os Dragões Antigos e sua civilização são, eles não duraram para sempre.</p>
+
+                <p>Placidusax foi mortalmente ferido por Bayle, o Pavoroso, e enquanto Placidusax repeliu Bayle e o mandou fugir, ele perdeu duas de suas cabeças e foi forçado a entrar em um sono catatônico.</p>
+
+                <p>A destruição literal da alvenaria de Farum Azula veio pelas mãos de um meteorito, algo que aprendemos através da Espada Grande das Ruínas:</p>
+
+                <p class="item-quote">“A ruína de onde veio desmoronou quando atingida por um meteorito, como tal esta arma abriga seu poder destrutivo.”</p>
+                <span class="quote-source">- Espada Grande das Ruínas</span>
+
+                <p>Então, em algum momento, o templo no céu foi atingido por um meteorito. Foi este evento que levou à dispersão dos fragmentos de Farum Azula por toda a terra e à ruína da própria capital.</p>
+
+                <p>No entanto, não acredito que este tenha sido o evento que levou à queda dos dragões. Em vez disso, acredito que isso ocorreu após sua queda, quando o templo estava no céu, e portanto depois de ter sido congelado no tempo.</p>
+
+                <p>Com todos os outros derrotados, Godfrey e seus homens enfrentariam os rivais finais de Marika: os Gigantes de Fogo que controlavam os picos das montanhas e a Forja da Chama Ruinosa.</p>
+
+                <h2 class="subsection-title">A GUERRA DOS<br>GIGANTES</h2>
+
+                <p>Os gigantes foram inimigos instantâneos da Térvore e representaram uma enorme ameaça ao seu reinado. Aprendemos a extensão da inimizade através do Medalhão do Rugido:</p>
+
+                <p class="item-quote">“Nos tempos antigos, os gigantes eram inimigos mortais da Térvore.”</p>
+                <span class="quote-source">- Medalhão do Rugido</span>
+
+                <p>De fato, sabemos que a derrota dos gigantes foi o que estabeleceu o reinado da Térvore propriamente dita, e assim podemos assumir que os gigantes foram hostis à Térvore desde sua concepção.</p>
+
+                <p>Aprendemos de várias fontes, bem como de nossa própria experiência no jogo, que a Chama da Ruína representa uma ameaça direta à Térvore. Uma das melhores fontes disso é Aviva, Ó Chama!:</p>
+
+                <p class="item-quote">“A Chama dos Gigantes é a chama da ruína, capaz de queimar a Térvore. E assim, após a Guerra contra os Gigantes, seu brilho ruinoso foi selado, e...”</p>
+            </div>
+            
+            <div class="page-number">239</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

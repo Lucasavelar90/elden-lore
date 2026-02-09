@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 9: As Guerras de Unificação da Térvore - Páginas 236 e 237</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .book-spread {
+            display: flex;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page {
+            background-color: #fcfbf7;
+            flex: 1;
+            min-height: 850px;
+            padding: 60px 50px;
+            position: relative;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-left {
+            border-radius: 5px 0 0 5px;
+            background: linear-gradient(to right, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        .page-right {
+            border-radius: 0 5px 5px 0;
+            background: linear-gradient(to left, #fcfbf7 96%, #e5e3da 100%);
+        }
+
+        /* Cabeçalho */
+        .header { text-align: center; margin-bottom: 30px; position: absolute; top: 30px; left: 0; width: 100%; }
+        .header-icon { display: block; margin: 0 auto 5px auto; width: 25px; height: 25px; fill: #c5a059; }
+        .header-title { font-family: 'Cinzel', serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #c5a059; font-weight: 600; }
+
+        /* Conteúdo Texto */
+        .content {
+            margin-top: 40px;
+            column-count: 2;
+            column-gap: 35px;
+            font-size: 15px;
+            line-height: 1.45;
+            text-align: justify;
+            orphans: 2;
+            widows: 2;
+            flex-grow: 1;
+            height: 100%;
+            padding-bottom: 40px;
+        }
+
+        p { margin-bottom: 15px; text-indent: 1.5em; }
+        .no-indent { text-indent: 0; }
+        
+        em { font-style: italic; }
+
+        /* Títulos de Subseção */
+        h2.subsection-title {
+            font-family: 'Cinzel', serif;
+            color: #c5a059; /* Dourado */
+            font-size: 1.2rem;
+            text-align: center;
+            margin: 25px 0 15px 0;
+            line-height: 1.2;
+            break-inside: avoid;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        /* Citações de Itens */
+        .item-quote {
+            font-style: italic;
+            margin: 15px 0 5px 0;
+            text-indent: 0;
+            font-size: 0.95em;
+        }
+
+        .quote-source {
+            display: block;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Citação Verde Grande (Pull Quote) */
+        .pull-quote-green {
+            color: #c5a059; /* Laranja/Dourado */
+            font-size: 1.35rem;
+            line-height: 1.3;
+            margin: 0 0 25px 0;
+            text-indent: 0;
+            text-align: left;
+            break-inside: avoid;
+            font-weight: 400;
+        }
+
+        /* Rodapé (Número da página) */
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: #c5a059;
+            font-weight: 600;
+        }
+        
+        .page-left .page-number { left: 45px; }
+        .page-right .page-number { right: 45px; }
+
+        @media (max-width: 900px) {
+            .book-spread { flex-direction: column; align-items: center; gap: 20px; }
+            .page { width: 100%; max-width: 550px; min-height: auto; }
+            .content { column-count: 1; padding-bottom: 0; }
+            .header { position: relative; top: auto; margin-bottom: 20px; }
+            .content { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-spread">
+        
+        <div class="page page-left">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><circle cx="12" cy="12" r="3"/></svg> 
+                <div class="header-title">As Guerras de Unificação da Térvore</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">mas em seu modo de vida transitório. Tais são os Maculados que escolhem a classe guerreira.</p>
+
+                <p>O que também é interessante é que alguns dos povos Maculados parecem ainda adorar os Dois Dedos e a graça, algo que aprendemos através do Conjunto de Confessor:</p>
+
+                <p class="item-quote">“As igrejas fora das Terras Intermédias, dedicadas aos ensinamentos dos Dois Dedos, enviam confessores para seguir a orientação da graça. Os confessores são servos leais dos Dois Dedos, prontos para caçar e dispor silenciosamente de seus inimigos.”</p>
+                <span class="quote-source">- Capuz de Confessor</span>
+
+                <p>Não está claro se as pessoas fora das Terras Intermédias já adoravam a graça e os Dois Dedos, ou se foi uma exportação trazida com eles pelos Maculados. Estou mais inclinado a acreditar no último – não apenas porque é mais interessante, mas porque os Maculados têm um relacionamento muito forte com os Dois Dedos, como veremos em breve.</p>
+
+                <p>O ponto é que os Maculados evidentemente se dispersaram por todo o mundo, e vieram em todas as formas e tamanhos. O fato de Miyazaki descrever os guerreiros Maculados originais como nossos "ancestrais" dá algumas possibilidades legais de roleplay, porque a passagem do tempo permite plausivelmente que o povo Maculado se espalhe por toda parte e desenvolva culturas diversas.</p>
+
+                <p>Mas, como sabemos pelo discurso de Marika, os Maculados um dia seriam obrigados a retornar às Terras Intermédias. Longe das terras Maculadas, as Terras Intermédias passariam por um período tumultuado: a Ruptura.</p>
+
+                <p>O Anel Prístino seria destruído e os filhos semideuses de Marika lutariam pela supremacia de uma maneira tão brutal que ninguém emergiria verdadeiramente vitorioso. Seu fracasso em anunciar uma nova Ordem levaria ao abandono pela Vontade Maior, como nos é dito no segmento introdutório.</p>
+
+                <h2 class="subsection-title">GODFREY, PRIMEIRO<br>LORDE PRÍSTINO</h2>
+
+                <p>As coisas mudam dramaticamente para Godfrey e o mundo mais amplo quando Marika procura trazer a primazia da Térvore. Sabemos pela lembrança de Maliketh que Marika foi uma vez uma Empírea e, portanto, deve ter sido eleita como tal durante a mesma era das conquistas de Hoarah Loux. Pelo diálogo de Ranni, sabemos que Empíreos são deuses em potencial escolhidos para inaugurar uma nova era.</p>
+
+                <p>Como uma jovem Empírea, Marika e sua Térvore enfrentariam uma batalha difícil para se tornarem o poder dominante na terra. A encantação Proteção da Térvore diz:</p>
+
+                <p class="item-quote">“No início, tudo estava em oposição à Térvore. Mas através de inúmeras...”</p>
+            </div>
+            
+            <div class="page-number">236</div>
+        </div>
+
+        <div class="page page-right">
+            <div class="header">
+                 <svg class="header-icon" viewBox="0 0 24 24"><path d="M12 2L4 10h5v12h6V10h5L12 2z"/></svg> 
+                <div class="header-title">Graça Concedida</div>
+            </div>
+
+            <div class="content">
+                <p class="no-indent">...vitórias na guerra, ela se tornou a personificação da Ordem.”</p>
+                <span class="quote-source">- Proteção da Térvore</span>
+
+                <p>A Térvore é tão obviamente o centro de poder em nossa era atual que é difícil imaginá-la como qualquer outra coisa, mas como esta descrição afirma tão claramente, a Térvore ganhou sua primazia através do derramamento de sangue.</p>
+
+                <p>Sem dúvida, como uma deusa recém-cunhada, Marika teria tido um poder significativo concedido a ela. No entanto, se sua nova Ordem fosse subjugar as várias culturas e rivais ao seu redor, ela precisaria de guerreiros e generais.</p>
+
+                <p>É por isso que Marika se casou com Godfrey e por que ele foi elevado como primeiro Lorde Prístino da Era da Térvore – pois neste estágio Hoarah Loux teria sido um chefe guerreiro renomado por direito próprio. Falamos sobre suas vitórias e o desenvolvimento de sua cultura de mesa redonda, mas o que não está claro é quais vitórias Hoarah Loux obteve antes de se tornar marido de Marika e quais são atribuídas às guerras de conquista da Térvore.</p>
+
+                <p>No entanto, como já especulamos, eu argumentaria que Hoarah Loux tornou-se Godfrey no momento preciso em que ele se tornaria Lorde Prístino, significando que sua mesa redonda também teria deposto seus machados neste momento. Essa teoria, portanto, implicaria que Godfrey e seus homens teriam tido várias vitórias antes deste ponto. Afinal, a escolha de Marika faria sentido se ele já fosse um homem de grande renome.</p>
+
+                <p>Neste ponto, a mesa redonda seria dobrada, e Godfrey dependeria de conselheiros e, em última análise, responderia à Rainha Marika, de quem ele era consorte. Godfrey estava se tornando parte de algo maior. Sua força havia garantido uma coroa, mas agora ele precisaria usar essa coroa e conduzir-se como um lorde ao lado de sua esposa divina. Assim, ele pegaria seu machado e tomaria Serosh em suas costas para ajudar a conter sua raiva de sangue sem fim.</p>
+
+                <p>No entanto, Godfrey dificilmente deu um passo atrás de ser um guerreiro. Em vez disso, ele apenas se conduziria de uma maneira mais senhorial, agindo menos como uma besta e mais como o nobre guerreiro da lenda.</p>
+
+                <div class="pull-quote-green">
+                    Novamente, é aqui que a crença do <em>Tarnished Archaeologist</em> de que Godfrey é análogo ao rei unificador Arthur faz sentido. Pois foi neste tempo que Godfrey derrotaria todos os oponentes da Térvore e unificaria as terras.
+                </div>
+
+                <p class="no-indent">Ele criaria um novo reino unido sob a égide da Térvore e de Marika. Como já lemos em Proteção da Térvore, eventualmente, através de inúmeras vitórias, a Térvore se tornaria o símbolo da Ordem.</p>
+
+                <p>Sem dúvida, há inúmeras tribos e sociedades menores que não conhecemos que teriam sido trazidas ao calcanhar por...</p>
+            </div>
+            
+            <div class="page-number">237</div>
+        </div>
+
+    </div>
+
+</body>
+</html>
